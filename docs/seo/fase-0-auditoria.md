@@ -6,11 +6,33 @@
 
 ---
 
-## 0. Antes de leer: 3 cosas que necesito de ti
+## 0. Actualización v2 (después de leer el handoff v2 del 11 nov 2026)
 
-1. **No pude leer el HANDOFF.** El archivo `HANDOFF_Compra_en_Fabricas_COMPLETO.md` vive en tu proyecto de Claude y no tengo acceso a esos proyectos desde aquí (tampoco está en tu Google Drive). Usé como sustituto el *project knowledge* de Lovable, que ya trae marca, tono, CTAs y reglas. **Pégamelo o súbelo al repo** antes de la Fase 2 para revisar contradicciones finas.
-2. **Hay contradicciones entre tu prompt y el project knowledge de Lovable** (sección 6). Tú decides cuál manda.
-3. **Hay un problema urgente que no es de SEO** (sección 1): datos de proveedores publicados y abiertos a Google.
+El handoff (`HANDOFF_Compra_en_Fabricas_COMPLETO.md`, en `main`) trae su propia regla: **si el handoff y el sitio no coinciden, manda el sitio.** Con eso se resuelven casi todas las contradicciones de la sección 6. Resumen de lo que cambió en este informe:
+
+| Antes (v1) | Ahora (v2) |
+|---|---|
+| C1 grabación: dudoso | **Resuelto:** la clase incluye grabación. No se toca. |
+| C2 `/validacion`: ¿eliminar y redirigir? | **Resuelto:** sigue activa. **No se redirige ni se quita** (y se queda en el sitemap). |
+| C3 mini-curso gratis | **Resuelto:** no existe. No se menciona. |
+| C6 `/adn` | **Resuelto:** es producto del ecosistema ("Clase ADN"). Se queda. |
+| C7 Paquetes 1–3 | **Resuelto:** vigentes (P1 por Hotmart). `/empieza-aqui` se queda, solo se le quita lo de clase gratis. |
+| C10 cotizador | **Resuelto:** es internacional a propósito. Solo hay que cambiar el title, que dice "España" cuando sirve para varios países. |
+| U2 nombres AEMAI y Port Tide | **Baja de urgencia:** el handoff los presenta como producto del marketplace y regalo #1 y #2 de la clase. Mostrarlos es intencional. |
+| U1 `/proveedores` | **Sigue urgente**, ver sección 1. |
+| IndexNow "no existe" | **Corrección mía:** ya se usa (llave en `/0548ff….txt`, 12 URLs enviadas). Lo que falta es **automatizarlo** para no hacer el POST a mano. |
+| Fase 4: verificar Search Console y Bing | **Ya está hecho** (GSC verificado, sitemap enviado, Bing importado). La Fase 4 queda en: eventos de analítica, WhatsApp con origen y tabla de posiciones. |
+
+**Lo que el handoff confirma de mi análisis** (ya estaba en su lista de pendientes): "25 años" vs "26", la FAQ de `site.tsx` que manda a `/clase-gratis`, metadatos con "Lovable" y el nombre del logo que se corta en escritorio.
+
+**Una corrección al handoff:** la sección 18 dice que los FAQ enriquecidos "solo salen para gobierno y salud". Desde el **7 de mayo de 2026** Google ya no los muestra para nadie. El schema se queda igual (lo leen las IAs), solo hay que actualizar esa línea.
+
+**Cuidado con el calendario de 10 notas del handoff:**
+- La nota **1 "Cómo comprar en China sin intermediarios"** y la **10 "Fábrica vs. revendedor"** pelean la misma intención. Recomiendo juntarlas en una sola.
+- La nota **7 "Padrón de importadores 2026"** es la misma página de trámites que propongo en el mapa (4.2). Que sea esa: "Requisitos para importar de China a México (padrón, RFC, agente aduanal)".
+- La nota **2 "Cuánto cuesta importar"** debe crecer desde la sección de costos de la pilar y enlazarse desde ahí, sin repetirla.
+
+**Nota del repo:** mi rama se había creado antes del handoff. Ya la puse sobre `main`, junto al blog.
 
 ---
 
@@ -22,7 +44,9 @@
 | U2 | **Nombres de proveedores publicados:** AEMAI y Port Tide aparecen con nombre en la página de la clase (como "Regalo #1 y #2") y en el marketplace. | `/clase`, `/marketplace` | Misma regla. Tú decides si en marketplace sí se pueden mostrar (ahí es el producto que vendes). |
 | U3 | **Se sigue ofreciendo "clase gratis por Zoom".** El botón "Registrarme a la clase gratis" manda a `/clase-gratis`, que redirige al inicio. Funnel roto + servicio que ya no existe. | `/empieza-aqui` (3 botones + FAQ) | Promesa falsa a quien llega de anuncios viejos o de Google. |
 
-Propuesta: `noindex` + quitar del sitemap `/proveedores` de inmediato y, mejor aún, protegerla (enlace secreto o acceso con correo de compra). Te lo dejo listo para la Fase 1 con tu OK.
+Propuesta: `noindex` en `/proveedores` de inmediato (no está en el sitemap, pero Google la puede encontrar por ligas compartidas) y, mejor aún, protegerla (enlace secreto o acceso con correo de compra). Te lo dejo listo para la Fase 1 con tu OK.
+
+**v2:** el handoff dice que `/proveedores` "está bien". Como contenido sí, pero sigue siendo un problema de **acceso**: publica WeChat (la regla 12 del handoff lo prohíbe), no está en el sitemap pero tampoco tiene `noindex`, y cualquiera puede compartir la liga. Como mínimo `noindex` (no oculta ningún servicio). Protegerla con acceso sí cambia cómo funciona el regalo, así que **eso lo decide Eduardo**.
 
 ---
 
@@ -199,12 +223,16 @@ No se pudieron medir datos de campo (CrUX) por la misma falta de cupo. Con Searc
 ### 5.2 Fechas de la clase para el schema `Event`
 `/clase` dice **21 de noviembre**. En el proyecto hay un banner llamado `banner-clase-20nov.jpg`. ¿Cuál es la fecha correcta, a qué hora (zona de Monterrey/CDMX) y cuáles son las siguientes fechas? Sin fechas reales no pongo Event. Además, después del 21 la página quedará con fecha vencida: hay que definir cómo se actualiza.
 
+**v2:** el handoff confirma el 21 de noviembre como próxima fecha publicada. Falta la **hora** y aclarar el banner "20nov".
+
 ### 5.3 Google Business Profile
-No encontré dirección en México en el sitio. Menciones que encontré: "oficina en Guangzhou" (marketplace) y "tenemos showroom" (FAQ de joyería). Si hay un showroom u oficina real en México donde atiendes clientes, dime la dirección y lo evaluamos. Si no, no se crea GBP y usamos `areaServed`.
+**v2:** el handoff tampoco trae dirección (menciona Jaico Jewels SA de CV, pero sin domicilio de atención a clientes). No encontré dirección en México en el sitio. Menciones que encontré: "oficina en Guangzhou" (marketplace) y "tenemos showroom" (FAQ de joyería). Si hay un showroom u oficina real en México donde atiendes clientes, dime la dirección y lo evaluamos. Si no, no se crea GBP y usamos `areaServed`.
 
 ---
 
 ## 6. Contradicciones (prompt ↔ project knowledge ↔ sitio)
+
+> **v2:** con el handoff quedan **resueltas C1, C2, C3, C6, C7 y C10** (ver sección 0). Siguen abiertas: **C4** (quitar clase gratis, confirmado por el handoff), **C5** (unificar a 26+), **C8** ("deja tu trabajo este año"), **C9** (solo el WeChat de `/proveedores`) y **C11** (WhatsApp de marketplace).
 
 | # | Tema | Tu prompt dice | Project knowledge / sitio dice | Decides tú |
 |---|---|---|---|---|
@@ -236,10 +264,10 @@ No encontré dirección en México en el sitio. Menciones que encontré: "oficin
 | 8 | 404 en español con enlaces | Medio | Bajo | 1 |
 | 9 | Footer general completo y enlaces de páginas comerciales al blog | Medio | Bajo | 1 |
 | 10 | `Product`+`Offer` en `/productos`, `VideoObject`, `FAQPage` y `BreadcrumbList` en comerciales | Medio | Medio | 1 |
-| 11 | IndexNow + `llms.txt` más completo | Bajo-medio | Bajo | 1 |
+| 11 | Automatizar IndexNow (ya hay llave) + `llms.txt` más completo | Bajo-medio | Bajo | 1 |
 | 12 | Página del curso (5.1), guía de trámites, hub de preguntas, convertir la guía del blog en pilar | Alto (a mediano plazo) | Alto | 2 |
 | 13 | Enriquecer página de Eduardo (fotos reales, perfiles personales, NADIE) | Alto (E-E-A-T) | Medio | 2 |
-| 14 | Search Console (DNS), Bing Webmaster, eventos de analítica, WhatsApp con origen | Alto (medir) | Bajo (lo haces tú, te guío) | 4 |
+| 14 | Eventos de analítica, WhatsApp con origen en páginas comerciales, tabla de posiciones (GSC y Bing ya están) | Alto (medir) | Bajo | 4 |
 | 15 | YouTube, menciones y PR | Alto (IA) | Alto (tú) | 5 |
 
 ---
