@@ -3,6 +3,12 @@
 Proyecto de Lovable: **China Direct Connect** (compraenfabricas.com), workspace "Eduardo's Lovable".
 Nada está publicado en producción todavía: todo vive en el preview hasta que se apruebe el deploy.
 
+## Estado en producción (11 nov 2026)
+- Publicado en compraenfabricas.com: blog, 5 notas, imágenes, sitemap, robots y llms.txt.
+- Search Console verificado (propiedad https://compraenfabricas.com/) y sitemap enviado.
+- IndexNow activo: llave en /0548ff40ad255644b9c19950f3efce17.txt; 12 URLs enviadas (respuesta 202). Para avisar URLs nuevas, repite el POST a https://api.indexnow.org/indexnow con la misma llave.
+- Inicio corregido a "5 proveedores de regalo" (confirmado: son 5).
+
 ## 1. Qué se construyó
 
 **Rutas nuevas**
