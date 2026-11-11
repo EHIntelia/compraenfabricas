@@ -98,7 +98,7 @@ Luego eliges cómo viaja:
 - **Aéreo:** se cobra por kilo, tarda de 7 a 15 días. Para pedidos chicos, muestras o producto de valor alto.
 - **Marítimo consolidado:** se cobra por metro cúbico, tarda de 30 a 45 días. Para volumen, cuando lo que importa es el costo por pieza.
 
-Para saber cuánto te cuesta, usa el [cotizador de envíos](/cotizador) con el peso y las medidas de tu mercancía ya empacada.
+Para saber cuánto te cuesta, pide una [cotización de envío desde China](/logistica#cotizar) con el peso y las medidas de tu mercancía ya empacada.
 
 ## Paso 7: pasar la aduana en México sin que te atoren
 

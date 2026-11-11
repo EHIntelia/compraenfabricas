@@ -117,3 +117,43 @@ Cada una enlaza a la pilar (`/blog/como-importar-de-china-a-mexico`) y la pilar 
 - Precios de cursos de terceros: sitios de CETYS, LatinoTrainers/INCEA, 100negocios, Kuinsen y Elevify (consultados en noviembre de 2026).
 - Robots de IA y llms.txt: guías 2026 de Digital Applied y DEV Community.
 - AI Overviews: HubSpot y guías 2026 (respuesta directa arriba, pasos, FAQ y E-E-A-T).
+
+---
+
+## Lote 2: calendario de 10 notas (desde el 11 nov 2026)
+
+Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (rama del agente SEO). La pilar sigue siendo dueña de "cómo importar de China a México" y "cómo comprar en China".
+
+**Flujo por nota:** `posts/<slug>.md` → `python3 tools/check.py` → `python3 tools/make_images_notas.py <slug>` → `python3 tools/build_sql.py --status draft <slug>` → carga en `posts` → vista previa con `python3 tools/preview.py <slug>` (el sitio no muestra borradores) → confirmación → `published` → deploy (por las imágenes) → enlace desde la pilar → IndexNow → indexación en Search Console.
+
+| # | Slug | Keyword | Meta title | Palabras | Estado | Fecha |
+|---|---|---|---|---|---|---|
+| B | requisitos-para-importar-de-china-a-mexico | requisitos para importar de China a México | Requisitos para importar de China a México en 2026 | ~1,810 | Borrador en la base, imágenes subidas | — |
+| C | cuanto-cuesta-importar-de-china | cuánto cuesta importar de China | Cuánto cuesta importar de China en 2026: ejemplo real | ~1,670 | Borrador en la base, imágenes subidas | — |
+| A | comprar-directo-de-fabrica-en-china | comprar directo de fábrica en China | — | — | Por escribir | — |
+| E | como-pagar-a-un-proveedor-en-china | cómo pagar a un proveedor en China | — | — | Por escribir | — |
+| D | aranceles-china-mexico-2026 | aranceles a China 2026 | — | — | Por escribir (revisión mensual) | — |
+| H | envio-aereo-o-maritimo-desde-china | envío aéreo o marítimo desde China | — | — | Por escribir | — |
+| F | que-es-yiwu | Yiwu | — | — | Por escribir | — |
+| I | joyeria-de-acero-inoxidable | joyería de acero inoxidable | — | — | Por escribir | — |
+| J | feria-de-canton | Feria de Cantón | — | — | Por escribir (2–3 meses antes de la edición) | — |
+| G | errores-que-me-costaron-dinero-importando | errores al importar de China | — | — | Espera historias reales de Eduardo | — |
+
+**Meta descriptions**
+- B: "Requisitos para importar de China a México en 2026: RFC, e.firma, padrón de importadores, agente aduanal, pedimento y NOM. Explicado fácil y con fuentes." (153)
+- C: "Cuánto cuesta importar de China a México en 2026: mercancía, flete, arancel, IVA, agente aduanal y envío, con un ejemplo con números. Calcula tu costo." (151)
+
+**Al publicar B y C:** agregar en la pilar (Paso 7) el enlace a B en el punto de padrón y a C en el punto de impuestos. La pilar no tiene una sección de costos larga, así que no hay texto que resumir.
+
+**Cambio ya aplicado (11 nov):** la pilar enlazaba a /cotizador (en construcción). Ahora enlaza a /logistica#cotizar.
+
+**[PENDIENTE] y datos por confirmar**
+- B: no se pudieron abrir directo sat.gob.mx ni dof.gob.mx desde esta sesión (red bloqueada); los datos salen de las fichas oficiales vistas por buscador, con fecha de consulta. Conviene que alguien abra la ficha 5/LA y confirme: (1) el plazo de respuesta del padrón (la nota no lo menciona a propósito) y (2) los topes de la regla 1.3.1 de las RGCE 2026 para importar sin padrón (la nota solo dice que existen excepciones).
+- C: el ejemplo es hipotético salvo IVA 16%, DTA 8 al millar y la caja S100 (~$31/pieza). Si Eduardo da un caso real de importación con números, la nota se vuelve más fuerte.
+- D: la LIGIE tuvo otra reforma con fecha DOF 13-10-2026. Revisarla antes de escribir la nota de aranceles.
+
+**Pedidos al agente SEO** (no los toca el agente de contenido)
+1. **Vista previa de borradores:** el blog solo lee notas `published`, así que un borrador no se puede ver en el preview. Propuesta: ruta de vista previa con token o una bandera solo en el preview.
+2. **Corregir la sección 18 del handoff:** Google dejó de mostrar FAQ enriquecidos para todos desde el 7 de mayo de 2026.
+3. **IndexNow automático** al publicar una nota (hoy el POST es manual).
+4. Si se publica `/curso-para-importar-de-china`, avisar para cambiar el enlace de la nota de cursos.
