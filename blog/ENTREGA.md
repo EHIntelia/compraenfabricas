@@ -28,6 +28,15 @@ Nada está publicado en producción todavía: todo vive en el preview hasta que 
 3. `python3 tools/check.py` para validar el SEO; `python3 tools/build_sql.py > out/posts.sql` para generar el SQL (upsert por slug).
 4. Cárgala como `draft`, revísala en el preview y cámbiala a `published`.
 
+## Verificación (hecha por el agente de Lovable en su preview)
+- Las 5 notas, /blog, las categorías y el autor responden 200. Todo sale en el HTML inicial: title, description, canonical, og:image 1200×630, un solo H1, cuerpo completo, cajas, tablas, figuras con pie y FAQ con respuestas visibles.
+- JSON-LD válido: Organization, WebSite, BlogPosting, BreadcrumbList y FAQPage aparecen una vez por nota. HowTo solo en la pilar.
+- Los 14 enlaces internos de las notas y las 20 imágenes responden 200.
+- WhatsApp (botón final y flotante en móvil) lleva el slug de la nota.
+- robots.txt, llms.txt y sitemap correctos. Se corrigió un bug: el sitemap listaba categorías vacías y no tenía lastmod en /blog, autor y categorías.
+- Sin desbordes a 390 px ni a 1280 px. /, /clase y /productos siguen igual. "Blog" sale en el menú.
+- Fuera del blog (no se tocó): en escritorio, el nombre del logo del header se corta.
+
 ## 2. Las 5 notas
 
 | # | Slug | Keyword | Meta title | Meta description | Palabras |

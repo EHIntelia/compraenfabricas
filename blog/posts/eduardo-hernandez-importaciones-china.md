@@ -72,6 +72,9 @@ Después de tantos años yendo a China, hay cosas que ya no se me olvidan:
 
 <!-- PENDIENTE: anécdota real de Eduardo en una fábrica china: una negociación o un descubrimiento que le cambió la forma de comprar. -->
 
+:::cta-clase
+:::
+
 ## Mis negocios hoy: JAICO, Xijiao Shops y Xijiao LOG
 
 Hoy tengo **5 negocios funcionando**. Los principales están conectados con China:

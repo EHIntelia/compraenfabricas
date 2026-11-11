@@ -16,7 +16,7 @@ for i, slug in enumerate(ORDER):
     rt = max(1, math.ceil(words / 200))
     tags = "ARRAY[" + ",".join(q(t) for t in m["tags"]) + "]::text[]"
     howto = q(json.dumps(m["howto"], ensure_ascii=False), "j") + "::jsonb" if m.get("howto") else "NULL"
-    pub = f"timestamptz '2026-11-11 09:00:00-06' - interval '{i * 3} hours'"
+    pub = f"timestamptz '2026-11-11 09:00:00-06' - interval '{i} hours'"
     cols = dict(title=q(m["title"]), slug=q(m["slug"]), meta_title=q(m["meta_title"]), meta_description=q(m["meta_description"]),
                 excerpt=q(m["excerpt"]), content=q(body, "md"), cover_image=q(m["cover_image"]), cover_alt=q(m["cover_alt"]),
                 category=q(m["category"]), tags=tags, author="'eduardo-hernandez'", published_at=pub, reading_time=str(rt),
