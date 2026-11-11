@@ -1,0 +1,242 @@
+<title>Imágenes del blog</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: encabezado de marca + una sección por nota con rejilla de tarjetas de imagen */
+:root {
+  --bg: #FFF8F5; --surface: #FFFFFF; --ink: #1A1A1A; --muted: #6B6B6B; --line: #D9CFC7;
+  --peach: #FCE4DC; --orange: #F97316; --red: #DC2626; --red-ink: #B91C1C;
+  --grad: linear-gradient(120deg, #F97316, #DC2626);
+  --display: "Inter", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #17120F; --surface: #221B17; --ink: #F5EEE9; --muted: #B8ADA6; --line: #3A2F29; --peach: #3B2218; --red-ink: #FCA5A5; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #17120F; --surface: #221B17; --ink: #F5EEE9; --muted: #B8ADA6; --line: #3A2F29; --peach: #3B2218; --red-ink: #FCA5A5; color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font-family: var(--display); line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 48px; }
+.wrap { max-width: 1180px; margin: 0 auto; }
+.top { border-top: 6px solid transparent; border-image: var(--grad) 1; padding-block: 28px 8px; display: grid; gap: 10px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 15px; }
+.mark { width: 32px; height: 32px; border-radius: 9px; background: var(--grad); display: grid; place-items: center; color: #fff; font-weight: 900; }
+h1 { font-size: clamp(28px, 5vw, 44px); line-height: 1.08; font-weight: 900; margin: 6px 0 0; text-wrap: balance; letter-spacing: -0.01em; }
+.lede { color: var(--muted); max-width: 68ch; margin: 0; font-size: 16px; }
+.stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.stats span { background: var(--peach); color: var(--red-ink); font-weight: 800; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px; }
+.post { margin-top: 40px; display: grid; gap: 16px; }
+.post header { display: grid; gap: 2px; border-bottom: 1px solid var(--line); padding-bottom: 12px; }
+.kw { margin: 0; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--orange); }
+h2 { margin: 0; font-size: clamp(20px, 3vw, 26px); font-weight: 900; text-wrap: balance; }
+.path { margin: 0; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 16px; align-items: start; }
+.card { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: grid; min-width: 0; }
+.card.portada { grid-column: 1 / -1; }
+@media (min-width: 900px) { .card.portada { grid-template-columns: 1.4fr 1fr; } }
+.thumb { display: block; background: var(--bg); }
+.thumb img { display: block; width: 100%; height: auto; max-width: 100%; }
+figcaption { padding: 14px 16px 16px; display: grid; gap: 10px; min-width: 0; align-content: start; }
+.tag { justify-self: start; font-size: 11px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; color: var(--red-ink); background: var(--peach); padding: 4px 10px; border-radius: 999px; }
+.row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0; }
+code { font-family: var(--mono); font-size: 13px; overflow-wrap: anywhere; flex: 1 1 200px; min-width: 0; }
+.alt { margin: 0; font-size: 14px; }
+.alt span { font-family: var(--mono); font-size: 11px; color: var(--muted); text-transform: uppercase; margin-right: 8px; }
+.meta { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.meta span + span::before { content: "·"; margin-right: 8px; }
+.copy { font: 600 12px var(--display); color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 8px; padding: 5px 10px; cursor: pointer; margin-left: auto; }
+.copy:hover { border-color: var(--orange); }
+.copy:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+.note { margin-top: 40px; color: var(--muted); font-size: 14px; max-width: 72ch; }
+</style>
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><span class="mark" aria-hidden="true">中</span>Compra en Fábricas de China · Xijiao Shops</div>
+    <h1>Imágenes del blog</h1>
+    <p class="lede">Las 20 imágenes de las 5 notas, con su nombre de archivo SEO y su alt text. Todas están en WebP y ya viven en el proyecto, en <code>/public/blog/[slug]/</code>.</p>
+    <div class="stats"><span>5 notas</span><span>20 imágenes</span><span>776 KB en total</span></div>
+  </header>
+  <section class="post">
+  <header><p class="kw">Keyword: cómo importar de China</p><h2>Cómo importar de China a México paso a paso (guía 2026)</h2><p class="path">/blog/como-importar-de-china-a-mexico/</p></header>
+  <div class="grid"><figure class="card portada">
+  <a class="thumb" href="blog/como-importar-de-china-a-mexico/como-importar-de-china-a-mexico-guia-2026.webp" target="_blank" rel="noopener"><img src="blog/como-importar-de-china-a-mexico/como-importar-de-china-a-mexico-guia-2026.webp" alt="Guía de cómo importar de China a México paso a paso en 2026" width="1200" height="630" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Portada y OG · 1200×630</span>
+    <div class="row"><code>como-importar-de-china-a-mexico-guia-2026.webp</code><button type="button" class="copy" data-copy="como-importar-de-china-a-mexico-guia-2026.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Guía de cómo importar de China a México paso a paso en 2026</p>
+    <div class="row meta"><span>13 palabras</span><span>27 KB · WebP</span><button type="button" class="copy" data-copy="Guía de cómo importar de China a México paso a paso en 2026">Copiar alt</button></div>
+  </figcaption>
+</figure><figure class="card infografia">
+  <a class="thumb" href="blog/como-importar-de-china-a-mexico/pasos-para-importar-de-china-a-mexico.webp" target="_blank" rel="noopener"><img src="blog/como-importar-de-china-a-mexico/pasos-para-importar-de-china-a-mexico.webp" alt="Infografía con los 8 pasos para importar de China a México, de la fábrica a tu puerta" width="1200" height="675" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Infografía · 1200×675</span>
+    <div class="row"><code>pasos-para-importar-de-china-a-mexico.webp</code><button type="button" class="copy" data-copy="pasos-para-importar-de-china-a-mexico.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Infografía con los 8 pasos para importar de China a México, de la fábrica a tu puerta</p>
+    <div class="row meta"><span>17 palabras</span><span>50 KB · WebP</span><button type="button" class="copy" data-copy="Infografía con los 8 pasos para importar de China a México, de la fábrica a tu puerta">Copiar alt</button></div>
+  </figcaption>
+</figure><figure class="card infografia">
+  <a class="thumb" href="blog/como-importar-de-china-a-mexico/incoterms-exw-fob-cif-ddp-explicados.webp" target="_blank" rel="noopener"><img src="blog/como-importar-de-china-a-mexico/incoterms-exw-fob-cif-ddp-explicados.webp" alt="Tabla de Incoterms EXW, FOB, CIF y DDP explicados fácil para importar de China" width="1200" height="675" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Infografía · 1200×675</span>
+    <div class="row"><code>incoterms-exw-fob-cif-ddp-explicados.webp</code><button type="button" class="copy" data-copy="incoterms-exw-fob-cif-ddp-explicados.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Tabla de Incoterms EXW, FOB, CIF y DDP explicados fácil para importar de China</p>
+    <div class="row meta"><span>14 palabras</span><span>35 KB · WebP</span><button type="button" class="copy" data-copy="Tabla de Incoterms EXW, FOB, CIF y DDP explicados fácil para importar de China">Copiar alt</button></div>
+  </figcaption>
+</figure><figure class="card redes">
+  <a class="thumb" href="blog/como-importar-de-china-a-mexico/como-importar-de-china-a-mexico-guia-2026-redes.webp" target="_blank" rel="noopener"><img src="blog/como-importar-de-china-a-mexico/como-importar-de-china-a-mexico-guia-2026-redes.webp" alt="Cómo importar de China a México paso a paso, guía 2026 para redes sociales" width="1080" height="1080" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Redes · 1080×1080</span>
+    <div class="row"><code>como-importar-de-china-a-mexico-guia-2026-redes.webp</code><button type="button" class="copy" data-copy="como-importar-de-china-a-mexico-guia-2026-redes.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Cómo importar de China a México paso a paso, guía 2026 para redes sociales</p>
+    <div class="row meta"><span>14 palabras</span><span>46 KB · WebP</span><button type="button" class="copy" data-copy="Cómo importar de China a México paso a paso, guía 2026 para redes sociales">Copiar alt</button></div>
+  </figcaption>
+</figure></div>
+</section><section class="post">
+  <header><p class="kw">Keyword: Eduardo Hernández importaciones de China</p><h2>¿Quién es Eduardo Hernández? 26 años de importaciones de China</h2><p class="path">/blog/eduardo-hernandez-importaciones-china/</p></header>
+  <div class="grid"><figure class="card portada">
+  <a class="thumb" href="blog/eduardo-hernandez-importaciones-china/eduardo-hernandez-importaciones-china-26-anos.webp" target="_blank" rel="noopener"><img src="blog/eduardo-hernandez-importaciones-china/eduardo-hernandez-importaciones-china-26-anos.webp" alt="Eduardo Hernández, más de 26 años en importaciones de China y fábricas chinas" width="1200" height="630" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Portada y OG · 1200×630</span>
+    <div class="row"><code>eduardo-hernandez-importaciones-china-26-anos.webp</code><button type="button" class="copy" data-copy="eduardo-hernandez-importaciones-china-26-anos.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Eduardo Hernández, más de 26 años en importaciones de China y fábricas chinas</p>
+    <div class="row meta"><span>13 palabras</span><span>30 KB · WebP</span><button type="button" class="copy" data-copy="Eduardo Hernández, más de 26 años en importaciones de China y fábricas chinas">Copiar alt</button></div>
+  </figcaption>
+</figure><figure class="card infografia">
+  <a class="thumb" href="blog/eduardo-hernandez-importaciones-china/eduardo-hernandez-en-numeros-importaciones-china.webp" target="_blank" rel="noopener"><img src="blog/eduardo-hernandez-importaciones-china/eduardo-hernandez-en-numeros-importaciones-china.webp" alt="Eduardo Hernández en números: 26 años importando de China, 5 negocios y 300 empresas asesoradas" width="1200" height="675" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Infografía · 1200×675</span>
+    <div class="row"><code>eduardo-hernandez-en-numeros-importaciones-china.webp</code><button type="button" class="copy" data-copy="eduardo-hernandez-en-numeros-importaciones-china.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Eduardo Hernández en números: 26 años importando de China, 5 negocios y 300 empresas asesoradas</p>
+    <div class="row meta"><span>15 palabras</span><span>38 KB · WebP</span><button type="button" class="copy" data-copy="Eduardo Hernández en números: 26 años importando de China, 5 negocios y 300 empresas asesoradas">Copiar alt</button></div>
+  </figcaption>
+</figure><figure class="card infografia">
+  <a class="thumb" href="blog/eduardo-hernandez-importaciones-china/negocios-eduardo-hernandez-jaico-xijiao.webp" target="_blank" rel="noopener"><img src="blog/eduardo-hernandez-importaciones-china/negocios-eduardo-hernandez-jaico-xijiao.webp" alt="Negocios de Eduardo Hernández: Compra en Fábricas de China, JAICO, Xijiao Shops y Xijiao LOG" width="1200" height="675" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Infografía · 1200×675</span>
+    <div class="row"><code>negocios-eduardo-hernandez-jaico-xijiao.webp</code><button type="button" class="copy" data-copy="negocios-eduardo-hernandez-jaico-xijiao.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Negocios de Eduardo Hernández: Compra en Fábricas de China, JAICO, Xijiao Shops y Xijiao LOG</p>
+    <div class="row meta"><span>15 palabras</span><span>36 KB · WebP</span><button type="button" class="copy" data-copy="Negocios de Eduardo Hernández: Compra en Fábricas de China, JAICO, Xijiao Shops y Xijiao LOG">Copiar alt</button></div>
+  </figcaption>
+</figure><figure class="card redes">
+  <a class="thumb" href="blog/eduardo-hernandez-importaciones-china/eduardo-hernandez-importaciones-china-redes.webp" target="_blank" rel="noopener"><img src="blog/eduardo-hernandez-importaciones-china/eduardo-hernandez-importaciones-china-redes.webp" alt="Eduardo Hernández, 26 años en importaciones de China, historia para redes sociales" width="1080" height="1080" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Redes · 1080×1080</span>
+    <div class="row"><code>eduardo-hernandez-importaciones-china-redes.webp</code><button type="button" class="copy" data-copy="eduardo-hernandez-importaciones-china-redes.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Eduardo Hernández, 26 años en importaciones de China, historia para redes sociales</p>
+    <div class="row meta"><span>12 palabras</span><span>47 KB · WebP</span><button type="button" class="copy" data-copy="Eduardo Hernández, 26 años en importaciones de China, historia para redes sociales">Copiar alt</button></div>
+  </figcaption>
+</figure></div>
+</section><section class="post">
+  <header><p class="kw">Keyword: cursos para importar de China</p><h2>Cursos para importar de China en 2026: comparativa honesta</h2><p class="path">/blog/cursos-para-importar-de-china/</p></header>
+  <div class="grid"><figure class="card portada">
+  <a class="thumb" href="blog/cursos-para-importar-de-china/cursos-para-importar-de-china-comparativa-2026.webp" target="_blank" rel="noopener"><img src="blog/cursos-para-importar-de-china/cursos-para-importar-de-china-comparativa-2026.webp" alt="Comparativa de cursos para importar de China en 2026: precio, formato y soporte" width="1200" height="630" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Portada y OG · 1200×630</span>
+    <div class="row"><code>cursos-para-importar-de-china-comparativa-2026.webp</code><button type="button" class="copy" data-copy="cursos-para-importar-de-china-comparativa-2026.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Comparativa de cursos para importar de China en 2026: precio, formato y soporte</p>
+    <div class="row meta"><span>13 palabras</span><span>34 KB · WebP</span><button type="button" class="copy" data-copy="Comparativa de cursos para importar de China en 2026: precio, formato y soporte">Copiar alt</button></div>
+  </figcaption>
+</figure><figure class="card infografia">
+  <a class="thumb" href="blog/cursos-para-importar-de-china/tabla-comparativa-cursos-importar-de-china.webp" target="_blank" rel="noopener"><img src="blog/cursos-para-importar-de-china/tabla-comparativa-cursos-importar-de-china.webp" alt="Tabla comparativa de cursos para importar de China en 2026 por precio, formato y proveedores" width="1200" height="675" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Infografía · 1200×675</span>
+    <div class="row"><code>tabla-comparativa-cursos-importar-de-china.webp</code><button type="button" class="copy" data-copy="tabla-comparativa-cursos-importar-de-china.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Tabla comparativa de cursos para importar de China en 2026 por precio, formato y proveedores</p>
+    <div class="row meta"><span>15 palabras</span><span>49 KB · WebP</span><button type="button" class="copy" data-copy="Tabla comparativa de cursos para importar de China en 2026 por precio, formato y proveedores">Copiar alt</button></div>
+  </figcaption>
+</figure><figure class="card infografia">
+  <a class="thumb" href="blog/cursos-para-importar-de-china/criterios-elegir-curso-importar-de-china.webp" target="_blank" rel="noopener"><img src="blog/cursos-para-importar-de-china/criterios-elegir-curso-importar-de-china.webp" alt="Los 7 criterios para elegir un curso para importar de China antes de pagar" width="1200" height="675" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Infografía · 1200×675</span>
+    <div class="row"><code>criterios-elegir-curso-importar-de-china.webp</code><button type="button" class="copy" data-copy="criterios-elegir-curso-importar-de-china.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Los 7 criterios para elegir un curso para importar de China antes de pagar</p>
+    <div class="row meta"><span>14 palabras</span><span>38 KB · WebP</span><button type="button" class="copy" data-copy="Los 7 criterios para elegir un curso para importar de China antes de pagar">Copiar alt</button></div>
+  </figcaption>
+</figure><figure class="card redes">
+  <a class="thumb" href="blog/cursos-para-importar-de-china/cursos-para-importar-de-china-redes.webp" target="_blank" rel="noopener"><img src="blog/cursos-para-importar-de-china/cursos-para-importar-de-china-redes.webp" alt="Cursos para importar de China en 2026, comparativa honesta para redes sociales" width="1080" height="1080" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Redes · 1080×1080</span>
+    <div class="row"><code>cursos-para-importar-de-china-redes.webp</code><button type="button" class="copy" data-copy="cursos-para-importar-de-china-redes.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Cursos para importar de China en 2026, comparativa honesta para redes sociales</p>
+    <div class="row meta"><span>12 palabras</span><span>43 KB · WebP</span><button type="button" class="copy" data-copy="Cursos para importar de China en 2026, comparativa honesta para redes sociales">Copiar alt</button></div>
+  </figcaption>
+</figure></div>
+</section><section class="post">
+  <header><p class="kw">Keyword: productos para importar de China</p><h2>Productos para importar de China en 2026 y revender</h2><p class="path">/blog/productos-para-importar-de-china/</p></header>
+  <div class="grid"><figure class="card portada">
+  <a class="thumb" href="blog/productos-para-importar-de-china/productos-para-importar-de-china-revender-2026.webp" target="_blank" rel="noopener"><img src="blog/productos-para-importar-de-china/productos-para-importar-de-china-revender-2026.webp" alt="Productos para importar de China en 2026 y revender: electrónica de vanguardia y joyería" width="1200" height="630" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Portada y OG · 1200×630</span>
+    <div class="row"><code>productos-para-importar-de-china-revender-2026.webp</code><button type="button" class="copy" data-copy="productos-para-importar-de-china-revender-2026.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Productos para importar de China en 2026 y revender: electrónica de vanguardia y joyería</p>
+    <div class="row meta"><span>14 palabras</span><span>31 KB · WebP</span><button type="button" class="copy" data-copy="Productos para importar de China en 2026 y revender: electrónica de vanguardia y joyería">Copiar alt</button></div>
+  </figcaption>
+</figure><figure class="card infografia">
+  <a class="thumb" href="blog/productos-para-importar-de-china/precio-por-pieza-electronica-importada-de-china.webp" target="_blank" rel="noopener"><img src="blog/productos-para-importar-de-china/precio-por-pieza-electronica-importada-de-china.webp" alt="Gráfica del precio por pieza de productos de electrónica importados de China en cajas para revender" width="1200" height="675" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Infografía · 1200×675</span>
+    <div class="row"><code>precio-por-pieza-electronica-importada-de-china.webp</code><button type="button" class="copy" data-copy="precio-por-pieza-electronica-importada-de-china.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Gráfica del precio por pieza de productos de electrónica importados de China en cajas para revender</p>
+    <div class="row meta"><span>16 palabras</span><span>36 KB · WebP</span><button type="button" class="copy" data-copy="Gráfica del precio por pieza de productos de electrónica importados de China en cajas para revender">Copiar alt</button></div>
+  </figcaption>
+</figure><figure class="card infografia">
+  <a class="thumb" href="blog/productos-para-importar-de-china/comparativa-electronica-vs-joyeria-importada-de-china.webp" target="_blank" rel="noopener"><img src="blog/productos-para-importar-de-china/comparativa-electronica-vs-joyeria-importada-de-china.webp" alt="Comparativa electrónica contra joyería importada de China: margen, peso y riesgo por pieza" width="1200" height="675" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Infografía · 1200×675</span>
+    <div class="row"><code>comparativa-electronica-vs-joyeria-importada-de-china.webp</code><button type="button" class="copy" data-copy="comparativa-electronica-vs-joyeria-importada-de-china.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Comparativa electrónica contra joyería importada de China: margen, peso y riesgo por pieza</p>
+    <div class="row meta"><span>13 palabras</span><span>35 KB · WebP</span><button type="button" class="copy" data-copy="Comparativa electrónica contra joyería importada de China: margen, peso y riesgo por pieza">Copiar alt</button></div>
+  </figcaption>
+</figure><figure class="card redes">
+  <a class="thumb" href="blog/productos-para-importar-de-china/productos-para-importar-de-china-redes.webp" target="_blank" rel="noopener"><img src="blog/productos-para-importar-de-china/productos-para-importar-de-china-redes.webp" alt="Productos para importar de China en 2026 y revender, publicación para redes sociales" width="1080" height="1080" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Redes · 1080×1080</span>
+    <div class="row"><code>productos-para-importar-de-china-redes.webp</code><button type="button" class="copy" data-copy="productos-para-importar-de-china-redes.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Productos para importar de China en 2026 y revender, publicación para redes sociales</p>
+    <div class="row meta"><span>13 palabras</span><span>45 KB · WebP</span><button type="button" class="copy" data-copy="Productos para importar de China en 2026 y revender, publicación para redes sociales">Copiar alt</button></div>
+  </figcaption>
+</figure></div>
+</section><section class="post">
+  <header><p class="kw">Keyword: importar joyería de China</p><h2>Importar joyería de China para vender</h2><p class="path">/blog/importar-joyeria-de-china-para-vender/</p></header>
+  <div class="grid"><figure class="card portada">
+  <a class="thumb" href="blog/importar-joyeria-de-china-para-vender/importar-joyeria-de-china-para-vender-mayoreo.webp" target="_blank" rel="noopener"><img src="blog/importar-joyeria-de-china-para-vender/importar-joyeria-de-china-para-vender-mayoreo.webp" alt="Importar joyería de China para vender por mayoreo en México: acero, plata y bisutería" width="1200" height="630" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Portada y OG · 1200×630</span>
+    <div class="row"><code>importar-joyeria-de-china-para-vender-mayoreo.webp</code><button type="button" class="copy" data-copy="importar-joyeria-de-china-para-vender-mayoreo.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Importar joyería de China para vender por mayoreo en México: acero, plata y bisutería</p>
+    <div class="row meta"><span>14 palabras</span><span>27 KB · WebP</span><button type="button" class="copy" data-copy="Importar joyería de China para vender por mayoreo en México: acero, plata y bisutería">Copiar alt</button></div>
+  </figcaption>
+</figure><figure class="card infografia">
+  <a class="thumb" href="blog/importar-joyeria-de-china-para-vender/por-que-la-joyeria-importada-de-china-deja-margen.webp" target="_blank" rel="noopener"><img src="blog/importar-joyeria-de-china-para-vender/por-que-la-joyeria-importada-de-china-deja-margen.webp" alt="Por qué la joyería importada de China deja buen margen: peso, envío, rotación y caducidad" width="1200" height="675" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Infografía · 1200×675</span>
+    <div class="row"><code>por-que-la-joyeria-importada-de-china-deja-margen.webp</code><button type="button" class="copy" data-copy="por-que-la-joyeria-importada-de-china-deja-margen.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Por qué la joyería importada de China deja buen margen: peso, envío, rotación y caducidad</p>
+    <div class="row meta"><span>15 palabras</span><span>35 KB · WebP</span><button type="button" class="copy" data-copy="Por qué la joyería importada de China deja buen margen: peso, envío, rotación y caducidad">Copiar alt</button></div>
+  </figcaption>
+</figure><figure class="card infografia">
+  <a class="thumb" href="blog/importar-joyeria-de-china-para-vender/donde-vender-joyeria-importada-de-china.webp" target="_blank" rel="noopener"><img src="blog/importar-joyeria-de-china-para-vender/donde-vender-joyeria-importada-de-china.webp" alt="Dónde vender joyería importada de China: catálogo, redes, tianguis, tiendas y en línea" width="1200" height="675" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Infografía · 1200×675</span>
+    <div class="row"><code>donde-vender-joyeria-importada-de-china.webp</code><button type="button" class="copy" data-copy="donde-vender-joyeria-importada-de-china.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Dónde vender joyería importada de China: catálogo, redes, tianguis, tiendas y en línea</p>
+    <div class="row meta"><span>13 palabras</span><span>39 KB · WebP</span><button type="button" class="copy" data-copy="Dónde vender joyería importada de China: catálogo, redes, tianguis, tiendas y en línea">Copiar alt</button></div>
+  </figcaption>
+</figure><figure class="card redes">
+  <a class="thumb" href="blog/importar-joyeria-de-china-para-vender/importar-joyeria-de-china-para-vender-redes.webp" target="_blank" rel="noopener"><img src="blog/importar-joyeria-de-china-para-vender/importar-joyeria-de-china-para-vender-redes.webp" alt="Importar joyería de China para vender por mayoreo, publicación para redes sociales" width="1080" height="1080" loading="lazy"></a>
+  <figcaption>
+    <span class="tag">Redes · 1080×1080</span>
+    <div class="row"><code>importar-joyeria-de-china-para-vender-redes.webp</code><button type="button" class="copy" data-copy="importar-joyeria-de-china-para-vender-redes.webp">Copiar</button></div>
+    <p class="alt"><span>alt</span>Importar joyería de China para vender por mayoreo, publicación para redes sociales</p>
+    <div class="row meta"><span>12 palabras</span><span>43 KB · WebP</span><button type="button" class="copy" data-copy="Importar joyería de China para vender por mayoreo, publicación para redes sociales">Copiar alt</button></div>
+  </figcaption>
+</figure></div>
+</section>
+  <p class="note">La portada de cada nota también es la imagen de Open Graph y Twitter. Las versiones de 1080×1080 son para Instagram, Facebook y WhatsApp. Haz clic en cualquier imagen para verla en tamaño completo.</p>
+</div>
+<script>
+document.addEventListener('click', async (ev) => {
+  const b = ev.target.closest('.copy'); if (!b) return;
+  const t = b.dataset.copy; const prev = b.textContent;
+  try { await navigator.clipboard.writeText(t); b.textContent = 'Copiado'; }
+  catch (e) { const r = document.createRange(); r.selectNodeContents(b.parentElement.querySelector('code') || b.closest('figcaption').querySelector('.alt')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selecciona y copia'; }
+  setTimeout(() => b.textContent = prev, 1500);
+});
+</script>
