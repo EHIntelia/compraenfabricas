@@ -92,7 +92,76 @@ def nota_costos():
            "Cuánto cuesta importar de China a México en 2026, publicación para redes sociales")
 
 
-NOTAS = {"requisitos-para-importar-de-china-a-mexico": nota_requisitos, "cuanto-cuesta-importar-de-china": nota_costos}
+def art_chain(x, y):
+    # cadena fábrica -> intermediarios -> tú, con la fábrica resaltada
+    pasos = [("Fábrica", True), ("Trading", False), ("Revendedor", False), ("Mayorista", False), ("Tú", True)]
+    g = [f'<g transform="translate({x},{y})">']
+    for i, (t, hl) in enumerate(pasos):
+        yy = i * 76
+        fill = "url(#g)" if hl else BLANCO
+        ink = "#fff" if hl else TINTA
+        g.append(f'<rect x="40" y="{yy}" width="300" height="58" rx="16" fill="{fill}" stroke="{BORDE}" stroke-width="{0 if hl else 2}" filter="url(#sh)"/>')
+        g.append(f'<text x="190" y="{yy+37}" font-family="{FONT}" font-size="22" font-weight="800" fill="{ink}" text-anchor="middle">{esc(t)}</text>')
+        if not hl:
+            g.append(f'<line x1="70" y1="{yy+29}" x2="310" y2="{yy+29}" stroke="{ROJO}" stroke-width="4" stroke-linecap="round"/>')
+        if i < len(pasos) - 1:
+            g.append(f'<path d="M190,{yy+60} l0,12 M183,{yy+66} l7,7 l7,-7" stroke="{GRIS}" stroke-width="3" fill="none"/>')
+    g.append("</g>")
+    return "\n".join(g)
+
+
+def nota_fabrica():
+    s = "comprar-directo-de-fabrica-en-china"
+    cover(s, "comprar-directo-de-fabrica-en-china-sin-intermediarios.webp", "Errores y consejos", "Comprar directo de fábrica en China",
+          "Cómo saber si es fábrica, trading o revendedor", art_chain(800, 125),
+          "Comprar directo de fábrica en China sin intermediarios: fábrica, trading y revendedor")
+    save(s, "fabrica-vs-trading-vs-revendedor-china.webp", frame("Fábrica, trading o revendedor", "A quién le estás comprando en China", table(
+        ["", "Fábrica", "Trading", "Revendedor"],
+        [["¿Fabrica?", "Sí", "No, compra a fábricas", "No"], ["Precio", "El más bajo", "Fábrica + margen", "Varios márgenes"],
+         ["Pedido mínimo", "Más alto", "Medio", "Bajo"], ["Cambios de logo o empaque", "Sí", "A veces", "Casi nunca"],
+         ["Variedad", "Su línea", "Muchas fábricas", "Mucha, sin control"], ["Control de calidad", "Directo", "Depende", "Ninguno"]],
+        [300, 250, 280, 250], top=145, row_h=64, hl_row=None), "Una trading confiable no es mala: solo debes saber que es trading."), 1200, 675,
+         "Tabla con la diferencia entre fábrica, trading y revendedor al comprar en China", "infografia")
+    save(s, "senales-para-saber-si-es-fabrica-en-china.webp", frame("7 señales de que sí es fábrica", "Revísalas antes de pagar", steps_grid([
+        ("Licencia que dice fabricar", "El objeto social incluye producción."),
+        ("El nombre coincide", "Licencia, contrato y cuenta bancaria."),
+        ("Línea en vivo", "Videollamada en la fábrica, no fotos."),
+        ("Hace cambios", "Color, empaque, etiqueta o tu logo."),
+        ("Se especializa", "Una línea de productos, no de todo."),
+        ("Sabe su proceso", "Materiales, tiempos y capacidad."),
+        ("Escalas de precio", "El precio baja claro con el volumen."),
+    ], cols=4, top=145, card_h=215)), 1200, 675, "Las 7 señales para saber si un proveedor en China es fábrica", "infografia")
+    social(s, "comprar-directo-de-fabrica-en-china-redes.webp", "Errores y consejos", "¿Es fábrica o revendedor?",
+           "7 señales para comprar directo en China", "Comprar directo de fábrica en China, publicación para redes sociales")
+
+
+def nota_pagar():
+    s = "como-pagar-a-un-proveedor-en-china"
+    cover(s, "como-pagar-a-un-proveedor-en-china-seguro.webp", "Errores y consejos", "Cómo pagar a un proveedor en China",
+          "Sin que te estafen: métodos, anticipo y alertas",
+          art_receipt(780, 120, "Pago en partes", [("Validar proveedor", "Antes"), ("Anticipo", "30%"), ("Revisar mercancía", "Video"), ("Pago final", "70%")], ("Cuenta", "De la empresa")),
+          "Cómo pagar a un proveedor en China de forma segura y sin que te estafen")
+    save(s, "reglas-para-pagar-seguro-a-china.webp", frame("5 reglas para pagar a China sin riesgo", "Te protegen más que cualquier método de pago", cards_row([
+        ("!1", "Valida antes", "Licencia, videollamada y muestra."),
+        ("2", "Cuenta de la empresa", "Mismo nombre que la licencia."),
+        ("3", "Paga en partes", "Anticipo y resto al revisar."),
+        ("4", "Canal rastreable", "Comprobante de cada pago."),
+        ("5", "Todo por escrito", "Proforma con precio, calidad y fechas."),
+    ], top=160, h=420)), 1200, 675, "Las 5 reglas para pagar a un proveedor en China de forma segura", "infografia")
+    save(s, "senales-de-fraude-al-pagar-a-china.webp", frame("Señales de fraude al pagar a China", "Si ves una, frena y confirma por otro medio", steps_grid([
+        ("Cambio de cuenta", "Te mandan otra cuenta a última hora."),
+        ("Cuenta personal", "No está a nombre de la empresa."),
+        ("Presión", "Paga hoy porque mañana sube."),
+        ("Precio regalado", "Muy por debajo de todos los demás."),
+        ("Sin fábrica en vivo", "No te enseñan nada ni dan muestra."),
+        ("Pago por fuera", "Te piden salir de la plataforma."),
+    ], cols=3, top=145, card_h=215)), 1200, 675, "Señales de fraude al pagar a un proveedor en China", "infografia")
+    social(s, "como-pagar-a-un-proveedor-en-china-redes.webp", "Errores y consejos", "Cómo pagar a China sin que te estafen",
+           "5 reglas y 6 señales de fraude", "Cómo pagar a un proveedor en China, publicación para redes sociales")
+
+
+NOTAS = {"requisitos-para-importar-de-china-a-mexico": nota_requisitos, "cuanto-cuesta-importar-de-china": nota_costos,
+         "comprar-directo-de-fabrica-en-china": nota_fabrica, "como-pagar-a-un-proveedor-en-china": nota_pagar}
 
 if __name__ == "__main__":
     for slug in sys.argv[1:] or NOTAS:

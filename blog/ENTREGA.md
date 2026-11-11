@@ -128,10 +128,10 @@ Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (ra
 
 | # | Slug | Keyword | Meta title | Palabras | Estado | Fecha |
 |---|---|---|---|---|---|---|
-| B | requisitos-para-importar-de-china-a-mexico | requisitos para importar de China a México | Requisitos para importar de China a México en 2026 | ~1,810 | Borrador en la base, imágenes subidas | — |
-| C | cuanto-cuesta-importar-de-china | cuánto cuesta importar de China | Cuánto cuesta importar de China en 2026: ejemplo real | ~1,670 | Borrador en la base, imágenes subidas | — |
-| A | comprar-directo-de-fabrica-en-china | comprar directo de fábrica en China | — | — | Por escribir | — |
-| E | como-pagar-a-un-proveedor-en-china | cómo pagar a un proveedor en China | — | — | Por escribir | — |
+| B | requisitos-para-importar-de-china-a-mexico | requisitos para importar de China a México | Requisitos para importar de China a México en 2026 | ~1,810 | **Publicada** (enlazada desde la pilar) | 11 nov 2026 |
+| C | cuanto-cuesta-importar-de-china | cuánto cuesta importar de China | Cuánto cuesta importar de China en 2026: ejemplo real | ~1,670 | **Publicada** (enlazada desde la pilar y desde productos) | 11 nov 2026 |
+| A | comprar-directo-de-fabrica-en-china | comprar directo de fábrica en China | Comprar directo de fábrica en China sin intermediarios | ~1,550 | Borrador en la base; imágenes listas en el repo, falta subirlas a Lovable | — |
+| E | como-pagar-a-un-proveedor-en-china | cómo pagar a un proveedor en China | Cómo pagar a un proveedor en China sin que te estafen | ~1,610 | Borrador en la base; imágenes listas en el repo, falta subirlas a Lovable | — |
 | D | aranceles-china-mexico-2026 | aranceles a China 2026 | — | — | Por escribir (revisión mensual) | — |
 | H | envio-aereo-o-maritimo-desde-china | envío aéreo o marítimo desde China | — | — | Por escribir | — |
 | F | que-es-yiwu | Yiwu | — | — | Por escribir | — |
@@ -157,3 +157,12 @@ Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (ra
 2. **Corregir la sección 18 del handoff:** Google dejó de mostrar FAQ enriquecidos para todos desde el 7 de mayo de 2026.
 3. **IndexNow automático** al publicar una nota (hoy el POST es manual).
 4. Si se publica `/curso-para-importar-de-china`, avisar para cambiar el enlace de la nota de cursos.
+
+**Publicación de B y C (11 nov 2026):** pasadas a published, deploy hecho (incluyó solo la Tanda 1 del agente SEO, ya publicada, y las imágenes del blog), enlaces agregados en la pilar (Paso 7) y en la nota de productos (hacia C). IndexNow y verificación en producción: mensaje en cola en Lovable detrás de la Tanda 2 del agente SEO. Falta pedir indexación en Search Console.
+
+**Meta descriptions A y E**
+- A: "Cómo comprar directo de fábrica en China sin intermediarios: diferencia entre fábrica, trading y revendedor, señales para reconocerlos y cómo validarla." (152)
+- E: "Cómo pagar a un proveedor en China de forma segura: transferencia, Alipay, PayPal y carta de crédito, cuánto pagar por adelantado y señales de fraude." (150)
+- A y E se enlazan entre sí: publicarlas juntas. Al publicarlas, enlazar desde la pilar (Paso 2 → A, Paso 5 → E).
+
+**Canva (carpeta FAHYMS7Wadk):** esta sesión puede listar la carpeta pero no ver ni descargar las imágenes (media.canva.com bloqueado por la red). Los archivos se llaman "Signature_…", sin descripción.

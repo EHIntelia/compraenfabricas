@@ -152,11 +152,11 @@ Para saber cuánto te cuesta, pide una [cotización de envío desde China](/logi
 
 Aquí es donde se atora la mercancía de los que compran en una página china y mandan por paquetería exprés "a ver qué pasa". Lo que necesitas saber:
 
-- **RFC y Padrón de Importadores.** Si vas a importar de forma regular para revender, te tienes que inscribir en el [Padrón de Importadores del SAT](https://www.sat.gob.mx/minisitio/PadronImportadoresExportadores/). El trámite es en línea con tu e.firma.
+- **RFC y Padrón de Importadores.** Si vas a importar de forma regular para revender, te tienes que inscribir en el [Padrón de Importadores del SAT](https://www.sat.gob.mx/minisitio/PadronImportadoresExportadores/). El trámite es en línea con tu e.firma. Te explico todos los papeles en [requisitos para importar de China a México](/blog/requisitos-para-importar-de-china-a-mexico).
 - **Agente aduanal.** Es la persona autorizada que presenta tu **pedimento** (el documento oficial donde se declara tu mercancía y se pagan los impuestos).
 - **Fracción arancelaria.** Es el código que clasifica tu producto. De ahí sale cuánto arancel pagas. Con los cambios de 2026 esto es más importante que nunca.
 - **NOM y etiquetado.** Muchos productos necesitan cumplir una Norma Oficial Mexicana y llevar etiqueta en español. Si no, se quedan en la aduana.
-- **Impuestos.** Pagas el arancel de tu fracción, el **IVA de 16%** y otros cargos de aduana. Declara el valor real. Subvaluar para pagar menos sale carísimo en multas.
+- **Impuestos.** Pagas el arancel de tu fracción, el **IVA de 16%** y otros cargos de aduana. Declara el valor real. Subvaluar para pagar menos sale carísimo en multas. Aquí tienes un ejemplo con números de [cuánto cuesta importar de China](/blog/cuanto-cuesta-importar-de-china).
 
 :::consejo
 Haz tu cálculo de costo con el arancel de tu fracción **antes** de comprar, no cuando la mercancía ya viene en camino. Con los aumentos de 2026, un producto que antes dejaba buen margen puede ya no convenir, y otro que nadie está trayendo puede ser tu oportunidad.

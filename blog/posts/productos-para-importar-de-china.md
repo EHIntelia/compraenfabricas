@@ -133,7 +133,7 @@ No es casualidad que dos de mis negocios, JAICO y Xijiao Shops, sean de joyería
 ## Cómo probar un producto sin arriesgar todo
 
 1. **Investiga la demanda:** búscalo en Mercado Libre, en redes y en tiendas de tu ciudad. Anota precios.
-2. **Haz la cuenta completa:** costo en fábrica + envío + impuestos + empaque + comisiones.
+2. **Haz la cuenta completa:** costo en fábrica + envío + impuestos + empaque + comisiones. Aquí te enseño a sacarla con un ejemplo: [cuánto cuesta importar de China](/blog/cuanto-cuesta-importar-de-china).
 3. **Pide muestra o empieza con poco.** Una caja, no un contenedor.
 4. **Vende antes de volver a comprar.** Tu primer pedido es para aprender qué se mueve.
 
