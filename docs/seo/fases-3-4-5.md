@@ -11,10 +11,11 @@
 - **El perfil se hace para JAICO**, en el showroom de San Pedro Garza García, que atiende con cita. Google permite negocios que atienden solo con cita, siempre que el lugar sea real, tenga letrero y alguien del equipo reciba a los clientes. **No se usan oficinas virtuales:** Google las suspende.
 
 ### Antes de crearlo (lo confirmas tú)
-- [ ] **Dirección exacta**, escrita igual que en el comprobante de domicilio. Me pasaste "Perserancia 123"; confirma si es "Perseverancia" y la colonia y el código postal.
+- [x] **Calle:** Perseverancia 123, San Pedro Garza García, N.L. *(confirmado 12 nov)*
+- [ ] **Colonia y código postal**, escritos igual que en el comprobante de domicilio.
 - [ ] **Nombre en el letrero:** el perfil se llama exactamente así ("JAICO" o "JAICO Joyería"). Nada de palabras extra del tipo "joyería mayoreo barata".
 - [ ] **Quién recibe** cuando hay cita.
-- [ ] **Teléfono del perfil:** ¿el mismo WhatsApp (81 2018 1761) o uno del showroom?
+- [x] **Teléfono del perfil:** 81 2018 1761 (+52 81 2018 1761), el mismo del WhatsApp *(confirmado 12 nov)*
 - [ ] **Video para verificar:** Google suele pedir un video continuo que muestre el letrero, la calle y el interior, y algo que pruebe que el lugar es tuyo (llaves, caja, mostrador).
 
 ### Ficha propuesta (para copiar y pegar en Google Business Profile)

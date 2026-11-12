@@ -118,7 +118,8 @@ Hallazgos principales (detalle en `docs/seo/fase-0-auditoria.md`):
   - Pixel diferido sin perder eventos.
   - Footer y enlaces internos completos, `llms.txt` ampliado e IndexNow por endpoint.
 - **Clips:** los videos de arriba de 6 páginas ahora arrancan con un clip de ~1.5 MB sin sonido. El video completo (65–203 MB) solo se baja al dar "Ver video completo".
-- **En proceso:** convertir esos 6 videos completos a H.264 para que se reproduzcan en todos los celulares y pesen menos.
+- **Videos completos en H.264** (18–44 MB, antes 65–203 MB), para que se reproduzcan en todos los celulares.
+- **Fase 2 (publicada el 12 nov):** `/curso-para-importar-de-china`, `/preguntas-frecuentes`, página de Eduardo con fotos reales, negocios y NADIE, WhatsApp con página de origen y eventos del Pixel (InitiateCheckout, ClicSkool, ClicJoyeria, ClicTomarClase) centralizados en `trackEvent()`. IndexNow avisado.
 
 ### Velocidad en celular (Lighthouse, sitio en vivo)
 
@@ -170,15 +171,16 @@ Meta: LCP menor a 2.5 s. La nota de SEO de Lighthouse está en 100 en las págin
 **Para el equipo**
 - [ ] Revisar el banner nuevo de correo (`/email/banner-clase-21nov.jpg`) y usarlo en los siguientes envíos.
 - [ ] Crear el secreto `INDEXNOW_ADMIN_TOKEN` en Lovable (Ajustes → Secretos). Sirve para avisar a Bing de cada nota nueva; ChatGPT busca con el índice de Bing.
-- [ ] Confirmar la dirección exacta del showroom, si tiene letrero de JAICO y si alguien recibe ahí. Con eso se prepara el perfil de Google.
+- [ ] Showroom JAICO: Perseverancia 123, San Pedro Garza García, tel. 81 2018 1761. Falta colonia, código postal y confirmar letrero y quién recibe. La ficha está en `docs/seo/fases-3-4-5.md`.
 - [ ] Mandar las historias reales de Eduardo para su nota: cómo empezó, las 2 bancarrotas, una anécdota en fábrica y qué es NADIE.
 - [ ] Decidir quién coordina las sesiones que trabajan en paralelo en Lovable.
 - [ ] Actualizar el árbol de ManyChat: 5 proveedores e incluye grabación.
 
 **SEO (siguientes fases)**
-- [ ] Terminar y publicar la conversión a H.264; volver a medir velocidad de /clase y /joyeria.
+- [ ] Volver a medir velocidad de /clase y /joyeria con los clips.
+- [ ] Instalar GA4 cuando haya ID (conectarlo en `trackEvent()` de `src/lib/tracking.ts`).
 - [ ] Revisar /clase y /productos en la prueba de resultados enriquecidos de Google.
-- [ ] **Fase 2:** página `/curso-para-importar-de-china`, hub `/preguntas-frecuentes`, convertir la nota pilar en guía principal, enriquecer la página de Eduardo (fotos reales, perfiles personales, NADIE).
+- [x] **Fase 2** publicada. Pendiente del agente del blog: convertir la nota pilar en guía principal (ver `docs/seo/fase-2/03-autor-y-pedido-blog.md`).
 - [ ] **Fase 3:** perfil de Google de JAICO, si califica.
 - [ ] **Fase 4:** eventos de analítica (clic a WhatsApp, a la clase, a joyería y a Skool), WhatsApp con mensaje de origen en las páginas comerciales y tabla de posiciones por keyword.
 - [ ] **Fase 5 (fuera del sitio, lo hace Eduardo):**
