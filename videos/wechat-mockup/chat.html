@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Chat proveedor</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 540px; height: 960px; overflow: hidden; }
+  body {
+    font-family: "Inter", "WenQuanYi Zen Hei", "Noto Color Emoji", sans-serif;
+    background: radial-gradient(circle at 30% 20%, #2b3a55 0%, #121826 55%, #0a0d14 100%);
+    display: flex; align-items: center; justify-content: center;
+  }
+  /* iPhone frame */
+  .phone {
+    position: relative; width: 410px; height: 860px; border-radius: 64px;
+    background: #1b1c1f; padding: 13px;
+    box-shadow: 0 0 0 2px #3a3b40, 0 0 0 5px #111, 0 40px 80px rgba(0,0,0,.6), inset 0 0 6px rgba(255,255,255,.08);
+  }
+  .btn { position: absolute; background: #2a2b2f; border-radius: 3px; }
+  .screen {
+    position: relative; width: 100%; height: 100%; border-radius: 52px; overflow: hidden;
+    background: #ededed; display: flex; flex-direction: column;
+  }
+  .island {
+    position: absolute; top: 11px; left: 50%; transform: translateX(-50%);
+    width: 118px; height: 34px; border-radius: 20px; background: #000; z-index: 10;
+  }
+  .status {
+    height: 54px; display: flex; align-items: center; justify-content: space-between;
+    padding: 6px 30px 0 34px; font-weight: 600; font-size: 16px; color: #000; flex: none;
+  }
+  .rec { background: #ff3b30; color: #fff; border-radius: 14px; padding: 2px 10px; font-size: 15px; }
+  .sicons { display: flex; gap: 6px; align-items: center; }
+  .header {
+    height: 46px; display: flex; align-items: center; justify-content: space-between;
+    padding: 0 14px; border-bottom: 1px solid #d9d9d9; flex: none; background: #ededed;
+  }
+  .header .title { text-align: center; line-height: 1.15; }
+  .header .name { font-size: 16px; font-weight: 600; color: #111; }
+  .header .sub { font-size: 11px; color: #888; }
+  .messages {
+    flex: 1; display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 0 12px 10px; overflow: hidden;
+  }
+  .wrap { overflow: hidden; flex: none; }
+  .msg { display: flex; gap: 9px; align-items: flex-start; padding-top: 14px; transform-origin: left bottom; }
+  .msg.me { flex-direction: row-reverse; transform-origin: right bottom; }
+  .avatar {
+    width: 38px; height: 38px; border-radius: 6px; flex: none; color: #fff;
+    display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 17px;
+  }
+  .avatar.cn { background: linear-gradient(135deg, #e5533d, #b8322a); }
+  .avatar.es { background: linear-gradient(135deg, #2f6fdf, #1c47a8); font-size: 14px; }
+  .bubble {
+    position: relative; max-width: 250px; padding: 9px 12px; border-radius: 6px;
+    font-size: 15.5px; line-height: 1.4; color: #111; background: #fff;
+  }
+  .bubble::before {
+    content: ""; position: absolute; top: 13px; left: -6px;
+    border: 6px solid transparent; border-left: 0; border-right-color: #fff;
+  }
+  .me .bubble { background: #95ec69; }
+  .me .bubble::before { left: auto; right: -6px; border-right: 0; border-left: 6px solid #95ec69; border-top-color: transparent; border-bottom-color: transparent; }
+  .time { text-align: center; font-size: 12px; color: #9a9a9a; padding-top: 12px; }
+  .dots { display: flex; gap: 5px; padding: 4px 2px; }
+  .dots span { width: 7px; height: 7px; border-radius: 50%; background: #b5b5b5; }
+  .card { padding: 0; overflow: hidden; width: 220px; }
+  .card .img { height: 104px; background: linear-gradient(135deg, #f4f4f4, #dcdcdc); display: flex; align-items: center; justify-content: center; font-size: 46px; }
+  .card .txt { padding: 8px 11px 9px; font-size: 14px; }
+  .card .price { color: #e5533d; font-weight: 700; font-size: 16px; }
+  .inputbar {
+    flex: none; background: #f7f7f7; border-top: 1px solid #ddd;
+    padding: 9px 10px 30px; display: flex; align-items: center; gap: 9px;
+  }
+  .circle { width: 30px; height: 30px; border-radius: 50%; border: 1.6px solid #222; flex: none; display: flex; align-items: center; justify-content: center; }
+  .field {
+    flex: 1; min-height: 38px; background: #fff; border-radius: 6px; padding: 8px 10px;
+    font-size: 15.5px; color: #111; white-space: nowrap; overflow: hidden; display: flex; align-items: center;
+  }
+  .caret { display: inline-block; width: 2px; height: 19px; background: #07c160; margin-left: 1px; }
+  .send {
+    background: #07c160; color: #fff; font-size: 14px; font-weight: 600; border-radius: 6px;
+    padding: 8px 12px; flex: none;
+  }
+  .homebar { position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); width: 134px; height: 5px; border-radius: 3px; background: #111; }
+  .tap { position: absolute; width: 46px; height: 46px; border-radius: 50%; background: rgba(0,0,0,.18); pointer-events: none; }
+</style>
+</head>
+<body>
+<div class="phone">
+  <div class="btn" style="left:-4px;top:150px;width:4px;height:30px"></div>
+  <div class="btn" style="left:-4px;top:205px;width:4px;height:58px"></div>
+  <div class="btn" style="left:-4px;top:275px;width:4px;height:58px"></div>
+  <div class="btn" style="right:-4px;top:230px;width:4px;height:90px"></div>
+  <div class="screen">
+    <div class="island"></div>
+    <div class="status">
+      <span class="rec">9:41</span>
+      <span class="sicons">
+        <svg width="18" height="12" viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+        <svg width="16" height="12" viewBox="0 0 16 12"><path d="M8 11.5l2.4-2.9a3.6 3.6 0 0 0-4.8 0z"/><path d="M8 5.2a6.6 6.6 0 0 1 4.6 1.9l1.3-1.5A8.6 8.6 0 0 0 8 3.2a8.6 8.6 0 0 0-5.9 2.4l1.3 1.5A6.6 6.6 0 0 1 8 5.2z"/><path d="M8 1.9c2.8 0 5.3 1.1 7.2 2.9L16 3.7C13.9 1.6 11.1.3 8 .3S2.1 1.6 0 3.7l.8 1.1A10.4 10.4 0 0 1 8 1.9z" opacity=".95"/></svg>
+        <svg width="27" height="13" viewBox="0 0 27 13"><rect x=".5" y=".5" width="23" height="12" rx="3.5" fill="none" stroke="#000" opacity=".4"/><rect x="2" y="2" width="18" height="9" rx="2"/><rect x="24.5" y="4.5" width="2" height="4" rx="1" opacity=".4"/></svg>
+      </span>
+    </div>
+    <div class="header">
+      <svg width="12" height="20" viewBox="0 0 12 20"><path d="M10 2L2 10l8 8" stroke="#111" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="title"><div class="name">王经理 · 深圳工厂</div><div class="sub" id="sub">在线</div></div>
+      <svg width="22" height="6" viewBox="0 0 22 6"><circle cx="3" cy="3" r="2.4"/><circle cx="11" cy="3" r="2.4"/><circle cx="19" cy="3" r="2.4"/></svg>
+    </div>
+    <div class="messages" id="messages">
+      <div class="wrap" data-show="0" data-pop="0"><div class="time">Hoy 09:41</div></div>
+
+      <div class="wrap" data-show="0.25" data-pop="1"><div class="msg">
+        <div class="avatar cn">王</div>
+        <div class="bubble">您好！我们是源头工厂，出厂价直供 😊</div>
+      </div></div>
+
+      <div class="wrap" data-show="1.55" data-pop="1"><div class="msg me">
+        <div class="avatar es">Yo</div>
+        <div class="bubble">¡Hola Wang! Necesito 500 unidades. ¿Precio FOB?</div>
+      </div></div>
+
+      <div class="wrap typing" data-show="1.95" data-hide="2.55" data-pop="1"><div class="msg">
+        <div class="avatar cn">王</div>
+        <div class="bubble"><div class="dots"><span></span><span></span><span></span></div></div>
+      </div></div>
+
+      <div class="wrap" data-show="2.55" data-pop="1"><div class="msg">
+        <div class="avatar cn">王</div>
+        <div class="bubble card">
+          <div class="img">🎧</div>
+          <div class="txt">500件 · FOB 深圳<br><span class="price">$3.20 / 件</span></div>
+        </div>
+      </div></div>
+
+      <div class="wrap" data-show="3.15" data-pop="1"><div class="msg">
+        <div class="avatar cn">王</div>
+        <div class="bubble">可以印LOGO，15天交货 ✅</div>
+      </div></div>
+
+      <div class="wrap" data-show="4.35" data-pop="1"><div class="msg me">
+        <div class="avatar es">Yo</div>
+        <div class="bubble">¡Perfecto! Envíame la proforma 👍</div>
+      </div></div>
+
+      <div class="wrap typing" data-show="4.7" data-hide="5.25" data-pop="1"><div class="msg">
+        <div class="avatar cn">王</div>
+        <div class="bubble"><div class="dots"><span></span><span></span><span></span></div></div>
+      </div></div>
+
+      <div class="wrap" data-show="5.25" data-pop="1"><div class="msg">
+        <div class="avatar cn">王</div>
+        <div class="bubble">好的，马上发给您！🤝</div>
+      </div></div>
+    </div>
+    <div class="inputbar">
+      <div class="circle"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M4 3a5 5 0 0 1 0 8M7.5 1a8 8 0 0 1 0 12" stroke="#222" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></div>
+      <div class="field" id="field"><span id="ftext"></span><span class="caret" id="caret"></span></div>
+      <div class="circle" id="emoji"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="5.5" cy="6" r="1.1" fill="#222"/><circle cx="10.5" cy="6" r="1.1" fill="#222"/><path d="M4.5 9.5c1.8 2.2 5.2 2.2 7 0" stroke="#222" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></div>
+      <div class="circle" id="plus"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 1v12M1 7h12" stroke="#222" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+      <div class="send" id="send" style="display:none">Enviar</div>
+    </div>
+    <div class="homebar"></div>
+    <div class="tap" id="tap" style="display:none"></div>
+  </div>
+</div>
+<script>
+  const wraps = [...document.querySelectorAll('.wrap')];
+  wraps.forEach(w => { w.dataset.h = w.scrollHeight; });
+  const typing = [
+    { text: '¡Hola Wang! Necesito 500 unidades. ¿Precio FOB?', start: 0.7, end: 1.4, send: 1.55 },
+    { text: '¡Perfecto! Envíame la proforma 👍', start: 3.6, end: 4.2, send: 4.35 },
+  ];
+  const ease = p => 1 - Math.pow(1 - Math.min(Math.max(p, 0), 1), 3);
+  const back = p => { p = Math.min(Math.max(p, 0), 1); const c = 1.7; return 1 + (c + 1) * Math.pow(p - 1, 3) + c * Math.pow(p - 1, 2); };
+
+  window.render = function (t) {
+    wraps.forEach(w => {
+      const s = +w.dataset.show, hide = w.dataset.hide ? +w.dataset.hide : Infinity, h = +w.dataset.h;
+      const msg = w.firstElementChild;
+      if (t < s || t >= hide) { w.style.height = '0px'; msg.style.opacity = 0; return; }
+      if (w.dataset.pop === '0') { w.style.height = h + 'px'; msg.style.opacity = 1; return; }
+      const p = (t - s) / 0.28;
+      w.style.height = (h * ease(p)) + 'px';
+      msg.style.opacity = Math.min(1, p * 1.6);
+      msg.style.transform = `scale(${0.85 + 0.15 * back(p)})`;
+      if (w.classList.contains('typing')) {
+        w.querySelectorAll('.dots span').forEach((d, i) => {
+          const k = Math.sin((t * 9) - i * 0.9);
+          d.style.transform = `translateY(${-Math.max(0, k) * 3}px)`;
+          d.style.opacity = 0.5 + 0.5 * Math.max(0, k);
+        });
+      }
+    });
+
+    // input field typing
+    let txt = '', active = false, sending = null;
+    for (const ty of typing) {
+      if (t >= ty.start && t < ty.send) {
+        active = true;
+        const chars = [...ty.text];
+        const n = Math.round(chars.length * Math.min(1, (t - ty.start) / (ty.end - ty.start)));
+        txt = chars.slice(0, n).join('');
+        if (t >= ty.end) sending = ty;
+      }
+    }
+    document.getElementById('ftext').textContent = txt;
+    const field = document.getElementById('field');
+    field.style.justifyContent = 'flex-start';
+    document.getElementById('send').style.display = txt ? 'block' : 'none';
+    document.getElementById('plus').style.display = txt ? 'none' : 'flex';
+    if (field.scrollWidth > field.clientWidth) field.style.justifyContent = 'flex-end';
+    const blink = active || Math.floor(t * 2.2) % 2 === 0;
+    document.getElementById('caret').style.opacity = (active && txt) || blink ? 1 : 0;
+    document.getElementById('send').style.display = txt ? 'block' : 'none';
+    document.getElementById('emoji').style.display = txt ? 'flex' : 'flex';
+    document.getElementById('plus').style.display = txt ? 'none' : 'flex';
+
+    // tap ripple on send
+    const tap = document.getElementById('tap');
+    const sendBtn = document.getElementById('send');
+    if (sending) {
+      const r = sendBtn.getBoundingClientRect(), sr = document.querySelector('.screen').getBoundingClientRect();
+      const p = (t - sending.end) / (sending.send - sending.end);
+      tap.style.display = 'block';
+      tap.style.left = (r.left - sr.left + r.width / 2 - 23) + 'px';
+      tap.style.top = (r.top - sr.top + r.height / 2 - 23) + 'px';
+      tap.style.transform = `scale(${0.6 + 0.4 * p})`;
+      tap.style.opacity = 1 - p * 0.5;
+      sendBtn.style.filter = 'brightness(0.88)';
+    } else { tap.style.display = 'none'; sendBtn.style.filter = ''; }
+
+    const typingNow = (t >= 1.95 && t < 2.55) || (t >= 4.7 && t < 5.25);
+    document.getElementById('sub').textContent = typingNow ? '对方正在输入…' : '在线';
+  };
+  window.render(0);
+</script>
+</body>
+</html>
