@@ -119,7 +119,7 @@ Antes de pagar, revisa el temario. Si le falta alguno de estos puntos, te va a t
 9. **Impuestos**, incluidos los aumentos de aranceles de 2026 para productos de China.
 10. **Cómo vender** lo que traes, porque importar sin vender no es negocio.
 
-La [clase en vivo para aprender a importar de China](/clase) cubre todo ese recorrido en una sola sesión, de la fábrica hasta tu puerta.
+La [clase en vivo para aprender a importar de China](/clase) cubre todo ese recorrido en una sola sesión, de la fábrica hasta tu puerta. Si quieres ver el temario completo y comparar la clase, la Escuela y la asesoría en una sola página, está en el [curso para importar de China con Eduardo](/curso-para-importar-de-china).
 
 ## Preguntas que debes hacer antes de pagar cualquier curso
 

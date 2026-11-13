@@ -130,8 +130,8 @@ Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (ra
 |---|---|---|---|---|---|---|
 | B | requisitos-para-importar-de-china-a-mexico | requisitos para importar de China a México | Requisitos para importar de China a México en 2026 | ~1,810 | **Publicada** (enlazada desde la pilar) | 11 nov 2026 |
 | C | cuanto-cuesta-importar-de-china | cuánto cuesta importar de China | Cuánto cuesta importar de China en 2026: ejemplo real | ~1,670 | **Publicada** (enlazada desde la pilar y desde productos) | 11 nov 2026 |
-| A | comprar-directo-de-fabrica-en-china | comprar directo de fábrica en China | Comprar directo de fábrica en China sin intermediarios | ~1,550 | Borrador en la base; imágenes listas en el repo, falta subirlas a Lovable | — |
-| E | como-pagar-a-un-proveedor-en-china | cómo pagar a un proveedor en China | Cómo pagar a un proveedor en China sin que te estafen | ~1,610 | Borrador en la base; imágenes listas en el repo, falta subirlas a Lovable | — |
+| A | comprar-directo-de-fabrica-en-china | comprar directo de fábrica en China | Comprar directo de fábrica en China sin intermediarios | ~1,550 | **Publicada** (enlazada desde la pilar, Paso 2) | 13 nov 2026 |
+| E | como-pagar-a-un-proveedor-en-china | cómo pagar a un proveedor en China | Cómo pagar a un proveedor en China sin que te estafen | ~1,610 | **Publicada** (enlazada desde la pilar, Paso 5) | 13 nov 2026 |
 | D | aranceles-china-mexico-2026 | aranceles a China 2026 | — | — | Por escribir (revisión mensual) | — |
 | H | envio-aereo-o-maritimo-desde-china | envío aéreo o marítimo desde China | — | — | Por escribir | — |
 | F | que-es-yiwu | Yiwu | — | — | Por escribir | — |
@@ -156,9 +156,11 @@ Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (ra
 1. **Vista previa de borradores:** el blog solo lee notas `published`, así que un borrador no se puede ver en el preview. Propuesta: ruta de vista previa con token o una bandera solo en el preview.
 2. **Corregir la sección 18 del handoff:** Google dejó de mostrar FAQ enriquecidos para todos desde el 7 de mayo de 2026.
 3. **IndexNow automático** al publicar una nota (hoy el POST es manual).
-4. Si se publica `/curso-para-importar-de-china`, avisar para cambiar el enlace de la nota de cursos.
+4. ~~Si se publica `/curso-para-importar-de-china`, avisar~~ Hecho: salió en el deploy del 13 nov y la nota de cursos ya enlaza ahí.
 
 **Publicación de B y C (11 nov 2026):** pasadas a published, deploy hecho (incluyó solo la Tanda 1 del agente SEO, ya publicada, y las imágenes del blog), enlaces agregados en la pilar (Paso 7) y en la nota de productos (hacia C). IndexNow y verificación en producción: mensaje en cola en Lovable detrás de la Tanda 2 del agente SEO. Falta pedir indexación en Search Console.
+
+**Publicación de A y E (13 nov 2026):** 8 imágenes subidas a Lovable (commit d54436a), deploy hecho con autorización del usuario. Ese deploy también publicó lo que el agente SEO tenía pendiente: Fase 2 (/curso-para-importar-de-china, /preguntas-frecuentes, schema del autor), fotos reales de Eduardo, sección NADIE, WhatsApp con página de origen, eventos del Pixel, videos 720p y un cambio automático de bun.lock. A y E pasaron a published con published_at = now(). Se agregaron enlaces en la pilar (Paso 2 → A, Paso 5 → E) y en la nota de cursos hacia /curso-para-importar-de-china. Las md5 de la base coinciden con el repo. IndexNow y verificación en producción se pidieron al agente de Lovable. Falta pedir indexación en Search Console de las 2 notas nuevas.
 
 **Meta descriptions A y E**
 - A: "Cómo comprar directo de fábrica en China sin intermediarios: diferencia entre fábrica, trading y revendedor, señales para reconocerlos y cómo validarla." (152)

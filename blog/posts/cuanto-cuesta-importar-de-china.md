@@ -111,6 +111,8 @@ Así funcionan las cajas:
 
 Con esto te saltas el padrón, el agente aduanal y la espera, y aprendes a vender antes de importar tú.
 
+![Costo por pieza al importar de China comparado con una caja que ya está en México](/blog/cuanto-cuesta-importar-de-china/costo-por-pieza-importar-vs-caja-en-mexico.webp "Importar tú contra comprar una caja que ya está en México.")
+
 ## Costos ocultos que nadie te cuenta
 
 1. **Almacenaje en la aduana:** si tu mercancía se atora por un papel, te cobran por cada día.
