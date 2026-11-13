@@ -92,7 +92,7 @@ Dónde buscar:
 - **Yiwu.** Es la ciudad de los mayoristas: hay de todo, en un solo lugar y a precio de mayoreo. Ideal para surtido general.
 - **Gente en China.** Es lo que más funciona. En mi caso tengo equipo allá: **chinos que negocian con chinos**. A ellos no les cuentan la misma historia que a un extranjero.
 
-Cómo saber si es fábrica: pregunta si tienen línea de producción propia, pide video de la planta trabajando y fíjate si te pueden hacer cambios de color, empaque o logo. Un revendedor casi nunca puede.
+Cómo saber si es fábrica: pregunta si tienen línea de producción propia, pide video de la planta trabajando y fíjate si te pueden hacer cambios de color, empaque o logo. Un revendedor casi nunca puede. Te doy las 7 señales completas y cómo revisar su licencia en [comprar directo de fábrica en China](/blog/comprar-directo-de-fabrica-en-china).
 
 ## Paso 3: revisa que la fábrica sea confiable antes de pagar
 
@@ -125,6 +125,8 @@ El pago es donde más gente pierde dinero. Reglas básicas:
 - **Nunca pagues el 100% por adelantado** a alguien nuevo. Lo normal es un anticipo (por ejemplo 30%) para que produzcan y el resto cuando revisas la mercancía terminada.
 - **Paga por canales rastreables**: transferencia internacional a la cuenta de la empresa, no a una cuenta personal que te mandan por chat.
 - **Guarda todo por escrito**: cotización, factura proforma, fotos, acuerdos de calidad.
+
+Métodos, cuánto adelantar y las señales de fraude están en [cómo pagar a un proveedor en China](/blog/como-pagar-a-un-proveedor-en-china).
 
 Si no quieres lidiar con mandar dinero al otro lado del mundo, hay quien lo hace por ti por los canales correctos. Es parte del servicio de [logística desde China](/logistica).
 
