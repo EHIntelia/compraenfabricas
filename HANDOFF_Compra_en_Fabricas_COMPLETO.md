@@ -45,18 +45,23 @@ El equipo chino (gente de Eduardo en China) busca, compara y valida fábricas: "
 
 > ⚠️ **No confundir** con la marca personal de Eduardo Hernández (negro + rojo #A30E1A, fuente Koltav). Esta es otra marca.
 
+> **Actualización 19 nov 2026 (Eduardo):** la marca va **solo en naranjas, sin rojos**. El rojo `#DC2626` y el durazno rosado `#FCE4DC` ya no se usan. Fuente de verdad del brand kit: el design system en Claude (https://claude.ai/artifact/LQo5jwhwzq4XSH1Qdj43Fr).
+
 | Color | Hex | Uso |
 |---|---|---|
-| Naranja | `#F97316` | Primario / acentos |
-| Rojo | `#DC2626` | Botones, CTAs, sellos |
-| Tinta (texto) | `#1A1A1A` | Texto principal |
+| Naranja | `#F97316` | Primario: inicio del degradado, bordes, acentos |
+| Naranja oscuro | `#EA580C` | Final del degradado, precios y totales grandes, sello oficial |
+| Naranja texto | `#C2410C` | Texto destacado, enlaces, "Importante:", errores |
+| Naranja muy oscuro | `#9A3412` | Avisos sobre durazno |
+| Tinta (texto) | `#1A1A1A` | Texto principal, encabezados de tabla |
 | Gris | `#6B6B6B` | Texto secundario |
-| Durazno | `#FCE4DC` | Badges, insignias |
-| Crema | `#FFF8F5` | Fondos |
+| Durazno | `#FFEDD5` | Badges, cajas de nota, caja "Importante" |
+| Crema | `#FFF8F5` | Fondos, celdas de tablas |
 | Borde | `#D9CFC7` | Líneas / bordes |
 
-- **Firma visual:** degradado naranja → rojo.
-- **Logo:** "Compra en Fábricas de China · Xijiao Shops" (horizontal). En el sitio el ícono es el carácter 中 en un cuadro con el degradado.
+- **Firma visual:** degradado naranja → naranja oscuro (`#F97316 → #EA580C`), igual que en el sitio.
+- **Logo oficial:** el ícono naranja (dos formas, `#FF8212`) + "Compra en fábricas" en negro. Archivos: `logo-horizontal.png`, `logo-vertical.png` e `icono.png` en el design system. El cuadro con el carácter 中 en degradado naranja-rojo (favicon viejo del sitio) **no es el logo de la marca**.
+- **Sello oficial:** "Compra en fábricas · Directo de fábrica · De China", ahora en naranja `#EA580C` (en el design system, `assets/sellos/`).
 - **Redes oficiales:** Instagram https://www.instagram.com/compraenfabricasdechina · Facebook https://www.facebook.com/profile.php?id=61591427343713 · TikTok https://www.tiktok.com/@compraenfabricasdechina
 
 ---
@@ -154,6 +159,8 @@ Sin cambios: públicos amplios, muchas creatividades, retargeting obligatorio, o
 ## 11. DOCUMENTOS CREADOS
 
 Sin cambios (sistema de validación, recibo de pago, guías, Golden Freight, acuerdo de compra, sellos y firmas).
+
+**Acuerdo de compra (nov 2026):** una hoja carta con 4 pasos (tu pedido, elige tu envío, cuánto pagas, datos para tu pago), ya en naranjas. El precio por pieza se redondea a centavos y se multiplica por las piezas (ej. M1: $49.90 × 94 = $4,690.60). El envío sale de `compraenfabricas.com/cotizar-envio?caja=CÓDIGO` con el CP del cliente (DHL vía Envia.com, con seguro por el valor de la caja). Los acuerdos llevan datos del cliente y bancarios: no se suben al repo.
 
 **Nuevo:** `ENTREGA.md` del blog (ver sección 20).
 
