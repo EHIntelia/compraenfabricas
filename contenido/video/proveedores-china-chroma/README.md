@@ -20,6 +20,10 @@ Llegan 6 cards de proveedor, una cada 1.5 s, volando desde los lados y desde aba
 | 5 | 6.3 s · derecha | Ficha de producto | Foshan Haoju Furniture | Sillas de oficina |
 | 6 | 7.8 s · abajo | Tarjeta de presentación (negra con rosa) | Guangzhou Yanmei Cosmetics | Labiales, skincare |
 
+## Fotos de producto
+
+Las cards 1, 3 y 5 usan fotos generadas con Grok (peluche, sudadera, silla). Los originales están en [`design-system/imagenes/productos/`](../../../design-system/imagenes/productos/); en el canvas van subidas en versión ligera (600×900).
+
 ## Notas para chroma
 
 - Sin sombras ni transparencias: todo entra y sale con movimiento, para que el recorte quede limpio.
