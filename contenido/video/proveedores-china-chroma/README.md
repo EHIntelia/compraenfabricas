@@ -22,7 +22,7 @@ Llegan 6 cards de proveedor, una cada 1.5 s, volando desde los lados y desde aba
 
 ## Fotos de producto
 
-Las cards 1, 3 y 5 usan fotos generadas con Grok (peluche, sudadera, silla). Los originales están en [`design-system/imagenes/productos/`](../../../design-system/imagenes/productos/); en el canvas van subidas en versión ligera (600×900).
+Las cards 1, 3 y 5 usan fotos generadas con Grok (peluche, sudadera, silla). Los originales están en [`design-system/artefacto/assets/photos/productos/`](../../../design-system/artefacto/assets/photos/productos/); en el canvas van subidas en versión ligera (600×900).
 
 ## Notas para chroma
 
@@ -30,6 +30,6 @@ Las cards 1, 3 y 5 usan fotos generadas con Grok (peluche, sudadera, silla). Los
 - Ningún elemento usa verde (los íconos de WeChat/WhatsApp van en el color de cada tarjeta).
 - Nombres de empresas y personas son inventados; teléfonos van con `****`. No se usa logo ni marca de Alibaba, solo el estilo de ficha.
 
-## Cómo exportarlo a video
+## Video listo
 
-Abrir el artboard en el canvas (Play / vista completa) y grabar la pantalla a 1080×1080, o usar la exportación del canvas si está disponible. Recortar 12 s para un loop exacto.
+[`export/proveedores-china-chroma-1080.mp4`](export/proveedores-china-chroma-1080.mp4): MP4 H.264, 1080×1080, 30 fps, 12 s, fondo verde `#00FF00`. Se renderizó cuadro por cuadro desde el diseño, así que el loop es exacto (el último cuadro empata con el primero).
