@@ -5,6 +5,7 @@ Recordatorio para el día antes de la clase en vivo, para mandar por WhatsApp.
 - **Clase:** Cómo comprar directo en fábricas de China (en vivo, con Eduardo)
 - **Fecha:** sábado 21 de noviembre de 2026
 - **Hora:** 11:00 am CDMX
+- **Grabación:** sí, la clase queda grabada (confirmado).
 - **Formato:** imagen 1:1 (1080×1080) + copy
 - **Voz:** de marca, en plural ("te esperamos"). **No en primera persona:** no se habla como si fuera Eduardo; a él se le menciona en tercera persona ("Eduardo explica…").
 
@@ -54,9 +55,17 @@ Recordatorio para el día antes de la clase en vivo, para mandar por WhatsApp.
 **E · Muy corto** (para acompañar la imagen)
 > Mañana, 11 am CDMX. Te esperamos en la clase 🇨🇳
 
+**F · Con grabación**
+> Mañana es el día 🇨🇳
+> Sábado 21 de noviembre, 11:00 am CDMX: clase en vivo para aprender a comprar directo en fábricas de China.
+> Lo ideal es que estés en vivo para hacerle tus preguntas a Eduardo. Y si algo se te atraviesa, tranquilo: la clase queda grabada.
+> Te esperamos.
+
+> Nota: la grabación se puede agregar como última línea en cualquier copy ("La clase queda grabada"), pero conviene no ponerla al principio para que la gente priorice entrar en vivo.
+
 ## Pendientes / por confirmar
 
-- **Grabación:** no se menciona. El Design System dice "no queda grabada" y el handoff (sección 5) dice que sí incluye grabación. Confirmar antes de agregarla.
+- **Grabación:** confirmado que sí queda grabada. Los diseños no la mencionan; el copy F sí. Ojo: el README del Design System todavía dice "La clase es en vivo y no queda grabada" y hay que corregirlo.
 - **Precio ($990):** no se menciona; el warm up está pensado para gente ya inscrita.
 - **[LINK DE ACCESO]:** reemplazar por el link real de la clase.
 - Si se quiere mandar también a gente no inscrita, hacer una versión con link de registro.
