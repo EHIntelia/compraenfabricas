@@ -65,7 +65,7 @@ Recordatorio para el día antes de la clase en vivo, para mandar por WhatsApp.
 
 ## Pendientes / por confirmar
 
-- **Grabación:** confirmado que sí queda grabada. Los diseños no la mencionan; el copy F sí. Ojo: el README del Design System todavía dice "La clase es en vivo y no queda grabada" y hay que corregirlo.
+- **Grabación:** confirmado que sí queda grabada. Los diseños no la mencionan; el copy F sí. El Design System ya se corrigió (20 nov 2026): dice que la clase queda grabada, usa voz de marca (sin primera persona de Eduardo) y ya no dice "gratis".
 - **Precio ($990):** no se menciona; el warm up está pensado para gente ya inscrita.
 - **[LINK DE ACCESO]:** reemplazar por el link real de la clase.
 - Si se quiere mandar también a gente no inscrita, hacer una versión con link de registro.
