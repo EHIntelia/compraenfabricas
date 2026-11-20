@@ -311,6 +311,9 @@ Flujo: **contenido (redes + blog) → clase / Escuela → joyería / cajas → l
 | Notas en markdown, imágenes, scripts, SQL y entrega | GitHub `EHIntelia/compraenfabricas`, rama `main`, carpeta `blog/` |
 | Resumen técnico del blog | `blog/ENTREGA.md` en el repo |
 | Reglas de marca y publicación para el agente de Lovable | Project knowledge del proyecto en Lovable |
+| Catálogo de cajas (precio, piezas, vendida/apartada) | Lovable "China Direct Connect", `src/lib/cajas.ts` |
+| Ventas de cajas en el panel | Lovable "Eduardo Hernández" (eduardohernandez.com), tablas `ventas` y `cajas` |
+| Acuerdos de compra y fichas de cada caja vendida | `ventas/cajas/` en el repo (ver su README) |
 
 **Recomendado:** conectar el proyecto de Lovable a GitHub (Connect → GitHub) para que el código también quede respaldado en el repo.
 
