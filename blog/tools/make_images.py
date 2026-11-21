@@ -321,7 +321,7 @@ cover(s, "cursos-para-importar-de-china-comparativa-2026.webp", "Cómo importar"
 save(s, "tabla-comparativa-cursos-importar-de-china.webp", frame("Cursos para importar de China: comparativa 2026", "Precios publicados en noviembre de 2026. Confírmalos en cada sitio.", table(
     ["Opción", "Precio", "Formato", "Proveedores"],
     [["Clase en vivo con Eduardo", "$990 MXN", "En vivo + grabación", "5 de regalo"],
-     ["Escuela de Negocios", "$250 MXN/mes", "Grabado + Zooms en vivo", "No lo indica"],
+     ["Escuela de Negocios", "$15 USD/mes", "Grabado + Zooms en vivo", "No lo indica"],
      ["CETYS Educación Continua", "$8,603 MXN", "Presencial, 24 h", "No lo indica"],
      ["INCEA / LatinoTrainers", "Desde $790 MXN", "En línea", "No lo indica"],
      ["100negocios", "$39 USD", "En línea", "No lo indica"],
