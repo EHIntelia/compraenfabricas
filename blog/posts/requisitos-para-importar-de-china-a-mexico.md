@@ -137,7 +137,7 @@ La **fracción arancelaria** es el código que clasifica tu producto en la tarif
 - Cuánto **arancel** pagas.
 - Si tu producto necesita **permisos, NOM o padrón de sectores específicos**.
 
-Esto es más importante que nunca en 2026: desde el 1 de enero subieron los aranceles de **1,463 fracciones** para mercancías de países sin tratado comercial con México, como China, según el [decreto publicado en el DOF el 29 de diciembre de 2025](https://dof.gob.mx/nota_detalle.php?codigo=5777376&fecha=29%2F12%2F2025). Clasificar mal tu producto puede salirte caro en multas.
+Esto es más importante que nunca en 2026: desde el 1 de enero subieron los aranceles de **1,463 fracciones** para mercancías de países sin tratado comercial con México, como China, según el [decreto publicado en el DOF el 29 de diciembre de 2025](https://dof.gob.mx/nota_detalle.php?codigo=5777376&fecha=29%2F12%2F2025). Clasificar mal tu producto puede salirte caro en multas. Qué productos subieron y cuánto, en [aranceles a China 2026](/blog/aranceles-china-mexico-2026).
 
 ## NOM y etiquetado: el papel que más mercancía atora
 

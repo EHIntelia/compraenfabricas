@@ -84,7 +84,7 @@ Haz esta tabla **antes** de pagarle a la fábrica, no cuando ya viene la mercanc
 
 ## ¿Cuánto se paga de arancel por productos de China?
 
-Depende de la **fracción arancelaria** de tu producto. No hay un arancel único para China. Lo que sí cambió es que, desde el 1 de enero de 2026, México subió los aranceles de **1,463 fracciones** para países sin tratado comercial, entre ellos China, según el [decreto publicado en el DOF el 29 de diciembre de 2025](https://dof.gob.mx/nota_detalle.php?codigo=5777376&fecha=29%2F12%2F2025). Por eso el arancel es el número que más tienes que revisar.
+Depende de la **fracción arancelaria** de tu producto. No hay un arancel único para China. Lo que sí cambió es que, desde el 1 de enero de 2026, México subió los aranceles de **1,463 fracciones** para países sin tratado comercial, entre ellos China, según el [decreto publicado en el DOF el 29 de diciembre de 2025](https://dof.gob.mx/nota_detalle.php?codigo=5777376&fecha=29%2F12%2F2025). Por eso el arancel es el número que más tienes que revisar. Te explico qué cambió y cómo saber la tasa de tu producto en [aranceles a China 2026](/blog/aranceles-china-mexico-2026).
 
 ## ¿Cuánto cuesta el envío de China a México?
 

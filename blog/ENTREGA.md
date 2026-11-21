@@ -132,7 +132,7 @@ Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (ra
 | C | cuanto-cuesta-importar-de-china | cuánto cuesta importar de China | Cuánto cuesta importar de China en 2026: ejemplo real | ~1,670 | **Publicada** (enlazada desde la pilar y desde productos) | 11 nov 2026 |
 | A | comprar-directo-de-fabrica-en-china | comprar directo de fábrica en China | Comprar directo de fábrica en China sin intermediarios | ~1,550 | **Publicada** (enlazada desde la pilar, Paso 2) | 13 nov 2026 |
 | E | como-pagar-a-un-proveedor-en-china | cómo pagar a un proveedor en China | Cómo pagar a un proveedor en China sin que te estafen | ~1,610 | **Publicada** (enlazada desde la pilar, Paso 5) | 13 nov 2026 |
-| D | aranceles-china-mexico-2026 | aranceles a China 2026 | Aranceles a China 2026: qué subió y cuánto pagas | ~2,030 | Borrador en la base (md5 7cf0080c…); imágenes en el repo, falta subirlas a Lovable. Revisión mensual | — |
+| D | aranceles-china-mexico-2026 | aranceles a China 2026 | Aranceles a China 2026: qué subió y cuánto pagas | ~2,030 | **Publicada** (enlazada desde la pilar, requisitos y costos). Revisión mensual contra el DOF | 21 nov 2026 |
 | H | envio-aereo-o-maritimo-desde-china | envío aéreo o marítimo desde China | — | — | Por escribir | — |
 | F | que-es-yiwu | Yiwu | — | — | Por escribir | — |
 | I | joyeria-de-acero-inoxidable | joyería de acero inoxidable | — | — | Por escribir | — |
@@ -194,3 +194,14 @@ Las notas nuevas siguen el **Compra en Fábricas Design System** (artifact https
 **Notas publicadas antes del design system:** se quedan en primera persona de Eduardo, como pidió el usuario. Lo único que no sigue el design system son sus imágenes (marca dibujada, fuente Inter) y algunos guiones largos en el texto. Se pueden regenerar si el usuario lo pide.
 
 **Vista previa del borrador D:** https://claude.ai/artifact/RDRQWUZNhkPCJoAb5Djtmi
+
+**Publicación de D (21 nov 2026):**
+- 5 imágenes subidas a Lovable (commit dd1a2ef) y deploy hecho con autorización del usuario.
+- El deploy también publicó lo que habían hecho otras sesiones del usuario: precio de la Escuela a $15 USD/mes, infografía de cursos corregida, GA4, reseñas y cambios del catálogo de cajas.
+- D quedó published con published_at = now(). Se agregaron enlaces a D desde la pilar (Paso 7, fracción arancelaria), desde requisitos (sección de fracción arancelaria) y desde costos (sección de arancel). Las md5 de la base coinciden con el repo.
+- IndexNow y verificación en producción se pidieron al agente de Lovable.
+
+**Cambio de precio de la Escuela (21 nov 2026, otra sesión):** ahora es $15 USD/mes y ya no existen los planes de $250 MXN/mes ni $2,500/año.
+- Esa sesión actualizó en la base las notas de cursos y de Eduardo. El repo se sincronizó con la base (md5 iguales).
+- También se regeneró la tabla de cursos en `img/` y se corrigió el handoff.
+- **Regla:** antes de reconstruir cualquier nota con build_sql, compara su md5 con la base. Otras sesiones pueden editar la tabla posts directamente.

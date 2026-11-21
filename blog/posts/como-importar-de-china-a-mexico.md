@@ -156,7 +156,7 @@ Aquí es donde se atora la mercancía de los que compran en una página china y 
 
 - **RFC y Padrón de Importadores.** Si vas a importar de forma regular para revender, te tienes que inscribir en el [Padrón de Importadores del SAT](https://www.sat.gob.mx/minisitio/PadronImportadoresExportadores/). El trámite es en línea con tu e.firma. Te explico todos los papeles en [requisitos para importar de China a México](/blog/requisitos-para-importar-de-china-a-mexico).
 - **Agente aduanal.** Es la persona autorizada que presenta tu **pedimento** (el documento oficial donde se declara tu mercancía y se pagan los impuestos).
-- **Fracción arancelaria.** Es el código que clasifica tu producto. De ahí sale cuánto arancel pagas. Con los cambios de 2026 esto es más importante que nunca.
+- **Fracción arancelaria.** Es el código que clasifica tu producto. De ahí sale cuánto arancel pagas. Con los cambios de 2026 esto es más importante que nunca: te explico qué subió en [aranceles a China 2026](/blog/aranceles-china-mexico-2026).
 - **NOM y etiquetado.** Muchos productos necesitan cumplir una Norma Oficial Mexicana y llevar etiqueta en español. Si no, se quedan en la aduana.
 - **Impuestos.** Pagas el arancel de tu fracción, el **IVA de 16%** y otros cargos de aduana. Declara el valor real. Subvaluar para pagar menos sale carísimo en multas. Aquí tienes un ejemplo con números de [cuánto cuesta importar de China](/blog/cuanto-cuesta-importar-de-china).
 

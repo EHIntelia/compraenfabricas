@@ -137,7 +137,7 @@ Tampoco te voy a decir que importar es fácil o que te vas a hacer rico en un me
 ## Cómo puedes aprender conmigo
 
 - **[Clase en vivo con Eduardo](/clase):** te enseño todo el proceso de principio a fin y me preguntas directamente. Incluye la grabación, material de apoyo y proveedores de regalo para empezar.
-- **[Escuela de Negocios](/escuela):** cursos de importación, ventas y negocio, Zooms en vivo conmigo y una comunidad de emprendedores. Desde $250 MXN al mes.
+- **[Escuela de Negocios](/escuela):** cursos de importación, ventas y negocio, Zooms en vivo conmigo y una comunidad de emprendedores. $15 USD al mes.
 - **[Logística desde China](/logistica):** si ya tienes proveedor, validamos, pagamos y te traemos tu mercancía.
 
 Y si tienes una duda concreta, escríbeme por WhatsApp. Ahí te contestamos.
