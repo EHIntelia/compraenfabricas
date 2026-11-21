@@ -1,11 +1,13 @@
 # HANDOFF — COMPRA EN FÁBRICAS DE CHINA
-### Documento maestro de contexto · Actualizado 11 nov 2026 (v2: blog + SEO + correcciones con el sitio real)
+### Documento maestro de contexto · Actualizado 21 nov 2026 (v3: precio real de la Escuela en Skool)
 
 > **Para qué sirve este documento:** que cualquier persona (o cualquier IA) que lo lea entienda el proyecto completo de Compra en Fábricas de China: qué es, cómo funciona, qué se vende, cómo hablamos, qué está hecho y qué falta.
 >
 > **Regla de oro (nueva):** si este documento y el sitio compraenfabricas.com no coinciden, **manda lo que dice el sitio**. El sitio es la fuente de verdad de productos, precios y condiciones.
 >
-> **Qué cambió en esta versión:** se corrigieron datos que estaban desactualizados (clase, proveedores de regalo, validación, clase gratis) y se agregaron las secciones 17 a 21 (blog, SEO, imágenes, proyecto en Lovable, repo y pendientes nuevos).
+> **Qué cambió en v3 (21 nov 2026):** el precio correcto de la Escuela es **$15 USD/mes** (lo que cobra Skool); se quitó el $250 MXN/mes y el $2,500/año. Se agregó el estado actual de membresías en la sección 6.
+>
+> **Qué cambió en v2:** se corrigieron datos que estaban desactualizados (clase, proveedores de regalo, validación, clase gratis) y se agregaron las secciones 17 a 21 (blog, SEO, imágenes, proyecto en Lovable, repo y pendientes nuevos).
 
 ---
 
@@ -89,7 +91,7 @@ Aplican a TODO el contenido: anuncios, mensajes, guiones, páginas y blog.
 | Producto | Precio | Ruta | Detalle |
 |---|---|---|---|
 | **Clase en vivo con Eduardo** | **$990 MXN** (~$54 USD) | /clase | En vivo, hablas con Eduardo. **Incluye grabación**, material de apoyo, plantillas y **5 proveedores de regalo**: 2 de electrónica (AEMAI y Port Tide, con videos) + 3 de surtido general de Yiwu (Grace, Wilhem, Vincent, que se abren al entrar). Producto de entrada y CTA principal. Próxima fecha publicada: 21 de noviembre. Pago por Stripe. |
-| **Escuela de Negocios (Skool)** | **$250 MXN/mes** o **$2,500/año** | /escuela | Cursos grabados (importación desde China, ventas, negocio), Zooms en vivo con Eduardo y comunidad. Cancelas cuando quieras. **Ya no se menciona mini-curso gratis.** |
+| **Escuela de Negocios (Skool)** | **$15 USD/mes** (cobro en Skool) | /escuela | Cursos grabados (importación desde China, ventas, negocio), Zooms en vivo con Eduardo y comunidad. Cancelas cuando quieras. **Ya no se menciona mini-curso gratis.** |
 | **Joyería al mayoreo** | Variable | /joyeria y https://info.joyeria.shop/ | El producto estrella real, vía JAICO / Xijiao Shops. |
 | **Cajas de electrónica** | Desde ~$3,000 MXN por caja | /productos | Ya están en México. Se apartan con **20% de anticipo**, 7 días para pagar el 80% + envío nacional, llegan en 1 a 2 días hábiles. Flete desde China incluido; paquetería nacional aparte. Se venden cajas completas, no piezas. Ej.: WK104 Lentes AI, 50 pzas, $46,058 MXN. |
 | **Proveedores de tecnología** | — | /marketplace | Port Tide y AEMAI, cada uno con sus videos. |
@@ -108,6 +110,11 @@ Aplican a TODO el contenido: anuncios, mensajes, guiones, páginas y blog.
 ## 6. LA ESCUELA (Skool)
 
 - Membresía en Skool: cursos grabados + Zooms en vivo + comunidad.
+- Nombre de la comunidad en Skool: **Escuela Negocios y Emprender**.
+- **Precio: $15 USD/mes**, cobrado por Skool. Cada miembro se cobra el mismo día del mes en que entró (no hay un día fijo para todos).
+- También hay una venta única de curso de **$50 USD** dentro de Skool.
+- **Estado al 21 nov 2026:** 5 membresías de pago (Enrique Ortiz, Marco Zepeda, Carlos Guillen, Marco Felix Guevara, Arnulfo Yañes) ≈ **$75 USD/mes** brutos. 2 ventas del curso de $50 (Carlos Guillen, Diana González). Miembros free: pendiente de contar en Skool. Detalle en `negocio/skool-membresias.md` y en el panel de eduardohdz.com.
+- Skool no avisa por correo las cancelaciones: verificar en Skool.
 - Contenido: curso de importación desde China, cursos de ventas y negocio, guía rápida para importar.
 - **Actualización:** ya no se habla de modelo freemium ni de mini-curso gratis en el contenido público.
 
@@ -189,7 +196,7 @@ Sin cambios (sistema de validación, recibo de pago, guías, Golden Freight, acu
 
 1. LiveWebinar se abandonó → clase en vivo directa.
 2. ~~Validación de proveedor eliminada~~ → **Corrección:** la validación sigue activa en /validacion. No se elimina ningún servicio sin aprobación.
-3. Clase a $990 como entrada; membresía $250/mes como recurrencia.
+3. Clase a $990 como entrada; membresía en Skool de **$15 USD/mes** como recurrencia.
 4. Siembra de joyería en vez de pitch directo.
 5. Andrómeda: creatividades sobre segmentación.
 6. **Nuevo:** el sitio manda sobre el handoff cuando hay contradicciones.
@@ -232,8 +239,8 @@ Flujo: **contenido (redes + blog) → clase / Escuela → joyería / cajas → l
 ## 16. PENDIENTES (históricos)
 
 - [ ] Actualizar el árbol de ManyChat (cajas 20%, "importan por mí", y ahora decir 5 proveedores).
-- [ ] Construir la Escuela en Skool.
-- [ ] Cobro recurrente en Stripe ($250/mes).
+- [x] Construir la Escuela en Skool (ya opera: Escuela Negocios y Emprender).
+- [x] ~~Cobro recurrente en Stripe ($250/mes)~~ → el cobro recurrente lo hace Skool a $15 USD/mes.
 - [ ] Correr pauta (Andrómeda).
 - [ ] Grabar la parrilla con siembra de joyería.
 - [ ] Llenar la clase de $990.
