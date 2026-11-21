@@ -26,6 +26,6 @@
   "pendientes_de_verificar": [
     "Skool no manda correo cuando alguien cancela: confirmar en Skool > Settings > Billing / Members que las 5 siguen activas.",
     "Número de miembros free: no viene en los correos; verlo en Skool > Members (total de miembros menos los 5 de pago).",
-    "El precio real en Skool es $15 USD/mes; el handoff dice $250 MXN/mes y $2,500/año. Alinear."
+    "Resuelto: el precio correcto es $15 USD/mes (confirmado por Eduardo, handoff actualizado)."
   ]
 }

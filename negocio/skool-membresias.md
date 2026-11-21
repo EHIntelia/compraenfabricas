@@ -27,6 +27,6 @@ Skool cobra cada membresía en el aniversario de su alta (no hay un día fijo pa
 ## Pendientes
 
 - Confirmar en Skool que las 5 membresías siguen activas (Skool no avisa por correo las cancelaciones).
-- El precio en Skool es $15 USD/mes, pero el handoff dice $250 MXN/mes o $2,500/año. Alinear.
+- ~~Alinear precio~~ → confirmado: el precio correcto es $15 USD/mes (handoff ya actualizado).
 
 Datos en formato máquina: `skool-membresias.json`.
