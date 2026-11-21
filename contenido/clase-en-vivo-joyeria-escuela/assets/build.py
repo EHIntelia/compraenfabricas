@@ -386,15 +386,15 @@ text(s, 54, 324, 615, 47, [[("No es teoría: ", {"bold": True, "color": GOLD}),
 # =============== 17. ESCUELA: CÓMO ENTRAR ===============
 s = new_slide()
 eyebrow(s, "CÓMO ENTRAR A LA ESCUELA")
-title(s, "Entras gratis. Y por $15 USD desbloqueas mucho más.", 24)
+title(s, "Entras gratis. Por $15 USD al mes, desbloqueas más.", 24)
 tiers = [(CARD, GRAY, "GRATIS", "$0", ["Entras a la comunidad", "Conoces a emprendedores como tú", "Ves cómo funciona todo por dentro"]),
-         (REDCARD, GOLD, "MEMBRESÍA", "$15 USD", ["Curso De 0 a 1 Millón INCLUIDO", "Curso Sube tus Ventas en 5 Pasos INCLUIDO", "El mejor punto de partida"]),
+         (REDCARD, GOLD, "MEMBRESÍA MENSUAL", "$15 USD/mes", ["Curso De 0 a 1 Millón INCLUIDO", "Curso Sube tus Ventas en 5 Pasos INCLUIDO", "El mejor punto de partida"]),
          (CARD, GRAY, "CURSOS PREMIUM", "a la carta", ["Importación de China completo: $230 USD", "Arma tu negocio con IA: $50 USD", "Guía rápida: $50 USD"])]
 for i, (fill, lc, lab, price, lines) in enumerate(tiers):
     x = 36 + i * 162
     rect(s, x, 92, 150, 188, fill)
     text(s, x + 12, 104, 126, 14, lab, B, 11, lc, bold=True)
-    text(s, x + 12, 120, 126, 30, price, H, 22 if i < 2 else 18, WHITE, bold=True, anchor="m")
+    text(s, x + 12, 120, 126, 30, price, H, (22 if i == 0 else 18), WHITE, bold=True, anchor="m")
     text(s, x + 12, 160, 130, 110, ["•  " + l for l in lines], B, 11.5, PINK if i == 1 else WHITE, space_after=6)
 qr_card(s, 538, 92, 146, "qr_skool.png")
 text(s, 526, 246, 170, 16, "ESCANEA Y ENTRA", H, 11.5, GOLD, bold=True, align="c")
