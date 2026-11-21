@@ -133,7 +133,7 @@ Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (ra
 | A | comprar-directo-de-fabrica-en-china | comprar directo de fábrica en China | Comprar directo de fábrica en China sin intermediarios | ~1,550 | **Publicada** (enlazada desde la pilar, Paso 2) | 13 nov 2026 |
 | E | como-pagar-a-un-proveedor-en-china | cómo pagar a un proveedor en China | Cómo pagar a un proveedor en China sin que te estafen | ~1,610 | **Publicada** (enlazada desde la pilar, Paso 5) | 13 nov 2026 |
 | D | aranceles-china-mexico-2026 | aranceles a China 2026 | Aranceles a China 2026: qué subió y cuánto pagas | ~2,030 | **Publicada** (enlazada desde la pilar, requisitos y costos). Revisión mensual contra el DOF | 21 nov 2026 |
-| H | envio-aereo-o-maritimo-desde-china | envío aéreo o marítimo desde China | — | — | Por escribir | — |
+| H | envio-aereo-o-maritimo-desde-china | envío aéreo o marítimo desde China | Envío aéreo o marítimo desde China: cuál te conviene | ~1,820 | Borrador en la base (md5 df536313…); imágenes en el repo, falta subirlas a Lovable | — |
 | F | que-es-yiwu | Yiwu | — | — | Por escribir | — |
 | I | joyeria-de-acero-inoxidable | joyería de acero inoxidable | — | — | Por escribir | — |
 | J | feria-de-canton | Feria de Cantón | — | — | Por escribir (2–3 meses antes de la edición) | — |
@@ -205,3 +205,13 @@ Las notas nuevas siguen el **Compra en Fábricas Design System** (artifact https
 - Esa sesión actualizó en la base las notas de cursos y de Eduardo. El repo se sincronizó con la base (md5 iguales).
 - También se regeneró la tabla de cursos en `img/` y se corrigió el handoff.
 - **Regla:** antes de reconstruir cualquier nota con build_sql, compara su md5 con la base. Otras sesiones pueden editar la tabla posts directamente.
+
+**Nota H (envío aéreo o marítimo):** borrador del 21 nov 2026, en primera persona de Eduardo.
+- **Datos reales del sitio (/logistica):** aéreo se cobra por kilo y marítimo consolidado por metro cúbico; la cotización pide CBM, kilos y ciudad en China.
+- **Datos de referencia con fuente:**
+  - Divisor 6,000 (IATA) y 5,000 en exprés.
+  - Tránsito puerto a puerto Shanghái a Manzanillo de 17 a 29 días y Shenzhen o Guangzhou de 20 a 35 días, publicados por agentes de carga.
+  - Contenedor de 20' de unos 33 m³ y de 40' de unos 67 m³.
+- **Sin precios de flete:** la nota no los menciona porque no hay datos propios.
+- **[PENDIENTE, opcional]:** si Eduardo da sus tiempos reales de aéreo y marítimo (por ejemplo, Yiwu a Monterrey), la nota gana mucho.
+- **Al publicar:** enlazar desde la pilar (Paso 6, envío) y desde costos (sección de envío).

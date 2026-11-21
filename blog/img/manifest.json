@@ -409,5 +409,56 @@
     "kind": "redes",
     "alt": "Aranceles a China 2026 para importar a México, versión para redes",
     "bytes": 114914
+  },
+  {
+    "slug": "envio-aereo-o-maritimo-desde-china",
+    "file": "envio-aereo-o-maritimo-desde-china.webp",
+    "path": "/blog/envio-aereo-o-maritimo-desde-china/envio-aereo-o-maritimo-desde-china.webp",
+    "width": 1200,
+    "height": 630,
+    "kind": "portada",
+    "alt": "Envío aéreo o marítimo desde China: bodega con cajas listas para embarcar a México",
+    "bytes": 51764
+  },
+  {
+    "slug": "envio-aereo-o-maritimo-desde-china",
+    "file": "aereo-vs-maritimo-desde-china.webp",
+    "path": "/blog/envio-aereo-o-maritimo-desde-china/aereo-vs-maritimo-desde-china.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Envío aéreo o marítimo desde China: cómo se cobra, cuánto tarda y para qué conviene cada uno",
+    "bytes": 34306
+  },
+  {
+    "slug": "envio-aereo-o-maritimo-desde-china",
+    "file": "peso-volumetrico-envio-desde-china.webp",
+    "path": "/blog/envio-aereo-o-maritimo-desde-china/peso-volumetrico-envio-desde-china.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Cómo calcular el peso volumétrico de una caja para envío aéreo desde China",
+    "bytes": 33410
+  },
+  {
+    "slug": "envio-aereo-o-maritimo-desde-china",
+    "file": "entrega-mercancia-de-china-en-tu-negocio.webp",
+    "path": "/blog/envio-aereo-o-maritimo-desde-china/entrega-mercancia-de-china-en-tu-negocio.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "foto",
+    "alt": "Entrega de cajas importadas de China en la puerta de un negocio en México",
+    "bytes": 159358,
+    "source": "brand/fotos/entrega-cajas-en-negocio.jpg"
+  },
+  {
+    "slug": "envio-aereo-o-maritimo-desde-china",
+    "file": "envio-aereo-o-maritimo-desde-china-redes.webp",
+    "path": "/blog/envio-aereo-o-maritimo-desde-china/envio-aereo-o-maritimo-desde-china-redes.webp",
+    "width": 1080,
+    "height": 1080,
+    "kind": "redes",
+    "alt": "Envío aéreo o marítimo desde China, versión para redes",
+    "bytes": 104786
   }
 ]

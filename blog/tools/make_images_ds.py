@@ -58,7 +58,44 @@ def nota_aranceles():
                  "Aranceles a China 2026 para importar a México, versión para redes", hl=("aranceles",))
 
 
-NOTAS = {"aranceles-china-mexico-2026": nota_aranceles}
+def nota_envio():
+    s = "envio-aereo-o-maritimo-desde-china"
+    photo_cover(s, "envio-aereo-o-maritimo-desde-china.webp", "Envíos desde China",
+                "Envío aéreo o marítimo desde China: cuál te conviene",
+                "Cómo se cobra cada uno y cuánto tarda",
+                "bodega-cajas-montacargas.jpg",
+                "Envío aéreo o marítimo desde China: bodega con cajas listas para embarcar a México",
+                hl=("aéreo", "marítimo"), focus=(0.5, 0.5))
+    body = L.table(["", "Aéreo", "Marítimo consolidado"], [
+        ["Cómo se cobra", "Por kilo (real o volumétrico)", "Por metro cúbico"],
+        ["Tiempo", "Días", "Semanas"],
+        ["Conviene para", "Muestras y pedidos chicos", "Volumen y costo por pieza"],
+        ["Producto ideal", "Chico, caro o urgente", "Grande o pesado"],
+        ["Ojo con", "Cajas grandes y ligeras", "Planear con tiempo"],
+    ], [250, 415, 415], top=150, row_h=74)
+    L.save(s, "aereo-vs-maritimo-desde-china.webp",
+           L.frame("Envío aéreo o marítimo desde China", "Cómo se cobra, cuánto tarda y para qué conviene cada uno",
+                   body, "El costo exacto depende de tu producto y tu volumen: pide tu cotización."),
+           1200, 675, "Envío aéreo o marítimo desde China: cómo se cobra, cuánto tarda y para qué conviene cada uno", "infografia")
+    body = L.cards_row([
+        ("60×40×40", "Medidas de la caja", "En centímetros, ya empacada para exportar"),
+        ("16 kg", "Peso volumétrico", "60 × 40 × 40 ÷ 6,000 (carga aérea). Con ÷ 5,000 serían 19.2 kg"),
+        ("10 kg", "Peso real", "Lo que marca la báscula. Te cobran el mayor: 16 kg"),
+    ], top=160, h=330)
+    L.save(s, "peso-volumetrico-envio-desde-china.webp",
+           L.frame("Cómo calcular el peso volumétrico", "Ejemplo con una caja para envío aéreo desde China",
+                   body, "Divisor 6,000 en carga aérea general; muchas mensajerías exprés usan 5,000."),
+           1200, 675, "Cómo calcular el peso volumétrico de una caja para envío aéreo desde China", "infografia")
+    photo_body(s, "entrega-mercancia-de-china-en-tu-negocio.webp", "entrega-cajas-en-negocio.jpg",
+               "Entrega de cajas importadas de China en la puerta de un negocio en México", focus=(0.5, 0.5))
+    photo_social(s, "envio-aereo-o-maritimo-desde-china-redes.webp", "Envíos desde China",
+                 "Envío aéreo o marítimo desde China: cuál te conviene",
+                 "Por kilo o por metro cúbico, días o semanas",
+                 "puerto-contenedores-anochecer.jpg",
+                 "Envío aéreo o marítimo desde China, versión para redes", hl=("aéreo", "marítimo"))
+
+
+NOTAS = {"aranceles-china-mexico-2026": nota_aranceles, "envio-aereo-o-maritimo-desde-china": nota_envio}
 
 if __name__ == "__main__":
     for slug in sys.argv[1:] or NOTAS:
