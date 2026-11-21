@@ -199,7 +199,7 @@ Las notas nuevas siguen el **Compra en Fábricas Design System** (artifact https
 - 5 imágenes subidas a Lovable (commit dd1a2ef) y deploy hecho con autorización del usuario.
 - El deploy también publicó lo que habían hecho otras sesiones del usuario: precio de la Escuela a $15 USD/mes, infografía de cursos corregida, GA4, reseñas y cambios del catálogo de cajas.
 - D quedó published con published_at = now(). Se agregaron enlaces a D desde la pilar (Paso 7, fracción arancelaria), desde requisitos (sección de fracción arancelaria) y desde costos (sección de arancel). Las md5 de la base coinciden con el repo.
-- IndexNow y verificación en producción se pidieron al agente de Lovable.
+- Verificado en producción: D, sus 5 imágenes, las 3 notas que la enlazan, el sitemap y llms.txt responden 200, y /escuela muestra $15 USD. IndexNow devolvió 200 para 8 URLs. Falta pedir indexación de D en Search Console.
 
 **Cambio de precio de la Escuela (21 nov 2026, otra sesión):** ahora es $15 USD/mes y ya no existen los planes de $250 MXN/mes ni $2,500/año.
 - Esa sesión actualizó en la base las notas de cursos y de Eduardo. El repo se sincronizó con la base (md5 iguales).
