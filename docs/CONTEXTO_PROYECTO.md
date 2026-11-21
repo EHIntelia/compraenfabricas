@@ -178,7 +178,7 @@ Meta: LCP menor a 2.5 s. La nota de SEO de Lighthouse está en 100 en las págin
 
 **SEO (siguientes fases)**
 - [ ] Volver a medir velocidad de /clase y /joyeria con los clips.
-- [ ] Instalar GA4 cuando haya ID (conectarlo en `trackEvent()` de `src/lib/tracking.ts`).
+- [x] GA4 instalado y publicado el 21 nov (ID G-CMYV43J6S2, propiedad "Compra en Fábricas de China", cuenta EH Intelia). Vinculado con Search Console. Eventos: clic_whatsapp, clic_tomar_clase, begin_checkout, clic_joyeria, clic_skool, apartar_caja, view_item, search. "Cambios de página por historial" desactivado en la medición mejorada (los page_view los manda el sitio).
 - [ ] Revisar /clase y /productos en la prueba de resultados enriquecidos de Google.
 - [x] **Fase 2** publicada. Pendiente del agente del blog: convertir la nota pilar en guía principal (ver `docs/seo/fase-2/03-autor-y-pedido-blog.md`).
 - [ ] **Fase 3:** perfil de Google de JAICO, si califica.
