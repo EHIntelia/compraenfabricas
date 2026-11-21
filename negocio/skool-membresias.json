@@ -1,0 +1,31 @@
+{
+  "comunidad": "Escuela Negocios y Emprender",
+  "url": "https://www.skool.com/compraenfabricas",
+  "corte": "2026-11-21",
+  "fuente": "Correos 'New customer' de Skool en Gmail (no hay acceso directo al panel de Skool)",
+  "moneda": "USD",
+  "tipo_cambio_aprox_mxn": 18,
+  "membresias_pagadas": [
+    {"nombre": "Enrique Ortiz",        "plan": "mensual", "monto": 15, "alta": "2026-09-07", "dia_cobro": 7},
+    {"nombre": "Marco Zepeda",         "plan": "mensual", "monto": 15, "alta": "2026-09-09", "dia_cobro": 9},
+    {"nombre": "Carlos Guillen",       "plan": "mensual", "monto": 15, "alta": "2026-09-18", "dia_cobro": 18},
+    {"nombre": "Marco Felix Guevara",  "plan": "mensual", "monto": 15, "alta": "2026-10-04", "dia_cobro": 4},
+    {"nombre": "Arnulfo Yañes",        "plan": "mensual", "monto": 15, "alta": "2026-10-26", "dia_cobro": 26}
+  ],
+  "ventas_unicas_curso": [
+    {"nombre": "Carlos Guillen", "monto": 50, "fecha": "2026-09-18"},
+    {"nombre": "Diana González", "monto": 50, "fecha": "2026-09-27"}
+  ],
+  "resumen": {
+    "membresias_pagadas": 5,
+    "mrr_bruto_usd": 75,
+    "mrr_bruto_mxn_aprox": 1350,
+    "ventas_unicas_total_usd": 100,
+    "miembros_free": null
+  },
+  "pendientes_de_verificar": [
+    "Skool no manda correo cuando alguien cancela: confirmar en Skool > Settings > Billing / Members que las 5 siguen activas.",
+    "Número de miembros free: no viene en los correos; verlo en Skool > Members (total de miembros menos los 5 de pago).",
+    "El precio real en Skool es $15 USD/mes; el handoff dice $250 MXN/mes y $2,500/año. Alinear."
+  ]
+}
