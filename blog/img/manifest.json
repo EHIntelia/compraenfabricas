@@ -358,5 +358,56 @@
     "kind": "redes",
     "alt": "Cómo pagar a un proveedor en China, publicación para redes sociales",
     "bytes": 43750
+  },
+  {
+    "slug": "aranceles-china-mexico-2026",
+    "file": "aranceles-a-china-2026-mexico.webp",
+    "path": "/blog/aranceles-china-mexico-2026/aranceles-a-china-2026-mexico.webp",
+    "width": 1200,
+    "height": 630,
+    "kind": "portada",
+    "alt": "Aranceles a China 2026 en México: puerto con contenedores al atardecer",
+    "bytes": 72370
+  },
+  {
+    "slug": "aranceles-china-mexico-2026",
+    "file": "que-cambio-aranceles-a-china-2026.webp",
+    "path": "/blog/aranceles-china-mexico-2026/que-cambio-aranceles-a-china-2026.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Lo que cambió en los aranceles a China en 2026: 1,463 fracciones, 185 fracciones y 33.5% en paquetería",
+    "bytes": 33266
+  },
+  {
+    "slug": "aranceles-china-mexico-2026",
+    "file": "tasas-aranceles-a-china-2026.webp",
+    "path": "/blog/aranceles-china-mexico-2026/tasas-aranceles-a-china-2026.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Cuántas fracciones quedaron en cada tasa con los aranceles a China 2026",
+    "bytes": 24248
+  },
+  {
+    "slug": "aranceles-china-mexico-2026",
+    "file": "revision-en-aduana-contenedores.webp",
+    "path": "/blog/aranceles-china-mexico-2026/revision-en-aduana-contenedores.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "foto",
+    "alt": "Contenedores en patio de aduana mientras un inspector revisa la mercancía",
+    "bytes": 82758,
+    "source": "brand/fotos/patio-aduana-contenedores-inspector.jpg"
+  },
+  {
+    "slug": "aranceles-china-mexico-2026",
+    "file": "aranceles-a-china-2026-redes.webp",
+    "path": "/blog/aranceles-china-mexico-2026/aranceles-a-china-2026-redes.webp",
+    "width": 1080,
+    "height": 1080,
+    "kind": "redes",
+    "alt": "Aranceles a China 2026 para importar a México, versión para redes",
+    "bytes": 114914
   }
 ]
