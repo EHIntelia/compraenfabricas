@@ -132,7 +132,7 @@ Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (ra
 | C | cuanto-cuesta-importar-de-china | cuánto cuesta importar de China | Cuánto cuesta importar de China en 2026: ejemplo real | ~1,670 | **Publicada** (enlazada desde la pilar y desde productos) | 11 nov 2026 |
 | A | comprar-directo-de-fabrica-en-china | comprar directo de fábrica en China | Comprar directo de fábrica en China sin intermediarios | ~1,550 | **Publicada** (enlazada desde la pilar, Paso 2) | 13 nov 2026 |
 | E | como-pagar-a-un-proveedor-en-china | cómo pagar a un proveedor en China | Cómo pagar a un proveedor en China sin que te estafen | ~1,610 | **Publicada** (enlazada desde la pilar, Paso 5) | 13 nov 2026 |
-| D | aranceles-china-mexico-2026 | aranceles a China 2026 | Aranceles a China 2026: qué subió y cuánto pagas | ~1,990 | Borrador en la base (md5 6fef1a72…); imágenes en el repo, falta subirlas a Lovable. Revisión mensual | — |
+| D | aranceles-china-mexico-2026 | aranceles a China 2026 | Aranceles a China 2026: qué subió y cuánto pagas | ~2,030 | Borrador en la base (md5 7cf0080c…); imágenes en el repo, falta subirlas a Lovable. Revisión mensual | — |
 | H | envio-aereo-o-maritimo-desde-china | envío aéreo o marítimo desde China | — | — | Por escribir | — |
 | F | que-es-yiwu | Yiwu | — | — | Por escribir | — |
 | I | joyeria-de-acero-inoxidable | joyería de acero inoxidable | — | — | Por escribir | — |
@@ -174,10 +174,8 @@ Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (ra
 Las notas nuevas siguen el **Compra en Fábricas Design System** (artifact https://claude.ai/artifact/8C8JC157VBWdCqCS4mbui4).
 
 **Texto**
-- Voz de la marca, nunca en primera persona de Eduardo. A Eduardo se le nombra en tercera persona ("Eduardo te enseña…") y la marca habla en plural ("te explicamos").
-- Al lector se le habla de tú.
-- Sin guiones largos (—), sin la palabra "PDF" (se usa guía, material o documento) y sin "gratis".
-- La marca se escribe "Compra en fábricas".
+- **Excepción decidida por el usuario el 21 nov:** el blog va en **primera persona de Eduardo** ("en mi caso", "te explico"), aunque el design system pida voz de marca. Los servicios se nombran en plural ("nuestro equipo", "nosotros te lo traemos").
+- Del design system se mantiene: tutear al lector, sin guiones largos (—), sin la palabra "PDF" (se usa guía, material o documento) y sin "gratis".
 
 **Imágenes** (con `tools/make_images_ds.py`, plantillas en `tools/ds.py`)
 - Arial (Liberation Sans en este equipo) y logo real: `brand/logo-horizontal.png`, con versión blanca.
@@ -185,7 +183,7 @@ Las notas nuevas siguen el **Compra en Fábricas Design System** (artifact https
 - Badges en mayúsculas, rojo sobre durazno.
 - Fotos del banco del design system, redondeadas 24px. Las que usa cada nota se copian a `brand/fotos/` con nombre descriptivo.
 
-**Nota D (aranceles):** ya está escrita así.
+**Nota D (aranceles):** está en primera persona de Eduardo y usa las imágenes nuevas.
 - Fuentes oficiales leídas el 21 nov 2026 por el agente de Lovable, porque la red de esta sesión bloquea gob.mx:
   - DOF 29/12/2025: 1,463 fracciones, de 5% a 50%. La mayoría quedan en 25% (669) o 35% (612).
   - DOF 23/04/2026: 185 fracciones, de 5% a 35%.
@@ -193,6 +191,6 @@ Las notas nuevas siguen el **Compra en Fábricas Design System** (artifact https
   - RGCE 2026, regla 3.7.35: 33.5%, sin cambios en la 1a ni en la 2a modificación.
 - Pendiente: los decretos citan una modificación a la Tarifa del DOF del 26/03/2026 que SNICE no enlista. Revisarla en la revisión mensual.
 
-**Notas publicadas antes del design system:** las 7 notas de lote 1 y lote 2 (A, B, C, E) están escritas en primera persona de Eduardo y usan la imagen anterior (marca dibujada, fuente Inter). Falta decidir si se reescriben a la voz de la marca y si se regeneran sus imágenes.
+**Notas publicadas antes del design system:** se quedan en primera persona de Eduardo, como pidió el usuario. Lo único que no sigue el design system son sus imágenes (marca dibujada, fuente Inter) y algunos guiones largos en el texto. Se pueden regenerar si el usuario lo pide.
 
 **Vista previa del borrador D:** https://claude.ai/artifact/RDRQWUZNhkPCJoAb5Djtmi

@@ -3,7 +3,7 @@ title: "Aranceles a China 2026: qué subió y cuánto pagas al importar a Méxic
 slug: aranceles-china-mexico-2026
 meta_title: "Aranceles a China 2026: qué subió y cuánto pagas"
 meta_description: "Aranceles a China 2026 en México: 1,463 fracciones subieron hasta 50%, 185 más en abril y 33.5% en paquetería. Qué cambió y cómo calcular lo que pagas."
-excerpt: "Desde el 1 de enero de 2026 México subió los aranceles a 1,463 fracciones y en abril a 185 más. Te explicamos qué productos de China pagan más, cuánto y cómo saber el arancel exacto de lo que quieres traer."
+excerpt: "Desde el 1 de enero de 2026 México subió los aranceles a 1,463 fracciones y en abril a 185 más. Te explico qué productos de China pagan más, cuánto y cómo saber el arancel exacto de lo que quieres traer."
 category: como-importar
 tags: [aranceles a china 2026, arancel china mexico, ligie 2026, fraccion arancelaria, impuestos de importacion]
 focus_keyword: "aranceles a China 2026"
@@ -42,9 +42,9 @@ Los **aranceles a China 2026** subieron para **1,463 fracciones** desde el 1 de 
 
 *Actualizado: noviembre de 2026. Revisamos esta nota cada mes contra el Diario Oficial.*
 
-Si en 2026 te cotizaron un producto de China y la cuenta final no te cuadró, no fue tu imaginación. México subió los aranceles a cientos de productos que llegan de países sin tratado comercial, y China es el principal de ellos. Para quien importa para revender, ese solo número puede convertir un buen negocio en uno que no deja.
+Si en 2026 te cotizaron un producto de China y la cuenta final no te cuadró, no fue tu imaginación. México subió los aranceles a cientos de productos que llegan de países sin tratado comercial, y China es el principal de ellos. En más de 26 años importando de China he visto subir y bajar aranceles varias veces, y siempre pasa lo mismo: a quien importa para revender, ese solo número le puede convertir un buen negocio en uno que no deja.
 
-La buena noticia es que no todo subió y que se puede calcular antes de comprar. En esta nota te explicamos qué cambió en los aranceles a China en 2026, a qué productos les pega más, cuánto pagan los paquetes de Shein o Temu y cómo saber el arancel exacto de lo que quieres traer.
+La buena noticia es que no todo subió y que se puede calcular antes de comprar. En esta nota te explico qué cambió en los aranceles a China en 2026, a qué productos les pega más, cuánto pagan los paquetes de Shein o Temu y cómo saber el arancel exacto de lo que quieres traer.
 
 Si es tu primera importación, empieza por la [guía de cómo importar de China a México paso a paso](/blog/como-importar-de-china-a-mexico) y luego regresa aquí.
 
@@ -84,7 +84,7 @@ Es decir, casi 9 de cada 10 fracciones del decreto quedaron en **25% o 35%**. Si
 ![Cuántas fracciones quedaron en cada tasa con los aranceles a China 2026](/blog/aranceles-china-mexico-2026/tasas-aranceles-a-china-2026.webp "La mayoría de las fracciones quedaron en 25% o 35%.")
 
 :::consejo
-No te quedes con la tasa que viste en un video o en una nota. Pide la fracción exacta a tu agente aduanal y revisa la tasa vigente el día que vas a comprar. En 2026 la tarifa cambió dos veces y puede volver a cambiar.
+Lo que yo hago siempre: no me quedo con la tasa que vi en un video o en una nota. Pide la fracción exacta a tu agente aduanal y revisa la tasa vigente el día que vas a comprar. En 2026 la tarifa cambió dos veces y puede volver a cambiar.
 :::
 
 ## ¿Los aranceles de 2026 aplican solo a China?
@@ -135,11 +135,11 @@ Las modificaciones a esas reglas publicadas en 2026 (mayo y septiembre) no cambi
 3. **Confirma el origen.** Si tu producto es de China, paga la tasa general. Si lo compras a una fábrica de otro país con tratado, pregunta si puede darte certificado de origen.
 4. **Calcula tu costo completo.** Al arancel súmale el IVA de 16%, el derecho de trámite aduanero, el flete, el agente aduanal y el envío dentro de México.
 
-Este último paso es donde se decide si tu producto deja o no deja. Te explicamos cómo sumar todo con un ejemplo con números en [cuánto cuesta importar de China](/blog/cuanto-cuesta-importar-de-china).
+Este último paso es donde se decide si tu producto deja o no deja. Te explico cómo sumar todo con un ejemplo con números en [cuánto cuesta importar de China](/blog/cuanto-cuesta-importar-de-china).
 
 ## Ejemplo: cuánto cambia tu costo si tu producto pasó a 35%
 
-Un **ejemplo hipotético** para que veas el efecto. Supón un pedido con un valor en aduana de **$23,000 pesos** (mercancía más flete y seguro):
+Te pongo un **ejemplo hipotético** para que veas el efecto. Supón un pedido con un valor en aduana de **$23,000 pesos** (mercancía más flete y seguro):
 
 | Concepto | Arancel de 15% | Arancel de 35% |
 |---|---|---|
@@ -155,12 +155,14 @@ En este ejemplo, pasar de 15% a 35% sube **$5,336 pesos** lo que pagas en la adu
 - **Revisa la clasificación.** A veces un cambio de material o de presentación cambia la fracción. Hazlo siempre con tu agente aduanal y declarando la verdad: subvaluar o clasificar mal para pagar menos termina en multas.
 - **Junta volumen.** Traer más piezas por envío reparte mejor el flete y el agente aduanal, y te saca de la tasa de paquetería.
 - **Prueba otros productos.** No todo subió. Busca ideas de productos ligeros y con buen margen en [qué productos importar de China para revender](/blog/productos-para-importar-de-china), y revisa la fracción de cada uno.
-- **Cotiza tu envío con números reales.** En nuestro servicio de logística te damos el costo puesto en tu puerta antes de que pagues: [cotiza tu envío desde China](/logistica#cotizar).
+- **Cotiza tu envío con números reales.** Si ya tienes proveedor, en nuestro servicio de logística te damos el costo puesto en tu puerta antes de que pagues: [cotiza tu envío desde China](/logistica#cotizar).
 
 Si además te falta el padrón o no sabes qué papeles necesitas, revisa los [requisitos para importar de China a México](/blog/requisitos-para-importar-de-china-a-mexico).
 
-## Aprende a calcularlo con Eduardo
+## Aprende a hacer la cuenta antes de comprar
 
-Los aranceles cambian; lo que no cambia es la forma de hacer la cuenta antes de comprar. En la [clase en vivo con Eduardo](/clase) aprendes a clasificar tu producto, calcular tu costo puesto en México y decidir si conviene traerlo, resolviendo tus dudas en el momento. Eduardo lleva 26+ años importando de China y te enseña a hacerlo con números reales.
+Los aranceles cambian; lo que no cambia es la forma de hacer la cuenta antes de comprar. Entra a la [clase en vivo con Eduardo](/clase): ahí te enseño a clasificar tu producto, calcular tu costo puesto en México y decidir si conviene traerlo, con números reales y resolviendo tus dudas en el momento.
+
+Como siempre te digo: si puedes hacerlo solo, hazlo solo. Nosotros estamos para acelerarte, no para amarrarte.
 
 **Fuentes (consultadas el 21 de noviembre de 2026):** DOF, [Decreto por el que se reforman diversas fracciones arancelarias de la Tarifa de la LIGIE](https://dof.gob.mx/nota_detalle.php?codigo=5777376&fecha=29%2F12%2F2025) (29 de diciembre de 2025); DOF, [decreto de modificación de 185 fracciones](https://dof.gob.mx/nota_detalle.php?codigo=5785818&fecha=23/04/2026) (23 de abril de 2026); DOF, [decreto sobre la fracción 9803.00.01](https://dof.gob.mx/nota_detalle.php?codigo=5800977&fecha=13/10/2026) (13 de octubre de 2026); Secretaría de Economía, [Modificaciones a la TIGIE 2026](https://www.snice.gob.mx/cs/avi/snice/ligie.info22.mod26.html); SAT, [Reglas Generales de Comercio Exterior para 2026](https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rgce/rgce/ReglasGeneralesComercioExteriorpara2026.pdf), regla 3.7.35. El conteo de fracciones por tasa sale de la tabla del decreto de diciembre de 2025.
