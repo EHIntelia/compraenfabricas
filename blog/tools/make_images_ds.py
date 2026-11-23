@@ -112,7 +112,7 @@ def nota_yiwu():
            L.frame("Yiwu en números", "El mercado mayorista más grande de China",
                    body, "Fuentes: China Daily (marzo de 2026) y Travel China Guide."),
            1200, 675, "Yiwu en números: casi 80,000 puestos, más de 2.1 millones de productos y a unas 2 horas de Shanghái en tren", "infografia")
-    body = L.table(["", "Yiwu (mayorista)", "Fábrica"], [
+    body = L.table(["", "Puesto en Yiwu", "Fábrica directa"], [
         ["Variedad", "Muchísima", "Solo lo que produce"],
         ["Pedido mínimo", "Más bajo, por lo general", "Más alto"],
         ["Precio por pieza", "Buen precio de mayoreo", "El más bajo, con volumen"],

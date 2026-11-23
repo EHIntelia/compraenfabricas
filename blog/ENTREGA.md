@@ -134,7 +134,7 @@ Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (ra
 | E | como-pagar-a-un-proveedor-en-china | cómo pagar a un proveedor en China | Cómo pagar a un proveedor en China sin que te estafen | ~1,610 | **Publicada** (enlazada desde la pilar, Paso 5) | 13 nov 2026 |
 | D | aranceles-china-mexico-2026 | aranceles a China 2026 | Aranceles a China 2026: qué subió y cuánto pagas | ~2,030 | **Publicada** (enlazada desde la pilar, requisitos y costos). Revisión mensual contra el DOF | 21 nov 2026 |
 | H | envio-aereo-o-maritimo-desde-china | envío aéreo o marítimo desde China | Envío aéreo o marítimo desde China: cuál te conviene | ~1,820 | **Publicada** (enlazada desde la pilar, Paso 6, y desde costos) | 23 nov 2026 |
-| F | que-es-yiwu | Yiwu | Qué es Yiwu y cómo comprar en el mercado mayorista | ~1,730 | Borrador en la base (md5 2d4cf51d…); imágenes en el repo; **faltan datos de Eduardo** (4 [PENDIENTE] ocultos) | — |
+| F | que-es-yiwu | Yiwu | Qué es Yiwu y cómo comprar en el mercado mayorista | ~2,100 | Borrador completo con información real de Eduardo (md5 b5d42b0f…); publicando | — |
 | I | joyeria-de-acero-inoxidable | joyería de acero inoxidable | — | — | Por escribir | — |
 | J | feria-de-canton | Feria de Cantón | — | — | Por escribir (2–3 meses antes de la edición) | — |
 | G | errores-que-me-costaron-dinero-importando | errores al importar de China | — | — | Espera historias reales de Eduardo | — |
@@ -231,3 +231,13 @@ Las notas nuevas siguen el **Compra en Fábricas Design System** (artifact https
   3. Un error real de un cliente que compró en Yiwu y cómo se resolvió.
   4. Consejo práctico para la primera visita: dónde hospedarse, cuántos días, en qué orden recorrer y cuándo no ir.
 - **Al publicar:** enlazar desde la pilar (Paso 2, donde menciona Yiwu) y desde comprar directo de fábrica (sección de dónde encontrar fábricas).
+
+**F completada con información real de Eduardo (23 nov 2026):**
+- **Fuente:** `contenido/transcripts/transcripts_eduardo.md`, en la rama `claude/affectionate-faraday-guyqfo`, más lo que contó el usuario.
+- **Datos que entraron:**
+  - Ha ido a Yiwu y a Guangzhou, y tiene oficina en Guangzhou con compradores chinos.
+  - Anécdota real en Guangzhou: al confirmar un pedido de cadenas y antes del depósito, el proveedor dijo que el precio era "el puro cobre", sin baño, y hubo que renegociar. Otra vez canceló un pedido porque le cambiaron las condiciones.
+  - "Negociar con los chinos es un arte". "Puedes comprar como si fueras Walmart, desde poquita cantidad". Ir muchas veces y hacerse amigo de los chinos.
+  - Busca "poquita cantidad de algo que valga mucho dinero". Comprar en Yiwu sale de 20% a 30% más barato que en las plataformas chinas en línea. China va 14 horas adelante.
+- **Corrección de enfoque:** Eduardo describe los puestos como "tiendas y showrooms de fábrica". La nota ahora dice que hay tiendas de fábrica y también revendedores.
+- **Diferencia de números:** Eduardo dice "220 mil tienditas" en sus videos; la nota usa la cifra de China Daily (casi 80,000 puestos).

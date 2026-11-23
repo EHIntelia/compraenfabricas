@@ -1,13 +1,14 @@
-INSERT INTO public.posts (title, slug, meta_title, meta_description, excerpt, content, cover_image, cover_alt, category, tags, author, published_at, reading_time, faq, howto, focus_keyword, featured, status) VALUES ($t$Qué es Yiwu: el mercado mayorista más grande de China y cómo comprar ahí$t$, $t$que-es-yiwu$t$, $t$Qué es Yiwu y cómo comprar en el mercado mayorista$t$, $t$Qué es Yiwu, el mercado mayorista más grande de China: qué venden, para quién conviene, pedidos mínimos, cómo pagar y enviar a México sin que te engañen.$t$, $t$Yiwu es la ciudad de los mayoristas: casi 80,000 puestos con millones de productos en un solo lugar. Te explico qué es, para quién conviene, en qué se diferencia de comprar a una fábrica y cómo traer tu mercancía a México.$t$, $md$:::respuesta
-**Yiwu** es una ciudad del este de China con el mercado mayorista más grande del país: casi **80,000 puestos** y millones de productos de surtido general en un solo lugar. Conviene para traer **variedad** con pedidos mínimos más bajos que los de una fábrica. Valida cada puesto y revisa la mercancía antes de pagar.
+INSERT INTO public.posts (title, slug, meta_title, meta_description, excerpt, content, cover_image, cover_alt, category, tags, author, published_at, reading_time, faq, howto, focus_keyword, featured, status) VALUES ($t$Qué es Yiwu: el mercado mayorista más grande de China y cómo comprar ahí$t$, $t$que-es-yiwu$t$, $t$Qué es Yiwu y cómo comprar en el mercado mayorista$t$, $t$Qué es Yiwu, el mercado mayorista más grande de China: qué venden, para quién conviene, pedidos mínimos, cómo pagar y enviar a México sin que te engañen.$t$, $t$Yiwu es la ciudad de los mayoristas: casi 80,000 puestos con millones de productos en un solo lugar. Te cuento lo que he visto caminándolo: qué es, para quién conviene, cómo negociar ahí y cómo traer tu mercancía a México.$t$, $md$:::respuesta
+**Yiwu** es una ciudad del este de China con el mercado mayorista más grande del país: casi **80,000 puestos** y millones de productos de surtido general en un solo lugar. Muchos puestos son showrooms de fábrica: conviene para traer **variedad** y comprar poca cantidad. Valida cada puesto y revisa la mercancía antes de pagar.
 :::
 
 *Actualizado: noviembre de 2026.*
 
 Cuando alguien me dice "quiero importar de China pero no sé qué traer", casi siempre le hablo de Yiwu. Es el lugar donde ves, en unos cuantos pasillos, lo que en México está en cientos de tiendas: juguetes, bisutería, regalos, decoración, artículos de fiesta, papelería, cocina. Todo a precio de mayoreo.
 
+He caminado Yiwu y Guangzhou muchas veces, y tenemos oficina en Guangzhou con compradores chinos. La primera impresión de Yiwu no se olvida: pasillos y pisos interminables donde encuentras desde una canica, un pin o un alfiler hasta un carro, una moto o material de construcción.
 
-En más de 26 años importando de China, una de las cosas que más repito es esta: **Yiwu no es una fábrica, es un supermercado de mayoristas**. Entender esa diferencia te ahorra mucho dinero. En esta nota te explico qué es Yiwu, qué se compra ahí, para quién conviene, en qué se diferencia de ir directo a una fábrica y cómo traer tu mercancía a México.
+En más de 26 años importando de China, una de las cosas que más repito es esta: **en Yiwu puedes comprar como si fueras Walmart, desde poquita cantidad**, pero tienes que saber moverte. Ahí conviven tiendas de fábrica y revendedores, y saber con quién estás tratando te ahorra mucho dinero. En esta nota te explico qué es Yiwu, qué se compra ahí, para quién conviene, en qué se diferencia de ir directo a una fábrica y cómo traer tu mercancía a México.
 
 Si todavía no conoces el proceso completo, empieza por la [guía de cómo importar de China a México paso a paso](/blog/como-importar-de-china-a-mexico).
 
@@ -33,12 +34,13 @@ Yiwu es el reino del **surtido general** y de los productos de bajo precio por p
 
 Lo que hace especial a Yiwu no es un producto: es que **encuentras todo junto**. Si tienes una tienda de regalos, una papelería o vendes por redes, en un mismo viaje puedes armar un surtido completo.
 
+En mis recorridos me he encontrado pasillos completos de un solo producto: puros ventiladores, puros relojes, puros rastrillos, luces navideñas, básculas, secadoras de pelo, rasuradoras, lámparas, cosas de pesca, herramientas y electrónica. Lo que yo busco ahí es gente que me venda **poquita cantidad de algo que valga mucho dinero**, que se pueda traer en avión y venderse rápido en plataformas en México. Y en precio, por lo que he visto, comprando ahí directo sale entre un 20 y un 30 por ciento más barato que en las plataformas chinas en línea.
 
 ## ¿Yiwu es fábrica o mayorista?
 
-Aquí está lo importante. **La mayoría de los puestos de Yiwu son mayoristas o salas de exhibición.** Algunos tienen su propia fábrica detrás; otros le compran a varias fábricas y te revenden. Las dos cosas pueden estar bien, siempre que sepas con quién estás tratando.
+Aquí está lo importante. En Yiwu hay **tiendas y showrooms de fábrica** que te venden directo, y también hay **revendedores** que le compran a varias fábricas. Las dos cosas pueden estar bien, siempre que sepas con quién estás tratando y cuánto margen hay en medio.
 
-| | Yiwu (mayorista) | Fábrica |
+| | Puesto en Yiwu | Fábrica directa |
 |---|---|---|
 | **Variedad** | Muchísima, de muchos productos | Solo lo que produce |
 | **Pedido mínimo** | Más bajo, por lo general | Más alto |
@@ -67,6 +69,7 @@ No te conviene tanto si quieres un solo producto en gran volumen, si necesitas t
 En Yiwu, pide siempre el pedido mínimo **por modelo y por color**. Muchos puestos te dicen un mínimo que suena bajo, pero luego resulta que es por cada color. Y toma foto de cada producto con su código y su precio: después de 20 puestos, todo se te revuelve.
 :::
 
+Y algo que tienes que saber: **negociar con los chinos es un arte**, porque te dicen que sí, luego que no, y luego te cambian las condiciones. Me pasó en Guangzhou con un pedido grande de cadenas. Ya tenía el precio, le dije cuántas piezas quería de cada modelo, y justo cuando le iba a dar el depósito me dijo: "ah, pero espérame, ese precio no incluye el baño, es el puro cobre". Tuve que negociar todo otra vez. Otra vez cancelé un pedido completo porque me cambiaron las condiciones de un día para otro. Por eso, antes de pagar, confirma por escrito qué incluye el precio: material, acabado, empaque y cantidades.
 
 ## ¿Cómo se compra en Yiwu? Paso a paso
 
@@ -92,6 +95,7 @@ El paso 5 es el que más se complica si estás solo. Por eso en mi caso tengo **
 
 El mercado abre de día y cierra en la tarde; los horarios cambian según la fuente y la temporada, y cierra varios días por el **Año Nuevo chino**. Confirma los horarios antes de viajar.
 
+Mi consejo si vas por tu cuenta: Yiwu no se entiende en un viaje. Hay que ir varias veces hasta que sepas cómo moverte, cómo pagar, cómo transportarte, cómo hablar con los chinos y que no te frieguen. Y hazte amigo de ellos: una vez que un chino te tiene confianza, te da precios para que hagas negocio en cualquier cosa. Toma en cuenta también que China va 14 horas adelante del centro de México, así que coordinar con tu negocio desde allá tiene su chiste.
 
 ## ¿Tengo que ir a Yiwu para comprar ahí?
 
@@ -109,11 +113,12 @@ Si quieres que nosotros lo traigamos hasta tu puerta, [cotiza tu envío desde Ch
 
 ## Errores comunes al comprar en Yiwu
 
-1. **Creer que todo puesto es fábrica.** La mayoría son mayoristas; está bien, pero que lo sepas.
+1. **Creer que todo puesto es fábrica.** Hay tiendas de fábrica y hay revendedores; pregunta y valida.
 2. **No preguntar el mínimo por color.** El mínimo "bajo" se multiplica.
 3. **No anotar nada.** Sin foto, código y precio de cada producto, no hay forma de cerrar el pedido.
 4. **No revisar antes de embarcar.** Si la mercancía sale mal, ya en México es tarde.
 5. **Olvidar el arancel.** Productos baratos en Yiwu pueden pagar 25% o 35% de arancel al entrar a México.
+6. **No confirmar qué incluye el precio.** Material, acabado, empaque y cantidades, por escrito, antes del depósito.
 
 ## Aprende a comprar en China conmigo
 
@@ -122,5 +127,5 @@ En la [clase en vivo con Eduardo](/clase) te enseño a elegir productos, encontr
 Como siempre te digo: si puedes hacerlo solo, hazlo solo. Nosotros estamos para acelerarte, no para amarrarte.
 
 **Fuentes (consultadas el 23 de noviembre de 2026):** número de puestos y productos del Yiwu International Trade City según [China Daily](https://regional.chinadaily.com.cn/ezhejiang/2026-03/01/c_1163126.htm) (marzo de 2026); tiempos de tren Shanghái a Yiwu según [Travel China Guide](https://travelchinaguide.com/cityguides/shanghai/yiwu.htm). Los horarios del mercado varían según la fuente: confírmalos antes de viajar.
-$md$, $t$/blog/que-es-yiwu/que-es-yiwu-mercado-mayorista-china.webp$t$, $t$Qué es Yiwu: pasillo del mercado mayorista de Yiwu en China con compradores$t$, $t$como-importar$t$, ARRAY[$t$yiwu$t$,$t$mercado de yiwu$t$,$t$mayoreo china$t$,$t$surtido general$t$,$t$comprar en china$t$]::text[], 'eduardo-hernandez', NULL, 8, $j$[{"q": "¿Qué es Yiwu?", "a": "Es una ciudad de la provincia de Zhejiang, en el este de China, famosa por su mercado mayorista, el Yiwu International Trade City. Ahí se juntan casi 80,000 puestos con millones de productos de surtido general: juguetes, bisutería, regalos, artículos para el hogar, papelería, decoración y mucho más."}, {"q": "¿Qué se compra en Yiwu?", "a": "Sobre todo surtido general y productos de bajo precio por pieza: bisutería, accesorios, juguetes, artículos de fiesta, decoración, papelería, cocina y hogar, artículos de temporada y regalos. Es ideal para quien quiere variedad en una sola compra."}, {"q": "¿Yiwu es fábrica o mayorista?", "a": "La mayoría de los puestos son mayoristas o salas de exhibición. Algunos tienen fábrica detrás y otros solo revenden. Por eso conviene preguntar y validar antes de pagar, igual que con cualquier proveedor en China."}, {"q": "¿Cuál es el pedido mínimo en Yiwu?", "a": "Depende de cada puesto y de cada producto. En general, los pedidos mínimos en Yiwu suelen ser más bajos que los de una fábrica, y por eso es buen lugar para traer variedad sin comprar miles de piezas de un solo producto. Pregunta siempre el mínimo por modelo y por color."}, {"q": "¿Cómo llego a Yiwu desde Shanghái?", "a": "En tren de alta velocidad desde la estación de Shanghái Hongqiao, en alrededor de una hora y media a dos horas. Desde la estación de Yiwu al mercado hay taxi y transporte público."}, {"q": "¿Necesito ir a Yiwu para comprar ahí?", "a": "No necesariamente. Puedes comprar con alguien de confianza que esté en China, que vaya a los puestos, revise la mercancía y junte tu pedido. Lo importante es que alguien vea la mercancía antes de que pagues."}]$j$::jsonb, NULL, $t$Yiwu$t$, false, 'draft')
+$md$, $t$/blog/que-es-yiwu/que-es-yiwu-mercado-mayorista-china.webp$t$, $t$Qué es Yiwu: pasillo del mercado mayorista de Yiwu en China con compradores$t$, $t$como-importar$t$, ARRAY[$t$yiwu$t$,$t$mercado de yiwu$t$,$t$mayoreo china$t$,$t$surtido general$t$,$t$comprar en china$t$]::text[], 'eduardo-hernandez', NULL, 10, $j$[{"q": "¿Qué es Yiwu?", "a": "Es una ciudad de la provincia de Zhejiang, en el este de China, famosa por su mercado mayorista, el Yiwu International Trade City. Ahí se juntan casi 80,000 puestos con millones de productos de surtido general: juguetes, bisutería, regalos, artículos para el hogar, papelería, decoración y mucho más."}, {"q": "¿Qué se compra en Yiwu?", "a": "Sobre todo surtido general y productos de bajo precio por pieza: bisutería, accesorios, juguetes, artículos de fiesta, decoración, papelería, cocina y hogar, artículos de temporada y regalos. Es ideal para quien quiere variedad en una sola compra."}, {"q": "¿Yiwu es fábrica o mayorista?", "a": "Hay de los dos. Muchos puestos son tiendas o showrooms de fábrica que te venden directo, y otros son revendedores. Por eso conviene preguntar y validar antes de pagar, igual que con cualquier proveedor en China."}, {"q": "¿Cuál es el pedido mínimo en Yiwu?", "a": "Depende de cada puesto y de cada producto. En general, los pedidos mínimos en Yiwu suelen ser más bajos que los de una fábrica, y por eso es buen lugar para traer variedad sin comprar miles de piezas de un solo producto. Pregunta siempre el mínimo por modelo y por color."}, {"q": "¿Cómo llego a Yiwu desde Shanghái?", "a": "En tren de alta velocidad desde la estación de Shanghái Hongqiao, en alrededor de una hora y media a dos horas. Desde la estación de Yiwu al mercado hay taxi y transporte público."}, {"q": "¿Necesito ir a Yiwu para comprar ahí?", "a": "No necesariamente. Puedes comprar con alguien de confianza que esté en China, que vaya a los puestos, revise la mercancía y junte tu pedido. Lo importante es que alguien vea la mercancía antes de que pagues."}]$j$::jsonb, NULL, $t$Yiwu$t$, false, 'draft')
 ON CONFLICT (slug) DO UPDATE SET title = EXCLUDED.title, meta_title = EXCLUDED.meta_title, meta_description = EXCLUDED.meta_description, excerpt = EXCLUDED.excerpt, content = EXCLUDED.content, cover_image = EXCLUDED.cover_image, cover_alt = EXCLUDED.cover_alt, category = EXCLUDED.category, tags = EXCLUDED.tags, author = EXCLUDED.author, published_at = EXCLUDED.published_at, reading_time = EXCLUDED.reading_time, faq = EXCLUDED.faq, howto = EXCLUDED.howto, focus_keyword = EXCLUDED.focus_keyword, featured = EXCLUDED.featured, status = EXCLUDED.status;
