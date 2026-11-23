@@ -118,7 +118,7 @@ Lo importante no es comprarle siempre a la fábrica: es **saber a quién le est�
 
 - **Plataformas mayoristas chinas:** sirven para comparar, pero ahí conviven fábricas, tradings y revendedores. Aplica las 7 señales.
 - **Ferias:** en ellas ves la mercancía en persona y hablas con quien la hace.
-- **Ciudades especializadas:** en China muchas ciudades se especializan en un tipo de producto. Ir a la ciudad correcta te acerca a la fábrica.
+- **Ciudades especializadas:** en China muchas ciudades se especializan en un tipo de producto. Ir a la ciudad correcta te acerca a la fábrica. Para surtido general, la referencia es [Yiwu, el mercado mayorista más grande de China](/blog/que-es-yiwu).
 - **Gente en China:** es lo que más funciona, porque te ahorras el idioma y las historias.
 
 ## Errores al buscar comprar directo de fábrica

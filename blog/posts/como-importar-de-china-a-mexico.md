@@ -89,7 +89,7 @@ Dónde buscar:
 
 - **Plataformas mayoristas chinas.** Sirven para comparar precios y ver qué existe. Filtra por fábricas verificadas, pero no te fíes solo de la etiqueta.
 - **Ferias.** La [Canton Fair](https://www.cantonfair.org.cn/) en Guangzhou es la feria de comercio más grande de China. Ahí ves la mercancía en persona.
-- **Yiwu.** Es la ciudad de los mayoristas: hay de todo, en un solo lugar y a precio de mayoreo. Ideal para surtido general.
+- **Yiwu.** Es la ciudad de los mayoristas: hay de todo, en un solo lugar y a precio de mayoreo. Ideal para surtido general. Te cuento cómo comprar ahí en [qué es Yiwu](/blog/que-es-yiwu).
 - **Gente en China.** Es lo que más funciona. En mi caso tengo equipo allá: **chinos que negocian con chinos**. A ellos no les cuentan la misma historia que a un extranjero.
 
 Cómo saber si es fábrica: pregunta si tienen línea de producción propia, pide video de la planta trabajando y fíjate si te pueden hacer cambios de color, empaque o logo. Un revendedor casi nunca puede. Te doy las 7 señales completas y cómo revisar su licencia en [comprar directo de fábrica en China](/blog/comprar-directo-de-fabrica-en-china).
