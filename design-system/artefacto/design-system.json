@@ -1,0 +1,85 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "Other": {
+      "files": {},
+      "name": "Other",
+      "order": []
+    },
+    "notes": {
+      "files": {},
+      "name": "notes",
+      "order": []
+    },
+    "photos": {
+      "files": {
+        "productos/peluche-oso-mono-rojo.jpg": {
+          "name": "productos/peluche-oso-mono-rojo.jpg",
+          "blob": "ec53bf4870bed8962e80d86290b142af",
+          "size": 463474,
+          "type": "image/jpeg"
+        },
+        "productos/sudadera-roja-capucha.jpg": {
+          "name": "productos/sudadera-roja-capucha.jpg",
+          "blob": "f259e4fd878800ffeaf753b2d6c3adf7",
+          "size": 396201,
+          "type": "image/jpeg"
+        },
+        "productos/silla-oficina-malla-negra.jpg": {
+          "name": "productos/silla-oficina-malla-negra.jpg",
+          "blob": "a770f1e1e2230defe3b830661065d816",
+          "size": 267226,
+          "type": "image/jpeg"
+        }
+      },
+      "name": "photos",
+      "order": [
+        "productos/peluche-oso-mono-rojo.jpg",
+        "productos/sudadera-roja-capucha.jpg",
+        "productos/silla-oficina-malla-negra.jpg"
+      ]
+    },
+    "sellos": {
+      "files": {},
+      "name": "sellos",
+      "order": []
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-10-15T19:32:01.008Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": [
+      "project/ui_kits/landing/README.md"
+    ]
+  },
+  "groups": [
+    "Other",
+    "notes",
+    "photos",
+    "sellos"
+  ],
+  "layout": "files",
+  "libraries": [
+    {
+      "name": "react",
+      "version": "18"
+    },
+    {
+      "name": "react-dom",
+      "version": "18"
+    }
+  ],
+  "namespace": "CompraEnFBricasDesignSystem_e5b2dc",
+  "sections": {},
+  "title": "Compra en Fábricas Design System",
+  "lastChange": {
+    "by": "Claude",
+    "at": "2026-11-20T22:35:00Z",
+    "via": "Claude Code",
+    "note": "Se agregan 3 fotos de producto (peluche, sudadera, silla) en photos/productos para simular fichas de proveedor"
+  }
+}
