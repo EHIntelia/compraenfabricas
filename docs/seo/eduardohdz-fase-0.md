@@ -213,3 +213,40 @@ Ojo con canibalizar dentro del sitio:
 - [PENDIENTE: registrador del dominio]
 - [PENDIENTE: fotos nuevas de Eduardo]
 - [PENDIENTE: fechas reales de la clase ADN para el schema Event]
+
+---
+
+## 9. Respuestas del usuario (21 nov) y avance de la Fase 1 (23 nov)
+
+**Respuestas:**
+- El sitio es solo para darle autoridad a Eduardo; por ahora no se vende nada.
+- /clase-gratuita sigue vigente.
+- Las redes de NADIE ya no están vigentes: las únicas redes son las de Compra en Fábricas.
+- El dominio está en GoDaddy.
+- De 0 a 1 Millón es gratis en vivo; las grabaciones están en Skool (15 USD al mes).
+- Se migra a TanStack Start.
+- Search Console: se agrega como propiedad de dominio en la misma cuenta.
+
+**Decisión sobre noindex** (la dejó el usuario a mi criterio):
+- Se ocultan a Google: /reto, /reto-*, /preventa-curso, /aliados*, /diagnostico-evergreen y la página de gracias.
+- No se borra ni se redirige ninguna.
+
+**Migración (Lovable, commit `c9f14f3`):**
+- Plan aprobado. La migración arrancó a las 18:46 UTC y terminó a las 19:03 UTC.
+- Pruebas que reporta Lovable:
+  - TypeScript sin errores.
+  - SSR: 32 de 32 rutas responden 200.
+  - Sin errores al hidratar.
+  - Las 7 edge functions siguen en Supabase, sin cambios.
+  - 404 real.
+  - Pixel con 2 IDs y un PageView por navegación (corrigió un doble conteo).
+  - El parámetro `ref` sigue llegando a los links de Hotmart.
+  - Panel probado con sesión.
+  - Home y /clase-gratuita comparadas con el sitio publicado.
+- Revisado en el código:
+  - `src/lib/seo.ts` con `SITE_URL = https://eduardohdz.com`.
+  - `head()` por ruta.
+  - /trabaja-conmigo con canonical a /asesoria.
+  - El panel con `ssr: false` y `noindex`.
+- Salvedad: `/diagnostico` y `/diagnostico-evergreen` quedaron con `ssr: false`, porque el quiz guarda el avance en el navegador. El servidor manda su title y description, pero no texto. En la Fase 2 hay que agregar texto renderizado en servidor alrededor del quiz.
+- [PENDIENTE: la vista previa pide sesión (401), así que el HTML crudo de las 25 rutas se verifica en vivo después de publicar o con capturas del usuario. La captura automática del proyecto mostró "Not found" en la home: hay que revisarlo en el editor antes de publicar.]
