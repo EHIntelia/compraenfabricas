@@ -1,0 +1,38 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1350px;font-family:Inter,sans-serif;background:#FFF8F5;color:#1A1A1A;overflow:hidden;position:relative}
+.top{height:440px;background:linear-gradient(135deg,#F97316,#DC2626);padding:56px 80px;color:#fff;position:relative;overflow:hidden}
+.chip{display:inline-block;background:#fff;border-radius:20px;padding:16px 24px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.chip img{height:64px;display:block}
+h1{font-size:84px;font-weight:900;letter-spacing:-2.5px;margin-top:44px;line-height:1}
+.sub{font-size:28px;font-weight:600;opacity:.95;margin-top:14px}
+.card{position:absolute;left:60px;right:60px;top:372px;background:#fff;border-radius:36px;padding:44px 60px;box-shadow:0 24px 60px rgba(220,38,38,.16);border:1px solid #F3E6DE}
+.bank{display:flex;align-items:center;justify-content:space-between;background:#FFF8F5;border:2px solid #FCE4DC;border-radius:22px;padding:22px 30px;margin-bottom:10px}
+.bank .lab{margin:0}
+.bank .name{font-size:52px;font-weight:900;letter-spacing:-1px;line-height:1}
+.bank .country{font-size:24px;font-weight:700;color:#6B6B6B;margin-top:6px}
+.row{padding:22px 0;border-bottom:2px dashed #EADCD3}.row:last-child{border:none;padding-bottom:0}
+.lab{font-size:20px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#6B6B6B}
+.val{font-size:40px;font-weight:800;margin-top:6px;letter-spacing:-.5px;font-variant-numeric:tabular-nums}
+.big{font-size:54px;background:linear-gradient(90deg,#F97316,#DC2626);-webkit-background-clip:text;color:transparent;letter-spacing:1px}
+.badge{display:inline-block;background:#FCE4DC;color:#DC2626;font-weight:800;font-size:18px;letter-spacing:1.5px;padding:6px 14px;border-radius:999px;margin-left:12px;vertical-align:middle}
+.two{display:flex;gap:40px}.two>div{flex:1}
+.foot{position:absolute;left:80px;right:80px;bottom:48px;display:flex;align-items:center;gap:18px;font-size:23px;color:#6B6B6B;font-weight:600;line-height:1.4}
+.dot{flex:none;width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#F97316,#DC2626);display:grid;place-items:center;color:#fff;font-weight:900;font-size:28px}
+</style></head><body>
+<div class="top">
+ <div class="chip"><img src="logo-horizontal.png" alt="Compra en fábricas"></div>
+ <h1>Datos de pago</h1>
+ <div class="sub">Transferencia o depósito en pesos mexicanos</div>
+</div>
+<div class="card">
+ <div class="bank"><div><div class="lab">Banco</div><div class="name">BBVA</div></div><div class="country">BBVA México</div></div>
+ <div class="row"><div class="lab">Titular</div><div class="val">Angel Eduardo Hernández Guerra</div></div>
+ <div class="row"><div class="lab">CLABE interbancaria <span class="badge">SPEI</span></div><div class="val big">012 580 01555349612 7</div></div>
+ <div class="row"><div class="lab">Tarjeta de débito BBVA <span class="badge">OXXO · Practicaja</span></div><div class="val">4152 3145 1466 1902</div></div>
+ <div class="row two"><div><div class="lab">Número de cuenta</div><div class="val">155 534 9612</div></div><div><div class="lab">Código SWIFT</div><div class="val">BCMRMXMMPYM</div></div></div>
+</div>
+<div class="foot"><div class="dot">✓</div><div>Al pagar, mándanos tu comprobante por WhatsApp<br>para confirmar tu pedido.</div></div>
+</body></html>
