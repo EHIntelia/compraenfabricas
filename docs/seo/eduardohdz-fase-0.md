@@ -280,3 +280,50 @@ Publicada con OK del usuario (deploy `5abcf320`, commit `c9f14f3`). Antes de pub
 | `/de-0-a-1-millon` | 49 → 81 | 6.2 → 2.9 s | 2.0 → 1.6 MB |
 
 El LCP de la home empeoró porque ahora el elemento LCP es `eduardo-portrait.png` (1.8 MB); antes era un fondo decorativo. Se corrige en la Fase 2 con WebP y srcset (también `nadie-community.jpg`, de 1.8 MB).
+
+---
+
+## 10. Fase 2 publicada (23 nov 2026)
+
+**Commits:**
+- Tanda 1 (SEO técnico): `b3bf041`.
+- Tanda 2 (velocidad): `9788743`, costó 11.1 créditos.
+- Deploy `6cafee57`, con OK del usuario. Antes se revisó `list_edits`: solo estaban estas dos tandas.
+
+**Verificación en vivo:**
+- `/sitemap.xml` responde 200 `application/xml`, con 13 URLs y lastmod.
+- `/robots.txt` responde 200 `text/plain`:
+  - `*` y GPTBot, OAI-SearchBot, ChatGPT-User, Google-Extended, PerplexityBot, ClaudeBot, Claude-SearchBot, Bingbot y Googlebot con `Allow: /`;
+  - `Disallow: /panel`;
+  - línea `Sitemap:`.
+- `/llms.txt` responde 200 `text/plain`, con el texto acordado.
+- `/asesoria/` → 301 → `/asesoria`; la query string se conserva.
+- 13 rutas indexables con su title y description nuevos, canonical propia, H1 y texto.
+- `/diagnostico` ya trae en el HTML del servidor 152 palabras (antes 12), con su H1 y la sección "¿Qué mide el diagnóstico de negocio?".
+- 9 rutas con `noindex, follow`.
+- El panel conserva `noindex, nofollow`.
+- La 404 está en español, con status 404 y `noindex`. Detalle menor: trae 2 `<title>` (el de la raíz y el de la página); se corrige en la siguiente tanda.
+- El menú y el footer tienen `<a href>` reales (10 rutas internas enlazadas desde la home).
+- 22 imágenes WebP en la home y precarga con `fetchPriority="high"` para la imagen del hero.
+- Navegador real:
+  - sin errores de JavaScript;
+  - Hotmart conserva `src`;
+  - el Pixel deja el stub en fila y carga fbevents con los 2 IDs;
+  - el quiz recorre las 15 preguntas hasta "Analizando tu negocio".
+
+**Lighthouse móvil (Fase 0 → migración → Fase 2):**
+
+| Página | Perf | LCP | Peso |
+|---|---|---|---|
+| `/` | 44 → 58 → **82** | 7.4 → 17.8 → **3.3 s** | 4.7 → 4.3 → **0.7 MB** |
+| `/asesoria` | 49 → 62 → **82** | 9.8 → 7.4 → **3.5 s** | 2.3 → 1.9 → **0.6 MB** |
+| `/diagnostico` | 51 → 77 → **79** | 6.9 → 3.3 → **4.0 s** | 1.0 → 0.6 → 0.6 MB |
+| `/sube-tus-ventas` | 48 → 58 → **81** | 8.8 → 6.8 → **3.1 s** | 2.0 → 1.2 → **0.7 MB** |
+| `/de-0-a-1-millon` | 49 → 81 → **83** | 6.2 → 2.9 → **3.0 s** | 2.0 → 1.6 → 1.6 MB |
+
+**Pendiente de velocidad** (todavía sin llegar a la meta de 2.5 s):
+- En la home, el LCP es el fondo decorativo `results-team-960.webp` (TTFB 0.76 s y carga 1.4 s). Opciones: un fondo más chico o borroso, o un degradado en CSS.
+- `/diagnostico` subió a 4.0 s porque ahora monta el quiz en el cliente.
+- `/asesoria` tiene SEO 92 por un texto de enlace genérico.
+
+**"Edit with Lovable":** no se quita desde el código. Se oculta en los ajustes de publicación del proyecto (requiere plan Pro o superior).
