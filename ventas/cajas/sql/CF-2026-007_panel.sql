@@ -14,3 +14,12 @@ select 'CF-038', 'YJ12', 'YJ12 Lentes Bluetooth', 93, 17847.63, 'vendida', '2026
  'Orden CF-2026-007 · Rocío Ríos (Zacatecas). Catálogo: 100 pzas / $19,191; llegaron 93 y se cobraron 93 × $191.91.'
 from v
 returning id, codigo, estado, venta_id;
+
+-- 23-nov-2026: la clienta eligió la opción A de envío.
+-- El trigger sync_caja_venta (en cajas) reescribe ventas.notas en cada INSERT/UPDATE de cajas,
+-- así que primero se toca cajas y al final las notas de la venta.
+update cajas set fecha_aproximada = false,
+  notas = 'Orden CF-2026-007 · Rocío Ríos (Zacatecas). Catálogo: 100 pzas / $19,191; llegaron 93 y se cobraron 93 × $191.91. Envío opción A (DHL al final del día) $778.56; total pagado $18,626.19.'
+  where id = '9cb2446d-994c-45ff-a8b5-ada7057e792f';
+update ventas set notas = 'Caja CF-038 YJ12 Lentes Bluetooth (93 pzas recibidas de 100; se cobran solo las 93 a $191.91). Orden CF-2026-007, acuerdo del 18-nov-2026. Envío elegido: opción A, DHL Express con seguro al final del día, $778.56 (pass-through, no incluido en este monto). Total pagado por la clienta: $18,626.19.'
+  where id = 'c493c3dc-1404-4ac5-b5f9-362b598e96a4';
