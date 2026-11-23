@@ -133,7 +133,7 @@ Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (ra
 | A | comprar-directo-de-fabrica-en-china | comprar directo de fábrica en China | Comprar directo de fábrica en China sin intermediarios | ~1,550 | **Publicada** (enlazada desde la pilar, Paso 2) | 13 nov 2026 |
 | E | como-pagar-a-un-proveedor-en-china | cómo pagar a un proveedor en China | Cómo pagar a un proveedor en China sin que te estafen | ~1,610 | **Publicada** (enlazada desde la pilar, Paso 5) | 13 nov 2026 |
 | D | aranceles-china-mexico-2026 | aranceles a China 2026 | Aranceles a China 2026: qué subió y cuánto pagas | ~2,030 | **Publicada** (enlazada desde la pilar, requisitos y costos). Revisión mensual contra el DOF | 21 nov 2026 |
-| H | envio-aereo-o-maritimo-desde-china | envío aéreo o marítimo desde China | Envío aéreo o marítimo desde China: cuál te conviene | ~1,820 | Borrador en la base (md5 df536313…); imágenes en el repo, falta subirlas a Lovable | — |
+| H | envio-aereo-o-maritimo-desde-china | envío aéreo o marítimo desde China | Envío aéreo o marítimo desde China: cuál te conviene | ~1,820 | **Publicada** (enlazada desde la pilar, Paso 6, y desde costos) | 23 nov 2026 |
 | F | que-es-yiwu | Yiwu | — | — | Por escribir | — |
 | I | joyeria-de-acero-inoxidable | joyería de acero inoxidable | — | — | Por escribir | — |
 | J | feria-de-canton | Feria de Cantón | — | — | Por escribir (2–3 meses antes de la edición) | — |
@@ -215,3 +215,8 @@ Las notas nuevas siguen el **Compra en Fábricas Design System** (artifact https
 - **Sin precios de flete:** la nota no los menciona porque no hay datos propios.
 - **[PENDIENTE, opcional]:** si Eduardo da sus tiempos reales de aéreo y marítimo (por ejemplo, Yiwu a Monterrey), la nota gana mucho.
 - **Al publicar:** enlazar desde la pilar (Paso 6, envío) y desde costos (sección de envío).
+
+**Publicación de H (23 nov 2026):**
+- 5 imágenes subidas a Lovable (commit 73836d9) y deploy hecho con autorización del usuario.
+- El deploy también publicó lo que habían hecho otras sesiones del usuario: fechas de clase en hora CDMX, LCP de joyería y escuela, página del curso Monterrey, reseñas reales y SAG20 marcada como vendida.
+- H quedó published con published_at = now(). Enlaces agregados en la pilar (Paso 6, tras los tipos de envío) y en costos (sección de envío). Las md5 de la base coinciden con el repo.

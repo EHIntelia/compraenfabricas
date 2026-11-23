@@ -93,6 +93,8 @@ Depende de cómo viaje:
 - **Aéreo:** se cobra **por kilo**. Rápido, conviene para poco volumen, muestras o productos de valor alto.
 - **Marítimo consolidado:** se cobra **por metro cúbico**. Tarda más, pero sale más barato por pieza cuando traes volumen.
 
+Te explico cómo se calcula cada uno, con un ejemplo de peso volumétrico, en [envío aéreo o marítimo desde China](/blog/envio-aereo-o-maritimo-desde-china).
+
 Para saber cuánto te cuesta tu envío, pide una cotización con el peso y las medidas de tu mercancía ya empacada en [logística desde China](/logistica#cotizar).
 
 :::cta-clase
