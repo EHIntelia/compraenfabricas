@@ -460,5 +460,56 @@
     "kind": "redes",
     "alt": "Envío aéreo o marítimo desde China, versión para redes",
     "bytes": 104786
+  },
+  {
+    "slug": "que-es-yiwu",
+    "file": "que-es-yiwu-mercado-mayorista-china.webp",
+    "path": "/blog/que-es-yiwu/que-es-yiwu-mercado-mayorista-china.webp",
+    "width": 1200,
+    "height": 630,
+    "kind": "portada",
+    "alt": "Qué es Yiwu: pasillo del mercado mayorista de Yiwu en China con compradores",
+    "bytes": 84956
+  },
+  {
+    "slug": "que-es-yiwu",
+    "file": "yiwu-en-numeros.webp",
+    "path": "/blog/que-es-yiwu/yiwu-en-numeros.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Yiwu en números: casi 80,000 puestos, más de 2.1 millones de productos y a unas 2 horas de Shanghái en tren",
+    "bytes": 29398
+  },
+  {
+    "slug": "que-es-yiwu",
+    "file": "yiwu-o-fabrica-cual-conviene.webp",
+    "path": "/blog/que-es-yiwu/yiwu-o-fabrica-cual-conviene.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Yiwu o fábrica: cuándo conviene comprar en el mercado de Yiwu y cuándo directo de fábrica",
+    "bytes": 34854
+  },
+  {
+    "slug": "que-es-yiwu",
+    "file": "puesto-mercado-mayorista-yiwu.webp",
+    "path": "/blog/que-es-yiwu/puesto-mercado-mayorista-yiwu.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "foto",
+    "alt": "Vendedora en un puesto de mercado mayorista con mercancía de surtido general",
+    "bytes": 90136,
+    "source": "brand/fotos/puesto-mercado-mayorista.jpg"
+  },
+  {
+    "slug": "que-es-yiwu",
+    "file": "que-es-yiwu-redes.webp",
+    "path": "/blog/que-es-yiwu/que-es-yiwu-redes.webp",
+    "width": 1080,
+    "height": 1080,
+    "kind": "redes",
+    "alt": "Qué es Yiwu y cómo comprar ahí, versión para redes",
+    "bytes": 152798
   }
 ]

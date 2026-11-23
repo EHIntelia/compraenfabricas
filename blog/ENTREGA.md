@@ -134,7 +134,7 @@ Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (ra
 | E | como-pagar-a-un-proveedor-en-china | cómo pagar a un proveedor en China | Cómo pagar a un proveedor en China sin que te estafen | ~1,610 | **Publicada** (enlazada desde la pilar, Paso 5) | 13 nov 2026 |
 | D | aranceles-china-mexico-2026 | aranceles a China 2026 | Aranceles a China 2026: qué subió y cuánto pagas | ~2,030 | **Publicada** (enlazada desde la pilar, requisitos y costos). Revisión mensual contra el DOF | 21 nov 2026 |
 | H | envio-aereo-o-maritimo-desde-china | envío aéreo o marítimo desde China | Envío aéreo o marítimo desde China: cuál te conviene | ~1,820 | **Publicada** (enlazada desde la pilar, Paso 6, y desde costos) | 23 nov 2026 |
-| F | que-es-yiwu | Yiwu | — | — | Por escribir | — |
+| F | que-es-yiwu | Yiwu | Qué es Yiwu y cómo comprar en el mercado mayorista | ~1,730 | Borrador en la base (md5 2d4cf51d…); imágenes en el repo; **faltan datos de Eduardo** (4 [PENDIENTE] ocultos) | — |
 | I | joyeria-de-acero-inoxidable | joyería de acero inoxidable | — | — | Por escribir | — |
 | J | feria-de-canton | Feria de Cantón | — | — | Por escribir (2–3 meses antes de la edición) | — |
 | G | errores-que-me-costaron-dinero-importando | errores al importar de China | — | — | Espera historias reales de Eduardo | — |
@@ -221,3 +221,13 @@ Las notas nuevas siguen el **Compra en Fábricas Design System** (artifact https
 - El deploy también publicó lo que habían hecho otras sesiones del usuario: fechas de clase en hora CDMX, LCP de joyería y escuela, página del curso Monterrey, reseñas reales y SAG20 marcada como vendida.
 - H quedó published con published_at = now(). Enlaces agregados en la pilar (Paso 6, tras los tipos de envío) y en costos (sección de envío). Las md5 de la base coinciden con el repo.
 - Verificado en producción: H, sus 5 imágenes (al principio daban 404 y salieron en cuanto terminó el deploy), la pilar y costos (enlazan a H), el sitemap y llms.txt responden 200. IndexNow devolvió 200. Falta pedir indexación de H en Search Console.
+
+**Nota F (Yiwu):** borrador del 23 nov 2026, en primera persona de Eduardo. No nombra proveedores ni menciona WeChat.
+- **Datos con fuente:** casi 80,000 puestos y más de 2.1 millones de productos (China Daily, marzo 2026); tren de Shanghái Hongqiao a Yiwu en 1.5 a 2 h (Travel China Guide). Los horarios no van exactos porque las fuentes no coinciden.
+- **Lo que sí se afirma de Eduardo:** más de 26 años importando y equipo propio en China ("chinos que negocian con chinos"). **No** se afirma que haya ido a Yiwu.
+- **[PENDIENTE Eduardo]** Son comentarios HTML ocultos en `posts/que-es-yiwu.md`; build_sql los quita y la nota se lee completa sin ellos:
+  1. Su experiencia en Yiwu: desde cuándo va o compra ahí, cuántas veces y una anécdota real de la primera vez.
+  2. Qué ha comprado él o sus clientes en Yiwu (categorías, sin nombrar proveedores) y qué le ha funcionado para revender.
+  3. Un error real de un cliente que compró en Yiwu y cómo se resolvió.
+  4. Consejo práctico para la primera visita: dónde hospedarse, cuántos días, en qué orden recorrer y cuándo no ir.
+- **Al publicar:** enlazar desde la pilar (Paso 2, donde menciona Yiwu) y desde comprar directo de fábrica (sección de dónde encontrar fábricas).

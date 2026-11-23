@@ -95,7 +95,44 @@ def nota_envio():
                  "Envío aéreo o marítimo desde China, versión para redes", hl=("aéreo", "marítimo"))
 
 
-NOTAS = {"aranceles-china-mexico-2026": nota_aranceles, "envio-aereo-o-maritimo-desde-china": nota_envio}
+def nota_yiwu():
+    s = "que-es-yiwu"
+    photo_cover(s, "que-es-yiwu-mercado-mayorista-china.webp", "Comprar en China",
+                "Qué es Yiwu: el mercado mayorista más grande de China",
+                "Qué se compra, para quién conviene y cómo traerlo",
+                "mercado-yiwu-pasillo.jpg",
+                "Qué es Yiwu: pasillo del mercado mayorista de Yiwu en China con compradores",
+                hl=("yiwu",), focus=(0.5, 0.5))
+    body = L.cards_row([
+        ("80,000", "puestos", "Casi 80,000 puestos en el Yiwu International Trade City (China Daily, 2026)"),
+        ("2.1 M", "tipos de productos", "Más de 2.1 millones de productos de surtido general"),
+        ("1.5 a 2 h", "desde Shanghái", "En tren de alta velocidad desde la estación Hongqiao"),
+    ], top=160, h=330)
+    L.save(s, "yiwu-en-numeros.webp",
+           L.frame("Yiwu en números", "El mercado mayorista más grande de China",
+                   body, "Fuentes: China Daily (marzo de 2026) y Travel China Guide."),
+           1200, 675, "Yiwu en números: casi 80,000 puestos, más de 2.1 millones de productos y a unas 2 horas de Shanghái en tren", "infografia")
+    body = L.table(["", "Yiwu (mayorista)", "Fábrica"], [
+        ["Variedad", "Muchísima", "Solo lo que produce"],
+        ["Pedido mínimo", "Más bajo, por lo general", "Más alto"],
+        ["Precio por pieza", "Buen precio de mayoreo", "El más bajo, con volumen"],
+        ["Personalización", "Limitada", "Logo, empaque y cambios"],
+        ["Conviene para", "Surtido y probar productos", "Volumen de un solo producto"],
+    ], [250, 415, 415], top=150, row_h=74)
+    L.save(s, "yiwu-o-fabrica-cual-conviene.webp",
+           L.frame("Yiwu o fábrica: cuál te conviene", "Comprar en el mercado de Yiwu o directo a una fábrica en China",
+                   body, "En los dos casos: valida al proveedor y revisa la mercancía antes de pagar."),
+           1200, 675, "Yiwu o fábrica: cuándo conviene comprar en el mercado de Yiwu y cuándo directo de fábrica", "infografia")
+    photo_body(s, "puesto-mercado-mayorista-yiwu.webp", "puesto-mercado-mayorista.jpg",
+               "Vendedora en un puesto de mercado mayorista con mercancía de surtido general", focus=(0.85, 0.5))
+    photo_social(s, "que-es-yiwu-redes.webp", "Comprar en China",
+                 "Qué es Yiwu y cómo comprar en el mercado mayorista",
+                 "80,000 puestos de surtido general en un solo lugar",
+                 "mercado-yiwu-pasillo.jpg",
+                 "Qué es Yiwu y cómo comprar ahí, versión para redes", hl=("yiwu",), focus=(0.5, 0.4))
+
+
+NOTAS = {"que-es-yiwu": nota_yiwu, "aranceles-china-mexico-2026": nota_aranceles, "envio-aereo-o-maritimo-desde-china": nota_envio}
 
 if __name__ == "__main__":
     for slug in sys.argv[1:] or NOTAS:
