@@ -220,3 +220,4 @@ Las notas nuevas siguen el **Compra en Fábricas Design System** (artifact https
 - 5 imágenes subidas a Lovable (commit 73836d9) y deploy hecho con autorización del usuario.
 - El deploy también publicó lo que habían hecho otras sesiones del usuario: fechas de clase en hora CDMX, LCP de joyería y escuela, página del curso Monterrey, reseñas reales y SAG20 marcada como vendida.
 - H quedó published con published_at = now(). Enlaces agregados en la pilar (Paso 6, tras los tipos de envío) y en costos (sección de envío). Las md5 de la base coinciden con el repo.
+- Verificado en producción: H, sus 5 imágenes (al principio daban 404 y salieron en cuanto terminó el deploy), la pilar y costos (enlazan a H), el sitemap y llms.txt responden 200. IndexNow devolvió 200. Falta pedir indexación de H en Search Console.
