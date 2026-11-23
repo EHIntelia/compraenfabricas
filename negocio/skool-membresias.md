@@ -1,7 +1,7 @@
-# Skool – Membresías (corte 21 nov 2026)
+# Skool – Membresías (corte 23 nov 2026)
 
 Comunidad: **Escuela Negocios y Emprender** · https://www.skool.com/compraenfabricas
-Fuente: correos "New customer" de Skool en Gmail. No hay acceso directo al panel de Skool, así que las cancelaciones y los miembros free no se pueden ver desde aquí.
+Fuente: correos "New customer" de Skool en Gmail (revisado de nuevo el 23 nov: sin altas nuevas ni otros avisos). No hay acceso directo al panel de Skool, así que las cancelaciones y los miembros free no se pueden ver desde aquí.
 
 ## Membresías de pago ($15 USD/mes)
 
