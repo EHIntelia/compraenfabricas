@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Comenta Curso · A animado chroma</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0}
+.card{animation:cardIn 6s ease-out infinite both}
+@keyframes cardIn{0%{transform:scale(0)}5%{transform:scale(1.06)}8%{transform:scale(1)}93%{transform:scale(1)}100%{transform:scale(0)}}
+.word{display:inline-block;transform-origin:0 70%;animation:wordIn 6s ease-out infinite both}
+@keyframes wordIn{0%{transform:scale(0)}10%{transform:scale(0)}15%{transform:scale(1.12)}18.33%{transform:scale(1)}100%{transform:scale(1)}}
+.heart{position:relative;width:52px;height:52px}
+.h-off,.h-on{position:absolute;left:0;top:0}
+.h-on{animation:hOn 6s ease-out infinite both}
+@keyframes hOn{0%{transform:scale(0)}30%{transform:scale(0)}34%{transform:scale(1.4)}38%{transform:scale(1)}100%{transform:scale(1)}}
+.n1,.n2{animation:6s steps(1,end) infinite both}
+.n1{animation-name:nOut}.n2{animation-name:nIn}
+@keyframes nOut{0%{font-size:24px}34%{font-size:0}100%{font-size:0}}
+@keyframes nIn{0%{font-size:0}34%{font-size:24px}100%{font-size:24px}}
+@media (prefers-reduced-motion: reduce){.card,.word,.h-on,.n1,.n2{animation:none}.n1{font-size:0}}
+</style>
+</helmet>
+<div class="root ck" style="background: #00FF00; width: 1080px; height: 400px; box-sizing: border-box; padding: 40px 90px; font-family: Arial, Helvetica, sans-serif; color: #1A1A1A; display: flex; align-items: center; justify-content: center">
+<div class="card" style="width: 100%; box-sizing: border-box; background: #FFFFFF; border-radius: 32px; padding: 36px 40px; display: flex; gap: 28px; align-items: flex-start">
+<div style="flex: 0 0 96px; height: 96px; border-radius: 50%; background: #FCE4DC; color: #DC2626; display: flex; align-items: center; justify-content: center; font-size: 38px; font-weight: 900">MA</div>
+<div style="flex: 1 1 0; display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; gap: 14px; align-items: baseline">
+<span style="font-size: 30px; font-weight: 700; color: #1A1A1A">maria.importa</span>
+<span style="font-size: 26px; color: #6B6B6B">hace 1 min</span>
+</div>
+<div style="font-size: 84px; font-weight: 900; line-height: 1.05; letter-spacing: -0.02em"><span class="word">Curso</span></div>
+<div style="font-size: 26px; font-weight: 700; color: #6B6B6B; margin-top: 6px">Responder</div>
+</div>
+<div style="flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 6px; padding-top: 40px">
+<div class="heart">
+<svg class="h-off" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
+<svg class="h-on" width="52" height="52" viewBox="0 0 24 24" fill="#DC2626" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
+</div>
+<span style="font-weight: 700; color: #6B6B6B; line-height: 1.2"><span class="n1">1,1 mil</span><span class="n2">1,2 mil</span></span>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":400}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
