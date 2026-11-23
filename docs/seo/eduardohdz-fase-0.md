@@ -327,3 +327,41 @@ El LCP de la home empeoró porque ahora el elemento LCP es `eduardo-portrait.png
 - `/asesoria` tiene SEO 92 por un texto de enlace genérico.
 
 **"Edit with Lovable":** no se quita desde el código. Se oculta en los ajustes de publicación del proyecto (requiere plan Pro o superior).
+
+---
+
+## 11. Fase 3 publicada: entidad y JSON-LD (23 nov 2026)
+
+**Commits y deploy:**
+- Fase 3: `c02a5ac`.
+- Corrección del Skool: `28b0bc0`, 0.6 créditos.
+- Deploy `69dcf5bf`, con OK del usuario. También subieron los 3 cambios del panel de la otra sesión del usuario (Tareas, videos IB y grupos), aprobados por el usuario.
+
+**Qué quedó (todo en el HTML del servidor, en `src/lib/schema.ts`):**
+- **Grafo global en todas las páginas:**
+  - **Person** `https://eduardohdz.com/#person`:
+    - jobTitle "Consultor de negocios" y description con los datos verificados;
+    - image `/images/eduardo-foto-profesional.jpg`;
+    - knowsAbout;
+    - affiliation con JAICO, Xijiao Shops, Xijiao LOG y Compra en Fábricas (con founder → Person);
+    - memberOf → NADIE;
+    - sameAs: el autor en compraenfabricas, Skool `emprende-importando-4690` y las redes de Compra en Fábricas.
+  - **Organization NADIE** `#nadie`, con el texto oficial, el slogan y founder → Person. Sin sameAs, porque sus redes ya no están vigentes.
+  - **WebSite** `#website`: name "Eduardo Hernández", con alternateName.
+- **Home:** ProfilePage con mainEntity → Person.
+- **BreadcrumbList** en las 11 páginas indexables internas.
+- **Course:**
+  - `/sube-tus-ventas`: precio 7,900 MXN, igual al visible, calculado con `getPrecioActual()`;
+  - `/de-0-a-1-millon`: gratis.
+- **FAQPage** en `/sube-tus-ventas` (9 preguntas), generado desde el mismo arreglo que pinta la página (`src/content/sube-tus-ventas-faqs`).
+- **Event** listo en `src/lib/class-dates.ts` (`CLASS_DATES`), hoy vacío: no sale ningún Event hasta que haya una fecha real de ADN o de la clase gratuita.
+- **`/adn-de-tu-negocio`** con noindex y fuera del sitemap y de `llms.txt`, porque muestra texto "Placeholder" en "Qué vas a aprender". [PENDIENTE: los 5 puntos reales.]
+- **La 404** tiene un solo `<title>`.
+
+**Verificación en vivo:**
+- 15 rutas revisadas: JSON válido, sin duplicados, 1 title por página.
+- Sitemap con 12 URLs.
+- `llms.txt` con el Skool correcto.
+- El resto de las rutas sin cambios (status, H1 y texto).
+
+**Para la sesión de compraenfabricas** (se le dio el texto al usuario): cambiar el `@id` del Person a `https://eduardohdz.com/#person`, dejar `url` en el autor de compraenfabricas y agregar `https://eduardohdz.com/` al sameAs.
