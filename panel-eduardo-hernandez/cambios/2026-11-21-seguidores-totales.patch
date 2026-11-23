@@ -1,0 +1,72 @@
+--- a/src/panel/PanelContenido.tsx
++++ b/src/panel/PanelContenido.tsx
+@@ -39,7 +39,7 @@
+   TableRow,
+ } from "@/components/ui/table";
+ import { useToast } from "@/hooks/use-toast";
+-import { Eye, MessageSquare, MessagesSquare, Users, Plus, Inbox, ArrowDown, Flame } from "lucide-react";
++import { Eye, MessageSquare, MessagesSquare, Users, Plus, Inbox, ArrowDown, Flame, UserPlus } from "lucide-react";
+ import { usePanel } from "./PanelLayout";
+ import { fmtMXN, fmtNum, fmtPct } from "./format";
+ import { DateRangeFilter, PeriodoLabel, useResolvedRange, type RangePreset } from "./DateRangeFilter";
+@@ -147,6 +147,37 @@
+ 
+   const metricas = useMemo(() => metricasAll.filter((m) => enRango(m.fecha)), [metricasAll, desdeStr, hastaStr]);
+   const leads = useMemo(() => leadsAll.filter((l) => enRango(diaLocal(new Date(l.fecha)))), [leadsAll, desdeStr, hastaStr]);
++  // Seguidores totales: último valor > 0 por red (seguidores es acumulado)
++  const seguidoresInfo = useMemo(() => {
++    const REDES: { key: string; label: string }[] = [
++      { key: "instagram", label: "Instagram" },
++      { key: "facebook", label: "Facebook" },
++      { key: "youtube", label: "YouTube" },
++      { key: "tiktok", label: "TikTok" },
++      { key: "otra", label: "Otra" },
++    ];
++    const finStr = hastaStr ?? diaLocal(new Date());
++    const ordenadas = [...metricasAll].filter((m) => (m.seguidores ?? 0) > 0).sort((a, b) => a.fecha.localeCompare(b.fecha));
++    let total = 0;
++    let totalIni = 0;
++    const desglose: { label: string; valor: number; fecha: string }[] = [];
++    for (const r of REDES) {
++      const deRed = ordenadas.filter((m) => m.red === r.key);
++      const fin = [...deRed].reverse().find((m) => m.fecha <= finStr);
++      if (!fin) continue;
++      total += fin.seguidores;
++      desglose.push({ label: r.label, valor: fin.seguidores, fecha: fin.fecha });
++      if (desdeStr) {
++        const ini = [...deRed].reverse().find((m) => m.fecha <= desdeStr) ?? deRed.find((m) => m.fecha >= desdeStr && m.fecha <= finStr);
++        totalIni += ini ? ini.seguidores : fin.seguidores;
++      }
++    }
++    return { total, desglose, finStr, crecimiento: desdeStr ? total - totalIni : null };
++  }, [metricasAll, desdeStr, hastaStr]);
++
++  const fmtDiaCorto = (d: string) =>
++    new Date(`${d}T12:00:00`).toLocaleDateString("es-MX", { day: "numeric", month: "short" }).replace(".", "");
++
+   const ventasCount = useMemo(
+     () => ventasAll.filter((v) => enRango(diaLocal(new Date(v.fecha)))).length,
+     [ventasAll, desdeStr, hastaStr]
+@@ -381,6 +412,22 @@
+       ) : (
+         <>
+           {/* Tarjetas */}
++          <Card><CardContent className="pt-4 px-4 pb-4">
++            <p className="text-xs text-muted-foreground flex items-center gap-1.5"><UserPlus className="w-3.5 h-3.5" /> Seguidores totales (todas las redes)</p>
++            <p className="text-3xl font-bold">{fmtNum(seguidoresInfo.total)}</p>
++            {seguidoresInfo.crecimiento !== null && (
++              <p className={`text-xs ${seguidoresInfo.crecimiento > 0 ? "text-green-500" : seguidoresInfo.crecimiento < 0 ? "text-destructive" : "text-muted-foreground"}`}>
++                {seguidoresInfo.crecimiento > 0 ? "+" : ""}{fmtNum(seguidoresInfo.crecimiento)} en el periodo
++              </p>
++            )}
++            {seguidoresInfo.desglose.length > 0 && (
++              <p className="text-xs text-muted-foreground mt-1">
++                {seguidoresInfo.desglose
++                  .map((d) => `${d.label} ${fmtNum(d.valor)}${d.fecha !== seguidoresInfo.finStr ? ` (${fmtDiaCorto(d.fecha)})` : ""}`)
++                  .join(" · ")}
++              </p>
++            )}
++          </CardContent></Card>
+           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+             <Card><CardContent className="pt-4 px-4 pb-4">
+               <p className="text-xs text-muted-foreground flex items-center gap-1.5"><Eye className="w-3.5 h-3.5" /> Vistas (periodo)</p>
