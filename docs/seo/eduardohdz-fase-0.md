@@ -250,3 +250,33 @@ Ojo con canibalizar dentro del sitio:
   - El panel con `ssr: false` y `noindex`.
 - Salvedad: `/diagnostico` y `/diagnostico-evergreen` quedaron con `ssr: false`, porque el quiz guarda el avance en el navegador. El servidor manda su title y description, pero no texto. En la Fase 2 hay que agregar texto renderizado en servidor alrededor del quiz.
 - [PENDIENTE: la vista previa pide sesión (401), así que el HTML crudo de las 25 rutas se verifica en vivo después de publicar o con capturas del usuario. La captura automática del proyecto mostró "Not found" en la home: hay que revisarlo en el editor antes de publicar.]
+
+### Publicación de la migración (23 nov 2026)
+
+Publicada con OK del usuario (deploy `5abcf320`, commit `c9f14f3`). Antes de publicar se revisó `list_edits`: solo estaba la migración.
+
+**HTML crudo como Googlebot, en vivo:**
+- Las 23 rutas públicas responden 200, con 1 title, 1 description y canonical absoluta a `https://eduardohdz.com/...`.
+- `/trabaja-conmigo` tiene canonical a `/asesoria`.
+- Todas tienen H1 y texto (117 a 1,069 palabras), salvo `/diagnostico` (12 palabras) y `/diagnostico-evergreen` (7), que se arman en el navegador.
+- `/panel` y `/panel/login` tienen `noindex, nofollow`.
+- `/no-existe-xyz` responde **404**.
+
+**En navegador real:**
+- Sin errores de JavaScript.
+- El Pixel carga con los 2 IDs. El envío a facebook.com/tr no se ve porque Meta descarta los navegadores automatizados; hay que confirmarlo en "Probar eventos".
+- El link de Hotmart conserva `?src=`.
+- El login del panel carga.
+- El badge "Edit with Lovable" sigue visible.
+
+**Lighthouse móvil, antes → después:**
+
+| Página | Perf | LCP | Peso |
+|---|---|---|---|
+| `/` | 44 → 58 | 7.4 s → **17.8 s** | 4.7 → 4.3 MB |
+| `/asesoria` | 49 → 62 | 9.8 → 7.4 s | 2.3 → 1.9 MB |
+| `/diagnostico` | 51 → 77 | 6.9 → 3.3 s | 1.0 → 0.6 MB |
+| `/sube-tus-ventas` | 48 → 58 | 8.8 → 6.8 s | 2.0 → 1.2 MB |
+| `/de-0-a-1-millon` | 49 → 81 | 6.2 → 2.9 s | 2.0 → 1.6 MB |
+
+El LCP de la home empeoró porque ahora el elemento LCP es `eduardo-portrait.png` (1.8 MB); antes era un fondo decorativo. Se corrige en la Fase 2 con WebP y srcset (también `nadie-community.jpg`, de 1.8 MB).
