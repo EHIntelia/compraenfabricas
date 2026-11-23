@@ -511,5 +511,56 @@
     "kind": "redes",
     "alt": "Qué es Yiwu y cómo comprar ahí, versión para redes",
     "bytes": 152798
+  },
+  {
+    "slug": "joyeria-de-acero-inoxidable",
+    "file": "joyeria-de-acero-inoxidable-mayoreo.webp",
+    "path": "/blog/joyeria-de-acero-inoxidable/joyeria-de-acero-inoxidable-mayoreo.webp",
+    "width": 1200,
+    "height": 630,
+    "kind": "portada",
+    "alt": "Joyería de acero inoxidable dorada: cadenas, aretes y dijes para vender al mayoreo",
+    "bytes": 62036
+  },
+  {
+    "slug": "joyeria-de-acero-inoxidable",
+    "file": "acero-316l-vs-chapa-vs-plata.webp",
+    "path": "/blog/joyeria-de-acero-inoxidable/acero-316l-vs-chapa-vs-plata.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Joyería de acero inoxidable: diferencia entre acero 316L, acero 304, chapa de oro y plata 925",
+    "bytes": 31222
+  },
+  {
+    "slug": "joyeria-de-acero-inoxidable",
+    "file": "margen-joyeria-de-acero-mayoreo-menudeo.webp",
+    "path": "/blog/joyeria-de-acero-inoxidable/margen-joyeria-de-acero-mayoreo-menudeo.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Margen de la joyería de acero inoxidable: costo, precio de mayoreo y precio de menudeo",
+    "bytes": 28030
+  },
+  {
+    "slug": "joyeria-de-acero-inoxidable",
+    "file": "joyeria-de-acero-dorada-para-vender.webp",
+    "path": "/blog/joyeria-de-acero-inoxidable/joyeria-de-acero-dorada-para-vender.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "foto",
+    "alt": "Joyería de acero inoxidable dorada sobre piedra con estuche para regalo",
+    "bytes": 83562,
+    "source": "brand/fotos/joyeria-dorada-sobre-piedra.jpg"
+  },
+  {
+    "slug": "joyeria-de-acero-inoxidable",
+    "file": "joyeria-de-acero-inoxidable-redes.webp",
+    "path": "/blog/joyeria-de-acero-inoxidable/joyeria-de-acero-inoxidable-redes.webp",
+    "width": 1080,
+    "height": 1080,
+    "kind": "redes",
+    "alt": "Joyería de acero inoxidable para vender, versión para redes",
+    "bytes": 86284
   }
 ]

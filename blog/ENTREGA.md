@@ -135,7 +135,7 @@ Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (ra
 | D | aranceles-china-mexico-2026 | aranceles a China 2026 | Aranceles a China 2026: qué subió y cuánto pagas | ~2,030 | **Publicada** (enlazada desde la pilar, requisitos y costos). Revisión mensual contra el DOF | 21 nov 2026 |
 | H | envio-aereo-o-maritimo-desde-china | envío aéreo o marítimo desde China | Envío aéreo o marítimo desde China: cuál te conviene | ~1,820 | **Publicada** (enlazada desde la pilar, Paso 6, y desde costos) | 23 nov 2026 |
 | F | que-es-yiwu | Yiwu | Qué es Yiwu y cómo comprar en el mercado mayorista | ~2,100 | **Publicada** (enlazada desde la pilar, Paso 2, y desde comprar directo de fábrica) | 23 nov 2026 |
-| I | joyeria-de-acero-inoxidable | joyería de acero inoxidable | — | — | Por escribir | — |
+| I | joyeria-de-acero-inoxidable | joyería de acero inoxidable | Joyería de acero inoxidable: qué es y por qué se vende | ~1,735 | Borrador en la base (md5 7e7be7fe…); imágenes en el repo | — |
 | J | feria-de-canton | Feria de Cantón | — | — | Por escribir (2–3 meses antes de la edición) | — |
 | G | errores-que-me-costaron-dinero-importando | errores al importar de China | — | — | Espera historias reales de Eduardo | — |
 
@@ -245,3 +245,15 @@ Las notas nuevas siguen el **Compra en Fábricas Design System** (artifact https
 **Publicación de F (23 nov 2026):**
 - 5 imágenes subidas a Lovable (commit f30d376) y deploy hecho; el deploy incluyó "ResenasFranja" de otra sesión.
 - F quedó published. Enlaces agregados en la pilar (viñeta de Yiwu, Paso 2) y en comprar directo de fábrica (ciudades especializadas). Las md5 de la base coinciden con el repo.
+- Verificado en producción: F, sus 5 imágenes, la pilar y comprar directo de fábrica (enlazan a F), el sitemap y llms.txt responden 200. IndexNow devolvió 200. Falta pedir indexación de F en Search Console.
+
+**Nota I (joyería de acero inoxidable):** borrador del 23 nov 2026, en primera persona de Eduardo. El CTA va a /joyeria y el texto no enlaza a info.joyeria.shop.
+- **Datos de Eduardo (transcripts):**
+  - 22 años en joyería de chapa y acero; empezó con dinero prestado y poca mercancía.
+  - Trabaja acero 316L. "El argumento de calidad se gana en la mano, no en el papel."
+  - Margen de ejemplo: 25 pesos de costo, 50 de mayoreo y 250 de menudeo.
+  - Mínimos para diseño propio: chapa unas 120 piezas por modelo y acero unas 360, porque necesita molde.
+  - Anécdota del "puro cobre" en Guangzhou (es la misma de F).
+- **Datos técnicos generales:** 316L lleva molibdeno y bajo carbono, frente al 304. No se afirma que sea hipoalergénico en absoluto.
+- **No se menciona el pedido mínimo de inventario:** /joyeria lo marca como pendiente de confirmar con Eduardo ("desde 36 piezas por modelo").
+- **Al publicar:** enlazar desde la nota de joyería (sección de tipos de joyería) y desde productos (donde menciona joyería).

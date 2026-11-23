@@ -132,7 +132,43 @@ def nota_yiwu():
                  "Qué es Yiwu y cómo comprar ahí, versión para redes", hl=("yiwu",), focus=(0.5, 0.4))
 
 
-NOTAS = {"que-es-yiwu": nota_yiwu, "aranceles-china-mexico-2026": nota_aranceles, "envio-aereo-o-maritimo-desde-china": nota_envio}
+def nota_acero():
+    s = "joyeria-de-acero-inoxidable"
+    photo_cover(s, "joyeria-de-acero-inoxidable-mayoreo.webp", "Joyería",
+                "Joyería de acero inoxidable: por qué se vende tanto",
+                "Acero 316L, chapa o plata y cuánto margen deja",
+                "joyeria-dorada-estuche-naranja.jpg",
+                "Joyería de acero inoxidable dorada: cadenas, aretes y dijes para vender al mayoreo",
+                hl=("acero", "inoxidable"), focus=(0.5, 0.5))
+    body = L.table(["", "Acero 316L", "Chapa de oro", "Plata 925"], [
+        ["Qué es", "Acero que no se oxida", "Oro sobre cobre o aleación", "Plata al 92.5%"],
+        ["Durabilidad", "Muy alta, uso diario", "Según el baño", "Alta, se oscurece"],
+        ["Precio", "Bajo", "Bajo", "Más alto"],
+        ["Ideal para", "Uso diario", "Moda a buen precio", "Metal precioso"],
+    ], [220, 290, 290, 280], top=150, row_h=80)
+    L.save(s, "acero-316l-vs-chapa-vs-plata.webp",
+           L.frame("Acero, chapa de oro o plata", "Qué es cada uno y para quién conviene",
+                   body, "En acero, pide siempre el grado por escrito: 316L para uso diario."),
+           1200, 675, "Joyería de acero inoxidable: diferencia entre acero 316L, acero 304, chapa de oro y plata 925", "infografia")
+    body = L.cards_row([
+        ("$25", "Te cuesta", "Precio de compra por pieza (ejemplo)"),
+        ("$50", "Mayoreo", "Lo que puedes cobrar a otras vendedoras o tiendas"),
+        ("$250", "Menudeo", "Lo que puede pagar la clienta final"),
+    ], top=160, h=330)
+    L.save(s, "margen-joyeria-de-acero-mayoreo-menudeo.webp",
+           L.frame("El margen de la joyería de acero", "Ejemplo de Eduardo con una pieza de 25 pesos",
+                   body, "Ejemplo de referencia. Tus precios dependen de tu proveedor, tu zona y tu clienta."),
+           1200, 675, "Margen de la joyería de acero inoxidable: costo, precio de mayoreo y precio de menudeo", "infografia")
+    photo_body(s, "joyeria-de-acero-dorada-para-vender.webp", "joyeria-dorada-sobre-piedra.jpg",
+               "Joyería de acero inoxidable dorada sobre piedra con estuche para regalo", focus=(0.5, 0.5))
+    photo_social(s, "joyeria-de-acero-inoxidable-redes.webp", "Joyería",
+                 "Joyería de acero inoxidable: por qué se vende tanto",
+                 "Dura, se ve bien y deja margen",
+                 "joyeria-dorada-sobre-piedra.jpg",
+                 "Joyería de acero inoxidable para vender, versión para redes", hl=("acero", "inoxidable"), focus=(0.5, 0.5))
+
+
+NOTAS = {"joyeria-de-acero-inoxidable": nota_acero, "que-es-yiwu": nota_yiwu, "aranceles-china-mexico-2026": nota_aranceles, "envio-aereo-o-maritimo-desde-china": nota_envio}
 
 if __name__ == "__main__":
     for slug in sys.argv[1:] or NOTAS:
