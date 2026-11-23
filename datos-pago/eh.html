@@ -1,0 +1,64 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1350px;font-family:Archivo,sans-serif;color:#fff;overflow:hidden;position:relative;
+ background:
+  radial-gradient(900px 620px at 100% 0%,rgba(163,14,26,.55),transparent 70%),
+  radial-gradient(700px 500px at 0% 100%,rgba(163,14,26,.22),transparent 70%),
+  #0B0B0B}
+body:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.018) 0 2px,transparent 2px 22px);pointer-events:none}
+.wrap{position:relative;padding:78px 84px 0}
+.mono{font-stretch:125%;font-weight:900;font-size:26px;letter-spacing:4px}
+.mono b{color:#E3263A}
+h1{font-stretch:125%;font-weight:900;font-size:80px;line-height:1;letter-spacing:-1px;margin-top:70px;text-transform:uppercase}
+h1 span{color:#E3263A}
+svg{display:block;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.bank{margin-top:52px;display:flex;align-items:center;gap:22px}
+.ib{width:96px;height:96px;border-radius:20px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);display:grid;place-items:center;color:#fff;flex:none}
+.bank .bn{font-stretch:115%;font-weight:900;font-size:44px;line-height:1}
+.bank .who{font-size:34px;color:#fff;font-weight:700;margin-top:10px;white-space:nowrap}.bank .who span{color:#BDBDBD;font-weight:500}
+.lab{display:flex;align-items:center;gap:10px;font-size:21px;letter-spacing:2px;font-weight:700;text-transform:uppercase;color:#B5B5B5}
+.hero{margin:44px -24px 0;background:linear-gradient(135deg,#C8152A,#A30E1A 55%,#7A0A14);border-radius:28px;padding:44px 46px 48px;box-shadow:0 24px 60px rgba(163,14,26,.45);position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-60px;top:-80px;width:320px;height:320px;border-radius:50%;border:40px solid rgba(255,255,255,.06)}
+.hero .lab{color:#FFD9DD}.hero .lab svg{color:#FFD9DD}
+.hero .val{position:relative;font-stretch:108%;font-weight:900;font-size:60px;letter-spacing:.5px;white-space:nowrap;margin-top:14px;font-variant-numeric:tabular-nums}
+.hero .hint{position:relative;font-size:24px;color:#FFD9DD;margin-top:10px}
+.panel{margin-top:44px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.10);border-radius:28px;padding:8px 40px}
+.it{display:flex;align-items:center;gap:28px;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.08)}.it:last-child{border:none}
+.ic{width:64px;height:64px;border-radius:18px;background:rgba(227,38,58,.14);color:#FF5A6A;display:grid;place-items:center;flex:none}
+.it .lab{font-size:20px}
+.it .row{display:flex;align-items:baseline;gap:20px;margin-top:6px}
+.it .val{font-size:40px;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:.5px;white-space:nowrap}
+.it .hint{font-size:21px;color:#9A9A9A}
+
+.foot{position:absolute;left:84px;right:84px;bottom:60px;display:flex;align-items:center;gap:18px;padding-top:28px;border-top:1px solid rgba(255,255,255,.12);font-size:25px;color:#D0D0D0}
+.foot .wa{width:52px;height:52px;border-radius:50%;background:#A30E1A;display:grid;place-items:center;flex:none}
+.foot b{color:#fff}
+</style></head><body>
+<div class="wrap">
+ <div class="mono">EDUARDO <b>HERNÁNDEZ</b></div>
+ <h1>Datos de <span>pago</span></h1>
+
+ <div class="bank">
+  <div class="ib"><svg width="40" height="40" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V10M9.5 21V10M14.5 21V10M19 21V10"/><path d="M2 10 12 3l10 7z"/></svg></div>
+  <div><div class="bn">BBVA México</div><div class="who"><span>A nombre de</span> Angel Eduardo Hernández Guerra</div></div>
+ </div>
+
+ <div class="hero">
+  <div class="lab"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M7 7h11l-3-3M17 17H6l3 3"/></svg>CLABE interbancaria</div>
+  <div class="val">012 580 01555349612 7</div>
+  <div class="hint">Para transferir desde cualquier banco</div>
+ </div>
+
+ <div class="panel">
+  <div class="it"><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><div><div class="lab">Tarjeta de débito</div><div class="row"><div class="val">4152 3145 1466 1902</div><div class="hint">OXXO o practicaja</div></div></div></div>
+  <div class="it"><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10M19 21V10M12 21V10M2 10 12 3l10 7z"/></svg></div><div><div class="lab">Cuenta</div><div class="row"><div class="val">155 534 9612</div><div class="hint">Desde BBVA</div></div></div></div>
+  <div class="it"><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></div><div><div class="lab">Código SWIFT</div><div class="row"><div class="val">BCMRMXMMPYM</div><div class="hint">Desde el extranjero</div></div></div></div>
+ </div>
+</div>
+<div class="foot">
+ <div class="wa"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg></div>
+ <div>Al pagar, envía tu comprobante por <b>WhatsApp</b>.</div>
+</div>
+</body></html>
