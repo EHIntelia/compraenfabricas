@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Hoja de trabajo</title>
+<style>
+  @page { size: Letter; margin: 0; }
+  :root { --ink:#141414; --gray:#5c5c5c; --line:#cfcfcf; --soft:#f4f1ea; --gold:#b8862b; --red:#c41424; --dark:#0d0d0d; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Calibri, Carlito, "Liberation Sans", Arial, sans-serif; color:var(--ink); font-size:11pt; background:#fff; }
+  h1,h2,h3,.h { font-family: Arial, "Liberation Sans", sans-serif; }
+  .page { width:8.5in; height:11in; padding:0.55in 0.6in 0.5in; position:relative; page-break-after:always; overflow:hidden; }
+  .page:last-child { page-break-after:auto; }
+  .foot { position:absolute; bottom:0.3in; left:0.6in; right:0.6in; display:flex; justify-content:space-between; font-size:8pt; color:#8a8a8a; letter-spacing:.04em; }
+  .eyebrow { font-weight:700; font-size:9.5pt; color:var(--gold); letter-spacing:.06em; text-transform:uppercase; margin:0 0 4px; }
+  .eyebrow.red { color:var(--red); }
+  h2 { font-size:21pt; margin:0 0 6px; line-height:1.1; }
+  .lead { color:var(--gray); margin:0 0 12px; font-size:11pt; }
+  .stepbar { display:flex; align-items:center; gap:10px; margin:0 0 4px; }
+  .num { width:34px; height:34px; border-radius:50%; background:var(--dark); color:#d4a547; font-family:Arial, sans-serif; font-weight:700; font-size:15pt; display:flex; align-items:center; justify-content:center; flex:none; }
+  .box { border:1.2px solid var(--line); border-radius:8px; padding:10px 12px; margin:0 0 10px; }
+  .box.soft { background:var(--soft); border-color:#e6dfd0; }
+  .box.red { border-color:#e7b3b8; background:#fdf3f4; }
+  .box h3 { font-size:11.5pt; margin:0 0 6px; }
+  .label { font-weight:700; }
+  .ln { border-bottom:1px solid var(--line); height:22px; }
+  .fill { display:flex; gap:8px; align-items:flex-end; margin:6px 0; }
+  .fill .t { white-space:nowrap; font-weight:700; }
+  .fill .l { flex:1; border-bottom:1px solid var(--line); height:18px; }
+  .chk { list-style:none; padding:0; margin:0; }
+  .chk li { padding:4px 0 4px 24px; position:relative; }
+  .chk li::before { content:""; position:absolute; left:0; top:5px; width:13px; height:13px; border:1.5px solid var(--ink); border-radius:3px; }
+  table { width:100%; border-collapse:collapse; font-size:10pt; }
+  th { background:var(--dark); color:#fff; font-family:Arial, sans-serif; font-size:8.5pt; text-align:left; padding:6px; font-weight:700; }
+  td { border:1px solid var(--line); height:30px; padding:4px 6px; vertical-align:top; }
+  td.k { font-weight:700; background:#faf8f4; width:30%; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .grid3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; }
+  .tip { font-size:10pt; color:var(--gray); }
+  .tip b { color:var(--gold); }
+  .mono { font-family:"Liberation Mono", monospace; font-size:9.5pt; background:#fff; border:1px dashed #d6cdb8; padding:8px; border-radius:6px; line-height:1.4; }
+  .calc td { height:26px; }
+  .calc td.k { width:58%; }
+  .calc td.op { width:28px; text-align:center; font-weight:700; color:var(--gold); border:none; }
+  /* cover */
+  .cover { background:var(--dark); color:#fff; }
+  .cover .foot { color:#777; }
+  .cover h1 { font-size:40pt; line-height:1.02; margin:0.9in 0 0.15in; }
+  .cover h1 span { color:var(--red); }
+  .cover .sub { color:#cfcfcf; font-size:13pt; max-width:6in; }
+  .cover .who { color:#d4a547; font-weight:700; letter-spacing:.06em; font-size:10.5pt; margin-top:.6in; }
+  .cover .card { background:#1a1a1a; border-radius:10px; padding:14px 16px; margin-top:12px; }
+  .cover .card .fill .l { border-color:#555; }
+  .cover .card .fill .t { color:#fff; }
+  .profiles { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:10px; }
+  .profiles div { background:#1a1a1a; border-radius:10px; padding:12px; font-size:10pt; color:#ddd; }
+  .profiles b { display:block; font-family:Arial, sans-serif; color:#d4a547; font-size:10.5pt; margin-bottom:4px; }
+  .profiles .sq { display:inline-block; width:12px; height:12px; border:1.5px solid #d4a547; border-radius:3px; margin-right:6px; vertical-align:-1px; }
+  .qr { display:flex; gap:12px; align-items:center; }
+  .qr img { width:1.15in; height:1.15in; border:6px solid #fff; border-radius:6px; outline:1px solid var(--line); }
+  .path { border-radius:10px; padding:12px; border:1.2px solid var(--line); }
+  .path.j { background:#fdf3f4; border-color:#e7b3b8; }
+  .path h3 { margin:0 0 4px; font-size:12pt; }
+  .small { font-size:9.5pt; color:var(--gray); }
+</style>
+</head>
+<body>
+
+<!-- PORTADA -->
+<section class="page cover">
+  <div class="who">HOJA DE TRABAJO  ·  CLASE EN VIVO CON EDUARDO HERNÁNDEZ</div>
+  <h1>Compra e importa<br><span>directo de China</span></h1>
+  <p class="sub">Llénala mientras ves la clase. Al terminar vas a tener tu plan completo: qué traer, de quién, cómo pagar, cómo traerlo, cuánto te cuesta de verdad y cómo venderlo.</p>
+
+  <div class="card">
+    <div class="fill"><span class="t">Mi nombre:</span><span class="l"></span></div>
+    <div class="fill"><span class="t">El producto que quiero vender:</span><span class="l"></span></div>
+    <div class="fill"><span class="t">¿Por qué ese producto?</span><span class="l"></span></div>
+    <div class="fill"><span class="t">Cuánto quiero ganar al mes con esto: $</span><span class="l"></span></div>
+    <div class="fill"><span class="t">Cuánto puedo invertir para empezar: $</span><span class="l"></span></div>
+  </div>
+
+  <p style="color:#d4a547;font-weight:700;margin:18px 0 0;font-family:Arial,sans-serif;">¿Cuál de estos eres tú? Márcalo:</p>
+  <div class="profiles">
+    <div><b><span class="sq"></span>1 · Trabajas y no alcanza</b>Quieres un ingreso extra real, no otro "negocito" que muere en 3 meses.</div>
+    <div><b><span class="sq"></span>2 · Quieres emprender</b>Tienes las ganas, pero te falta el proceso completo y te da miedo que te estafen.</div>
+    <div><b><span class="sq"></span>3 · Ya tienes negocio o importas</b>Le compras a intermediarios que se quedan con TU margen.</div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <p style="margin:0 0 6px;color:#d4a547;font-weight:700;font-family:Arial,sans-serif;font-size:10.5pt">LOS 6 PASOS DE ESTA HOJA</p>
+    <p style="margin:0;color:#ddd;font-size:10.5pt;line-height:1.6">1. Encontrar &nbsp;→&nbsp; 2. Validar &nbsp;→&nbsp; 3. Pagar &nbsp;→&nbsp; 4. Importar &nbsp;→&nbsp; 5. Recibir &nbsp;→&nbsp; 6. Vender</p>
+  </div>
+  <div class="foot"><span>COMPRA EN FÁBRICAS DE CHINA  ·  EDUARDO HERNÁNDEZ</span><span>1</span></div>
+</section>
+
+<!-- PASO 1 + 2 -->
+<section class="page">
+  <div class="stepbar"><div class="num">1</div><div><p class="eyebrow">Paso 1 de 6</p><h2>Encontrar proveedores REALES</h2></div></div>
+  <p class="lead">Busca tu producto en al menos 2 plataformas. Marca dónde buscaste:</p>
+  <div class="box">
+    <ul class="chk" style="display:grid;grid-template-columns:1fr 1fr 1fr;">
+      <li>Alibaba</li><li>1688.com</li><li>Made-in-China</li><li>Yiwugo</li><li>Chinagoods</li><li>AliExpress</li>
+    </ul>
+    <p class="tip" style="margin:6px 0 0"><b>Tip de oro:</b> 1688.com es el mercado interno chino: ahí compran los propios chinos. Precios aún más bajos.</p>
+  </div>
+  <table>
+    <tr><th style="width:4%">#</th><th style="width:24%">Proveedor / empresa</th><th style="width:16%">Plataforma</th><th style="width:16%">Precio por pieza</th><th style="width:14%">Mínimo (MOQ)</th><th>¿Fábrica o revendedor?</th></tr>
+    <tr><td>1</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>2</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>3</td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+  <div class="box red" style="margin-top:10px">
+    <h3 style="color:var(--red)">Señal de alerta: ¿es revendedor?</h3>
+    <ul class="chk"><li>No tiene fotos ni videos reales del producto</li><li>No te da el nombre de su empresa</li><li>El precio está "regalado" comparado con los demás</li></ul>
+    <p class="small" style="margin:4px 0 0">Si marcaste alguna, sigue buscando.</p>
+  </div>
+
+  <div class="stepbar" style="margin-top:14px"><div class="num">2</div><div><p class="eyebrow">Paso 2 de 6</p><h2>Contactar y validar</h2></div></div>
+  <p class="lead">Aquí se separan los pros. Palomea cada punto por proveedor:</p>
+  <table>
+    <tr><th>Lo que revisas</th><th style="width:14%">Prov. 1</th><th style="width:14%">Prov. 2</th><th style="width:14%">Prov. 3</th></tr>
+    <tr><td>Me mandó fotos, videos y cotización real</td><td></td><td></td><td></td></tr>
+    <tr><td>Tiene estrellas e insignias de verificación</td><td></td><td></td><td></td></tr>
+    <tr><td>Validé el TAX ID de la empresa ANTES de ordenar</td><td></td><td></td><td></td></tr>
+    <tr><td>Negocié precio por volumen (precio final: $)</td><td></td><td></td><td></td></tr>
+    <tr><td>Pedí muestra (costo de la muestra: $)</td><td></td><td></td><td></td></tr>
+  </table>
+  <div class="fill" style="margin-top:10px"><span class="t">El proveedor que elegí:</span><span class="l"></span></div>
+  <p class="tip" style="margin:4px 0 0"><b>Regla de oro:</b> nunca hagas un pedido grande sin probar una muestra. Es barata; el error, carísimo.</p>
+  <div class="foot"><span>COMPRA EN FÁBRICAS DE CHINA  ·  EDUARDO HERNÁNDEZ</span><span>2</span></div>
+</section>
+
+<!-- PASO 3 + 4 -->
+<section class="page">
+  <div class="stepbar"><div class="num">3</div><div><p class="eyebrow">Paso 3 de 6</p><h2>Pagar sin miedo y sin estafas</h2></div></div>
+  <p class="lead">Elige cómo vas a pagar cada cosa:</p>
+  <table>
+    <tr><th style="width:24%">Método</th><th>Para qué sirve</th><th style="width:20%">Lo voy a usar para</th></tr>
+    <tr><td class="k">WeChat Pay</td><td>Muestras y montos chicos, directo con el proveedor</td><td></td></tr>
+    <tr><td class="k">Alipay</td><td>El estándar en China para pagos rápidos y seguros</td><td></td></tr>
+    <tr><td class="k">Transferencia B2B</td><td>Empresa a empresa: debe pagar la empresa que va a importar</td><td></td></tr>
+  </table>
+  <div class="grid2" style="margin-top:10px">
+    <div class="box soft"><div class="fill"><span class="t">Monto para la muestra: $</span><span class="l"></span></div><div class="fill"><span class="t">Monto del primer pedido: $</span><span class="l"></span></div></div>
+    <div class="box soft"><p class="tip" style="margin:0"><b>Mi consejo:</b> empieza chiquito. Paga poco para muestras; cuando ya confías en la fábrica, subes volumen y pagas por B2B.</p></div>
+  </div>
+
+  <div class="stepbar" style="margin-top:14px"><div class="num">4</div><div><p class="eyebrow">Paso 4 de 6</p><h2>Importar legal</h2></div></div>
+  <p class="lead">Lo que nadie te explica. Palomea lo que ya tienes:</p>
+  <table>
+    <tr><th style="width:5%">✓</th><th style="width:28%">Requisito</th><th>Qué es</th><th style="width:26%">Mi estatus / notas</th></tr>
+    <tr><td></td><td class="k">Empresa importadora</td><td>Alta en Hacienda y Padrón de Importadores</td><td></td></tr>
+    <tr><td></td><td class="k">Encargo conferido</td><td>Autorización para que el agente aduanal actúe por ti</td><td></td></tr>
+    <tr><td></td><td class="k">NOMs de mi producto</td><td>Normas para que no se quede en la aduana</td><td></td></tr>
+    <tr><td></td><td class="k">Agente aduanal</td><td>Tu aliado para liberar la mercancía</td><td></td></tr>
+  </table>
+  <div class="box" style="margin-top:10px">
+    <h3>Tip con IA: copia esta pregunta en ChatGPT o Claude</h3>
+    <div class="mono">Quiero importar <u>&nbsp;&nbsp;(tu producto)&nbsp;&nbsp;</u> desde China a <u>&nbsp;&nbsp;(tu país)&nbsp;&nbsp;</u>. Dime qué requisitos, permisos, normas (NOM) e impuestos aplican, y qué documentos me debe dar el proveedor.</div>
+    <div class="fill" style="margin-top:8px"><span class="t">Lo que me respondió (resumen):</span><span class="l"></span></div>
+    <div class="ln"></div>
+  </div>
+  <div class="foot"><span>COMPRA EN FÁBRICAS DE CHINA  ·  EDUARDO HERNÁNDEZ</span><span>3</span></div>
+</section>
+
+<!-- PASO 5 -->
+<section class="page">
+  <div class="stepbar"><div class="num">5</div><div><p class="eyebrow">Paso 5 de 6</p><h2>Traerlo a tu país y sacar tu costo REAL</h2></div></div>
+  <p class="lead">Elige cómo lo traes:</p>
+  <div class="grid2">
+    <div class="box"><ul class="chk"><li><b>Vía aérea</b></li></ul><p class="small" style="margin:2px 0 0">Se paga POR KILO. Rápido: ideal para muestras y producto ligero de alto valor.</p></div>
+    <div class="box"><ul class="chk"><li><b>Vía marítima</b></li></ul><p class="small" style="margin:2px 0 0">Consolidado POR METRO CÚBICO o contenedor completo. El costo por pieza más bajo para volumen.</p></div>
+  </div>
+  <p class="tip" style="margin:0 0 12px"><b>Pro tip:</b> pide al proveedor que él arregle el envío al puerto o un contacto door-to-door con seguro.</p>
+
+  <div class="box soft">
+    <h3>Calculadora: ¿cuánto me cuesta cada pieza puesta en mi casa?</h3>
+    <table class="calc" style="background:#fff">
+      <tr><td class="k">A. Precio por pieza × número de piezas</td><td class="op"></td><td>$</td></tr>
+      <tr><td class="k">B. Envío internacional (aéreo o marítimo)</td><td class="op">+</td><td>$</td></tr>
+      <tr><td class="k">C. Impuestos y agente aduanal</td><td class="op">+</td><td>$</td></tr>
+      <tr><td class="k">D. Paquetería nacional hasta mi casa</td><td class="op">+</td><td>$</td></tr>
+      <tr><td class="k">E. COSTO TOTAL (A + B + C + D)</td><td class="op">=</td><td>$</td></tr>
+      <tr><td class="k">F. Costo por pieza (E ÷ número de piezas)</td><td class="op">=</td><td>$</td></tr>
+      <tr><td class="k">G. Precio al que lo voy a vender</td><td class="op"></td><td>$</td></tr>
+      <tr><td class="k">H. Ganancia por pieza (G − F)</td><td class="op">=</td><td>$</td></tr>
+      <tr><td class="k">I. Ganancia total (H × número de piezas)</td><td class="op">=</td><td>$</td></tr>
+    </table>
+    <p class="small" style="margin:8px 0 0">Para revender, cuida los números: si tu costo por pieza (F) se acerca a lo que cuesta en tienda, no deja.</p>
+  </div>
+
+  <div class="box red">
+    <h3 style="color:var(--red)">Guarda esta idea: por eso lo chiquito gana</h3>
+    <p style="margin:0 0 8px">Si el aéreo se cobra por kilo, lo que pesa poco y vale mucho llega rápido y barato. Haz la cuenta con joyería:</p>
+    <table class="calc" style="background:#fff">
+      <tr><td class="k">Me cuesta cada pieza (ejemplo hipotético)</td><td>$25</td><td class="k">Mi número real: $</td></tr>
+      <tr><td class="k">La vendo en (ejemplo hipotético)</td><td>$149</td><td class="k">Mi número real: $</td></tr>
+      <tr><td class="k">Ganancia por pieza</td><td>$124</td><td class="k">Mi número real: $</td></tr>
+      <tr><td class="k">× 100 piezas (caben en una caja)</td><td>$12,400</td><td class="k">Mi número real: $</td></tr>
+    </table>
+  </div>
+  <div class="foot"><span>COMPRA EN FÁBRICAS DE CHINA  ·  EDUARDO HERNÁNDEZ</span><span>4</span></div>
+</section>
+
+<!-- PASO 6 -->
+<section class="page">
+  <div class="stepbar"><div class="num">6</div><div><p class="eyebrow">Paso 6 de 6</p><h2>Ya llegó tu producto. Ahora: a venderlo</h2></div></div>
+  <p class="lead">El producto barato es la mitad del juego. Saber venderlo es la otra mitad.</p>
+
+  <div class="box">
+    <h3>¿Dónde voy a vender? (marca todos los que apliquen)</h3>
+    <ul class="chk" style="display:grid;grid-template-columns:1fr 1fr 1fr;">
+      <li>WhatsApp</li><li>Instagram</li><li>Facebook / Marketplace</li><li>TikTok</li><li>Mi tienda o mostrador</li><li>Bazares / ferias</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h3>Graba TODO el proceso: ideas de contenido</h3>
+    <p class="small" style="margin:0 0 4px">Del pedido al unboxing: ese contenido genera confianza y ventas.</p>
+    <div class="fill"><span class="t">Video 1:</span><span class="l"></span></div>
+    <div class="fill"><span class="t">Video 2:</span><span class="l"></span></div>
+    <div class="fill"><span class="t">Video 3:</span><span class="l"></span></div>
+  </div>
+
+  <div class="box">
+    <h3>Crea tu anuncio con IA</h3>
+    <div class="fill"><span class="t">Mensaje principal (qué gana mi cliente):</span><span class="l"></span></div>
+    <div class="fill"><span class="t">Llamado a la acción:</span><span class="l"></span></div>
+    <div class="fill"><span class="t">Foto publicitaria + video corto de:</span><span class="l"></span></div>
+  </div>
+
+  <div class="box">
+    <h3>Pauta a WhatsApp Business</h3>
+    <div class="grid2">
+      <div class="fill"><span class="t">Presupuesto diario: $</span><span class="l"></span></div>
+      <div class="fill"><span class="t">Días de prueba:</span><span class="l"></span></div>
+    </div>
+    <div class="fill"><span class="t">Mi primer mensaje de respuesta:</span><span class="l"></span></div>
+    <div class="ln"></div>
+  </div>
+
+  <div class="box soft">
+    <h3>Mi plan de los próximos 7 días</h3>
+    <table style="background:#fff">
+      <tr><th style="width:16%">Día</th><th>Qué voy a hacer</th><th style="width:10%">Listo</th></tr>
+      <tr><td>Día 1</td><td></td><td></td></tr>
+      <tr><td>Día 2–3</td><td></td><td></td></tr>
+      <tr><td>Día 4–5</td><td></td><td></td></tr>
+      <tr><td>Día 6–7</td><td></td><td></td></tr>
+    </table>
+  </div>
+  <div class="foot"><span>COMPRA EN FÁBRICAS DE CHINA  ·  EDUARDO HERNÁNDEZ</span><span>5</span></div>
+</section>
+
+<!-- MI CAMINO -->
+<section class="page">
+  <p class="eyebrow red">El momento de la verdad</p>
+  <h2>Elige tu camino</h2>
+  <p class="lead">Los dos caminos llegan. Uno llega mucho antes. Marca el tuyo:</p>
+
+  <div class="path" style="margin-bottom:10px">
+    <ul class="chk"><li><h3 style="display:inline">Camino 1: solo</h3></li></ul>
+    <p style="margin:4px 0 0">Con lo que aprendiste hoy y esta hoja, PUEDES importar lo que tú quieras. Te va a costar tiempo, prueba y error… pero es 100% posible.</p>
+  </div>
+
+  <div class="path j" style="margin-bottom:10px">
+    <div class="qr">
+      <div style="flex:1">
+        <ul class="chk"><li><h3 style="display:inline;color:var(--red)">Camino 2: con JAICO</h3></li></ul>
+        <p style="margin:4px 0 6px">Te saltas la parte difícil: vendes joyería que ya importamos nosotros, a precio de mayoreo. Sin aduana, sin bodega, sin esperar meses.</p>
+        <p class="small" style="margin:0"><b>Por qué joyería:</b> chiquita y ligera (llega en cajas) · siempre se está vendiendo · no necesitas bodega · buen margen.</p>
+        <p style="margin:6px 0 0;font-weight:700">Escanea y ve el catálogo: info.joyeria.shop</p>
+      </div>
+      <img src="qr_jaico.png" alt="QR JAICO">
+    </div>
+  </div>
+
+  <div class="path" style="margin-bottom:10px">
+    <div class="qr">
+      <div style="flex:1">
+        <h3>Para los dos caminos: Escuela de Negocios y Emprendimiento</h3>
+        <p style="margin:2px 0 6px" class="small">Cursos De 0 a 1 Millón, Importación de China, Guía rápida y Sube tus Ventas en 5 Pasos · Zooms EN VIVO cada fin de semana · comunidad · contenido nuevo cada mes.</p>
+        <table style="font-size:9.5pt">
+          <tr><td class="k" style="height:22px">Gratis</td><td style="height:22px">Entras a la comunidad</td></tr>
+          <tr><td class="k" style="height:22px">$15 USD/mes</td><td style="height:22px">De 0 a 1 Millón + Sube tus Ventas en 5 Pasos incluidos</td></tr>
+          <tr><td class="k" style="height:22px">Cursos premium</td><td style="height:22px">Importación de China completo $230 · Arma tu negocio con IA $50 · Guía rápida $50</td></tr>
+        </table>
+      </div>
+      <img src="qr_skool.png" alt="QR Escuela">
+    </div>
+    <p style="margin:8px 0 0;font-weight:700;color:var(--gold)">Regalo: la Guía rápida ya es tuya (es esta clase). Entra a la Escuela y pídele al staff que te la habilite.</p>
+  </div>
+
+  <div class="box soft">
+    <div class="fill"><span class="t">Mi decisión de hoy:</span><span class="l"></span></div>
+    <div class="fill"><span class="t">Lo primero que voy a hacer al terminar la clase:</span><span class="l"></span></div>
+    <p style="margin:8px 0 0;font-style:italic;color:var(--gray)">Lo único que no puedes hacer… es quedarte donde estás.</p>
+  </div>
+  <div class="foot"><span>COMPRA EN FÁBRICAS DE CHINA  ·  EDUARDO HERNÁNDEZ</span><span>6</span></div>
+</section>
+
+</body>
+</html>
