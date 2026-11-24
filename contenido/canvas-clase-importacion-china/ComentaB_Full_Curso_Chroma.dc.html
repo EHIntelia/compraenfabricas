@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Comenta Curso · B animado con textos chroma</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0}
+.top{box-shadow:0 16px 40px rgba(26,26,26,0.25);animation:topIn 6s ease-out infinite both}
+.bar{box-shadow:0 24px 60px rgba(220,38,38,0.35);animation:barIn 6s ease-out infinite both}
+.bot{box-shadow:0 12px 32px rgba(26,26,26,0.3);animation:botIn 6s ease-out infinite both}
+.ck .top,.ck .bar,.ck .bot{box-shadow:none}
+.ck .top{animation-name:topInCk}.ck .bar{animation-name:barInCk}.ck .bot{animation-name:botInCk}
+@keyframes topIn{0%{opacity:0;transform:translateY(-30px)}6.67%{opacity:1;transform:translateY(0)}93%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(0)}}
+@keyframes barIn{0%{opacity:0;transform:translateY(40px) scale(.92)}5%{opacity:0;transform:translateY(40px) scale(.92)}11.67%{opacity:1;transform:translateY(0) scale(1)}93%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:0;transform:translateY(0) scale(1)}}
+@keyframes botIn{0%{opacity:0;transform:translateY(30px)}43.33%{opacity:0;transform:translateY(30px)}50%{opacity:1;transform:translateY(0)}93%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(0)}}
+@keyframes topInCk{0%{transform:scale(0)}6.67%{transform:scale(1)}93%{transform:scale(1)}100%{transform:scale(0)}}
+@keyframes barInCk{0%{transform:scale(0)}5%{transform:scale(0)}11.67%{transform:scale(1)}93%{transform:scale(1)}100%{transform:scale(0)}}
+@keyframes botInCk{0%{transform:scale(0)}43.33%{transform:scale(0)}50%{transform:scale(1)}93%{transform:scale(1)}100%{transform:scale(0)}}
+.l{font-size:0;animation:6s steps(1,end) infinite both}
+.l1{animation-name:l1}.l2{animation-name:l2}.l3{animation-name:l3}.l4{animation-name:l4}.l5{animation-name:l5}
+@keyframes l1{0%{font-size:0}15%{font-size:96px}100%{font-size:96px}}
+@keyframes l2{0%{font-size:0}18.33%{font-size:96px}100%{font-size:96px}}
+@keyframes l3{0%{font-size:0}21.67%{font-size:96px}100%{font-size:96px}}
+@keyframes l4{0%{font-size:0}25%{font-size:96px}100%{font-size:96px}}
+@keyframes l5{0%{font-size:0}28.33%{font-size:96px}100%{font-size:96px}}
+.caret{animation:blink .8s steps(1,end) infinite}
+@keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}
+.send{animation:press 6s ease-out infinite both}
+@keyframes press{0%{transform:scale(1)}36.67%{transform:scale(1)}39%{transform:scale(.86)}42%{transform:scale(1.1)}45%{transform:scale(1)}100%{transform:scale(1)}}
+.ic-arrow{animation:icOut 6s steps(1,end) infinite both}
+.ic-check{animation:icIn 6s steps(1,end) infinite both}
+@keyframes icOut{0%{opacity:1}40%{opacity:0}100%{opacity:0}}
+@keyframes icIn{0%{opacity:0}40%{opacity:1}100%{opacity:1}}
+</style>
+</helmet>
+<div class="root ck" style="background: #00FF00; width: 1080px; height: 640px; box-sizing: border-box; padding: 60px 80px; font-family: Arial, Helvetica, sans-serif; color: #1A1A1A; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 32px">
+<div class="top" style="background: #FFFFFF; border-radius: 24px; padding: 20px 36px; font-size: 40px; font-weight: 900; letter-spacing: -0.01em">Escribe en los comentarios:</div>
+<div class="bar" style="width: 100%; box-sizing: border-box; background: #FFFFFF; border: 4px solid #F97316; border-radius: 999px; padding: 18px 18px 18px 22px; display: flex; gap: 24px; align-items: center">
+<div style="flex: 0 0 88px; height: 88px; border-radius: 50%; background: #FCE4DC; display: flex; align-items: center; justify-content: center">
+<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"></path></svg>
+</div>
+<div style="flex: 1 1 0; height: 110px; display: flex; align-items: center; gap: 4px">
+<span style="font-size: 96px; font-weight: 900; letter-spacing: -0.02em; line-height: 1"><span class="l l1">C</span><span class="l l2">u</span><span class="l l3">r</span><span class="l l4">s</span><span class="l l5">o</span></span>
+<span class="caret" style="width: 6px; height: 88px; border-radius: 3px; background: #F97316"></span>
+</div>
+<div class="send" style="position: relative; flex: 0 0 128px; height: 128px; border-radius: 50%; background: linear-gradient(90deg,#F97316,#DC2626)">
+<svg class="ic-arrow" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="position: absolute; left: 34px; top: 34px"><path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+<svg class="ic-check" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="position: absolute; left: 32px; top: 32px"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>
+</div>
+</div>
+<div class="bot" style="background: #1A1A1A; color: #FFFFFF; border-radius: 999px; padding: 16px 32px; font-size: 30px; font-weight: 700">y te mando la liga por mensaje</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":640}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Caja secreta · cubo interrogación</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0}
+.k1-stage{perspective:1800px}
+.k1-float{animation:k1float 3s ease-in-out infinite alternate}
+.k1-cube{position:relative;width:380px;height:380px;transform-style:preserve-3d;animation:k1spin 9s linear infinite}
+.k1-f{position:absolute;inset:0;box-sizing:border-box;border:12px solid #1A1A1A;border-radius:8px;display:flex;align-items:center;justify-content:center;backface-visibility:hidden;font-family:Arial, Helvetica, sans-serif;font-weight:900;font-size:270px;line-height:1;color:#FFFFFF;text-shadow:10px 10px 0 #1A1A1A}
+.k1-front{transform:translateZ(190px)}
+.k1-back{transform:rotateY(180deg) translateZ(190px)}
+.k1-right{transform:rotateY(90deg) translateZ(190px)}
+.k1-left{transform:rotateY(-90deg) translateZ(190px)}
+.k1-top{transform:rotateX(90deg) translateZ(190px)}
+.k1-bottom{transform:rotateX(-90deg) translateZ(190px)}
+.k1-spark{position:absolute;animation:k1tw 2.4s ease-in-out infinite both}
+.k1-q{position:absolute;animation:k1pop 4.5s ease-out infinite both}
+@keyframes k1spin{from{transform:rotateX(-20deg) rotateY(0deg)}to{transform:rotateX(-20deg) rotateY(360deg)}}
+@keyframes k1float{from{transform:translateY(-26px)}to{transform:translateY(26px)}}
+@keyframes k1tw{0%{transform:scale(0) rotate(0deg)}30%{transform:scale(1) rotate(45deg)}60%{transform:scale(0) rotate(90deg)}100%{transform:scale(0) rotate(90deg)}}
+@keyframes k1pop{0%{transform:scale(0) rotate(-20deg)}12%{transform:scale(1.15) rotate(8deg)}18%{transform:scale(1) rotate(0deg)}70%{transform:scale(1) rotate(0deg)}80%{transform:scale(0) rotate(0deg)}100%{transform:scale(0)}}
+@media (prefers-reduced-motion: reduce){.k1-cube{animation:none;transform:rotateX(-20deg) rotateY(-35deg)}.k1-float,.k1-spark,.k1-q{animation:none}}
+</style>
+</helmet>
+<div role="img" aria-label="Cubo naranja con signos de interrogación girando" style="position: relative; width: 1080px; height: 1080px; background: #00FF00; display: flex; align-items: center; justify-content: center; overflow: hidden">
+<svg class="k1-spark" style="left: 190px; top: 230px; animation-delay: 0s" width="90" height="90" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.2" stroke-linejoin="round"></path></svg>
+<svg class="k1-spark" style="left: 820px; top: 200px; animation-delay: .8s" width="70" height="70" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#FFD43B" stroke="#1A1A1A" stroke-width="1.2" stroke-linejoin="round"></path></svg>
+<svg class="k1-spark" style="left: 860px; top: 760px; animation-delay: 1.6s" width="84" height="84" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.2" stroke-linejoin="round"></path></svg>
+<svg class="k1-spark" style="left: 150px; top: 780px; animation-delay: 1.2s" width="60" height="60" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#FFD43B" stroke="#1A1A1A" stroke-width="1.2" stroke-linejoin="round"></path></svg>
+<div class="k1-q" style="left: 110px; top: 470px; width: 110px; height: 110px; border-radius: 50%; background: #FFFFFF; border: 8px solid #1A1A1A; box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-family: Arial, Helvetica, sans-serif; font-size: 66px; font-weight: 900; color: #DC2626; animation-delay: .3s">?</div>
+<div class="k1-q" style="left: 850px; top: 430px; width: 130px; height: 130px; border-radius: 50%; background: #FFFFFF; border: 8px solid #1A1A1A; box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-family: Arial, Helvetica, sans-serif; font-size: 80px; font-weight: 900; color: #F97316; animation-delay: 2.2s">?</div>
+<div class="k1-stage">
+<div class="k1-float">
+<div class="k1-cube">
+<div class="k1-f k1-front" style="background: #F97316">?</div>
+<div class="k1-f k1-back" style="background: #F97316">?</div>
+<div class="k1-f k1-right" style="background: #DC2626">?</div>
+<div class="k1-f k1-left" style="background: #DC2626">?</div>
+<div class="k1-f k1-top" style="background: #FDBA74">?</div>
+<div class="k1-f k1-bottom" style="background: #C2410C">?</div>
+</div>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1080}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

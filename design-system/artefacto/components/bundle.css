@@ -1,0 +1,16 @@
+/* Compra en Fábricas (marca solo en naranjas, sin rojos) — what tokens.json does not hold (the degradado estrella and motion) and the base element rules. Colors, type, spacing, radii and shadows come from tokens.css. */
+:root{
+--gradient-estrella:linear-gradient(90deg,#F97316 0%,#EA580C 100%);
+--gradient-estrella-diag:linear-gradient(135deg,#F97316 0%,#EA580C 100%);
+--gradient-estrella-hover:linear-gradient(90deg,#EA580C 0%,#C2410C 100%);
+--ease-out:cubic-bezier(.2,.8,.2,1);
+--dur-fast:150ms;
+--dur-base:220ms;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:var(--font-sans);color:var(--text-primary);background:var(--surface-page);line-height:var(--lh-body);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-weight:var(--fw-black);line-height:var(--lh-heading);letter-spacing:var(--ls-tight);margin:0;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+a{color:var(--cef-naranja-700);text-decoration:underline;text-underline-offset:2px}
+a:hover{color:var(--cef-naranja)}
+.cef-gradient-text{background:var(--gradient-estrella);-webkit-background-clip:text;background-clip:text;color:transparent}

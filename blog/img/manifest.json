@@ -97,7 +97,7 @@
     "height": 675,
     "kind": "infografia",
     "alt": "Tabla comparativa de cursos para importar de China en 2026 por precio, formato y proveedores",
-    "bytes": 50658
+    "bytes": 50442
   },
   {
     "slug": "cursos-para-importar-de-china",
@@ -198,5 +198,369 @@
     "kind": "redes",
     "alt": "Importar joyería de China para vender por mayoreo, publicación para redes sociales",
     "bytes": 44866
+  },
+  {
+    "slug": "requisitos-para-importar-de-china-a-mexico",
+    "file": "requisitos-para-importar-de-china-a-mexico-2026.webp",
+    "path": "/blog/requisitos-para-importar-de-china-a-mexico/requisitos-para-importar-de-china-a-mexico-2026.webp",
+    "width": 1200,
+    "height": 630,
+    "kind": "portada",
+    "alt": "Requisitos para importar de China a México en 2026: RFC, padrón y agente aduanal",
+    "bytes": 35334
+  },
+  {
+    "slug": "requisitos-para-importar-de-china-a-mexico",
+    "file": "lista-requisitos-para-importar-de-china.webp",
+    "path": "/blog/requisitos-para-importar-de-china-a-mexico/lista-requisitos-para-importar-de-china.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Tabla con la lista de requisitos para importar de China a México en 2026",
+    "bytes": 49224
+  },
+  {
+    "slug": "requisitos-para-importar-de-china-a-mexico",
+    "file": "pasos-padron-de-importadores-2026.webp",
+    "path": "/blog/requisitos-para-importar-de-china-a-mexico/pasos-padron-de-importadores-2026.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Pasos para inscribirte en el Padrón de Importadores del SAT en 2026",
+    "bytes": 45428
+  },
+  {
+    "slug": "requisitos-para-importar-de-china-a-mexico",
+    "file": "requisitos-para-importar-de-china-a-mexico-redes.webp",
+    "path": "/blog/requisitos-para-importar-de-china-a-mexico/requisitos-para-importar-de-china-a-mexico-redes.webp",
+    "width": 1080,
+    "height": 1080,
+    "kind": "redes",
+    "alt": "Requisitos para importar de China a México en 2026, publicación para redes sociales",
+    "bytes": 45700
+  },
+  {
+    "slug": "cuanto-cuesta-importar-de-china",
+    "file": "cuanto-cuesta-importar-de-china-2026.webp",
+    "path": "/blog/cuanto-cuesta-importar-de-china/cuanto-cuesta-importar-de-china-2026.webp",
+    "width": 1200,
+    "height": 630,
+    "kind": "portada",
+    "alt": "Cuánto cuesta importar de China a México en 2026, desglose de costos con números",
+    "bytes": 35252
+  },
+  {
+    "slug": "cuanto-cuesta-importar-de-china",
+    "file": "desglose-costos-importar-de-china-ejemplo.webp",
+    "path": "/blog/cuanto-cuesta-importar-de-china/desglose-costos-importar-de-china-ejemplo.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Desglose de cuánto cuesta importar de China con un ejemplo de 500 piezas",
+    "bytes": 46922
+  },
+  {
+    "slug": "cuanto-cuesta-importar-de-china",
+    "file": "costo-por-pieza-importar-vs-caja-en-mexico.webp",
+    "path": "/blog/cuanto-cuesta-importar-de-china/costo-por-pieza-importar-vs-caja-en-mexico.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Costo por pieza al importar de China comparado con una caja que ya está en México",
+    "bytes": 44954
+  },
+  {
+    "slug": "cuanto-cuesta-importar-de-china",
+    "file": "cuanto-cuesta-importar-de-china-redes.webp",
+    "path": "/blog/cuanto-cuesta-importar-de-china/cuanto-cuesta-importar-de-china-redes.webp",
+    "width": 1080,
+    "height": 1080,
+    "kind": "redes",
+    "alt": "Cuánto cuesta importar de China a México en 2026, publicación para redes sociales",
+    "bytes": 42210
+  },
+  {
+    "slug": "comprar-directo-de-fabrica-en-china",
+    "file": "comprar-directo-de-fabrica-en-china-sin-intermediarios.webp",
+    "path": "/blog/comprar-directo-de-fabrica-en-china/comprar-directo-de-fabrica-en-china-sin-intermediarios.webp",
+    "width": 1200,
+    "height": 630,
+    "kind": "portada",
+    "alt": "Comprar directo de fábrica en China sin intermediarios: fábrica, trading y revendedor",
+    "bytes": 28228
+  },
+  {
+    "slug": "comprar-directo-de-fabrica-en-china",
+    "file": "fabrica-vs-trading-vs-revendedor-china.webp",
+    "path": "/blog/comprar-directo-de-fabrica-en-china/fabrica-vs-trading-vs-revendedor-china.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Tabla con la diferencia entre fábrica, trading y revendedor al comprar en China",
+    "bytes": 33922
+  },
+  {
+    "slug": "comprar-directo-de-fabrica-en-china",
+    "file": "senales-para-saber-si-es-fabrica-en-china.webp",
+    "path": "/blog/comprar-directo-de-fabrica-en-china/senales-para-saber-si-es-fabrica-en-china.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Las 7 señales para saber si un proveedor en China es fábrica",
+    "bytes": 38464
+  },
+  {
+    "slug": "comprar-directo-de-fabrica-en-china",
+    "file": "comprar-directo-de-fabrica-en-china-redes.webp",
+    "path": "/blog/comprar-directo-de-fabrica-en-china/comprar-directo-de-fabrica-en-china-redes.webp",
+    "width": 1080,
+    "height": 1080,
+    "kind": "redes",
+    "alt": "Comprar directo de fábrica en China, publicación para redes sociales",
+    "bytes": 40266
+  },
+  {
+    "slug": "como-pagar-a-un-proveedor-en-china",
+    "file": "como-pagar-a-un-proveedor-en-china-seguro.webp",
+    "path": "/blog/como-pagar-a-un-proveedor-en-china/como-pagar-a-un-proveedor-en-china-seguro.webp",
+    "width": 1200,
+    "height": 630,
+    "kind": "portada",
+    "alt": "Cómo pagar a un proveedor en China de forma segura y sin que te estafen",
+    "bytes": 31384
+  },
+  {
+    "slug": "como-pagar-a-un-proveedor-en-china",
+    "file": "reglas-para-pagar-seguro-a-china.webp",
+    "path": "/blog/como-pagar-a-un-proveedor-en-china/reglas-para-pagar-seguro-a-china.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Las 5 reglas para pagar a un proveedor en China de forma segura",
+    "bytes": 33702
+  },
+  {
+    "slug": "como-pagar-a-un-proveedor-en-china",
+    "file": "senales-de-fraude-al-pagar-a-china.webp",
+    "path": "/blog/como-pagar-a-un-proveedor-en-china/senales-de-fraude-al-pagar-a-china.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Señales de fraude al pagar a un proveedor en China",
+    "bytes": 35270
+  },
+  {
+    "slug": "como-pagar-a-un-proveedor-en-china",
+    "file": "como-pagar-a-un-proveedor-en-china-redes.webp",
+    "path": "/blog/como-pagar-a-un-proveedor-en-china/como-pagar-a-un-proveedor-en-china-redes.webp",
+    "width": 1080,
+    "height": 1080,
+    "kind": "redes",
+    "alt": "Cómo pagar a un proveedor en China, publicación para redes sociales",
+    "bytes": 43750
+  },
+  {
+    "slug": "aranceles-china-mexico-2026",
+    "file": "aranceles-a-china-2026-mexico.webp",
+    "path": "/blog/aranceles-china-mexico-2026/aranceles-a-china-2026-mexico.webp",
+    "width": 1200,
+    "height": 630,
+    "kind": "portada",
+    "alt": "Aranceles a China 2026 en México: puerto con contenedores al atardecer",
+    "bytes": 72370
+  },
+  {
+    "slug": "aranceles-china-mexico-2026",
+    "file": "que-cambio-aranceles-a-china-2026.webp",
+    "path": "/blog/aranceles-china-mexico-2026/que-cambio-aranceles-a-china-2026.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Lo que cambió en los aranceles a China en 2026: 1,463 fracciones, 185 fracciones y 33.5% en paquetería",
+    "bytes": 33266
+  },
+  {
+    "slug": "aranceles-china-mexico-2026",
+    "file": "tasas-aranceles-a-china-2026.webp",
+    "path": "/blog/aranceles-china-mexico-2026/tasas-aranceles-a-china-2026.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Cuántas fracciones quedaron en cada tasa con los aranceles a China 2026",
+    "bytes": 24248
+  },
+  {
+    "slug": "aranceles-china-mexico-2026",
+    "file": "revision-en-aduana-contenedores.webp",
+    "path": "/blog/aranceles-china-mexico-2026/revision-en-aduana-contenedores.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "foto",
+    "alt": "Contenedores en patio de aduana mientras un inspector revisa la mercancía",
+    "bytes": 82758,
+    "source": "brand/fotos/patio-aduana-contenedores-inspector.jpg"
+  },
+  {
+    "slug": "aranceles-china-mexico-2026",
+    "file": "aranceles-a-china-2026-redes.webp",
+    "path": "/blog/aranceles-china-mexico-2026/aranceles-a-china-2026-redes.webp",
+    "width": 1080,
+    "height": 1080,
+    "kind": "redes",
+    "alt": "Aranceles a China 2026 para importar a México, versión para redes",
+    "bytes": 114914
+  },
+  {
+    "slug": "envio-aereo-o-maritimo-desde-china",
+    "file": "envio-aereo-o-maritimo-desde-china.webp",
+    "path": "/blog/envio-aereo-o-maritimo-desde-china/envio-aereo-o-maritimo-desde-china.webp",
+    "width": 1200,
+    "height": 630,
+    "kind": "portada",
+    "alt": "Envío aéreo o marítimo desde China: bodega con cajas listas para embarcar a México",
+    "bytes": 51764
+  },
+  {
+    "slug": "envio-aereo-o-maritimo-desde-china",
+    "file": "aereo-vs-maritimo-desde-china.webp",
+    "path": "/blog/envio-aereo-o-maritimo-desde-china/aereo-vs-maritimo-desde-china.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Envío aéreo o marítimo desde China: cómo se cobra, cuánto tarda y para qué conviene cada uno",
+    "bytes": 34306
+  },
+  {
+    "slug": "envio-aereo-o-maritimo-desde-china",
+    "file": "peso-volumetrico-envio-desde-china.webp",
+    "path": "/blog/envio-aereo-o-maritimo-desde-china/peso-volumetrico-envio-desde-china.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Cómo calcular el peso volumétrico de una caja para envío aéreo desde China",
+    "bytes": 33410
+  },
+  {
+    "slug": "envio-aereo-o-maritimo-desde-china",
+    "file": "entrega-mercancia-de-china-en-tu-negocio.webp",
+    "path": "/blog/envio-aereo-o-maritimo-desde-china/entrega-mercancia-de-china-en-tu-negocio.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "foto",
+    "alt": "Entrega de cajas importadas de China en la puerta de un negocio en México",
+    "bytes": 159358,
+    "source": "brand/fotos/entrega-cajas-en-negocio.jpg"
+  },
+  {
+    "slug": "envio-aereo-o-maritimo-desde-china",
+    "file": "envio-aereo-o-maritimo-desde-china-redes.webp",
+    "path": "/blog/envio-aereo-o-maritimo-desde-china/envio-aereo-o-maritimo-desde-china-redes.webp",
+    "width": 1080,
+    "height": 1080,
+    "kind": "redes",
+    "alt": "Envío aéreo o marítimo desde China, versión para redes",
+    "bytes": 104786
+  },
+  {
+    "slug": "que-es-yiwu",
+    "file": "que-es-yiwu-mercado-mayorista-china.webp",
+    "path": "/blog/que-es-yiwu/que-es-yiwu-mercado-mayorista-china.webp",
+    "width": 1200,
+    "height": 630,
+    "kind": "portada",
+    "alt": "Qué es Yiwu: pasillo del mercado mayorista de Yiwu en China con compradores",
+    "bytes": 84956
+  },
+  {
+    "slug": "que-es-yiwu",
+    "file": "yiwu-en-numeros.webp",
+    "path": "/blog/que-es-yiwu/yiwu-en-numeros.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Yiwu en números: casi 80,000 puestos, más de 2.1 millones de productos y a unas 2 horas de Shanghái en tren",
+    "bytes": 29398
+  },
+  {
+    "slug": "que-es-yiwu",
+    "file": "yiwu-o-fabrica-cual-conviene.webp",
+    "path": "/blog/que-es-yiwu/yiwu-o-fabrica-cual-conviene.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Yiwu o fábrica: cuándo conviene comprar en el mercado de Yiwu y cuándo directo de fábrica",
+    "bytes": 35304
+  },
+  {
+    "slug": "que-es-yiwu",
+    "file": "puesto-mercado-mayorista-yiwu.webp",
+    "path": "/blog/que-es-yiwu/puesto-mercado-mayorista-yiwu.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "foto",
+    "alt": "Vendedora en un puesto de mercado mayorista con mercancía de surtido general",
+    "bytes": 90136,
+    "source": "brand/fotos/puesto-mercado-mayorista.jpg"
+  },
+  {
+    "slug": "que-es-yiwu",
+    "file": "que-es-yiwu-redes.webp",
+    "path": "/blog/que-es-yiwu/que-es-yiwu-redes.webp",
+    "width": 1080,
+    "height": 1080,
+    "kind": "redes",
+    "alt": "Qué es Yiwu y cómo comprar ahí, versión para redes",
+    "bytes": 152798
+  },
+  {
+    "slug": "joyeria-de-acero-inoxidable",
+    "file": "joyeria-de-acero-inoxidable-mayoreo.webp",
+    "path": "/blog/joyeria-de-acero-inoxidable/joyeria-de-acero-inoxidable-mayoreo.webp",
+    "width": 1200,
+    "height": 630,
+    "kind": "portada",
+    "alt": "Joyería de acero inoxidable dorada: cadenas, aretes y dijes para vender al mayoreo",
+    "bytes": 62036
+  },
+  {
+    "slug": "joyeria-de-acero-inoxidable",
+    "file": "acero-316l-vs-chapa-vs-plata.webp",
+    "path": "/blog/joyeria-de-acero-inoxidable/acero-316l-vs-chapa-vs-plata.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Joyería de acero inoxidable: diferencia entre acero 316L, acero 304, chapa de oro y plata 925",
+    "bytes": 31222
+  },
+  {
+    "slug": "joyeria-de-acero-inoxidable",
+    "file": "margen-joyeria-de-acero-mayoreo-menudeo.webp",
+    "path": "/blog/joyeria-de-acero-inoxidable/margen-joyeria-de-acero-mayoreo-menudeo.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Margen de la joyería de acero inoxidable: costo, precio de mayoreo y precio de menudeo",
+    "bytes": 28030
+  },
+  {
+    "slug": "joyeria-de-acero-inoxidable",
+    "file": "joyeria-de-acero-dorada-para-vender.webp",
+    "path": "/blog/joyeria-de-acero-inoxidable/joyeria-de-acero-dorada-para-vender.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "foto",
+    "alt": "Joyería de acero inoxidable dorada sobre piedra con estuche para regalo",
+    "bytes": 83562,
+    "source": "brand/fotos/joyeria-dorada-sobre-piedra.jpg"
+  },
+  {
+    "slug": "joyeria-de-acero-inoxidable",
+    "file": "joyeria-de-acero-inoxidable-redes.webp",
+    "path": "/blog/joyeria-de-acero-inoxidable/joyeria-de-acero-inoxidable-redes.webp",
+    "width": 1080,
+    "height": 1080,
+    "kind": "redes",
+    "alt": "Joyería de acero inoxidable para vender, versión para redes",
+    "bytes": 86284
   }
 ]

@@ -1,0 +1,78 @@
+/* Compra en Fábricas Design System — generated from tokens.json */
+:root, [data-theme="light"] {
+  --cef-naranja: #f97316;
+  --cef-rojo: #dc2626;
+  --cef-tinta: #1a1a1a;
+  --cef-gris: #6b6b6b;
+  --cef-durazno: #fce4dc;
+  --cef-crema: #fff8f5;
+  --cef-blanco: #ffffff;
+  --cef-borde: #d9cfc7;
+  --cef-naranja-logo: #ff8212;
+  --cef-naranja-700: #c2410c;
+  --cef-rojo-700: #b91c1c;
+  --cef-verde: #16a34a;
+  --cef-verde-bg: #dcfce7;
+  --text-primary: var(--cef-tinta);
+  --text-secondary: var(--cef-gris);
+  --text-highlight: var(--cef-rojo);
+  --text-on-accent: var(--cef-blanco);
+  --accent: var(--cef-naranja);
+  --accent-strong: var(--cef-rojo);
+  --surface-page: var(--cef-crema);
+  --surface-card: var(--cef-blanco);
+  --surface-badge: var(--cef-durazno);
+  --surface-highlight: var(--cef-durazno);
+  --surface-dark: var(--cef-tinta);
+  --border-default: var(--cef-borde);
+  --border-focus: var(--cef-naranja);
+  --shadow-sm: 0 1px 2px rgba(26,26,26,.06);
+  --shadow-md: 0 6px 20px rgba(26,26,26,.08);
+  --shadow-lg: 0 16px 40px rgba(26,26,26,.10);
+  --shadow-accent: 0 8px 24px rgba(220,38,38,.25);
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-black: 900;
+  --lh-tight: 1.05;
+  --lh-heading: 1.15;
+  --lh-body: 1.55;
+  --ls-tight: -0.02em;
+  --ls-badge: 0.08em;
+  --fs-display: clamp(36px,9vw,64px);
+  --fs-h1: clamp(30px,7vw,48px);
+  --fs-h2: clamp(24px,5.5vw,34px);
+  --fs-h3: 20px;
+  --fs-body-lg: 18px;
+  --fs-body: 16px;
+  --fs-small: 14px;
+  --fs-micro: 12px;
+  --container-mobile: 480px;
+  --container-desktop: 1120px;
+  --font-sans: Arial,"Helvetica Neue",Helvetica,sans-serif;
+  --font-display: Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+.display { font-family: var(--font-display); font-size: 64px; line-height: 1.05; font-weight: 900; letter-spacing: -0.02em; }
+.h1 { font-family: var(--font-display); font-size: 48px; line-height: 1.15; font-weight: 900; letter-spacing: -0.02em; }
+.h2 { font-family: var(--font-display); font-size: 34px; line-height: 1.15; font-weight: 900; letter-spacing: -0.02em; }
+.h3 { font-family: var(--font-display); font-size: 20px; line-height: 1.15; font-weight: 900; letter-spacing: -0.02em; }
+.body-lg { font-family: var(--font-sans); font-size: 18px; line-height: 1.55; font-weight: 400; }
+.body { font-family: var(--font-sans); font-size: 16px; line-height: 1.55; font-weight: 400; }
+.small { font-family: var(--font-sans); font-size: 14px; line-height: 1.55; font-weight: 400; }
+.badge { font-family: var(--font-sans); font-size: 12px; line-height: 1.2; font-weight: 700; letter-spacing: 0.08em; }
+.eyebrow { font-family: var(--font-sans); font-size: 13px; font-weight: 700; letter-spacing: 0.08em; }
