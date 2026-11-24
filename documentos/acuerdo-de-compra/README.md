@@ -32,3 +32,5 @@ Los totales se calculan solos: piezas × precio por pieza, más el envío de cad
 - `assets/logo-horizontal.png`: logo oficial del design system.
 - `assets/ejemplo-producto.jpg`: foto de ejemplo (lentes YJ12).
 - `ejemplo/acuerdo-ejemplo.pdf`: cómo se ve con los datos de ejemplo.
+- `clientes/`: copias de acuerdos reales **sin datos privados** (teléfono, dirección y cuenta ocultos, nombre abreviado, sin sello). El acuerdo completo de cada cliente está en Drive, en su carpeta dentro de "Compra en China".
+  - `CF-2026-007_acuerdo_sin_datos_privados.pdf`: Rocío R., 93 lentes YJ12, envío DHL Express a Zacatecas.
