@@ -1,11 +1,13 @@
 # HANDOFF — COMPRA EN FÁBRICAS DE CHINA
-### Documento maestro de contexto · Actualizado 11 nov 2026 (v2: blog + SEO + correcciones con el sitio real)
+### Documento maestro de contexto · Actualizado 21 nov 2026 (v3: precio real de la Escuela en Skool)
 
 > **Para qué sirve este documento:** que cualquier persona (o cualquier IA) que lo lea entienda el proyecto completo de Compra en Fábricas de China: qué es, cómo funciona, qué se vende, cómo hablamos, qué está hecho y qué falta.
 >
 > **Regla de oro (nueva):** si este documento y el sitio compraenfabricas.com no coinciden, **manda lo que dice el sitio**. El sitio es la fuente de verdad de productos, precios y condiciones.
 >
-> **Qué cambió en esta versión:** se corrigieron datos que estaban desactualizados (clase, proveedores de regalo, validación, clase gratis) y se agregaron las secciones 17 a 21 (blog, SEO, imágenes, proyecto en Lovable, repo y pendientes nuevos).
+> **Qué cambió en v3 (21 nov 2026):** el precio correcto de la Escuela es **$15 USD/mes** (lo que cobra Skool); se quitó el $250 MXN/mes y el $2,500/año. Se agregó el estado actual de membresías en la sección 6.
+>
+> **Qué cambió en v2:** se corrigieron datos que estaban desactualizados (clase, proveedores de regalo, validación, clase gratis) y se agregaron las secciones 17 a 21 (blog, SEO, imágenes, proyecto en Lovable, repo y pendientes nuevos).
 
 ---
 
@@ -45,18 +47,23 @@ El equipo chino (gente de Eduardo en China) busca, compara y valida fábricas: "
 
 > ⚠️ **No confundir** con la marca personal de Eduardo Hernández (negro + rojo #A30E1A, fuente Koltav). Esta es otra marca.
 
+> **Actualización 19 nov 2026 (Eduardo):** la marca va **solo en naranjas, sin rojos**. El rojo `#DC2626` y el durazno rosado `#FCE4DC` ya no se usan. Fuente de verdad del brand kit: el design system en Claude (https://claude.ai/artifact/LQo5jwhwzq4XSH1Qdj43Fr).
+
 | Color | Hex | Uso |
 |---|---|---|
-| Naranja | `#F97316` | Primario / acentos |
-| Rojo | `#DC2626` | Botones, CTAs, sellos |
-| Tinta (texto) | `#1A1A1A` | Texto principal |
+| Naranja | `#F97316` | Primario: inicio del degradado, bordes, acentos |
+| Naranja oscuro | `#EA580C` | Final del degradado, precios y totales grandes, sello oficial |
+| Naranja texto | `#C2410C` | Texto destacado, enlaces, "Importante:", errores |
+| Naranja muy oscuro | `#9A3412` | Avisos sobre durazno |
+| Tinta (texto) | `#1A1A1A` | Texto principal, encabezados de tabla |
 | Gris | `#6B6B6B` | Texto secundario |
-| Durazno | `#FCE4DC` | Badges, insignias |
-| Crema | `#FFF8F5` | Fondos |
+| Durazno | `#FFEDD5` | Badges, cajas de nota, caja "Importante" |
+| Crema | `#FFF8F5` | Fondos, celdas de tablas |
 | Borde | `#D9CFC7` | Líneas / bordes |
 
-- **Firma visual:** degradado naranja → rojo.
-- **Logo:** "Compra en Fábricas de China · Xijiao Shops" (horizontal). En el sitio el ícono es el carácter 中 en un cuadro con el degradado.
+- **Firma visual:** degradado naranja → naranja oscuro (`#F97316 → #EA580C`), igual que en el sitio.
+- **Logo oficial:** el ícono naranja (dos formas, `#FF8212`) + "Compra en fábricas" en negro. Archivos: `logo-horizontal.png`, `logo-vertical.png` e `icono.png` en el design system. El cuadro con el carácter 中 en degradado naranja-rojo (favicon viejo del sitio) **no es el logo de la marca**.
+- **Sello oficial:** "Compra en fábricas · Directo de fábrica · De China", ahora en naranja `#EA580C` (en el design system, `assets/sellos/`).
 - **Redes oficiales:** Instagram https://www.instagram.com/compraenfabricasdechina · Facebook https://www.facebook.com/profile.php?id=61591427343713 · TikTok https://www.tiktok.com/@compraenfabricasdechina
 
 ---
@@ -89,7 +96,7 @@ Aplican a TODO el contenido: anuncios, mensajes, guiones, páginas y blog.
 | Producto | Precio | Ruta | Detalle |
 |---|---|---|---|
 | **Clase en vivo con Eduardo** | **$990 MXN** (~$54 USD) | /clase | En vivo, hablas con Eduardo. **Incluye grabación**, material de apoyo, plantillas y **5 proveedores de regalo**: 2 de electrónica (AEMAI y Port Tide, con videos) + 3 de surtido general de Yiwu (Grace, Wilhem, Vincent, que se abren al entrar). Producto de entrada y CTA principal. Próxima fecha publicada: 21 de noviembre. Pago por Stripe. |
-| **Escuela de Negocios (Skool)** | **$250 MXN/mes** o **$2,500/año** | /escuela | Cursos grabados (importación desde China, ventas, negocio), Zooms en vivo con Eduardo y comunidad. Cancelas cuando quieras. **Ya no se menciona mini-curso gratis.** |
+| **Escuela de Negocios (Skool)** | **$15 USD/mes** (cobro en Skool; desde el 21 nov 2026 ya no existen los planes de $250 MXN/mes ni $2,500/año) | /escuela | Cursos grabados (importación desde China, ventas, negocio), Zooms en vivo con Eduardo y comunidad. Cancelas cuando quieras. **Ya no se menciona mini-curso gratis.** |
 | **Joyería al mayoreo** | Variable | /joyeria y https://info.joyeria.shop/ | El producto estrella real, vía JAICO / Xijiao Shops. |
 | **Cajas de electrónica** | Desde ~$3,000 MXN por caja | /productos | Ya están en México. Se apartan con **20% de anticipo**, 7 días para pagar el 80% + envío nacional, llegan en 1 a 2 días hábiles. Flete desde China incluido; paquetería nacional aparte. Se venden cajas completas, no piezas. Ej.: WK104 Lentes AI, 50 pzas, $46,058 MXN. |
 | **Proveedores de tecnología** | — | /marketplace | Port Tide y AEMAI, cada uno con sus videos. |
@@ -108,6 +115,11 @@ Aplican a TODO el contenido: anuncios, mensajes, guiones, páginas y blog.
 ## 6. LA ESCUELA (Skool)
 
 - Membresía en Skool: cursos grabados + Zooms en vivo + comunidad.
+- Nombre de la comunidad en Skool: **Escuela Negocios y Emprender**.
+- **Precio: $15 USD/mes**, cobrado por Skool. Cada miembro se cobra el mismo día del mes en que entró (no hay un día fijo para todos).
+- También hay una venta única de curso de **$50 USD** dentro de Skool.
+- **Estado al 21 nov 2026:** 5 membresías de pago (Enrique Ortiz, Marco Zepeda, Carlos Guillen, Marco Felix Guevara, Arnulfo Yañes) ≈ **$75 USD/mes** brutos. 2 ventas del curso de $50 (Carlos Guillen, Diana González). Miembros free: pendiente de contar en Skool. Detalle en `negocio/skool-membresias.md` y en el panel de eduardohdz.com.
+- Skool no avisa por correo las cancelaciones: verificar en Skool.
 - Contenido: curso de importación desde China, cursos de ventas y negocio, guía rápida para importar.
 - **Actualización:** ya no se habla de modelo freemium ni de mini-curso gratis en el contenido público.
 
@@ -155,6 +167,8 @@ Sin cambios: públicos amplios, muchas creatividades, retargeting obligatorio, o
 
 Sin cambios (sistema de validación, recibo de pago, guías, Golden Freight, acuerdo de compra, sellos y firmas).
 
+**Nota de compra (nov 2026, antes se llamaba "acuerdo de compra"):** una hoja carta con 4 pasos (tu pedido, tu envío, cuánto pagas, datos para tu pago), ya en naranjas. Se da **una sola opción de envío**: DHL a domicilio, con seguro. El precio por pieza se redondea a centavos y se multiplica por las piezas (ej. M1: $49.90 × 94 = $4,690.60). El envío sale de `compraenfabricas.com/cotizar-envio?caja=CÓDIGO` con el CP del cliente (DHL vía Envia.com, con seguro por el valor de la caja). Los acuerdos llevan datos del cliente y bancarios: no se suben al repo.
+
 **Nuevo:** `ENTREGA.md` del blog (ver sección 20).
 
 > Notas técnicas de generación: `cairosvg` se instala con `pip install cairosvg --break-system-packages`. El carácter ★ no existe en la fuente: se dibuja con `<path>`. El `&` en SVG rompe el XML. **Nuevo:** en ese entorno tampoco hay fuente china, así que el 中 del logo también se dibuja con trazos.
@@ -189,7 +203,7 @@ Sin cambios (sistema de validación, recibo de pago, guías, Golden Freight, acu
 
 1. LiveWebinar se abandonó → clase en vivo directa.
 2. ~~Validación de proveedor eliminada~~ → **Corrección:** la validación sigue activa en /validacion. No se elimina ningún servicio sin aprobación.
-3. Clase a $990 como entrada; membresía $250/mes como recurrencia.
+3. Clase a $990 como entrada; membresía en Skool de **$15 USD/mes** como recurrencia.
 4. Siembra de joyería en vez de pitch directo.
 5. Andrómeda: creatividades sobre segmentación.
 6. **Nuevo:** el sitio manda sobre el handoff cuando hay contradicciones.
@@ -232,8 +246,8 @@ Flujo: **contenido (redes + blog) → clase / Escuela → joyería / cajas → l
 ## 16. PENDIENTES (históricos)
 
 - [ ] Actualizar el árbol de ManyChat (cajas 20%, "importan por mí", y ahora decir 5 proveedores).
-- [ ] Construir la Escuela en Skool.
-- [ ] Cobro recurrente en Stripe ($250/mes).
+- [x] Construir la Escuela en Skool (ya opera: Escuela Negocios y Emprender).
+- [x] ~~Cobro recurrente en Stripe ($250/mes)~~ → el cobro recurrente lo hace Skool a $15 USD/mes.
 - [ ] Correr pauta (Andrómeda).
 - [ ] Grabar la parrilla con siembra de joyería.
 - [ ] Llenar la clase de $990.
