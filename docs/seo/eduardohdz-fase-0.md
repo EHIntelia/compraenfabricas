@@ -407,3 +407,23 @@ El LCP de la home empeoró porque ahora el elemento LCP es `eduardo-portrait.png
 - El enlace a compraenfabricas.com aparece en todas las páginas, desde el footer.
 
 **Plan de guías:** `docs/seo/eduardohdz-plan-guias.md`.
+
+---
+
+## 13. Fase 5 publicada: medición (24 nov 2026)
+
+**Commits y deploy:**
+- Commits `3a84597` (GA4 apagado + eventos + llave IndexNow) y `21abf2f` (GA4 activado con `G-BMKRPT12Z6`, 1.2 créditos).
+- Deploy `0ac164dd`, con OK del usuario. También subieron 2 cambios del panel de la otra sesión del usuario: "Rediseñó tablero Tareas" y "Añadió orden por prioridad".
+- **Usuario:** verificó Search Console (propiedad de dominio por TXT en GoDaddy), envió el sitemap, importó a Bing y creó GA4 con "historial del navegador" desactivado.
+
+**Verificación en vivo con Chromium:**
+- gtag carga diferido.
+- `page_view` se manda una sola vez por página, también en navegación interna.
+- `clic_curso`, `clic_whatsapp`, `begin_checkout` (MXN 7,900) y `diagnostico_iniciado` se disparan.
+- El Pixel sigue con sus 2 IDs.
+- Sin errores de JavaScript.
+- La llave IndexNow se sirve en `/39ad97afec30c14ce2be6916ba563acf.txt` (200, text/plain).
+- IndexNow: 14 URLs del sitemap enviadas a api.indexnow.org (202).
+
+**Entrega final:** `docs/seo/eduardohdz-entrega.md`.
