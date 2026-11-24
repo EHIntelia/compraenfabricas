@@ -66,7 +66,7 @@ Estos son cursos que encontramos publicados en México. Los precios son los que 
 | Opción | Precio publicado | Formato | Proveedores incluidos | Comunidad / soporte |
 |---|---|---|---|---|
 | **Clase en vivo con Eduardo** (Compra en Fábricas de China) | $990 MXN | En vivo + grabación | Sí, 5 de regalo | Preguntas en vivo con Eduardo |
-| **Escuela de Negocios** (Compra en Fábricas de China) | $250 MXN/mes o $2,500/año | Cursos grabados + Zooms en vivo | No lo indica | Comunidad y Zooms en vivo |
+| **Escuela de Negocios** (Compra en Fábricas de China) | $15 USD/mes | Cursos grabados + Zooms en vivo | No lo indica | Comunidad y Zooms en vivo |
 | **CETYS Educación Continua** — Inicia tu negocio importando desde China | $8,603 MXN | Presencial, 24 horas (Mexicali) | No lo indica | Grupo presencial |
 | **INCEA / LatinoTrainers** — Importar de China | Desde $790 MXN por curso | En línea | No lo indica | No lo indica |
 | **100negocios** — Curso para importar de China | $39 USD (en línea) | En línea, acceso de por vida | No lo indica | No lo indica |
@@ -93,7 +93,7 @@ Lo que **no** es: no es un programa de meses ni te acompaña en cada compra. Es 
 
 ## La Escuela de Negocios: para seguir aprendiendo
 
-La [Escuela de Negocios](/escuela) es la membresía, en Skool. Adentro está el curso de importación desde China, cursos de ventas y de negocio, **Zooms en vivo conmigo** y una comunidad de emprendedores. Cuesta **$250 MXN al mes** o **$2,500 al año** y cancelas cuando quieras.
+La [Escuela de Negocios](/escuela) es la membresía, en Skool. Adentro está el curso de importación desde China, cursos de ventas y de negocio, **Zooms en vivo conmigo** y una comunidad de emprendedores. Cuesta **$15 USD al mes** y cancelas cuando quieras.
 
 Le conviene a quien ya tiene negocio o quiere construirlo en orden, y prefiere tener a quién preguntarle mes con mes en lugar de una sola clase.
 
@@ -119,7 +119,7 @@ Antes de pagar, revisa el temario. Si le falta alguno de estos puntos, te va a t
 9. **Impuestos**, incluidos los aumentos de aranceles de 2026 para productos de China.
 10. **Cómo vender** lo que traes, porque importar sin vender no es negocio.
 
-La [clase en vivo para aprender a importar de China](/clase) cubre todo ese recorrido en una sola sesión, de la fábrica hasta tu puerta.
+La [clase en vivo para aprender a importar de China](/clase) cubre todo ese recorrido en una sola sesión, de la fábrica hasta tu puerta. Si quieres ver el temario completo y comparar la clase, la Escuela y la asesoría en una sola página, está en el [curso para importar de China con Eduardo](/curso-para-importar-de-china).
 
 ## Preguntas que debes hacer antes de pagar cualquier curso
 

@@ -89,7 +89,7 @@ Aplican a TODO el contenido: anuncios, mensajes, guiones, páginas y blog.
 | Producto | Precio | Ruta | Detalle |
 |---|---|---|---|
 | **Clase en vivo con Eduardo** | **$990 MXN** (~$54 USD) | /clase | En vivo, hablas con Eduardo. **Incluye grabación**, material de apoyo, plantillas y **5 proveedores de regalo**: 2 de electrónica (AEMAI y Port Tide, con videos) + 3 de surtido general de Yiwu (Grace, Wilhem, Vincent, que se abren al entrar). Producto de entrada y CTA principal. Próxima fecha publicada: 21 de noviembre. Pago por Stripe. |
-| **Escuela de Negocios (Skool)** | **$250 MXN/mes** o **$2,500/año** | /escuela | Cursos grabados (importación desde China, ventas, negocio), Zooms en vivo con Eduardo y comunidad. Cancelas cuando quieras. **Ya no se menciona mini-curso gratis.** |
+| **Escuela de Negocios (Skool)** | **$15 USD/mes** (desde el 21 nov 2026; ya no existen los planes de $250 MXN/mes ni $2,500/año) | /escuela | Cursos grabados (importación desde China, ventas, negocio), Zooms en vivo con Eduardo y comunidad. Cancelas cuando quieras. **Ya no se menciona mini-curso gratis.** |
 | **Joyería al mayoreo** | Variable | /joyeria y https://info.joyeria.shop/ | El producto estrella real, vía JAICO / Xijiao Shops. |
 | **Cajas de electrónica** | Desde ~$3,000 MXN por caja | /productos | Ya están en México. Se apartan con **20% de anticipo**, 7 días para pagar el 80% + envío nacional, llegan en 1 a 2 días hábiles. Flete desde China incluido; paquetería nacional aparte. Se venden cajas completas, no piezas. Ej.: WK104 Lentes AI, 50 pzas, $46,058 MXN. |
 | **Proveedores de tecnología** | — | /marketplace | Port Tide y AEMAI, cada uno con sus videos. |

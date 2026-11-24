@@ -117,3 +117,143 @@ Cada una enlaza a la pilar (`/blog/como-importar-de-china-a-mexico`) y la pilar 
 - Precios de cursos de terceros: sitios de CETYS, LatinoTrainers/INCEA, 100negocios, Kuinsen y Elevify (consultados en noviembre de 2026).
 - Robots de IA y llms.txt: guías 2026 de Digital Applied y DEV Community.
 - AI Overviews: HubSpot y guías 2026 (respuesta directa arriba, pasos, FAQ y E-E-A-T).
+
+---
+
+## Lote 2: calendario de 10 notas (desde el 11 nov 2026)
+
+Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (rama del agente SEO). La pilar sigue siendo dueña de "cómo importar de China a México" y "cómo comprar en China".
+
+**Flujo por nota:** `posts/<slug>.md` → `python3 tools/check.py` → `python3 tools/make_images_notas.py <slug>` → `python3 tools/build_sql.py --status draft <slug>` → carga en `posts` → vista previa con `python3 tools/preview.py <slug>` (el sitio no muestra borradores) → confirmación → `published` → deploy (por las imágenes) → enlace desde la pilar → IndexNow → indexación en Search Console.
+
+| # | Slug | Keyword | Meta title | Palabras | Estado | Fecha |
+|---|---|---|---|---|---|---|
+| B | requisitos-para-importar-de-china-a-mexico | requisitos para importar de China a México | Requisitos para importar de China a México en 2026 | ~1,810 | **Publicada** (enlazada desde la pilar) | 11 nov 2026 |
+| C | cuanto-cuesta-importar-de-china | cuánto cuesta importar de China | Cuánto cuesta importar de China en 2026: ejemplo real | ~1,670 | **Publicada** (enlazada desde la pilar y desde productos) | 11 nov 2026 |
+| A | comprar-directo-de-fabrica-en-china | comprar directo de fábrica en China | Comprar directo de fábrica en China sin intermediarios | ~1,550 | **Publicada** (enlazada desde la pilar, Paso 2) | 13 nov 2026 |
+| E | como-pagar-a-un-proveedor-en-china | cómo pagar a un proveedor en China | Cómo pagar a un proveedor en China sin que te estafen | ~1,610 | **Publicada** (enlazada desde la pilar, Paso 5) | 13 nov 2026 |
+| D | aranceles-china-mexico-2026 | aranceles a China 2026 | Aranceles a China 2026: qué subió y cuánto pagas | ~2,030 | **Publicada** (enlazada desde la pilar, requisitos y costos). Revisión mensual contra el DOF | 21 nov 2026 |
+| H | envio-aereo-o-maritimo-desde-china | envío aéreo o marítimo desde China | Envío aéreo o marítimo desde China: cuál te conviene | ~1,820 | **Publicada** (enlazada desde la pilar, Paso 6, y desde costos) | 23 nov 2026 |
+| F | que-es-yiwu | Yiwu | Qué es Yiwu y cómo comprar en el mercado mayorista | ~2,100 | **Publicada** (enlazada desde la pilar, Paso 2, y desde comprar directo de fábrica) | 23 nov 2026 |
+| I | joyeria-de-acero-inoxidable | joyería de acero inoxidable | Joyería de acero inoxidable: qué es y por qué se vende | ~1,735 | Borrador en la base (md5 7e7be7fe…); imágenes en el repo | — |
+| J | feria-de-canton | Feria de Cantón | — | — | Por escribir (2–3 meses antes de la edición) | — |
+| G | errores-que-me-costaron-dinero-importando | errores al importar de China | — | — | Espera historias reales de Eduardo | — |
+
+**Meta descriptions**
+- B: "Requisitos para importar de China a México en 2026: RFC, e.firma, padrón de importadores, agente aduanal, pedimento y NOM. Explicado fácil y con fuentes." (153)
+- C: "Cuánto cuesta importar de China a México en 2026: mercancía, flete, arancel, IVA, agente aduanal y envío, con un ejemplo con números. Calcula tu costo." (151)
+
+**Al publicar B y C:** agregar en la pilar (Paso 7) el enlace a B en el punto de padrón y a C en el punto de impuestos. La pilar no tiene una sección de costos larga, así que no hay texto que resumir.
+
+**Cambio ya aplicado (11 nov):** la pilar enlazaba a /cotizador (en construcción). Ahora enlaza a /logistica#cotizar.
+
+**[PENDIENTE] y datos por confirmar**
+- B: no se pudieron abrir directo sat.gob.mx ni dof.gob.mx desde esta sesión (red bloqueada); los datos salen de las fichas oficiales vistas por buscador, con fecha de consulta. Conviene que alguien abra la ficha 5/LA y confirme: (1) el plazo de respuesta del padrón (la nota no lo menciona a propósito) y (2) los topes de la regla 1.3.1 de las RGCE 2026 para importar sin padrón (la nota solo dice que existen excepciones).
+- C: el ejemplo es hipotético salvo IVA 16%, DTA 8 al millar y la caja S100 (~$31/pieza). Si Eduardo da un caso real de importación con números, la nota se vuelve más fuerte.
+- D: la LIGIE tuvo otra reforma con fecha DOF 13-10-2026. Revisarla antes de escribir la nota de aranceles.
+
+**Pedidos al agente SEO** (no los toca el agente de contenido)
+1. **Vista previa de borradores:** el blog solo lee notas `published`, así que un borrador no se puede ver en el preview. Propuesta: ruta de vista previa con token o una bandera solo en el preview.
+2. **Corregir la sección 18 del handoff:** Google dejó de mostrar FAQ enriquecidos para todos desde el 7 de mayo de 2026.
+3. **IndexNow automático** al publicar una nota (hoy el POST es manual).
+4. ~~Si se publica `/curso-para-importar-de-china`, avisar~~ Hecho: salió en el deploy del 13 nov y la nota de cursos ya enlaza ahí.
+
+**Publicación de B y C (11 nov 2026):** pasadas a published, deploy hecho (incluyó solo la Tanda 1 del agente SEO, ya publicada, y las imágenes del blog), enlaces agregados en la pilar (Paso 7) y en la nota de productos (hacia C). IndexNow y verificación en producción: mensaje en cola en Lovable detrás de la Tanda 2 del agente SEO. Falta pedir indexación en Search Console.
+
+**Publicación de A y E (13 nov 2026):** 8 imágenes subidas a Lovable (commit d54436a), deploy hecho con autorización del usuario. Ese deploy también publicó lo que el agente SEO tenía pendiente: Fase 2 (/curso-para-importar-de-china, /preguntas-frecuentes, schema del autor), fotos reales de Eduardo, sección NADIE, WhatsApp con página de origen, eventos del Pixel, videos 720p y un cambio automático de bun.lock. A y E pasaron a published con published_at = now(). Se agregaron enlaces en la pilar (Paso 2 → A, Paso 5 → E) y en la nota de cursos hacia /curso-para-importar-de-china. Las md5 de la base coinciden con el repo. Verificado en producción: las 3 notas, las 8 imágenes, el sitemap y llms.txt responden 200, y la pilar enlaza a A y E. IndexNow devolvió 200 para A, E, la pilar, el sitemap, la nota de cursos y /curso-para-importar-de-china. Falta pedir indexación en Search Console de las 2 notas nuevas.
+
+**Meta descriptions A y E**
+- A: "Cómo comprar directo de fábrica en China sin intermediarios: diferencia entre fábrica, trading y revendedor, señales para reconocerlos y cómo validarla." (152)
+- E: "Cómo pagar a un proveedor en China de forma segura: transferencia, Alipay, PayPal y carta de crédito, cuánto pagar por adelantado y señales de fraude." (150)
+- A y E se enlazan entre sí: publicarlas juntas. Al publicarlas, enlazar desde la pilar (Paso 2 → A, Paso 5 → E).
+
+**Canva (carpeta FAHYMS7Wadk):** esta sesión puede listar la carpeta pero no ver ni descargar las imágenes (media.canva.com bloqueado por la red). Los archivos se llaman "Signature_…", sin descripción.
+
+## Design system en las notas (desde el 21 nov 2026)
+
+Las notas nuevas siguen el **Compra en Fábricas Design System** (artifact https://claude.ai/artifact/8C8JC157VBWdCqCS4mbui4).
+
+**Texto**
+- **Excepción decidida por el usuario el 21 nov:** el blog va en **primera persona de Eduardo** ("en mi caso", "te explico"), aunque el design system pida voz de marca. Los servicios se nombran en plural ("nuestro equipo", "nosotros te lo traemos").
+- Del design system se mantiene: tutear al lector, sin guiones largos (—), sin la palabra "PDF" (se usa guía, material o documento) y sin "gratis".
+
+**Imágenes** (con `tools/make_images_ds.py`, plantillas en `tools/ds.py`)
+- Arial (Liberation Sans en este equipo) y logo real: `brand/logo-horizontal.png`, con versión blanca.
+- Fondo crema. El degradado solo va en detalles (barras, números, palabra clave).
+- Badges en mayúsculas, rojo sobre durazno.
+- Fotos del banco del design system, redondeadas 24px. Las que usa cada nota se copian a `brand/fotos/` con nombre descriptivo.
+
+**Nota D (aranceles):** está en primera persona de Eduardo y usa las imágenes nuevas.
+- Fuentes oficiales leídas el 21 nov 2026 por el agente de Lovable, porque la red de esta sesión bloquea gob.mx:
+  - DOF 29/12/2025: 1,463 fracciones, de 5% a 50%. La mayoría quedan en 25% (669) o 35% (612).
+  - DOF 23/04/2026: 185 fracciones, de 5% a 35%.
+  - DOF 13/10/2026: solo la fracción 9803.00.01.
+  - RGCE 2026, regla 3.7.35: 33.5%, sin cambios en la 1a ni en la 2a modificación.
+- Pendiente: los decretos citan una modificación a la Tarifa del DOF del 26/03/2026 que SNICE no enlista. Revisarla en la revisión mensual.
+
+**Notas publicadas antes del design system:** se quedan en primera persona de Eduardo, como pidió el usuario. Lo único que no sigue el design system son sus imágenes (marca dibujada, fuente Inter) y algunos guiones largos en el texto. Se pueden regenerar si el usuario lo pide.
+
+**Vista previa del borrador D:** https://claude.ai/artifact/RDRQWUZNhkPCJoAb5Djtmi
+
+**Publicación de D (21 nov 2026):**
+- 5 imágenes subidas a Lovable (commit dd1a2ef) y deploy hecho con autorización del usuario.
+- El deploy también publicó lo que habían hecho otras sesiones del usuario: precio de la Escuela a $15 USD/mes, infografía de cursos corregida, GA4, reseñas y cambios del catálogo de cajas.
+- D quedó published con published_at = now(). Se agregaron enlaces a D desde la pilar (Paso 7, fracción arancelaria), desde requisitos (sección de fracción arancelaria) y desde costos (sección de arancel). Las md5 de la base coinciden con el repo.
+- Verificado en producción: D, sus 5 imágenes, las 3 notas que la enlazan, el sitemap y llms.txt responden 200, y /escuela muestra $15 USD. IndexNow devolvió 200 para 8 URLs. Falta pedir indexación de D en Search Console.
+
+**Cambio de precio de la Escuela (21 nov 2026, otra sesión):** ahora es $15 USD/mes y ya no existen los planes de $250 MXN/mes ni $2,500/año.
+- Esa sesión actualizó en la base las notas de cursos y de Eduardo. El repo se sincronizó con la base (md5 iguales).
+- También se regeneró la tabla de cursos en `img/` y se corrigió el handoff.
+- **Regla:** antes de reconstruir cualquier nota con build_sql, compara su md5 con la base. Otras sesiones pueden editar la tabla posts directamente.
+
+**Nota H (envío aéreo o marítimo):** borrador del 21 nov 2026, en primera persona de Eduardo.
+- **Datos reales del sitio (/logistica):** aéreo se cobra por kilo y marítimo consolidado por metro cúbico; la cotización pide CBM, kilos y ciudad en China.
+- **Datos de referencia con fuente:**
+  - Divisor 6,000 (IATA) y 5,000 en exprés.
+  - Tránsito puerto a puerto Shanghái a Manzanillo de 17 a 29 días y Shenzhen o Guangzhou de 20 a 35 días, publicados por agentes de carga.
+  - Contenedor de 20' de unos 33 m³ y de 40' de unos 67 m³.
+- **Sin precios de flete:** la nota no los menciona porque no hay datos propios.
+- **[PENDIENTE, opcional]:** si Eduardo da sus tiempos reales de aéreo y marítimo (por ejemplo, Yiwu a Monterrey), la nota gana mucho.
+- **Al publicar:** enlazar desde la pilar (Paso 6, envío) y desde costos (sección de envío).
+
+**Publicación de H (23 nov 2026):**
+- 5 imágenes subidas a Lovable (commit 73836d9) y deploy hecho con autorización del usuario.
+- El deploy también publicó lo que habían hecho otras sesiones del usuario: fechas de clase en hora CDMX, LCP de joyería y escuela, página del curso Monterrey, reseñas reales y SAG20 marcada como vendida.
+- H quedó published con published_at = now(). Enlaces agregados en la pilar (Paso 6, tras los tipos de envío) y en costos (sección de envío). Las md5 de la base coinciden con el repo.
+- Verificado en producción: H, sus 5 imágenes (al principio daban 404 y salieron en cuanto terminó el deploy), la pilar y costos (enlazan a H), el sitemap y llms.txt responden 200. IndexNow devolvió 200. Falta pedir indexación de H en Search Console.
+
+**Nota F (Yiwu):** borrador del 23 nov 2026, en primera persona de Eduardo. No nombra proveedores ni menciona WeChat.
+- **Datos con fuente:** casi 80,000 puestos y más de 2.1 millones de productos (China Daily, marzo 2026); tren de Shanghái Hongqiao a Yiwu en 1.5 a 2 h (Travel China Guide). Los horarios no van exactos porque las fuentes no coinciden.
+- **Lo que sí se afirma de Eduardo:** más de 26 años importando y equipo propio en China ("chinos que negocian con chinos"). **No** se afirma que haya ido a Yiwu.
+- **[PENDIENTE Eduardo]** Son comentarios HTML ocultos en `posts/que-es-yiwu.md`; build_sql los quita y la nota se lee completa sin ellos:
+  1. Su experiencia en Yiwu: desde cuándo va o compra ahí, cuántas veces y una anécdota real de la primera vez.
+  2. Qué ha comprado él o sus clientes en Yiwu (categorías, sin nombrar proveedores) y qué le ha funcionado para revender.
+  3. Un error real de un cliente que compró en Yiwu y cómo se resolvió.
+  4. Consejo práctico para la primera visita: dónde hospedarse, cuántos días, en qué orden recorrer y cuándo no ir.
+- **Al publicar:** enlazar desde la pilar (Paso 2, donde menciona Yiwu) y desde comprar directo de fábrica (sección de dónde encontrar fábricas).
+
+**F completada con información real de Eduardo (23 nov 2026):**
+- **Fuente:** `contenido/transcripts/transcripts_eduardo.md`, en la rama `claude/affectionate-faraday-guyqfo`, más lo que contó el usuario.
+- **Datos que entraron:**
+  - Ha ido a Yiwu y a Guangzhou, y tiene oficina en Guangzhou con compradores chinos.
+  - Anécdota real en Guangzhou: al confirmar un pedido de cadenas y antes del depósito, el proveedor dijo que el precio era "el puro cobre", sin baño, y hubo que renegociar. Otra vez canceló un pedido porque le cambiaron las condiciones.
+  - "Negociar con los chinos es un arte". "Puedes comprar como si fueras Walmart, desde poquita cantidad". Ir muchas veces y hacerse amigo de los chinos.
+  - Busca "poquita cantidad de algo que valga mucho dinero". Comprar en Yiwu sale de 20% a 30% más barato que en las plataformas chinas en línea. China va 14 horas adelante.
+- **Corrección de enfoque:** Eduardo describe los puestos como "tiendas y showrooms de fábrica". La nota ahora dice que hay tiendas de fábrica y también revendedores.
+- **Diferencia de números:** Eduardo dice "220 mil tienditas" en sus videos; la nota usa la cifra de China Daily (casi 80,000 puestos).
+
+**Publicación de F (23 nov 2026):**
+- 5 imágenes subidas a Lovable (commit f30d376) y deploy hecho; el deploy incluyó "ResenasFranja" de otra sesión.
+- F quedó published. Enlaces agregados en la pilar (viñeta de Yiwu, Paso 2) y en comprar directo de fábrica (ciudades especializadas). Las md5 de la base coinciden con el repo.
+- Verificado en producción: F, sus 5 imágenes, la pilar y comprar directo de fábrica (enlazan a F), el sitemap y llms.txt responden 200. IndexNow devolvió 200. Falta pedir indexación de F en Search Console.
+
+**Nota I (joyería de acero inoxidable):** borrador del 23 nov 2026, en primera persona de Eduardo. El CTA va a /joyeria y el texto no enlaza a info.joyeria.shop.
+- **Datos de Eduardo (transcripts):**
+  - 22 años en joyería de chapa y acero; empezó con dinero prestado y poca mercancía.
+  - Trabaja acero 316L. "El argumento de calidad se gana en la mano, no en el papel."
+  - Margen de ejemplo: 25 pesos de costo, 50 de mayoreo y 250 de menudeo.
+  - Mínimos para diseño propio: chapa unas 120 piezas por modelo y acero unas 360, porque necesita molde.
+  - Anécdota del "puro cobre" en Guangzhou (es la misma de F).
+- **Datos técnicos generales:** 316L lleva molibdeno y bajo carbono, frente al 304. No se afirma que sea hipoalergénico en absoluto.
+- **No se menciona el pedido mínimo de inventario:** /joyeria lo marca como pendiente de confirmar con Eduardo ("desde 36 piezas por modelo").
+- **Al publicar:** enlazar desde la nota de joyería (sección de tipos de joyería) y desde productos (donde menciona joyería).
