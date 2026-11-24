@@ -365,3 +365,45 @@ El LCP de la home empeoró porque ahora el elemento LCP es `eduardo-portrait.png
 - El resto de las rutas sin cambios (status, H1 y texto).
 
 **Para la sesión de compraenfabricas** (se le dio el texto al usuario): cambiar el `@id` del Person a `https://eduardohdz.com/#person`, dejar `url` en el autor de compraenfabricas y agregar `https://eduardohdz.com/` al sameAs.
+
+---
+
+## 12. Fase 4 publicada: contenido de entidad (24 nov 2026)
+
+**Commit y deploy:**
+- Commit `a3e7b66`, 5.3 créditos.
+- Deploy `4b82f5e7`, con OK del usuario. También subió el rediseño del panel de la otra sesión del usuario (`db6e7ce`), aprobado por el usuario.
+
+**Qué quedó:**
+- **`/eduardo-hernandez`** ("Quién es Eduardo Hernández"):
+  - respuesta directa arriba;
+  - historia en corto, con enlace a la nota completa en compraenfabricas;
+  - 6 números, 4 negocios, NADIE y "Cómo te puedo ayudar";
+  - bloque "¿Quieres importar de China?" → compraenfabricas.com, y la cita;
+  - 3 fotos reales de Eduardo en WebP;
+  - schema ProfilePage + BreadcrumbList;
+  - og:image `/img/eduardo-hernandez-og.jpg`: la foto profesional recortada a 1200×630, sin texto, revisada.
+- **`/nadie`** ("Qué es NADIE"): logo, texto oficial, filosofía, cita y "Cómo ser parte". Sin fotos de banco ni redes. Schema AboutPage + BreadcrumbList.
+- **Schema:**
+  - la home pasa a WebPage (about → Person);
+  - el Person tiene `mainEntityOfPage` → `/eduardo-hernandez`;
+  - la url de NADIE es `/nadie`.
+- **Navegación:**
+  - el menú lleva a las dos páginas nuevas;
+  - el footer tiene los enlaces "Eduardo Hernández" y "NADIE", y "¿Quieres importar de China? Visita Compra en Fábricas →".
+- **Home:**
+  - se quitaron las redes de NADIE (ya no están vigentes);
+  - "Sé parte de nosotros" → `/comunidad` (antes `#`);
+  - "Xijiao Logistics" → "Xijiao LOG";
+  - enlaces "Conoce su historia →" y "Qué es NADIE →".
+- **`/sube-tus-ventas`:** "más de una década" → "8 años en consultoría".
+- **Sitemap** con 14 URLs, y `llms.txt` con las dos páginas nuevas.
+
+**Verificación en vivo:**
+- `/eduardo-hernandez`: 200, 464 palabras, title, description y canonical correctos, H1 "Quién es Eduardo Hernández", JSON-LD válido.
+- `/nadie`: 200, 207 palabras, H1 "Qué es NADIE", JSON-LD válido.
+- La home ya trae WebPage.
+- En ninguna página quedan redes de NADIE ni "Xijiao Logistics".
+- El enlace a compraenfabricas.com aparece en todas las páginas, desde el footer.
+
+**Plan de guías:** `docs/seo/eduardohdz-plan-guias.md`.
