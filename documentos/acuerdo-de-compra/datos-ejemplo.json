@@ -1,0 +1,31 @@
+{
+  "orden": "CF-2026-000",
+  "fecha": "1 de enero de 2026",
+  "cliente": {
+    "nombre": "Nombre del cliente",
+    "telefono": "+52 000 000 0000",
+    "direccion": "Calle 123, Colonia, C.P. 00000, Ciudad, Estado"
+  },
+  "producto": {
+    "nombre": "Lentes Bluetooth YJ12",
+    "descripcion": "Lentes de sol con audífono inalámbrico y protección UV",
+    "piezas": 93,
+    "precio_pieza": 191.91,
+    "nota": "Incluye el flete de China a México. Solo pagas las piezas que recibes.",
+    "foto": "assets/ejemplo-producto.jpg"
+  },
+  "envio": {
+    "texto": "Tu caja va por <b>DHL Express, con seguro</b>, y llega el <b>jueves 19 de noviembre</b>:",
+    "opciones": [
+      {"nombre": "Opción A · Al final del día", "precio": 778.56},
+      {"nombre": "Opción B · Antes de las 12:00", "precio": 869.62}
+    ]
+  },
+  "pago": {
+    "banco": "BBVA",
+    "titular": "Eduardo Hernández",
+    "cuenta": "0000 0000 0000 0000",
+    "etiqueta_cuenta": "Número de tarjeta"
+  },
+  "firma": "Eduardo Hernández"
+}
