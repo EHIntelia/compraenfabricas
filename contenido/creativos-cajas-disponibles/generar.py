@@ -282,22 +282,23 @@ border:1px solid var(--borde);border-radius:12px;height:85px;margin-bottom:6px;p
     body = hist_head("Cajas <span class='grad'>disponibles</span>", "Precio final por pieza. Mínimo 10 piezas de cada caja.") + f"<div class='list'>{rows}</div>{CTA_V}"
     return page(body, extra)
 
-out = {}
-out["A-catalogo-12-cajas"] = prop_a()
-out["C1-desde-157-por-pieza"] = prop_c(DATA[:6], f"Desde <span class='grad'>{DATA[0]['pp']}</span> por pieza", "Mínimo 10 piezas de cada caja. Mercancía ya en México.")
-out["C2-camaras-relojes-y-mas"] = prop_c(DATA[6:], "Más cajas <span class='grad'>disponibles</span>", "Mínimo 10 piezas de cada caja. Mercancía ya en México.")
-out["D-lista-de-precios"] = prop_d()
-for i, d in enumerate(DATA, 1):
-    out[f"B{i:02d}-{d['model'].lower().replace(' ', '-')}"] = prop_b(d)
-# Historias (prefijo H-): van a png/historias/
-out["H-C1-desde-157-por-pieza"] = hist_c(DATA[:6], f"Desde <span class='grad'>{DATA[0]['pp']}</span> por pieza", "Mínimo 10 piezas de cada caja. Ya en México.")
-out["H-C2-mas-cajas-disponibles"] = hist_c(DATA[6:], "Más cajas <span class='grad'>disponibles</span>", "Mínimo 10 piezas de cada caja. Ya en México.")
-out["H-D-lista-de-precios"] = hist_d()
-for i, d in enumerate(DATA, 1):
-    out[f"H-B{i:02d}-{d['model'].lower().replace(' ', '-')}"] = hist_b(d)
+if __name__ == "__main__":
+    out = {}
+    out["A-catalogo-12-cajas"] = prop_a()
+    out["C1-desde-157-por-pieza"] = prop_c(DATA[:6], f"Desde <span class='grad'>{DATA[0]['pp']}</span> por pieza", "Mínimo 10 piezas de cada caja. Mercancía ya en México.")
+    out["C2-camaras-relojes-y-mas"] = prop_c(DATA[6:], "Más cajas <span class='grad'>disponibles</span>", "Mínimo 10 piezas de cada caja. Mercancía ya en México.")
+    out["D-lista-de-precios"] = prop_d()
+    for i, d in enumerate(DATA, 1):
+        out[f"B{i:02d}-{d['model'].lower().replace(' ', '-')}"] = prop_b(d)
+    # Historias (prefijo H-): van a png/historias/
+    out["H-C1-desde-157-por-pieza"] = hist_c(DATA[:6], f"Desde <span class='grad'>{DATA[0]['pp']}</span> por pieza", "Mínimo 10 piezas de cada caja. Ya en México.")
+    out["H-C2-mas-cajas-disponibles"] = hist_c(DATA[6:], "Más cajas <span class='grad'>disponibles</span>", "Mínimo 10 piezas de cada caja. Ya en México.")
+    out["H-D-lista-de-precios"] = hist_d()
+    for i, d in enumerate(DATA, 1):
+        out[f"H-B{i:02d}-{d['model'].lower().replace(' ', '-')}"] = hist_b(d)
 
-for k, v in out.items():
-    with open(os.path.join(AQUI, f"_{k}.html"), "w") as f:
-        f.write(v)
-json.dump(sorted(out), open(os.path.join(AQUI, "_lista.json"), "w"))
-print(len(out), "html")
+    for k, v in out.items():
+        with open(os.path.join(AQUI, f"_{k}.html"), "w") as f:
+            f.write(v)
+    json.dump(sorted(out), open(os.path.join(AQUI, "_lista.json"), "w"))
+    print(len(out), "html")
