@@ -1,6 +1,6 @@
 # Caption para Instagram (carrusel de cajas disponibles)
 
-Portada: usa `01-hook.png` o una de las versiones del hook "Ya no tienes excusa" (`01b-hook-excusa-productos.png`, `01c-hook-excusa-pretextos.png`) y luego las láminas 02 a 08. Si usas la de "excusa", cambia la primera línea del texto por la versión de abajo.
+Portada: usa `01-hook.png` o una de las versiones del hook "Ya no tienes excusa" (`01b-hook-excusa-productos.png`, `01c-hook-excusa-chat.png`) y luego las láminas 02 a 08. Si usas la de "excusa", cambia la primera línea del texto por la versión de abajo.
 
 ## Primera línea con el hook "Ya no tienes excusa"
 

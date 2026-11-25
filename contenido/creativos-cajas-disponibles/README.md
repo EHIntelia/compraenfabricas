@@ -31,7 +31,7 @@ Gancho: el presupuesto. Con el mínimo de 10 piezas, el primer inventario cuesta
 | # | Lámina |
 |---|---|
 | 1 | Gancho: "Tu primer inventario por menos de $2,000" + 6 productos con precio |
-| 1b / 1c | Portadas alternativas con el hook "Ya no tienes excusa para no empezar tu negocio": 1b con productos, 1c tachando 3 excusas (capital, complicado, tarda meses) con su respuesta real |
+| 1b / 1c | Portadas alternativas con el hook "Ya no tienes excusa para no empezar tu negocio": 1b con productos, 1c como chat: "Tú" escribe 3 excusas (capital, complicado, tarda meses) y Compra en fábricas contesta cada una con un dato real (portada elegida) |
 | 2 | Así funciona (3 pasos) + aviso de una sola caja por modelo |
 | 3 | Menos de $2,000: mochila, bocina KOS-500, micrófono MK26 |
 | 4 | Menos de $3,500: MK50, MS18, dashcam D8, QY77 |
