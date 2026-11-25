@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tu caja ya está apartada</title>
+</head>
+<body style="margin:0;padding:0;background:#f3f3f3;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">Aquí tienes tu recibo, el resumen de tu pedido y lo que sigue para recibir tus cajas.</div>
+<div style="background:#f3f3f3;padding:20px 8px;font-family:Tahoma,Geneva,Arial,sans-serif;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin:0 auto;background:#ffffff;border-radius:8px;overflow:hidden;">
+<tr><td style="height:8px;line-height:8px;font-size:0;background:#222222;">&nbsp;</td></tr>
+<tr><td align="center" style="background:#ffffff;padding:26px 24px 18px;"><img src="https://img.mailinblue.com/10747752/images/content_library/original/6a63eb3eb6fce5ac97240398.png" alt="Compra en Fábricas de China" width="200" style="display:block;max-width:200px;height:auto;border:0;"></td></tr>
+<tr><td align="center" style="background:#ffffff;padding:0 24px 22px;"><span style="display:inline-block;background:#FF9518;color:#ffffff;font-size:12px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;">Caja apartada</span></td></tr>
+
+<tr><td align="center" style="padding:6px 30px 8px;color:#222222;font-size:16px;line-height:1.6;text-align:center;">
+<h1 style="margin:0 0 16px;font-size:24px;line-height:1.3;color:#222222;text-align:center;">Tu mercancía ya está reservada</h1>
+<p style="margin:0 0 14px;">Hola {{ params.NOMBRE | default : "" }}, gracias por tu confianza. Recibimos tu anticipo y tu pedido ya quedó apartado a tu nombre.</p>
+<p style="margin:0 0 14px;">Aquí tienes tu recibo para que lo descargues y lo guardes:</p>
+<table role="presentation" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto 10px;"><tr><td align="center" style="border:2px solid #222222;border-radius:6px;"><a href="{{ params.URL_RECIBO }}" style="display:inline-block;width:240px;padding:11px 20px;font-family:Tahoma,Geneva,Arial,sans-serif;font-size:15px;font-weight:bold;color:#222222;text-decoration:none;text-align:center;">Descargar recibo</a></td></tr></table>
+</td></tr>
+
+<tr><td style="padding:18px 30px 0;">
+<div style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#777777;font-weight:bold;margin-bottom:8px;text-align:center;">Resumen de tu pedido · Orden {{ params.ORDEN }}</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-size:15px;line-height:21px;border:1px solid #e5e5e5;border-radius:6px;color:#222222;">
+{% for caja in params.CAJAS %}
+<tr><td style="padding:10px 14px;color:#666666;border-bottom:1px solid #e5e5e5;"><strong style="color:#222222;">{{ caja.nombre }}</strong><br><span style="font-size:13px;color:#777777;">{{ caja.piezas }} pzas · ${{ caja.precio_pieza }} c/u</span></td><td align="right" style="padding:10px 14px;border-bottom:1px solid #e5e5e5;">${{ caja.total }}</td></tr>
+{% endfor %}
+<tr><td style="padding:10px 14px;font-weight:bold;">Total de tu pedido</td><td align="right" style="padding:10px 14px;font-weight:bold;">${{ params.TOTAL }}</td></tr>
+<tr><td style="padding:10px 14px;color:#1f4d2e;background:#EEF7F0;border-top:1px solid #e5e5e5;font-weight:bold;">&#10004; Anticipo recibido (20%)</td><td align="right" style="padding:10px 14px;background:#EEF7F0;border-top:1px solid #e5e5e5;color:#1f4d2e;font-weight:bold;">${{ params.ANTICIPO }}</td></tr>
+<tr><td style="padding:10px 14px;color:#666666;border-top:1px solid #e5e5e5;">Pago restante (80%)</td><td align="right" style="padding:10px 14px;border-top:1px solid #e5e5e5;">${{ params.RESTANTE }}</td></tr>
+<tr><td style="padding:10px 14px;color:#666666;border-top:1px solid #e5e5e5;">Envío DHL Express con mercancía asegurada<br><span style="font-size:13px;color:#777777;">una guía por caja</span></td><td align="right" style="padding:10px 14px;border-top:1px solid #e5e5e5;">${{ params.ENVIO }}</td></tr>
+<tr><td style="padding:12px 14px;background:#FFF3E3;border-top:1px solid #e5e5e5;font-weight:bold;">Pago final</td><td align="right" style="padding:12px 14px;background:#FFF3E3;border-top:1px solid #e5e5e5;font-weight:bold;color:#c76a00;">${{ params.PAGO_FINAL }} MXN</td></tr>
+</table>
+<p style="margin:10px 0 0;font-size:14px;line-height:21px;color:#414141;text-align:center;">Tu pago final vence el <strong>{{ params.FECHA_LIMITE }}</strong> (7 días naturales después de apartar). Tus cajas salen en cuanto lo recibimos.</p>
+</td></tr>
+
+<tr><td style="padding:24px 30px 0;font-size:15px;line-height:22px;color:#222222;">
+<div style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#777777;font-weight:bold;margin-bottom:10px;text-align:center;">Qué sigue</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+<tr><td valign="top" width="32" style="padding:0 0 12px;"><div style="width:22px;height:22px;border-radius:11px;background:#FF9518;color:#ffffff;font-size:13px;line-height:22px;text-align:center;font-weight:bold;">1</div></td><td style="padding:0 0 12px;">Haz tu <strong>pago final</strong> antes del {{ params.FECHA_LIMITE }}: el 80% restante más el envío.</td></tr>
+<tr><td valign="top" width="32" style="padding:0 0 12px;"><div style="width:22px;height:22px;border-radius:11px;background:#FF9518;color:#ffffff;font-size:13px;line-height:22px;text-align:center;font-weight:bold;">2</div></td><td style="padding:0 0 12px;">Con tu pago recibido, enviamos tus cajas por <strong>DHL Express con la mercancía asegurada</strong> a {{ params.DIRECCION }}.</td></tr>
+<tr><td valign="top" width="32" style="padding:0;"><div style="width:22px;height:22px;border-radius:11px;background:#FF9518;color:#ffffff;font-size:13px;line-height:22px;text-align:center;font-weight:bold;">3</div></td><td style="padding:0;">Te compartimos tus <strong>guías de rastreo</strong>. Normalmente llegan al día hábil siguiente; en zonas con cobertura extendida de DHL puede tardar un poco más.</td></tr>
+</table></td></tr>
+
+<tr><td style="padding:24px 30px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f7f7f7;border:1px solid #e5e5e5;border-radius:6px;">
+<tr><td align="center" style="padding:18px 18px 8px;font-size:16px;line-height:22px;font-weight:bold;color:#222222;text-align:center;">Políticas de apartado, envío y devoluciones</td></tr>
+<tr><td style="padding:0 18px 16px;font-size:14px;line-height:21px;color:#414141;">
+<ul style="margin:0;padding-left:20px;text-align:left;">
+<li style="margin:0 0 10px;"><strong style="color:#222222;">Tu anticipo del 20% aparta tus cajas.</strong> Tienes 7 días naturales después de apartar para hacer tu pago final (80% restante + envío).</li>
+<li style="margin:0 0 10px;"><strong style="color:#222222;">Si cambias de opinión:</strong> el anticipo no es reembolsable, pero queda como crédito a tu favor sin fecha límite. Puedes usarlo en cualquier caja disponible, en la clase en vivo, en la validación de proveedores, en la asesoría o en joyería JAICO. Si te sobra crédito, se queda guardado para tus siguientes compras.</li>
+<li style="margin:0 0 10px;"><strong style="color:#222222;">Si nosotros no podemos entregarte tu caja,</strong> te devolvemos el 100% de lo que pagaste.</li>
+<li style="margin:0 0 10px;"><strong style="color:#222222;">Piezas dañadas o faltantes:</strong> avísanos dentro de las 48 horas siguientes a recibir tu paquete, con fotos o un video de la caja al abrirla. No reponemos piezas: te devolvemos en efectivo el valor de cada pieza afectada según el precio por pieza de su caja.</li>
+<li style="margin:0 0 10px;"><strong style="color:#222222;">Paquetería:</strong> tus cajas viajan por DHL Express con la mercancía asegurada. Una vez que salen, el traslado y la entrega se rigen por las políticas de DHL.</li>
+<li style="margin:0;"><strong style="color:#222222;">Factura:</strong> no emitimos factura. Tu recibo es la constancia de tu compra.</li>
+</ul>
+<p style="margin:12px 0 0;font-size:13px;line-height:20px;color:#666666;text-align:center;">Políticas completas: <a href="https://compraenfabricas.com/politicas-envio-devoluciones" style="color:#c76a00;">compraenfabricas.com/politicas-envio-devoluciones</a></p>
+</td></tr></table></td></tr>
+
+<tr><td align="center" style="padding:24px 30px 8px;color:#222222;font-size:16px;line-height:1.6;text-align:center;">
+<p style="margin:0 0 14px;">¿Tienes dudas? Escríbenos por WhatsApp:</p>
+<table role="presentation" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto 26px;"><tr><td align="center" style="background:#FF9518;border-radius:6px;"><a href="https://wa.me/528120181761" style="display:inline-block;padding:14px 30px;font-family:Tahoma,Geneva,Arial,sans-serif;font-size:16px;font-weight:bold;color:#FFFFFF;text-decoration:none;">Escribir por WhatsApp</a></td></tr></table>
+<p style="margin:0 0 8px;">Saludos,<br><strong>Equipo Compra en Fábricas de China</strong></p></td></tr>
+<tr><td style="padding:16px 30px 28px;"><hr style="border:0;border-top:1px solid #e5e5e5;margin:0;"></td></tr>
+<tr><td align="center" style="background:#222222;padding:26px 24px;color:#cfcfcf;font-size:12px;line-height:1.7;text-align:center;">
+<strong style="color:#ffffff;font-size:13px;">Compra en Fábricas de China</strong><br>San Pedro Garza García, México<br>
+WhatsApp <a href="https://wa.me/528120181761" style="color:#FF9518;text-decoration:none;">+52 81 2018 1761</a> · <a href="https://compraenfabricas.com/productos" style="color:#FF9518;text-decoration:none;">compraenfabricas.com</a><br><br>
+El recibo es una constancia de pago, no un comprobante fiscal.<br>© 2026 Compra en Fábricas de China</td></tr>
+</table></div></body></html>
