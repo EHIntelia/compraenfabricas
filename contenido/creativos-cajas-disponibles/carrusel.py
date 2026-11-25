@@ -110,7 +110,7 @@ border-radius:32px;box-shadow:0 16px 40px rgba(26,26,26,.10);display:flex;flex-d
 
 # Portada "excusas tachadas": 3 propuestas de diseño (menos texto que el chat)
 EXC = [
-    ("No tengo capital", "10 piezas desde $1,574"),
+    ("No tengo dinero", "10 piezas desde $1,574"),
     ("Importar es complicado", "Ya están en México"),
     ("Tarda meses en llegar", "DHL al día hábil siguiente"),
 ]
@@ -129,22 +129,41 @@ def exc_minimal():
     return slide(1, body, extra)
 
 def exc_primero():
+    # Arriba las excusas tachadas; abajo un bloque naranja con el remate y el precio de entrada
     xs = "".join(f"<div class='x'>{a}</div>" for a, _ in EXC)
-    oks = "".join(f"<span>✓ {b}</span>" for _, b in EXC)
+    mochila = DATA[0]
     extra = """
-.top{position:absolute;left:0;right:0;top:0;height:760px;background:var(--durazno)}
+.top{position:absolute;left:0;right:0;top:0;height:690px;background:var(--durazno)}
 .lg{z-index:2}.num{z-index:2}
-.lab{position:absolute;left:64px;top:180px;font-size:26px;font-weight:700;letter-spacing:.1em;color:var(--n9)}
-.xs{position:absolute;left:64px;right:64px;top:250px;display:flex;flex-direction:column;gap:34px}
+.lab{position:absolute;left:64px;top:170px;font-size:26px;font-weight:700;letter-spacing:.1em;color:var(--n9)}
+.xs{position:absolute;left:64px;right:64px;top:236px;display:flex;flex-direction:column;gap:30px}
 .x{align-self:flex-start;font-size:84px;font-weight:900;letter-spacing:-.03em;color:#8A817B;position:relative;line-height:1.05}
 .x::after{content:"";position:absolute;left:-12px;right:-12px;top:50%;height:12px;border-radius:6px;background:var(--n6);transform:rotate(-3deg)}
-.bot{position:absolute;left:64px;right:64px;top:810px}
-.bot h1{font-size:136px;letter-spacing:-.04em;line-height:.98}
-.oks{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.oks span{background:#fff;border:2px solid var(--n);color:var(--n7);font-weight:700;font-size:27px;border-radius:999px;padding:10px 22px}
+.band{position:absolute;left:0;right:0;top:690px;bottom:0;background:linear-gradient(135deg,#F97316 0%,#EA580C 60%,#C2410C 100%);overflow:hidden}
+.band::before{content:"";position:absolute;right:-180px;bottom:-260px;width:720px;height:720px;border-radius:50%;
+background:radial-gradient(circle,rgba(255,255,255,.18),rgba(255,255,255,0) 70%)}
+.ya{position:absolute;left:64px;top:56px;font-size:58px;font-weight:900;color:#fff;letter-spacing:-.02em}
+.ya span{background:#fff;color:var(--n6);border-radius:14px;padding:0 16px;margin-left:6px}
+.em{position:absolute;left:64px;top:160px;font-size:40px;font-weight:700;color:#FFEDD5;line-height:1.15;width:560px}
+.big{position:absolute;left:56px;top:250px;font-size:230px;font-weight:900;letter-spacing:-.06em;color:#fff;line-height:1;
+text-shadow:0 10px 30px rgba(124,45,18,.35)}
+.big small{font-size:60px;letter-spacing:-.02em;margin-left:10px;vertical-align:40%;font-weight:900}
+.facts{position:absolute;left:64px;top:520px;display:flex;gap:12px}
+.facts span{background:rgba(255,255,255,.16);border:2px solid rgba(255,255,255,.55);color:#fff;font-weight:700;font-size:25px;border-radius:999px;padding:10px 20px}
+.pic{position:absolute;right:56px;top:612px;width:300px;height:300px;border-radius:24px;border:8px solid #fff;
+background-size:cover;background-position:center;transform:rotate(6deg);box-shadow:0 20px 40px rgba(124,45,18,.35);z-index:3}
+.st{position:absolute;right:40px;top:880px;background:#1A1A1A;color:#fff;border-radius:999px;padding:12px 22px;font-size:28px;font-weight:900;
+transform:rotate(-4deg);z-index:4;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.st b{color:#FDBA74}
+.swipe{color:#fff!important;z-index:5}
 """
     body = f"""<div class='top'></div><div class='lab'>TUS EXCUSAS PARA EMPEZAR UN NEGOCIO:</div><div class='xs'>{xs}</div>
-<div class='bot'><h1>Ya no <span class='grad'>aplican.</span></h1><div class='oks'>{oks}</div></div>"""
+<div class='band'><div class='ya'>Ya no <span>aplican.</span></div>
+<div class='em'>Empieza tu negocio con menos de</div>
+<div class='big'>$1,600</div>
+<div class='facts'><span>✓ 10 piezas</span><span>✓ Ya en México</span><span>✓ DHL al día hábil siguiente</span></div></div>
+<div class='photo pic' style="background-image:url('{foto(mochila['code'])}')"></div>
+<div class='st'>{mochila['pp']} <b>c/pieza</b></div>"""
     return slide(1, body, extra)
 
 def exc_marcador():
