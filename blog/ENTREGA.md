@@ -306,3 +306,12 @@ Las URL no cambiaron. Cada nota lleva "Actualizado: noviembre de 2026" visible. 
 5. Agregar en **/validacion** y en **/preguntas-frecuentes** un enlace a **/blog/comprar-directo-de-fabrica-en-china**. Texto sugerido: "cómo saber si un proveedor chino es fábrica".
 
 **Revisión:** en 2 o 3 semanas, mirar en Search Console el CTR y la posición de las 3 notas.
+
+**Verificado en producción (25 nov 2026):**
+- G y sus 5 imágenes responden 200, y la pilar y la nota de Eduardo enlazan a G.
+- Las 3 notas de CTR muestran el título nuevo y tienen dateModified 2026-11-25.
+- En cursos: la tabla queda antes del primer H2, enlaza a las dos páginas de curso y la FAQ de Monterrey está en el JSON-LD.
+- En Eduardo: las 2 fotos y los enlaces a /autor y a eduardohdz.com.
+- En comprar directo de fábrica: la lista de 10 señales, el enlace a /validacion y la infografía nueva.
+- El sitemap y llms.txt incluyen G. IndexNow devolvió 200 para las 5 URLs y el sitemap.
+- Falta pedir indexación en Search Console de G y de las 3 notas actualizadas.
