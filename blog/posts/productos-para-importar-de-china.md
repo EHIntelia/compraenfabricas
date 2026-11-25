@@ -98,7 +98,7 @@ Ahora hagamos el mismo filtro con la joyería. Y aquí es donde la cuenta cambia
 - **Envío por pieza:** como se cobra por kilo o por volumen, el flete repartido entre tantas piezas queda en centavos.
 - **No se descompone:** no tiene batería, no tiene garantía técnica, no se "deja de cargar".
 - **Rotación:** se vende todo el año: cumpleaños, 10 de mayo, San Valentín, Navidad, graduaciones.
-- **Margen:** la joyería de moda se suele vender varias veces por encima de lo que cuesta en fábrica.
+- **Margen:** la joyería de moda se suele vender varias veces por encima de lo que cuesta en fábrica. La que más recomiendo para empezar es la [joyería de acero inoxidable](/blog/joyeria-de-acero-inoxidable).
 
 Para que lo veas con números de peso reales: en nuestro catálogo, una caja de 100 audífonos D14 pesa unos **8.5 kg** (85 gramos por pieza con empaque) y una de 50 lentes WK104 unos **15.3 kg** (más de 300 gramos por pieza). Una pieza de joyería con su bolsita pesa una fracción de eso.
 

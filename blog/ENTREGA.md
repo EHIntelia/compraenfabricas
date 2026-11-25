@@ -135,7 +135,7 @@ Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (ra
 | D | aranceles-china-mexico-2026 | aranceles a China 2026 | Aranceles a China 2026: qué subió y cuánto pagas | ~2,030 | **Publicada** (enlazada desde la pilar, requisitos y costos). Revisión mensual contra el DOF | 21 nov 2026 |
 | H | envio-aereo-o-maritimo-desde-china | envío aéreo o marítimo desde China | Envío aéreo o marítimo desde China: cuál te conviene | ~1,820 | **Publicada** (enlazada desde la pilar, Paso 6, y desde costos) | 23 nov 2026 |
 | F | que-es-yiwu | Yiwu | Qué es Yiwu y cómo comprar en el mercado mayorista | ~2,100 | **Publicada** (enlazada desde la pilar, Paso 2, y desde comprar directo de fábrica) | 23 nov 2026 |
-| I | joyeria-de-acero-inoxidable | joyería de acero inoxidable | Joyería de acero inoxidable: qué es y por qué se vende | ~1,735 | Borrador en la base (md5 7e7be7fe…); imágenes en el repo | — |
+| I | joyeria-de-acero-inoxidable | joyería de acero inoxidable | Joyería de acero inoxidable: qué es y por qué se vende | ~1,735 | **Publicada** (enlazada desde la nota de joyería y desde productos) | 25 nov 2026 |
 | J | feria-de-canton | Feria de Cantón | — | — | Por escribir (2–3 meses antes de la edición) | — |
 | G | errores-que-me-costaron-dinero-importando | errores al importar de China | — | — | Espera historias reales de Eduardo | — |
 
@@ -257,3 +257,8 @@ Las notas nuevas siguen el **Compra en Fábricas Design System** (artifact https
 - **Datos técnicos generales:** 316L lleva molibdeno y bajo carbono, frente al 304. No se afirma que sea hipoalergénico en absoluto.
 - **No se menciona el pedido mínimo de inventario:** /joyeria lo marca como pendiente de confirmar con Eduardo ("desde 36 piezas por modelo").
 - **Al publicar:** enlazar desde la nota de joyería (sección de tipos de joyería) y desde productos (donde menciona joyería).
+
+**Publicación de I (25 nov 2026):**
+- 5 imágenes subidas a Lovable (commit 53363b7) y deploy hecho.
+- El deploy también publicó lo que hicieron otras sesiones del usuario: /proveedores protegido con login, página "Quiénes somos", sello de pago seguro, número oculto en Dirección, ubicación SEO y texto del crédito.
+- I quedó published. Enlaces agregados en la nota de joyería (tipos de joyería) y en productos (viñeta de margen). Las md5 coinciden.
