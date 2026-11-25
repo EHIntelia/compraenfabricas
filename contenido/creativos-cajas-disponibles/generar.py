@@ -190,16 +190,115 @@ padding:64px 56px;display:flex;flex-direction:column}
 <div class='list'><div class='hd'><div></div><div>Producto</div><div>Por pieza</div><div>10 piezas</div><div>Caja completa</div></div>{rows}</div>{FOOT}"""
     return page(body, extra)
 
-out = {}
-out["A-catalogo-12-cajas"] = prop_a()
-out["C1-desde-157-por-pieza"] = prop_c(DATA[:6], f"Desde <span class='grad'>{DATA[0]['pp']}</span> por pieza", "Mínimo 10 piezas de cada caja. Mercancía ya en México.")
-out["C2-camaras-relojes-y-mas"] = prop_c(DATA[6:], "Más cajas <span class='grad'>disponibles</span>", "Mínimo 10 piezas de cada caja. Mercancía ya en México.")
-out["D-lista-de-precios"] = prop_d()
-for i, d in enumerate(DATA, 1):
-    out[f"B{i:02d}-{d['model'].lower().replace(' ', '-')}"] = prop_b(d)
+# ================= HISTORIAS (vertical 1080x1920) =================
+# Zonas seguras: arriba 0-220 (perfil de IG) y abajo 1700-1920 (barra de respuesta) sin info clave.
+V = "html,body{width:1080px;height:1920px}"
+VCTA = """
+.cta{position:absolute;left:56px;right:56px;top:1560px;height:120px;background:var(--tinta);color:#fff;
+border-radius:24px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.cta .a{font-size:30px;font-weight:700}.cta .a b{color:#FDBA74}
+.cta .b{font-size:21px;color:#D6D3D1;margin-top:6px}
+.web{position:absolute;left:0;right:0;top:1712px;text-align:center;font-size:26px;font-weight:700;color:var(--n7)}
+"""
+CTA_V = ("<div class='cta'><div class='a'>Aparta con el 20% por WhatsApp <b>81 2018 1761</b></div>"
+         "<div class='b'>Precios en pesos. Envío DHL Express asegurado aparte.</div></div>"
+         "<div class='web'>compraenfabricas.com/productos</div>")
 
-for k, v in out.items():
-    with open(os.path.join(AQUI, f"_{k}.html"), "w") as f:
-        f.write(v)
-json.dump(sorted(out), open(os.path.join(AQUI, "_lista.json"), "w"))
-print(len(out), "html")
+def hist_head(titulo, sub):
+    return (f"<div class='hh'><img class='logo' src='fotos/logo-horizontal.png' style='height:58px'>"
+            f"<h1>{titulo}{FLAG}</h1><p>{sub}</p></div>")
+
+HH = """
+.hh{position:absolute;left:56px;right:56px;top:200px}
+.hh h1{font-size:64px;margin-top:22px}.hh p{font-size:28px;color:var(--gris);margin-top:10px}
+"""
+
+# B vertical: una caja por historia
+def hist_b(d):
+    extra = V + VCTA + """
+.ph{position:absolute;left:56px;right:56px;top:200px;height:720px;border-radius:24px;overflow:hidden;
+box-shadow:0 16px 40px rgba(26,26,26,.12);background-size:cover}
+.ph .badge{position:absolute;left:24px;top:24px;font-size:22px;padding:12px 24px}
+.logo2{position:absolute;right:56px;top:952px;height:52px}
+.mod{position:absolute;left:56px;top:960px;font-size:26px;font-weight:700;letter-spacing:.08em;color:var(--n7)}
+.t{position:absolute;left:56px;right:56px;top:1010px}
+.t h1{font-size:64px}
+.big{font-weight:900;font-size:170px;letter-spacing:-.03em;line-height:1;margin-top:26px}
+.sub{font-size:30px;color:var(--gris)}
+.box{position:absolute;left:56px;right:56px;top:1390px;background:var(--durazno);border-left:6px solid var(--n);
+border-radius:12px;padding:20px 26px}
+.box .a{font-size:34px;font-weight:700;color:var(--n9)}.box .a b{color:var(--n6);font-size:44px}
+.box .c{font-size:26px;margin-top:6px}
+"""
+    body = f"""<div class='photo ph' style="background-image:url('{foto(d['code'])}')"><span class='badge'>Disponible · ya en México</span></div>
+<div class='mod'>MODELO {d['model'].upper()}</div><img class='logo logo2' src='fotos/logo-horizontal.png'>
+<div class='t'><h1>{d['name']}</h1><div class='big grad'>{d['pp']}</div><div class='sub'>precio final por pieza</div></div>
+<div class='box'><div class='a'>Llévate desde 10 piezas: <b>{d['min']}</b></div>
+<div class='c'>Caja completa: {d['pz']} piezas por {d['total']}</div></div>{CTA_V}"""
+    return page(body, extra)
+
+# C vertical: 6 cajas por historia (2 x 3)
+def hist_c(parte, titulo, sub):
+    cards = ""
+    for d in parte:
+        cards += f"""<div class='card'><div class='photo ph' style="background-image:url('{foto(d['code'])}')">
+<span class='badge soft'>{d['pz']} pzs</span></div>
+<div class='tx'><div class='nm'><span>{d['model']}</span> {d['name']}</div>
+<div class='pp grad'>{d['pp']}<small>por pieza</small></div>
+<div class='mn'>10 pzs: <b>{d['min']}</b></div><div class='cj'>Caja: {d['total']}</div></div></div>"""
+    extra = V + VCTA + HH + """
+.grid{position:absolute;top:470px;left:56px;right:56px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:#fff;border:1px solid var(--borde);border-radius:16px;box-shadow:0 6px 20px rgba(26,26,26,.08);
+height:345px;overflow:hidden;display:flex;flex-direction:column}
+.ph{height:150px;position:relative;background-size:cover;flex:none}
+.ph .badge{position:absolute;left:12px;top:12px;font-size:15px;padding:6px 12px}
+.tx{padding:12px 18px}
+.nm{font-size:21px;font-weight:700;line-height:1.15;height:48px}.nm span{color:var(--n7)}
+.pp{font-weight:900;font-size:50px;letter-spacing:-.02em;line-height:1;margin-top:6px}
+.pp small{font-size:17px;color:var(--gris);font-weight:400;letter-spacing:0;margin-left:8px;-webkit-text-fill-color:var(--gris)}
+.mn{margin-top:10px;background:var(--durazno);color:var(--n9);border-radius:8px;padding:5px 10px;font-size:19px}.mn b{color:var(--n7)}
+.cj{font-size:16px;color:var(--gris);margin-top:6px}
+"""
+    body = hist_head(titulo, sub) + f"<div class='grid'>{cards}</div>{CTA_V}"
+    return page(body, extra)
+
+# D vertical: lista de precios de las 12
+def hist_d():
+    rows = ""
+    for d in DATA:
+        rows += f"""<div class='rw'><div class='photo th' style="background-image:url('{foto(d['code'])}')"></div>
+<div class='nm'><span>{d['model']}</span><br>{d['name']}</div>
+<div class='r'><div class='pp grad'>{d['pp']}</div><div class='mn'>10 pzs {d['min']}</div></div></div>"""
+    extra = V + VCTA + HH + """
+.list{position:absolute;left:56px;right:56px;top:450px}
+.rw{display:grid;grid-template-columns:110px 1fr auto;align-items:center;column-gap:18px;background:#fff;
+border:1px solid var(--borde);border-radius:12px;height:85px;margin-bottom:6px;padding-right:20px;overflow:hidden}
+.th{height:85px;background-size:cover}
+.nm{font-size:22px;font-weight:700;line-height:1.15}.nm span{color:var(--n7);font-size:16px;letter-spacing:.06em}
+.r{text-align:right}
+.pp{font-weight:900;font-size:38px;letter-spacing:-.02em;line-height:1}
+.mn{font-size:17px;color:var(--n9);margin-top:2px}
+"""
+    body = hist_head("Cajas <span class='grad'>disponibles</span>", "Precio final por pieza. Mínimo 10 piezas de cada caja.") + f"<div class='list'>{rows}</div>{CTA_V}"
+    return page(body, extra)
+
+if __name__ == "__main__":
+    out = {}
+    out["A-catalogo-12-cajas"] = prop_a()
+    out["C1-desde-157-por-pieza"] = prop_c(DATA[:6], f"Desde <span class='grad'>{DATA[0]['pp']}</span> por pieza", "Mínimo 10 piezas de cada caja. Mercancía ya en México.")
+    out["C2-camaras-relojes-y-mas"] = prop_c(DATA[6:], "Más cajas <span class='grad'>disponibles</span>", "Mínimo 10 piezas de cada caja. Mercancía ya en México.")
+    out["D-lista-de-precios"] = prop_d()
+    for i, d in enumerate(DATA, 1):
+        out[f"B{i:02d}-{d['model'].lower().replace(' ', '-')}"] = prop_b(d)
+    # Historias (prefijo H-): van a png/historias/
+    out["H-C1-desde-157-por-pieza"] = hist_c(DATA[:6], f"Desde <span class='grad'>{DATA[0]['pp']}</span> por pieza", "Mínimo 10 piezas de cada caja. Ya en México.")
+    out["H-C2-mas-cajas-disponibles"] = hist_c(DATA[6:], "Más cajas <span class='grad'>disponibles</span>", "Mínimo 10 piezas de cada caja. Ya en México.")
+    out["H-D-lista-de-precios"] = hist_d()
+    for i, d in enumerate(DATA, 1):
+        out[f"H-B{i:02d}-{d['model'].lower().replace(' ', '-')}"] = hist_b(d)
+
+    for k, v in out.items():
+        with open(os.path.join(AQUI, f"_{k}.html"), "w") as f:
+            f.write(v)
+    json.dump(sorted(out), open(os.path.join(AQUI, "_lista.json"), "w"))
+    print(len(out), "html")
