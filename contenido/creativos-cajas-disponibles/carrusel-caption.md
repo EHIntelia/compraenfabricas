@@ -1,10 +1,12 @@
 # Caption para Instagram (carrusel de cajas disponibles)
 
+Programado en Metricool (Instagram, 25 nov 2026, 5:00 pm CDMX) con este texto.
+
 Orden: portada `01e-portada-excusas-primero.png` (recomendada; las otras portadas son alternativas) y luego `02` a `08`.
 
 ---
 
-¿Sigues esperando "el momento" para empezar tu negocio? 🇨🇳
+Ya no tienes excusa: empieza tu negocio con menos de $1,600 🇨🇳
 
 Traemos cajas de electrónica directo de fábricas en China y las abrimos para que te lleves solo lo que necesitas: desde 10 piezas de cada producto, al mismo precio por pieza.
 
