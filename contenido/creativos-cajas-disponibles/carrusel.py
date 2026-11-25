@@ -51,21 +51,139 @@ font-weight:900;font-size:28px;color:var(--n6)}
 <div class='g'>{tiles}</div>"""
     return slide(1, body, extra, logo=True)
 
+# 1 (alternativas) · Hook 9: "Ya no tienes excusa para no empezar tu negocio."
+EXC_H1 = "Ya no tienes <span class='grad'>excusa</span> para no empezar tu negocio."
+
+def s1_excusa_productos():
+    tiles = "".join(
+        f"<div class='photo t' style=\"background-image:url('{foto(d['code'])}')\"><span>{d['pp']}<small>/pieza</small></span></div>"
+        for d in DATA[:6])
+    extra = """
+.b{position:absolute;left:56px;top:150px;width:968px}
+.b h1{font-size:104px;letter-spacing:-.035em;line-height:1.02}
+.b p{font-size:36px;font-weight:700;margin-top:30px}
+.b p span{color:var(--n6)}
+.g{position:absolute;left:56px;right:56px;top:640px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.t{height:280px;border-radius:16px;position:relative;background-size:cover;box-shadow:0 6px 20px rgba(26,26,26,.12)}
+.t span{position:absolute;left:12px;bottom:12px;background:#fff;border-radius:999px;padding:6px 14px;
+font-weight:900;font-size:28px;color:var(--n6)}
+.t small{font-size:16px;color:var(--gris);font-weight:400}
+"""
+    body = f"""<div class='b'><h1>{EXC_H1}</h1>
+<p>10 piezas <span>·</span> Menos de $2,000 <span>·</span> Ya en México{FLAG}</p></div>
+<div class='g'>{tiles}</div>"""
+    return slide(1, body, extra)
+
+def s1_excusa_chat():
+    # Conversación: las excusas las escribe "Tú" y Compra en fábricas contesta con un dato real.
+    pares = [
+        ("No tengo capital para empezar", "10 piezas desde <b>$1,574</b>"),
+        ("Importar de China es complicado", "Ya están en México. Tú solo eliges"),
+        ("Tarda meses en llegar", "Te llega por DHL al día hábil siguiente"),
+    ]
+    msgs = ""
+    for ex, resp in pares:
+        msgs += f"""<div class='m in'><div class='av tu'>Tú</div><div class='bb'>{ex}</div></div>
+<div class='m out'><div class='bb'>{resp}</div><img class='av' src='fotos/icono.png'></div>"""
+    extra = """
+.b{position:absolute;left:56px;top:140px;width:968px}
+.b h1{font-size:88px;letter-spacing:-.035em;line-height:1.02}
+.chat{position:absolute;left:40px;right:40px;top:470px;bottom:110px;background:#fff;border:1px solid var(--borde);
+border-radius:32px;box-shadow:0 16px 40px rgba(26,26,26,.10);display:flex;flex-direction:column;overflow:hidden}
+.ch{display:flex;align-items:center;gap:16px;padding:16px 28px;border-bottom:1px solid #EFE7E1;background:var(--crema)}
+.ch b{display:block;font-size:26px}.ch span{font-size:20px;color:#16A34A}
+.av.sm{width:52px;height:52px;padding:8px}
+.msgs{flex:1;padding:22px 28px;display:flex;flex-direction:column;justify-content:space-between}
+.m{display:flex;align-items:flex-end;gap:14px}
+.m.out{justify-content:flex-end}
+.av{flex:none;width:64px;height:64px;border-radius:50%;object-fit:contain;background:var(--durazno);padding:10px}
+.av.tu{display:flex;align-items:center;justify-content:center;background:#E7E2DD;color:var(--gris);font-weight:700;font-size:22px;padding:0}
+.bb{max-width:760px;font-size:36px;line-height:1.2;padding:22px 30px;border-radius:30px}
+.in .bb{background:#F1ECE8;color:var(--tinta);border-bottom-left-radius:8px}
+.out .bb{background:var(--grad);color:#fff;font-weight:700;border-bottom-right-radius:8px;box-shadow:0 8px 24px rgba(234,88,12,.25)}
+.out .bb b{font-weight:900;background:#fff;color:var(--n6);border-radius:10px;padding:0 10px}
+"""
+    head = ("<div class='ch'><img class='av sm' src='fotos/icono.png'><div><b>Compra en fábricas</b>"
+            "<span>en línea</span></div></div>")
+    body = f"<div class='b'><h1>{EXC_H1}</h1></div><div class='chat'>{head}<div class='msgs'>{msgs}</div></div>"
+    return slide(1, body, extra)
+
+# Portada "excusas tachadas": 3 propuestas de diseño (menos texto que el chat)
+EXC = [
+    ("No tengo capital", "10 piezas desde $1,574"),
+    ("Importar es complicado", "Ya están en México"),
+    ("Tarda meses en llegar", "DHL al día hábil siguiente"),
+]
+
+def exc_minimal():
+    rows = "".join(f"<div class='r'><div class='x'>{a}</div><div class='ok'>✓ {b}</div></div>" for a, b in EXC)
+    extra = """
+.b{position:absolute;left:64px;top:150px;width:952px}
+.b h1{font-size:92px;letter-spacing:-.035em;line-height:1.02}
+.list{position:absolute;left:64px;right:64px;top:580px;display:flex;flex-direction:column;gap:64px}
+.x{display:inline-block;font-size:76px;font-weight:700;color:#A8A29E;letter-spacing:-.02em;position:relative;line-height:1.05}
+.x::after{content:"";position:absolute;left:-10px;right:-10px;top:52%;height:10px;border-radius:6px;background:var(--grad);transform:rotate(-2deg)}
+.ok{font-size:40px;font-weight:900;color:var(--n7);margin-top:14px}
+"""
+    body = f"<div class='b'><h1>Ya no tienes <span class='grad'>excusa</span> para empezar tu negocio.</h1></div><div class='list'>{rows}</div>"
+    return slide(1, body, extra)
+
+def exc_primero():
+    xs = "".join(f"<div class='x'>{a}</div>" for a, _ in EXC)
+    oks = "".join(f"<span>✓ {b}</span>" for _, b in EXC)
+    extra = """
+.top{position:absolute;left:0;right:0;top:0;height:760px;background:var(--durazno)}
+.lg{z-index:2}.num{z-index:2}
+.lab{position:absolute;left:64px;top:180px;font-size:26px;font-weight:700;letter-spacing:.1em;color:var(--n9)}
+.xs{position:absolute;left:64px;right:64px;top:250px;display:flex;flex-direction:column;gap:34px}
+.x{align-self:flex-start;font-size:84px;font-weight:900;letter-spacing:-.03em;color:#8A817B;position:relative;line-height:1.05}
+.x::after{content:"";position:absolute;left:-12px;right:-12px;top:50%;height:12px;border-radius:6px;background:var(--n6);transform:rotate(-3deg)}
+.bot{position:absolute;left:64px;right:64px;top:810px}
+.bot h1{font-size:136px;letter-spacing:-.04em;line-height:.98}
+.oks{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.oks span{background:#fff;border:2px solid var(--n);color:var(--n7);font-weight:700;font-size:27px;border-radius:999px;padding:10px 22px}
+"""
+    body = f"""<div class='top'></div><div class='lab'>TUS EXCUSAS PARA EMPEZAR UN NEGOCIO:</div><div class='xs'>{xs}</div>
+<div class='bot'><h1>Ya no <span class='grad'>aplican.</span></h1><div class='oks'>{oks}</div></div>"""
+    return slide(1, body, extra)
+
+def exc_marcador():
+    # Tachón tipo marcador (SVG) y la respuesta como etiqueta pegada encima
+    scrib = ("<svg class='sc' viewBox='0 0 600 60' preserveAspectRatio='none'><path d='M6 38 C 120 18, 240 46, 360 26 S 540 30, 594 20' "
+             "stroke='#EA580C' stroke-width='14' fill='none' stroke-linecap='round'/><path d='M14 26 C 160 44, 300 14, 440 36 S 560 30, 590 34' "
+             "stroke='#F97316' stroke-width='9' fill='none' stroke-linecap='round' opacity='.85'/></svg>")
+    rots = [-3, 2.5, -2]
+    rows = "".join(f"<div class='r'><div class='x'>“{a}”{scrib}</div><div class='tag' style='transform:rotate({r}deg)'>{b}</div></div>"
+                   for (a, b), r in zip(EXC, rots))
+    extra = """
+.b{position:absolute;left:64px;top:150px;width:952px}
+.b h1{font-size:88px;letter-spacing:-.035em;line-height:1.02}
+.list{position:absolute;left:64px;right:64px;top:560px;display:flex;flex-direction:column;gap:72px}
+.r{display:flex;flex-direction:column;align-items:flex-start}
+.x{font-size:70px;font-weight:700;color:var(--tinta);position:relative;letter-spacing:-.02em;line-height:1.1}
+.sc{position:absolute;left:-14px;right:-14px;top:22%;width:calc(100% + 28px);height:60%}
+.tag{margin:14px 0 0 120px;background:var(--grad);color:#fff;font-weight:900;font-size:34px;padding:12px 24px;border-radius:12px;
+box-shadow:0 8px 24px rgba(234,88,12,.28)}
+"""
+    body = f"<div class='b'><h1>Ya no tienes <span class='grad'>excusa</span> para empezar tu negocio.</h1></div><div class='list'>{rows}</div>"
+    return slide(1, body, extra)
+
 # 2 · Cómo funciona
 def s2():
     pasos = [
         ("Eliges producto y cuántas piezas", "Mínimo 10 piezas de cada caja, al mismo precio por pieza."),
         ("Apartas con el 20% por WhatsApp", "Tienes 7 días para pagar el resto y el envío."),
-        ("Te llega por DHL Express asegurado", "Las cajas ya están en México: normalmente llega al día hábil siguiente."),
+        ("Te llega por DHL o pasas por ella", "DHL Express asegurado, normalmente al día hábil siguiente. Si estás en Monterrey, pasa por tu caja."),
     ]
     items = "".join(f"<div class='p'><div class='c'>{i}</div><div><b>{t}</b><span>{d}</span></div></div>"
                     for i, (t, d) in enumerate(pasos, 1))
     extra = """
 .w{position:absolute;left:56px;right:56px;top:170px}
-.w h1{font-size:80px}
+.w h1{font-size:72px}
+.w .in{font-size:30px;color:var(--gris);margin-top:14px;line-height:1.35}
 .p{display:flex;gap:28px;align-items:flex-start;background:#fff;border:1px solid var(--borde);border-radius:16px;
-padding:38px 34px;margin-top:26px;box-shadow:0 6px 20px rgba(26,26,26,.06)}
-.p:first-of-type{margin-top:48px}
+padding:28px 32px;margin-top:20px;box-shadow:0 6px 20px rgba(26,26,26,.06)}
+.p:first-of-type{margin-top:34px}
 .c{flex:none;width:64px;height:64px;border-radius:50%;background:var(--grad);color:#fff;font-weight:900;font-size:32px;
 display:flex;align-items:center;justify-content:center}
 .p b{display:block;font-size:36px;line-height:1.15}.p span{display:block;font-size:28px;color:var(--gris);margin-top:8px;line-height:1.35}
@@ -73,7 +191,8 @@ display:flex;align-items:center;justify-content:center}
 font-size:30px;color:var(--n9)}.pb b{color:var(--n7)}
 """
     body = f"""<div class='w'><div class='eyebrow'>Así funciona</div>
-<h1>Sin contenedor. Sin importar. <span class='grad'>Sin esperar meses.</span></h1>{items}
+<h1>Sin contenedor. Sin importar. <span class='grad'>Sin esperar meses.</span></h1>
+<div class='in'>Traemos cajas de fábricas en China y las abrimos: tú te llevas solo las piezas que necesitas.</div>{items}
 <div class='pb'><b>Importante:</b> hay una sola caja de cada modelo. Cuando se acaba, se acaba.</div></div>"""
     return slide(2, body, extra)
 
@@ -103,7 +222,7 @@ def card(d):
     return f"""<div class='card'><div class='photo ph' style="background-image:url('{foto(d['code'])}')"></div>
 <div class='tx'><div class='mod'>{d['model']}</div><div class='nm'>{d['name']}</div>
 <div class='pp grad'>{d['pp']}<small>por pieza</small></div>
-<div class='mn'>10 piezas: {d['min']}</div><div class='cj'>Quedan {d['pz']} en la caja</div></div></div>"""
+<div class='mn'>10 piezas: {d['min']}</div><div class='cj'>Caja completa: {d['pz']} pzs · {d['total']}</div></div></div>"""
 
 def tier(n, eyebrow, titulo, sub, items):
     cls = "list g2" if len(items) == 4 else "list"
@@ -117,7 +236,7 @@ def s7():
         "Te hacemos un acuerdo de compra por escrito.",
         "Recibos de cada pago con nuestro sello oficial.",
         "Te mandamos videos de tu pedido y hacemos videollamada contigo.",
-        "Estamos en Monterrey, N.L.",
+        "Estamos en Monterrey, N.L. Puedes pasar por tu caja.",
         "No usamos pago contra entrega.",
     ]
     items = "".join(f"<div class='ck'><span>✓</span>{p}</div>" for p in pts)
@@ -147,25 +266,30 @@ def s8():
 .mi .photo{height:150px;border-radius:12px;background-size:cover}
 .mi b{display:block;font-size:26px;font-weight:900;color:var(--n6);margin-top:6px}
 .dm{margin-top:48px;background:var(--grad);color:#fff;border-radius:24px;padding:40px 30px;box-shadow:0 8px 24px rgba(234,88,12,.3)}
-.dm .a{font-size:48px;font-weight:900;letter-spacing:-.01em}
-.dm .a span{background:#fff;color:var(--n6);border-radius:12px;padding:2px 16px;margin:0 4px}
-.dm .b{font-size:28px;margin-top:14px}
-.o{margin-top:34px;font-size:30px;line-height:1.4}.o b{color:var(--n7)}
+.dm .a{font-size:76px;font-weight:900;letter-spacing:-.01em}
+.dm .a span{background:#fff;color:var(--n6);border-radius:16px;padding:0 22px;margin:0 6px}
+.dm .b{font-size:32px;margin-top:14px}
+.o{margin-top:40px;font-size:36px;line-height:1.4}.o b{color:var(--n7)}
 .sv{margin-top:26px;font-size:26px;color:var(--gris)}
 """
     body = f"""<div class='w'><h1>¿Cuál te <span class='grad'>llevas?</span></h1>
-<p>12 productos, mínimo 10 piezas de cada uno.</p><div class='g'>{mini}</div>
-<div class='dm'><div class='a'>Mándanos DM con la palabra <span>CAJA</span></div>
-<div class='b'>Te pasamos fotos, videos y te ayudamos a apartar.</div></div>
-<div class='o'>O escríbenos por WhatsApp <b>81 2018 1761</b><br>o entra a <b>compraenfabricas.com/productos</b></div>
+<p>Para empezar tu negocio o surtir el que ya tienes.</p><div class='g'>{mini}</div>
+<div class='dm'><div class='a'>Comenta <span>CAJA</span></div>
+<div class='b'>y te mandamos fotos, videos y precios de cada producto.</div></div>
+<div class='o'>¿Estás en Monterrey? <b>Pasa por tu caja.</b></div>
 <div class='sv'>Guarda este post para cuando estés listo.</div></div>"""
     return slide(8, body, extra, swipe=False)
 
 if __name__ == "__main__":
     out = {
         "K-01-hook": s1(),
+        "K-01b-hook-excusa-productos": s1_excusa_productos(),
+        "K-01c-hook-excusa-chat": s1_excusa_chat(),
+        "K-01d-portada-minimal": exc_minimal(),
+        "K-01e-portada-excusas-primero": exc_primero(),
+        "K-01f-portada-marcador": exc_marcador(),
         "K-02-como-funciona": s2(),
-        "K-03-menos-de-2000": tier(3, "Si tienes menos de $2,000", "Empieza con <span class='grad'>10 piezas</span> de:", "Lo más barato para arrancar tu negocio.", tramo(0, 2000)),
+        "K-03-menos-de-2000": tier(3, "Si tienes menos de $2,000", "Empieza con <span class='grad'>10 piezas</span> de:", "Para arrancar tu negocio o probar un producto nuevo en tu tienda.", tramo(0, 2000)),
         "K-04-menos-de-3500": tier(4, "Si tienes menos de $3,500", "Micrófonos y <span class='grad'>dashcam</span>", "Para creadores de contenido y conductores.", tramo(2000, 3500)),
         "K-05-menos-de-7000": tier(5, "Si tienes menos de $7,000", "Ventilador, cámara <span class='grad'>y reloj</span>", "Productos de mayor valor por pieza.", tramo(3500, 7000)),
         "K-06-para-ir-en-grande": tier(6, "Para ir en grande", "Lo más <span class='grad'>premium</span>", "Traductor con IA y cámara de bolsillo 4K.", tramo(7000, 10**9)),
