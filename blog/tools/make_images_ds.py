@@ -208,7 +208,28 @@ def nota_errores():
                  "Errores al importar de China, versión para redes", hl=("errores",), focus=(0.4, 0.5))
 
 
-NOTAS = {"errores-que-me-costaron-dinero-importando": nota_errores, "joyeria-de-acero-inoxidable": nota_acero, "que-es-yiwu": nota_yiwu, "aranceles-china-mexico-2026": nota_aranceles, "envio-aereo-o-maritimo-desde-china": nota_envio}
+def nota_fabrica_senales():
+    """Infografía actualizada de la nota A (10 señales), con el design system."""
+    s = "comprar-directo-de-fabrica-en-china"
+    body = L.steps_grid([
+        ("Licencia", "Dice que fabrica"),
+        ("Nombre igual", "En licencia y cuenta"),
+        ("Línea en vivo", "Videollamada, no fotos"),
+        ("Hace cambios", "Color, empaque o logo"),
+        ("Se especializa", "Una línea de productos"),
+        ("Sabe su proceso", "Materiales y capacidad"),
+        ("Escala precios", "Baja con el volumen"),
+        ("MOQ lógico", "Mínimo por modelo"),
+        ("Da tiempos", "De producción, no stock"),
+        ("Dirección real", "La planta de la licencia"),
+    ], cols=5, top=140, card_h=225)
+    L.save(s, "senales-para-saber-si-es-fabrica-en-china.webp",
+           L.frame("10 señales de que es fábrica", "Revísalas con cada proveedor antes de pagar",
+                   body, "Si no cumple la mayoría, trátalo como trading o revendedor."),
+           1200, 675, "Las 10 señales para saber si un proveedor en China es fábrica", "infografia")
+
+
+NOTAS = {"comprar-directo-de-fabrica-en-china": nota_fabrica_senales, "errores-que-me-costaron-dinero-importando": nota_errores, "joyeria-de-acero-inoxidable": nota_acero, "que-es-yiwu": nota_yiwu, "aranceles-china-mexico-2026": nota_aranceles, "envio-aereo-o-maritimo-desde-china": nota_envio}
 
 if __name__ == "__main__":
     for slug in sys.argv[1:] or NOTAS:

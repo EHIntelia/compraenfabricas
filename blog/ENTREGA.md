@@ -137,7 +137,7 @@ Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (ra
 | F | que-es-yiwu | Yiwu | Qué es Yiwu y cómo comprar en el mercado mayorista | ~2,100 | **Publicada** (enlazada desde la pilar, Paso 2, y desde comprar directo de fábrica) | 23 nov 2026 |
 | I | joyeria-de-acero-inoxidable | joyería de acero inoxidable | Joyería de acero inoxidable: qué es y por qué se vende | ~1,735 | **Publicada** (enlazada desde la nota de joyería y desde productos) | 25 nov 2026 |
 | J | feria-de-canton | Feria de Cantón | — | — | Por escribir (2–3 meses antes de la edición) | — |
-| G | errores-que-me-costaron-dinero-importando | errores al importar de China | Errores al importar de China que me costaron dinero | ~1,750 | Borrador en la base (md5 8bbc05d4…); imágenes en el repo | — |
+| G | errores-que-me-costaron-dinero-importando | errores al importar de China | Errores al importar de China que me costaron dinero | ~1,750 | **Publicada** (enlazada desde la pilar, sección de errores, y desde la nota de Eduardo) | 25 nov 2026 |
 
 **Meta descriptions**
 - B: "Requisitos para importar de China a México en 2026: RFC, e.firma, padrón de importadores, agente aduanal, pedimento y NOM. Explicado fácil y con fuentes." (153)
@@ -275,3 +275,34 @@ Las notas nuevas siguen el **Compra en Fábricas Design System** (artifact https
 - **Inconsistencia de fechas en los transcripts:** aparecen "hace 27 años" y "hace 13/15 años". La nota usa las edades (26 y 36), que sí cuadran con sus 49 años.
 - **Portada:** es una foto de stock del banco (un emprendedor), no Eduardo.
 - **Al publicar:** enlazar desde la pilar (sección de errores comunes) y desde la nota de Eduardo (sección de las 2 bancarrotas).
+
+**Publicación de G (25 nov 2026):** 5 imágenes subidas a Lovable (commit bbf3075) y deploy hecho. G quedó published. Enlaces agregados en la pilar (después de la lista de errores comunes) y en la nota de Eduardo (sección de las 2 bancarrotas).
+
+## Mejora de CTR en 3 notas (pedido del 25 nov 2026, datos de Search Console del 10 al 24 nov)
+
+Las URL no cambiaron. Cada nota lleva "Actualizado: noviembre de 2026" visible. `dateModified` sale de `updated_at`, que quedó en el 25 nov.
+
+**1. /blog/cursos-para-importar-de-china** (23 impresiones, posición 6.9, CTR 4.3%)
+- Título: "Cursos para importar de China 2026: precios y cuál elegir" (57). Descripción nueva tal cual el pedido (155).
+- Tabla rápida antes del primer H2, con columnas curso, precio, en vivo o grabado, incluye proveedores y soporte. La fila de la clase enlaza a /curso-para-importar-de-china.
+- La tabla larga de la sección "Comparativa" se quitó para no repetirla; se dejaron el texto y la infografía.
+- Sección y FAQ nuevas: "¿Hay cursos para importar de China en Monterrey?", con enlace a /curso-para-importar-de-china-monterrey. Las otras dos FAQ del pedido (cuánto cuesta y en vivo o grabado) ya existían. Quedan 7 FAQ.
+
+**2. /blog/eduardo-hernandez-importaciones-china** (14 impresiones, posición 4.5, CTR 7.1%)
+- Título: "Eduardo Hernández: 26 años importando de China y 2 quiebras" (59). El del pedido, con paréntesis, medía 61 y rebasaba el límite. Descripción tal cual el pedido (151).
+- `focus_keyword` cambió a "Eduardo Hernández", porque la gente lo busca por su nombre.
+- 2 fotos reales de Eduardo copiadas desde src/assets/opt (variantes de 1024 × 571) a public/blog/eduardo-hernandez-importaciones-china/: eduardo-hernandez-retrato.webp y eduardo-hernandez-fundador.webp. Viven solo en Lovable; la red de esta sesión no deja bajarlas al repo.
+- Enlaces a /autor/eduardo-hernandez y a eduardohdz.com.
+- El hueco pendiente de la sección de bancarrotas se llenó con la historia real (26 y 36 años, 3,000 dólares, año y medio y 5 años) y un enlace a G.
+
+**3. /blog/comprar-directo-de-fabrica-en-china** (14 impresiones, posición 16.2, 0 clics)
+- Título: "Comprar directo de fábrica en China: ¿es fábrica de verdad?" (59). El del pedido medía 61.
+- Descripción: la del pedido sin una coma ("sin caer con un revendedor ... y cómo validarla antes de pagar"), para dejarla en 155.
+- La lista pasó a 10 señales numeradas (se agregaron MOQ, tiempos de producción y dirección de planta) y la infografía se regeneró con 10 señales en el estilo nuevo.
+- Sección nueva "¿Y si no quieres validarla tú?" con enlace a /validacion.
+- Enlace desde /blog/como-pagar-a-un-proveedor-en-china: ya existía, al inicio de la nota.
+
+**Pedido al agente SEO** (son páginas comerciales que el agente de contenido no toca):
+5. Agregar en **/validacion** y en **/preguntas-frecuentes** un enlace a **/blog/comprar-directo-de-fabrica-en-china**. Texto sugerido: "cómo saber si un proveedor chino es fábrica".
+
+**Revisión:** en 2 o 3 semanas, mirar en Search Console el CTR y la posición de las 3 notas.
