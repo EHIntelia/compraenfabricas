@@ -51,6 +51,50 @@ font-weight:900;font-size:28px;color:var(--n6)}
 <div class='g'>{tiles}</div>"""
     return slide(1, body, extra, logo=True)
 
+# 1 (alternativas) · Hook 9: "Ya no tienes excusa para no empezar tu negocio."
+EXC_H1 = "Ya no tienes <span class='grad'>excusa</span> para no empezar tu negocio."
+
+def s1_excusa_productos():
+    tiles = "".join(
+        f"<div class='photo t' style=\"background-image:url('{foto(d['code'])}')\"><span>{d['pp']}<small>/pieza</small></span></div>"
+        for d in DATA[:6])
+    extra = """
+.b{position:absolute;left:56px;top:150px;width:968px}
+.b h1{font-size:104px;letter-spacing:-.035em;line-height:1.02}
+.b p{font-size:36px;font-weight:700;margin-top:30px}
+.b p span{color:var(--n6)}
+.g{position:absolute;left:56px;right:56px;top:640px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.t{height:280px;border-radius:16px;position:relative;background-size:cover;box-shadow:0 6px 20px rgba(26,26,26,.12)}
+.t span{position:absolute;left:12px;bottom:12px;background:#fff;border-radius:999px;padding:6px 14px;
+font-weight:900;font-size:28px;color:var(--n6)}
+.t small{font-size:16px;color:var(--gris);font-weight:400}
+"""
+    body = f"""<div class='b'><h1>{EXC_H1}</h1>
+<p>10 piezas <span>·</span> Menos de $2,000 <span>·</span> Ya en México{FLAG}</p></div>
+<div class='g'>{tiles}</div>"""
+    return slide(1, body, extra)
+
+def s1_excusa_pretextos():
+    pares = [
+        ("“No tengo capital”", "10 piezas desde $1,574"),
+        ("“Importar es complicado”", "Ya están en México. Tú solo eliges"),
+        ("“Tarda meses en llegar”", "DHL al día hábil siguiente"),
+    ]
+    rows = "".join(f"<div class='r'><div class='x'>{a}</div><div class='ok'><span>✓</span>{b}</div></div>" for a, b in pares)
+    extra = """
+.b{position:absolute;left:56px;top:150px;width:968px}
+.b h1{font-size:104px;letter-spacing:-.035em;line-height:1.02}
+.list{position:absolute;left:56px;right:56px;top:620px}
+.r{background:#fff;border:1px solid var(--borde);border-radius:16px;padding:30px 34px;margin-bottom:24px;
+box-shadow:0 6px 20px rgba(26,26,26,.06)}
+.x{font-size:36px;color:var(--gris);text-decoration:line-through;text-decoration-color:var(--n6);text-decoration-thickness:4px}
+.ok{display:flex;align-items:center;gap:16px;font-size:38px;font-weight:900;margin-top:10px;letter-spacing:-.01em}
+.ok span{flex:none;width:46px;height:46px;border-radius:50%;background:var(--grad);color:#fff;font-size:26px;
+display:flex;align-items:center;justify-content:center}
+"""
+    body = f"<div class='b'><h1>{EXC_H1}</h1></div><div class='list'>{rows}</div>"
+    return slide(1, body, extra)
+
 # 2 · Cómo funciona
 def s2():
     pasos = [
@@ -164,6 +208,8 @@ def s8():
 if __name__ == "__main__":
     out = {
         "K-01-hook": s1(),
+        "K-01b-hook-excusa-productos": s1_excusa_productos(),
+        "K-01c-hook-excusa-pretextos": s1_excusa_pretextos(),
         "K-02-como-funciona": s2(),
         "K-03-menos-de-2000": tier(3, "Si tienes menos de $2,000", "Empieza con <span class='grad'>10 piezas</span> de:", "Lo más barato para arrancar tu negocio.", tramo(0, 2000)),
         "K-04-menos-de-3500": tier(4, "Si tienes menos de $3,500", "Micrófonos y <span class='grad'>dashcam</span>", "Para creadores de contenido y conductores.", tramo(2000, 3500)),

@@ -1,5 +1,13 @@
 # Caption para Instagram (carrusel de cajas disponibles)
 
+Portada: usa `01-hook.png` o una de las versiones del hook "Ya no tienes excusa" (`01b-hook-excusa-productos.png`, `01c-hook-excusa-pretextos.png`) y luego las láminas 02 a 08. Si usas la de "excusa", cambia la primera línea del texto por la versión de abajo.
+
+## Primera línea con el hook "Ya no tienes excusa"
+
+Ya no tienes excusa para no empezar tu negocio 🇨🇳
+
+## Texto
+
 Tu primer inventario por menos de $2,000 🇨🇳
 
 Tenemos 12 cajas de electrónica directo de fábrica china que ya están en México. No necesitas comprar la caja completa: te llevas desde 10 piezas de cada producto, al mismo precio por pieza.
