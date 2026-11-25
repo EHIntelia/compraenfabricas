@@ -108,6 +108,66 @@ border-radius:32px;box-shadow:0 16px 40px rgba(26,26,26,.10);display:flex;flex-d
     body = f"<div class='b'><h1>{EXC_H1}</h1></div><div class='chat'>{head}<div class='msgs'>{msgs}</div></div>"
     return slide(1, body, extra)
 
+# Portada "excusas tachadas": 3 propuestas de diseño (menos texto que el chat)
+EXC = [
+    ("No tengo capital", "10 piezas desde $1,574"),
+    ("Importar es complicado", "Ya están en México"),
+    ("Tarda meses en llegar", "DHL al día hábil siguiente"),
+]
+
+def exc_minimal():
+    rows = "".join(f"<div class='r'><div class='x'>{a}</div><div class='ok'>✓ {b}</div></div>" for a, b in EXC)
+    extra = """
+.b{position:absolute;left:64px;top:150px;width:952px}
+.b h1{font-size:92px;letter-spacing:-.035em;line-height:1.02}
+.list{position:absolute;left:64px;right:64px;top:580px;display:flex;flex-direction:column;gap:64px}
+.x{display:inline-block;font-size:76px;font-weight:700;color:#A8A29E;letter-spacing:-.02em;position:relative;line-height:1.05}
+.x::after{content:"";position:absolute;left:-10px;right:-10px;top:52%;height:10px;border-radius:6px;background:var(--grad);transform:rotate(-2deg)}
+.ok{font-size:40px;font-weight:900;color:var(--n7);margin-top:14px}
+"""
+    body = f"<div class='b'><h1>Ya no tienes <span class='grad'>excusa</span> para empezar tu negocio.</h1></div><div class='list'>{rows}</div>"
+    return slide(1, body, extra)
+
+def exc_primero():
+    xs = "".join(f"<div class='x'>{a}</div>" for a, _ in EXC)
+    oks = "".join(f"<span>✓ {b}</span>" for _, b in EXC)
+    extra = """
+.top{position:absolute;left:0;right:0;top:0;height:760px;background:var(--durazno)}
+.lg{z-index:2}.num{z-index:2}
+.lab{position:absolute;left:64px;top:180px;font-size:26px;font-weight:700;letter-spacing:.1em;color:var(--n9)}
+.xs{position:absolute;left:64px;right:64px;top:250px;display:flex;flex-direction:column;gap:34px}
+.x{align-self:flex-start;font-size:84px;font-weight:900;letter-spacing:-.03em;color:#8A817B;position:relative;line-height:1.05}
+.x::after{content:"";position:absolute;left:-12px;right:-12px;top:50%;height:12px;border-radius:6px;background:var(--n6);transform:rotate(-3deg)}
+.bot{position:absolute;left:64px;right:64px;top:810px}
+.bot h1{font-size:136px;letter-spacing:-.04em;line-height:.98}
+.oks{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.oks span{background:#fff;border:2px solid var(--n);color:var(--n7);font-weight:700;font-size:27px;border-radius:999px;padding:10px 22px}
+"""
+    body = f"""<div class='top'></div><div class='lab'>TUS EXCUSAS:</div><div class='xs'>{xs}</div>
+<div class='bot'><h1>Ya no <span class='grad'>aplican.</span></h1><div class='oks'>{oks}</div></div>"""
+    return slide(1, body, extra)
+
+def exc_marcador():
+    # Tachón tipo marcador (SVG) y la respuesta como etiqueta pegada encima
+    scrib = ("<svg class='sc' viewBox='0 0 600 60' preserveAspectRatio='none'><path d='M6 38 C 120 18, 240 46, 360 26 S 540 30, 594 20' "
+             "stroke='#EA580C' stroke-width='14' fill='none' stroke-linecap='round'/><path d='M14 26 C 160 44, 300 14, 440 36 S 560 30, 590 34' "
+             "stroke='#F97316' stroke-width='9' fill='none' stroke-linecap='round' opacity='.85'/></svg>")
+    rots = [-3, 2.5, -2]
+    rows = "".join(f"<div class='r'><div class='x'>“{a}”{scrib}</div><div class='tag' style='transform:rotate({r}deg)'>{b}</div></div>"
+                   for (a, b), r in zip(EXC, rots))
+    extra = """
+.b{position:absolute;left:64px;top:150px;width:952px}
+.b h1{font-size:88px;letter-spacing:-.035em;line-height:1.02}
+.list{position:absolute;left:64px;right:64px;top:560px;display:flex;flex-direction:column;gap:72px}
+.r{display:flex;flex-direction:column;align-items:flex-start}
+.x{font-size:70px;font-weight:700;color:var(--tinta);position:relative;letter-spacing:-.02em;line-height:1.1}
+.sc{position:absolute;left:-14px;right:-14px;top:22%;width:calc(100% + 28px);height:60%}
+.tag{margin:14px 0 0 120px;background:var(--grad);color:#fff;font-weight:900;font-size:34px;padding:12px 24px;border-radius:12px;
+box-shadow:0 8px 24px rgba(234,88,12,.28)}
+"""
+    body = f"<div class='b'><h1>Ya no tienes <span class='grad'>excusa</span> para empezar tu negocio.</h1></div><div class='list'>{rows}</div>"
+    return slide(1, body, extra)
+
 # 2 · Cómo funciona
 def s2():
     pasos = [
@@ -223,6 +283,9 @@ if __name__ == "__main__":
         "K-01-hook": s1(),
         "K-01b-hook-excusa-productos": s1_excusa_productos(),
         "K-01c-hook-excusa-chat": s1_excusa_chat(),
+        "K-01d-portada-minimal": exc_minimal(),
+        "K-01e-portada-excusas-primero": exc_primero(),
+        "K-01f-portada-marcador": exc_marcador(),
         "K-02-como-funciona": s2(),
         "K-03-menos-de-2000": tier(3, "Si tienes menos de $2,000", "Empieza con <span class='grad'>10 piezas</span> de:", "Lo más barato para arrancar tu negocio.", tramo(0, 2000)),
         "K-04-menos-de-3500": tier(4, "Si tienes menos de $3,500", "Micrófonos y <span class='grad'>dashcam</span>", "Para creadores de contenido y conductores.", tramo(2000, 3500)),
