@@ -143,7 +143,7 @@ def exc_primero():
 .oks{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .oks span{background:#fff;border:2px solid var(--n);color:var(--n7);font-weight:700;font-size:27px;border-radius:999px;padding:10px 22px}
 """
-    body = f"""<div class='top'></div><div class='lab'>TUS EXCUSAS:</div><div class='xs'>{xs}</div>
+    body = f"""<div class='top'></div><div class='lab'>TUS EXCUSAS PARA EMPEZAR UN NEGOCIO:</div><div class='xs'>{xs}</div>
 <div class='bot'><h1>Ya no <span class='grad'>aplican.</span></h1><div class='oks'>{oks}</div></div>"""
     return slide(1, body, extra)
 
@@ -173,16 +173,17 @@ def s2():
     pasos = [
         ("Eliges producto y cuántas piezas", "Mínimo 10 piezas de cada caja, al mismo precio por pieza."),
         ("Apartas con el 20% por WhatsApp", "Tienes 7 días para pagar el resto y el envío."),
-        ("Te llega por DHL Express asegurado", "Las cajas ya están en México: normalmente llega al día hábil siguiente."),
+        ("Te llega por DHL o pasas por ella", "DHL Express asegurado, normalmente al día hábil siguiente. Si estás en Monterrey, pasa por tu caja."),
     ]
     items = "".join(f"<div class='p'><div class='c'>{i}</div><div><b>{t}</b><span>{d}</span></div></div>"
                     for i, (t, d) in enumerate(pasos, 1))
     extra = """
 .w{position:absolute;left:56px;right:56px;top:170px}
-.w h1{font-size:80px}
+.w h1{font-size:72px}
+.w .in{font-size:30px;color:var(--gris);margin-top:14px;line-height:1.35}
 .p{display:flex;gap:28px;align-items:flex-start;background:#fff;border:1px solid var(--borde);border-radius:16px;
-padding:38px 34px;margin-top:26px;box-shadow:0 6px 20px rgba(26,26,26,.06)}
-.p:first-of-type{margin-top:48px}
+padding:28px 32px;margin-top:20px;box-shadow:0 6px 20px rgba(26,26,26,.06)}
+.p:first-of-type{margin-top:34px}
 .c{flex:none;width:64px;height:64px;border-radius:50%;background:var(--grad);color:#fff;font-weight:900;font-size:32px;
 display:flex;align-items:center;justify-content:center}
 .p b{display:block;font-size:36px;line-height:1.15}.p span{display:block;font-size:28px;color:var(--gris);margin-top:8px;line-height:1.35}
@@ -190,7 +191,8 @@ display:flex;align-items:center;justify-content:center}
 font-size:30px;color:var(--n9)}.pb b{color:var(--n7)}
 """
     body = f"""<div class='w'><div class='eyebrow'>Así funciona</div>
-<h1>Sin contenedor. Sin importar. <span class='grad'>Sin esperar meses.</span></h1>{items}
+<h1>Sin contenedor. Sin importar. <span class='grad'>Sin esperar meses.</span></h1>
+<div class='in'>Traemos cajas de fábricas en China y las abrimos: tú te llevas solo las piezas que necesitas.</div>{items}
 <div class='pb'><b>Importante:</b> hay una sola caja de cada modelo. Cuando se acaba, se acaba.</div></div>"""
     return slide(2, body, extra)
 
@@ -220,7 +222,7 @@ def card(d):
     return f"""<div class='card'><div class='photo ph' style="background-image:url('{foto(d['code'])}')"></div>
 <div class='tx'><div class='mod'>{d['model']}</div><div class='nm'>{d['name']}</div>
 <div class='pp grad'>{d['pp']}<small>por pieza</small></div>
-<div class='mn'>10 piezas: {d['min']}</div><div class='cj'>Quedan {d['pz']} en la caja</div></div></div>"""
+<div class='mn'>10 piezas: {d['min']}</div><div class='cj'>Caja completa: {d['pz']} pzs · {d['total']}</div></div></div>"""
 
 def tier(n, eyebrow, titulo, sub, items):
     cls = "list g2" if len(items) == 4 else "list"
@@ -234,7 +236,7 @@ def s7():
         "Te hacemos un acuerdo de compra por escrito.",
         "Recibos de cada pago con nuestro sello oficial.",
         "Te mandamos videos de tu pedido y hacemos videollamada contigo.",
-        "Estamos en Monterrey, N.L.",
+        "Estamos en Monterrey, N.L. Puedes pasar por tu caja.",
         "No usamos pago contra entrega.",
     ]
     items = "".join(f"<div class='ck'><span>✓</span>{p}</div>" for p in pts)
@@ -264,17 +266,17 @@ def s8():
 .mi .photo{height:150px;border-radius:12px;background-size:cover}
 .mi b{display:block;font-size:26px;font-weight:900;color:var(--n6);margin-top:6px}
 .dm{margin-top:48px;background:var(--grad);color:#fff;border-radius:24px;padding:40px 30px;box-shadow:0 8px 24px rgba(234,88,12,.3)}
-.dm .a{font-size:48px;font-weight:900;letter-spacing:-.01em}
-.dm .a span{background:#fff;color:var(--n6);border-radius:12px;padding:2px 16px;margin:0 4px}
-.dm .b{font-size:28px;margin-top:14px}
-.o{margin-top:34px;font-size:30px;line-height:1.4}.o b{color:var(--n7)}
+.dm .a{font-size:76px;font-weight:900;letter-spacing:-.01em}
+.dm .a span{background:#fff;color:var(--n6);border-radius:16px;padding:0 22px;margin:0 6px}
+.dm .b{font-size:32px;margin-top:14px}
+.o{margin-top:40px;font-size:36px;line-height:1.4}.o b{color:var(--n7)}
 .sv{margin-top:26px;font-size:26px;color:var(--gris)}
 """
     body = f"""<div class='w'><h1>¿Cuál te <span class='grad'>llevas?</span></h1>
-<p>12 productos, mínimo 10 piezas de cada uno.</p><div class='g'>{mini}</div>
-<div class='dm'><div class='a'>Mándanos DM con la palabra <span>CAJA</span></div>
-<div class='b'>Te pasamos fotos, videos y te ayudamos a apartar.</div></div>
-<div class='o'>O escríbenos por WhatsApp <b>81 2018 1761</b><br>o entra a <b>compraenfabricas.com/productos</b></div>
+<p>Para empezar tu negocio o surtir el que ya tienes.</p><div class='g'>{mini}</div>
+<div class='dm'><div class='a'>Comenta <span>CAJA</span></div>
+<div class='b'>y te mandamos fotos, videos y precios de cada producto.</div></div>
+<div class='o'>¿Estás en Monterrey? <b>Pasa por tu caja.</b></div>
 <div class='sv'>Guarda este post para cuando estés listo.</div></div>"""
     return slide(8, body, extra, swipe=False)
 
@@ -287,7 +289,7 @@ if __name__ == "__main__":
         "K-01e-portada-excusas-primero": exc_primero(),
         "K-01f-portada-marcador": exc_marcador(),
         "K-02-como-funciona": s2(),
-        "K-03-menos-de-2000": tier(3, "Si tienes menos de $2,000", "Empieza con <span class='grad'>10 piezas</span> de:", "Lo más barato para arrancar tu negocio.", tramo(0, 2000)),
+        "K-03-menos-de-2000": tier(3, "Si tienes menos de $2,000", "Empieza con <span class='grad'>10 piezas</span> de:", "Para arrancar tu negocio o probar un producto nuevo en tu tienda.", tramo(0, 2000)),
         "K-04-menos-de-3500": tier(4, "Si tienes menos de $3,500", "Micrófonos y <span class='grad'>dashcam</span>", "Para creadores de contenido y conductores.", tramo(2000, 3500)),
         "K-05-menos-de-7000": tier(5, "Si tienes menos de $7,000", "Ventilador, cámara <span class='grad'>y reloj</span>", "Productos de mayor valor por pieza.", tramo(3500, 7000)),
         "K-06-para-ir-en-grande": tier(6, "Para ir en grande", "Lo más <span class='grad'>premium</span>", "Traductor con IA y cámara de bolsillo 4K.", tramo(7000, 10**9)),
