@@ -137,7 +137,7 @@ Mapa de keywords y dueños de cada búsqueda: `docs/seo/fase-0-auditoria.md` (ra
 | F | que-es-yiwu | Yiwu | Qué es Yiwu y cómo comprar en el mercado mayorista | ~2,100 | **Publicada** (enlazada desde la pilar, Paso 2, y desde comprar directo de fábrica) | 23 nov 2026 |
 | I | joyeria-de-acero-inoxidable | joyería de acero inoxidable | Joyería de acero inoxidable: qué es y por qué se vende | ~1,735 | **Publicada** (enlazada desde la nota de joyería y desde productos) | 25 nov 2026 |
 | J | feria-de-canton | Feria de Cantón | — | — | Por escribir (2–3 meses antes de la edición) | — |
-| G | errores-que-me-costaron-dinero-importando | errores al importar de China | — | — | Espera historias reales de Eduardo | — |
+| G | errores-que-me-costaron-dinero-importando | errores al importar de China | Errores al importar de China que me costaron dinero | ~1,750 | Borrador en la base (md5 8bbc05d4…); imágenes en el repo | — |
 
 **Meta descriptions**
 - B: "Requisitos para importar de China a México en 2026: RFC, e.firma, padrón de importadores, agente aduanal, pedimento y NOM. Explicado fácil y con fuentes." (153)
@@ -262,3 +262,16 @@ Las notas nuevas siguen el **Compra en Fábricas Design System** (artifact https
 - 5 imágenes subidas a Lovable (commit 53363b7) y deploy hecho.
 - El deploy también publicó lo que hicieron otras sesiones del usuario: /proveedores protegido con login, página "Quiénes somos", sello de pago seguro, número oculto en Dirección, ubicación SEO y texto del crédito.
 - I quedó published. Enlaces agregados en la nota de joyería (tipos de joyería) y en productos (viñeta de margen). Las md5 coinciden.
+- Verificado en producción: I, sus 5 imágenes, la nota de joyería y productos (enlazan a I), el sitemap y llms.txt responden 200. El cuerpo de I tiene 2 enlaces a /joyeria y ninguno a info.joyeria.shop. IndexNow devolvió 200. Falta pedir indexación de I en Search Console.
+
+**Nota G (errores al importar):** borrador del 25 nov 2026, en primera persona de Eduardo, con historias reales sacadas de `contenido/transcripts/transcripts_eduardo.md`.
+- **Las 2 bancarrotas:** la primera a los 26 años y la segunda a los 36. De la segunda tardó año y medio en levantarse y 5 años en pagar todo. Su frase: "no fue mala suerte, fueron decisiones mal tomadas".
+- **3,000 dólares prestados** que perdió por traer mercancía sin verla. Le han robado "10, 15 veces"; la nota dice "más de diez veces".
+- **Anécdota del "puro cobre"** en Guangzhou y del pedido cancelado porque le cambiaron las condiciones.
+- **Traer 100 piezas contra un importador que trae 30 a 50 mil por embarque:** mejor comprarle al mayorista local y probar.
+- **El flujo de dinero:** pagas, esperas y todavía hay que vender y cobrar.
+- **Cerrar negocios que sí dejaban dinero** porque distraían del principal.
+- **Lo que se dejó fuera a propósito:** alcoholismo y temas familiares. Sí se menciona la depresión, que Eduardo cuenta en público.
+- **Inconsistencia de fechas en los transcripts:** aparecen "hace 27 años" y "hace 13/15 años". La nota usa las edades (26 y 36), que sí cuadran con sus 49 años.
+- **Portada:** es una foto de stock del banco (un emprendedor), no Eduardo.
+- **Al publicar:** enlazar desde la pilar (sección de errores comunes) y desde la nota de Eduardo (sección de las 2 bancarrotas).
