@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Comenta Clase · D animado chroma</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0}
+.card{box-shadow:0 14px 36px rgba(26,26,26,0.22)}
+.c3{box-shadow:0 24px 60px rgba(220,38,38,0.35)}
+.ck .card,.ck .c3{box-shadow:none}
+.c1{animation:c1 6s ease-out infinite both}
+.c2{animation:c2 6s ease-out infinite both}
+.c3{animation:c3 6s ease-out infinite both}
+.hp{animation:hp 6s ease-out infinite both}
+.ck .c1{animation-name:c1k}.ck .c2{animation-name:c2k}.ck .c3{animation-name:c3k}
+@keyframes c1{0%{opacity:0;transform:translateY(60px) rotate(-3deg) scale(.88)}3.33%{opacity:0;transform:translateY(60px) rotate(-3deg) scale(.88)}10%{opacity:1;transform:translateY(0) rotate(-3deg) scale(.88)}93%{opacity:1;transform:translateY(0) rotate(-3deg) scale(.88)}100%{opacity:0;transform:translateY(0) rotate(-3deg) scale(.88)}}
+@keyframes c2{0%{opacity:0;transform:translateY(60px) rotate(2deg) scale(.94)}11.67%{opacity:0;transform:translateY(60px) rotate(2deg) scale(.94)}18.33%{opacity:1;transform:translateY(0) rotate(2deg) scale(.94)}93%{opacity:1;transform:translateY(0) rotate(2deg) scale(.94)}100%{opacity:0;transform:translateY(0) rotate(2deg) scale(.94)}}
+@keyframes c3{0%{opacity:0;transform:translateY(60px) scale(.9)}21.67%{opacity:0;transform:translateY(60px) scale(.9)}30%{opacity:1;transform:translateY(0) scale(1)}93%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:0;transform:translateY(0) scale(1)}}
+@keyframes c1k{0%{transform:rotate(-3deg) scale(0)}3.33%{transform:rotate(-3deg) scale(0)}10%{transform:rotate(-3deg) scale(.88)}93%{transform:rotate(-3deg) scale(.88)}100%{transform:rotate(-3deg) scale(0)}}
+@keyframes c2k{0%{transform:rotate(2deg) scale(0)}11.67%{transform:rotate(2deg) scale(0)}18.33%{transform:rotate(2deg) scale(.94)}93%{transform:rotate(2deg) scale(.94)}100%{transform:rotate(2deg) scale(0)}}
+@keyframes c3k{0%{transform:scale(0)}21.67%{transform:scale(0)}30%{transform:scale(1)}93%{transform:scale(1)}100%{transform:scale(0)}}
+@keyframes hp{0%{transform:scale(0)}36.67%{transform:scale(0)}40%{transform:scale(1.25)}43.33%{transform:scale(1)}93%{transform:scale(1)}100%{transform:scale(0)}}
+</style>
+</helmet>
+<div class="root ck" style="background: #00FF00; width: 1080px; height: 520px; box-sizing: border-box; padding: 40px 80px; font-family: Arial, Helvetica, sans-serif; color: #1A1A1A; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px">
+<div class="card c1" style="align-self: flex-start; margin-left: 120px; background: #FFFFFF; border-radius: 999px; padding: 14px 28px 14px 14px; display: flex; gap: 16px; align-items: center">
+<div style="width: 56px; height: 56px; border-radius: 50%; background: #FCE4DC; color: #DC2626; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 900">RS</div>
+<span style="font-size: 24px; font-weight: 700; color: #6B6B6B">rosa.shop</span>
+<span style="font-size: 40px; font-weight: 900">Clase</span>
+</div>
+<div class="card c2" style="align-self: flex-end; margin-right: 80px; background: #FFFFFF; border-radius: 999px; padding: 14px 28px 14px 14px; display: flex; gap: 16px; align-items: center">
+<div style="width: 56px; height: 56px; border-radius: 50%; background: #FCE4DC; color: #DC2626; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 900">CA</div>
+<span style="font-size: 24px; font-weight: 700; color: #6B6B6B">carlos_mx</span>
+<span style="font-size: 40px; font-weight: 900">Clase</span>
+</div>
+<div class="c3" style="position: relative; background: #FFFFFF; border: 4px solid #F97316; border-radius: 999px; padding: 18px 44px 18px 18px; display: flex; gap: 22px; align-items: center">
+<div style="width: 92px; height: 92px; border-radius: 50%; background: linear-gradient(90deg,#F97316,#DC2626); display: flex; align-items: center; justify-content: center">
+<svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 26px; font-weight: 700; color: #DC2626">Tú</span>
+<div style="display: flex; align-items: center; gap: 18px">
+<span style="font-size: 80px; font-weight: 900; line-height: 1; letter-spacing: -0.02em">Clase</span>
+</div>
+</div>
+<div class="hp" style="position: absolute; top: -26px; right: -26px; width: 76px; height: 76px; border-radius: 50%; background: #DC2626; border: 5px solid #FFFFFF; box-sizing: border-box; display: flex; align-items: center; justify-content: center">
+<svg width="36" height="36" viewBox="0 0 24 24" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":520}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
