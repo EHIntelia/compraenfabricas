@@ -53,7 +53,7 @@ Cita las fuentes. Si algo es opinión y no dato, márcalo.
 - **Cajas:** 25 vendidas en ~4 semanas, ~$386,600 MXN, ticket promedio ~$15,500. Se agotaron primero las de menor precio por pieza y las de "tecnología nueva" (lentes con IA $46,058, consolas, smartwatches, bocinas, audífonos). Todo cerró por WhatsApp con transferencia.
 - **Clase:** ventas en tendencia creciente (3 → 8 → 14 → 16 al mes), todas orgánicas.
 - **Leads:** 141 contactos de WhatsApp vía ManyChat entre agosto y noviembre.
-- **Prueba de WhatsApp (20 nov):** plantilla de recordatorio a 83 personas que ya habían pedido info de la clase; costó ~$3.90 USD y cerró 1 venta confirmada (+1 posible). Quien abandonó el checkout convirtió mejor que quien solo pidió información.
+- **Prueba de WhatsApp (20 nov):** plantilla de recordatorio a 83 personas que ya habían pedido info de la clase; costó ~$3.90 USD. **Venta atribuida con evidencia: 1** (clic en el botón con UTM + pago en Stripe 12 min después + mensaje "ya aparté mi lugar"). Además hubo 5 ventas de Stripe en las 30 h siguientes que no se pudieron ligar ni descartar (1 de ellas pagó justo durante el seguimiento). La atribución real está entre 1 y ~6. Quien abandonó el checkout convirtió mejor que quien solo pidió información.
 
 **Audiencia orgánica (dato del panel, 25 oct – 22 nov 2026):**
 
@@ -76,6 +76,7 @@ Facebook es por mucho el canal más fuerte (y genera muchos comentarios, el form
 - **Campaña WA-01 (20 nov, clase del 21 nov):** plantilla de marketing con imagen + 3 botones (Quiero mi lugar / Ya tengo mi lugar / Ahora no), sin descuento, ángulo "trae cualquier producto".
   - Grupo A, checkout abandonado: 29 en el segmento, 25 enviados, 23 entregados, 12 leídos, 5 "Quiero mi lugar", 1 clic a pago, **1 venta en 12 minutos**.
   - Grupo B, interesados: 72 en el segmento, 58 enviados, 49 entregados, 33 leídos, 5 "Quiero mi lugar", 1 clic a pago, 0 ventas confirmadas.
+  - **Cuidado con el "1 venta":** es la única con evidencia directa. Entre el envío (20 nov 9:56) y la clase hubo 5 pagos más en Stripe sin atribuir; antes del envío el ritmo orgánico era ~2 clases al día (4 entre el 18 y el 19 nov). No guardamos el teléfono del comprador en Stripe ni cruzamos los nombres de WhatsApp (son nombres de perfil), así que no sabemos si alguno vino del mensaje sin tocar el botón. Diseña la medición para que esto no vuelva a pasar.
   - Seguimiento libre dentro de las 24 h a los 9 que dijeron "quiero" y no pagaron: 1 clic, 0 ventas. La única duda por escrito fue "¿Cómo es verdad esto?" (confianza).
   - **Costo total: USD 3.92 (~$72 MXN)**: plantillas USD 3.80 por 83 envíos ≈ **USD 0.046 por mensaje (~$0.85 MXN)**; mensajes dentro de la ventana de 24 h casi gratis.
 - **Límites:** la cuenta no está verificada: máximo **250 conversaciones iniciadas por la empresa cada 24 h**. Con ese límite, recorrer toda la base de 5,988 tomaría ~24 días. El monedero de ManyChat tiene ~USD 4.57: hay que recargar.
@@ -176,7 +177,7 @@ Diseña la campaña de WhatsApp de **cada clase** (12 dic y 9 ene), coordinada c
    - Di si conviene invitar a los 25 compradores de cajas o dejarlos fuera.
 2. **Calendario de envíos** por segmento para cada clase (día y hora), respetando el límite de 250 al día y sin saturar a la misma gente: máximo de toques por persona por clase.
 3. **Plantillas** listas para mandar a aprobación a Meta (categoría Marketing, español de México): texto con variable `{{Nombre}}`, botones de respuesta rápida (máx. 20 caracteres, sin emojis), y para cada botón la respuesta, la etiqueta que pone y el link con UTM. Una plantilla distinta por segmento si el ángulo cambia. Más los mensajes libres de seguimiento dentro de la ventana de 24 h (recordatorio el día anterior y "hoy es la clase").
-4. **Costo estimado** con nuestros datos reales (USD 0.046 por plantilla enviada, ~$0.85 MXN): cuántos envíos por segmento y cuánto cuesta cada clase. Y qué esperamos vender por segmento, usando WA-01 como referencia (A: 1 venta en 25 envíos; B: 0 en 58), marcando que la base fría puede convertir mucho menos.
+4. **Costo estimado** con nuestros datos reales (USD 0.046 por plantilla enviada, ~$0.85 MXN): cuántos envíos por segmento y cuánto cuesta cada clase. Y qué esperamos vender por segmento, usando WA-01 como referencia (A: 1 venta confirmada en 25 envíos; B: 0 confirmadas en 58; más hasta 5 ventas sin atribuir en esas 30 h), marcando que la base fría puede convertir mucho menos.
 5. Cómo medir: etiquetas por clase (`wa12d_…`, `wa9e_…`), UTM por plantilla y registro en el panel (`campanas`, `campana_segmentos`, `campana_cortes`), igual que WA-01.
 
 ### F. Piezas gráficas (se harán como artefactos con nuestro design system)
