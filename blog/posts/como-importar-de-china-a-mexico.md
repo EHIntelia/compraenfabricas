@@ -183,6 +183,8 @@ Y si apenas vas a empezar y quieres algo listo para vender, hay [cajas de electr
 5. **Pedir demasiado la primera vez.** Empieza chico, aprende y luego crece.
 6. **Elegir productos pesados o frágiles.** El envío y las piezas rotas se comen tu ganancia.
 
+Te cuento con historias reales los que a mí me costaron dinero (y dos bancarrotas) en [errores al importar de China](/blog/errores-que-me-costaron-dinero-importando).
+
 Si quieres ver los errores que más dinero cuestan y cómo saber si alguien de verdad te puede enseñar, revisa la [comparativa de cursos para importar de China](/blog/cursos-para-importar-de-china).
 
 ## Tú eliges: hazlo solo o con ayuda

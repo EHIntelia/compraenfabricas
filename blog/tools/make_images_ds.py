@@ -168,7 +168,68 @@ def nota_acero():
                  "Joyería de acero inoxidable para vender, versión para redes", hl=("acero", "inoxidable"), focus=(0.5, 0.5))
 
 
-NOTAS = {"joyeria-de-acero-inoxidable": nota_acero, "que-es-yiwu": nota_yiwu, "aranceles-china-mexico-2026": nota_aranceles, "envio-aereo-o-maritimo-desde-china": nota_envio}
+def nota_errores():
+    s = "errores-que-me-costaron-dinero-importando"
+    photo_cover(s, "errores-al-importar-de-china.webp", "Errores y consejos",
+                "Errores al importar de China que me costaron dinero",
+                "Y las 2 bancarrotas que me enseñaron más",
+                "emprendedor-revisando-numeros-de-noche.jpg",
+                "Errores al importar de China que cuestan dinero: emprendedor revisando sus números de noche",
+                hl=("errores",), focus=(0.4, 0.5))
+    body = L.cards_row([
+        ("26", "años: primera bancarrota", "Pedí prestados 3,000 dólares, traje sin ver y los perdí"),
+        ("36", "años: segunda bancarrota", "Decisiones mal tomadas; año y medio para levantarme"),
+        ("5", "años para pagar todo", "Y recuperar mi nombre, con muchísimo trabajo"),
+    ], top=160, h=330)
+    L.save(s, "dos-bancarrotas-eduardo-hernandez.webp",
+           L.frame("Mis 2 bancarrotas", "No fue mala suerte: fueron decisiones mal tomadas",
+                   body, "Eduardo Hernández, más de 26 años importando de China."),
+           1200, 675, "Las 2 bancarrotas de Eduardo Hernández: a los 26 y a los 36 años, y 5 años para pagar todo", "infografia")
+    body = L.steps_grid([
+        ("Comprar sin ver", "Pide video y foto de tu mercancía real"),
+        ("No confirmar el precio", "Material, acabado y cantidades por escrito"),
+        ("Pagar todo de golpe", "Paga en partes y a la cuenta de la empresa"),
+        ("Crecer sin números", "Mide ventas, gastos y ganancia cada semana"),
+        ("Traer poquito", "Compara contra el mayorista de tu ciudad"),
+        ("Olvidar el flujo", "Calcula cuándo regresa tu dinero"),
+        ("Ignorar aranceles", "Fracción y permisos antes de pagar"),
+        ("Muchos negocios", "Enfócate en el que sí deja"),
+    ], cols=4, top=140, card_h=220)
+    L.save(s, "errores-al-importar-de-china-y-como-evitarlos.webp",
+           L.frame("8 errores al importar de China", "Lo que me costó dinero y cómo evitarlo",
+                   body, "De la experiencia de Eduardo Hernández."),
+           1200, 675, "Los errores al importar de China que más dinero cuestan y cómo evitarlos", "infografia")
+    photo_body(s, "mercancia-importada-en-bodega.webp", "bodega-cajas-mercancia.jpg",
+               "Bodega con cajas de mercancía importada de China lista para vender", focus=(0.5, 0.5))
+    photo_social(s, "errores-al-importar-de-china-redes.webp", "Errores y consejos",
+                 "Errores al importar de China que me costaron dinero",
+                 "2 bancarrotas y 8 lecciones para que no las pagues tú",
+                 "emprendedor-revisando-numeros-de-noche.jpg",
+                 "Errores al importar de China, versión para redes", hl=("errores",), focus=(0.4, 0.5))
+
+
+def nota_fabrica_senales():
+    """Infografía actualizada de la nota A (10 señales), con el design system."""
+    s = "comprar-directo-de-fabrica-en-china"
+    body = L.steps_grid([
+        ("Licencia", "Dice que fabrica"),
+        ("Nombre igual", "En licencia y cuenta"),
+        ("Línea en vivo", "Videollamada, no fotos"),
+        ("Hace cambios", "Color, empaque o logo"),
+        ("Se especializa", "Una línea de productos"),
+        ("Sabe su proceso", "Materiales y capacidad"),
+        ("Escala precios", "Baja con el volumen"),
+        ("MOQ lógico", "Mínimo por modelo"),
+        ("Da tiempos", "De producción, no stock"),
+        ("Dirección real", "La planta de la licencia"),
+    ], cols=5, top=140, card_h=225)
+    L.save(s, "senales-para-saber-si-es-fabrica-en-china.webp",
+           L.frame("10 señales de que es fábrica", "Revísalas con cada proveedor antes de pagar",
+                   body, "Si no cumple la mayoría, trátalo como trading o revendedor."),
+           1200, 675, "Las 10 señales para saber si un proveedor en China es fábrica", "infografia")
+
+
+NOTAS = {"comprar-directo-de-fabrica-en-china": nota_fabrica_senales, "errores-que-me-costaron-dinero-importando": nota_errores, "joyeria-de-acero-inoxidable": nota_acero, "que-es-yiwu": nota_yiwu, "aranceles-china-mexico-2026": nota_aranceles, "envio-aereo-o-maritimo-desde-china": nota_envio}
 
 if __name__ == "__main__":
     for slug in sys.argv[1:] or NOTAS:

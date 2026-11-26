@@ -301,16 +301,6 @@
   },
   {
     "slug": "comprar-directo-de-fabrica-en-china",
-    "file": "senales-para-saber-si-es-fabrica-en-china.webp",
-    "path": "/blog/comprar-directo-de-fabrica-en-china/senales-para-saber-si-es-fabrica-en-china.webp",
-    "width": 1200,
-    "height": 675,
-    "kind": "infografia",
-    "alt": "Las 7 señales para saber si un proveedor en China es fábrica",
-    "bytes": 38464
-  },
-  {
-    "slug": "comprar-directo-de-fabrica-en-china",
     "file": "comprar-directo-de-fabrica-en-china-redes.webp",
     "path": "/blog/comprar-directo-de-fabrica-en-china/comprar-directo-de-fabrica-en-china-redes.webp",
     "width": 1080,
@@ -562,5 +552,66 @@
     "kind": "redes",
     "alt": "Joyería de acero inoxidable para vender, versión para redes",
     "bytes": 86284
+  },
+  {
+    "slug": "errores-que-me-costaron-dinero-importando",
+    "file": "errores-al-importar-de-china.webp",
+    "path": "/blog/errores-que-me-costaron-dinero-importando/errores-al-importar-de-china.webp",
+    "width": 1200,
+    "height": 630,
+    "kind": "portada",
+    "alt": "Errores al importar de China que cuestan dinero: emprendedor revisando sus números de noche",
+    "bytes": 39818
+  },
+  {
+    "slug": "errores-que-me-costaron-dinero-importando",
+    "file": "dos-bancarrotas-eduardo-hernandez.webp",
+    "path": "/blog/errores-que-me-costaron-dinero-importando/dos-bancarrotas-eduardo-hernandez.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Las 2 bancarrotas de Eduardo Hernández: a los 26 y a los 36 años, y 5 años para pagar todo",
+    "bytes": 28026
+  },
+  {
+    "slug": "errores-que-me-costaron-dinero-importando",
+    "file": "errores-al-importar-de-china-y-como-evitarlos.webp",
+    "path": "/blog/errores-que-me-costaron-dinero-importando/errores-al-importar-de-china-y-como-evitarlos.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Los errores al importar de China que más dinero cuestan y cómo evitarlos",
+    "bytes": 43938
+  },
+  {
+    "slug": "errores-que-me-costaron-dinero-importando",
+    "file": "mercancia-importada-en-bodega.webp",
+    "path": "/blog/errores-que-me-costaron-dinero-importando/mercancia-importada-en-bodega.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "foto",
+    "alt": "Bodega con cajas de mercancía importada de China lista para vender",
+    "bytes": 74974,
+    "source": "brand/fotos/bodega-cajas-mercancia.jpg"
+  },
+  {
+    "slug": "errores-que-me-costaron-dinero-importando",
+    "file": "errores-al-importar-de-china-redes.webp",
+    "path": "/blog/errores-que-me-costaron-dinero-importando/errores-al-importar-de-china-redes.webp",
+    "width": 1080,
+    "height": 1080,
+    "kind": "redes",
+    "alt": "Errores al importar de China, versión para redes",
+    "bytes": 57052
+  },
+  {
+    "slug": "comprar-directo-de-fabrica-en-china",
+    "file": "senales-para-saber-si-es-fabrica-en-china.webp",
+    "path": "/blog/comprar-directo-de-fabrica-en-china/senales-para-saber-si-es-fabrica-en-china.webp",
+    "width": 1200,
+    "height": 675,
+    "kind": "infografia",
+    "alt": "Las 10 señales para saber si un proveedor en China es fábrica",
+    "bytes": 43070
   }
 ]

@@ -1,8 +1,8 @@
 ---
 title: "Comprar directo de fábrica en China: cómo saber si es fábrica o revendedor"
 slug: comprar-directo-de-fabrica-en-china
-meta_title: "Comprar directo de fábrica en China sin intermediarios"
-meta_description: "Cómo comprar directo de fábrica en China sin intermediarios: diferencia entre fábrica, trading y revendedor, señales para reconocerlos y cómo validarla."
+meta_title: "Comprar directo de fábrica en China: ¿es fábrica de verdad?"
+meta_description: "Cómo comprar directo de fábrica en China sin caer con un revendedor: señales para distinguir fábrica, trading y revendedor y cómo validarla antes de pagar."
 excerpt: "No todo el que dice ser fábrica en China lo es. Te enseño a distinguir una fábrica de una trading y de un revendedor, las señales que nunca fallan y cómo validarla antes de pagar."
 category: errores-y-consejos
 tags: [comprar directo de fabrica, sin intermediarios, fabrica vs revendedor, trading company, validar proveedor]
@@ -60,7 +60,7 @@ Cada uno le pone su parte. Por eso lo que en la fábrica cuesta una fracción, a
 
 ![Diferencia entre fábrica, trading y revendedor al comprar en China](/blog/comprar-directo-de-fabrica-en-china/fabrica-vs-trading-vs-revendedor-china.webp "Fábrica, trading y revendedor: quién es quién.")
 
-## ¿Cómo saber si un proveedor chino es fábrica? 7 señales
+## ¿Cómo saber si un proveedor chino es fábrica? Lista de 10 señales
 
 1. **Su licencia de negocio dice que fabrica.** Pide su licencia (營業執照, *business license*). El "objeto social" debe incluir producción o fabricación, no solo "comercio" o "venta".
 2. **El nombre coincide.** El nombre de la empresa en la licencia debe ser el mismo de la cuenta a la que vas a pagar y el del contrato.
@@ -69,8 +69,13 @@ Cada uno le pone su parte. Por eso lo que en la fábrica cuesta una fracción, a
 5. **Se especializa.** Una fábrica hace una línea de productos (por ejemplo, solo audífonos o solo joyería). Si te ofrece de todo, de bocinas a ropa, casi seguro es trading o revendedor.
 6. **Sabe de su proceso.** Pregunta por materiales, tiempos de producción y capacidad por mes. La fábrica contesta con detalle; el revendedor tiene que "preguntar".
 7. **Su precio cambia con el volumen de verdad.** Una fábrica te da escalas de precio claras según la cantidad, porque conoce sus costos.
+8. **Su pedido mínimo (MOQ) tiene sentido.** Una fábrica pide un mínimo por modelo porque tiene que producir. Si te vende una pieza de todo lo que existe, casi seguro es revendedor.
+9. **Te da tiempos de producción, no solo "en stock".** La fábrica te dice cuántos días tarda en producir tu pedido; el revendedor depende de lo que tenga su proveedor.
+10. **La dirección de la licencia es de una planta.** La dirección registrada debe ser la de la fábrica que te enseñan en video, no una oficina en un edificio comercial.
 
-![Las 7 señales para saber si un proveedor en China es fábrica](/blog/comprar-directo-de-fabrica-en-china/senales-para-saber-si-es-fabrica-en-china.webp "Siete señales para reconocer una fábrica real.")
+Guarda esta lista y revísala con cada proveedor. Si no cumple al menos la mayoría, trátalo como trading o revendedor.
+
+![Las 10 señales para saber si un proveedor en China es fábrica](/blog/comprar-directo-de-fabrica-en-china/senales-para-saber-si-es-fabrica-en-china.webp "Diez señales para reconocer una fábrica real.")
 
 :::consejo
 Pide la videollamada sin avisar con mucha anticipación y a una hora en que la fábrica debería estar trabajando. Si te dicen que hoy no se puede, que mañana, que pasado… ya tienes tu respuesta.
@@ -96,7 +101,9 @@ Este es el error que más veo: la gente piensa que, como ya encontró "la fábri
 - **Paga en partes** y por canales rastreables (lo explico en [cómo pagar a un proveedor en China](/blog/como-pagar-a-un-proveedor-en-china)).
 - **Pon todo por escrito**: precio, cantidades, calidad, empaque y fechas.
 
-Si ya tienes tu proveedor y quieres que alguien vaya en persona a verificar que existe y que tu mercancía es la que te prometieron, para eso está el servicio de [validación de proveedores en China](/validacion).
+## ¿Y si no quieres validarla tú?
+
+Revisar licencias en chino, pedir videollamadas a la hora correcta y leer las señales toma tiempo y experiencia. Si ya tienes tu proveedor y prefieres que alguien vaya **en persona** a verificar que la fábrica existe y que tu mercancía es la que te prometieron, para eso está el servicio de [validación de proveedores en China](/validacion): nuestro equipo va, revisa y te manda videos reales antes de que pagues.
 
 :::cta-clase
 :::
@@ -116,7 +123,7 @@ Lo importante no es comprarle siempre a la fábrica: es **saber a quién le est�
 
 ## ¿Dónde encontrar fábricas en China?
 
-- **Plataformas mayoristas chinas:** sirven para comparar, pero ahí conviven fábricas, tradings y revendedores. Aplica las 7 señales.
+- **Plataformas mayoristas chinas:** sirven para comparar, pero ahí conviven fábricas, tradings y revendedores. Aplica las 10 señales.
 - **Ferias:** en ellas ves la mercancía en persona y hablas con quien la hace.
 - **Ciudades especializadas:** en China muchas ciudades se especializan en un tipo de producto. Ir a la ciudad correcta te acerca a la fábrica. Para surtido general, la referencia es [Yiwu, el mercado mayorista más grande de China](/blog/que-es-yiwu).
 - **Gente en China:** es lo que más funciona, porque te ahorras el idioma y las historias.

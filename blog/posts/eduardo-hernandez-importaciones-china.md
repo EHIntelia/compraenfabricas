@@ -1,12 +1,12 @@
 ---
 title: "¿Quién es Eduardo Hernández? 26 años de importaciones de China, de fábrica en fábrica"
 slug: eduardo-hernandez-importaciones-china
-meta_title: "Eduardo Hernández: 26 años en importaciones de China"
-meta_description: "Eduardo Hernández lleva 26 años en importaciones de China: 2 bancarrotas, 5 negocios y 300+ empresas asesoradas. Conoce su historia y lo que aprendió."
+meta_title: "Eduardo Hernández: 26 años importando de China y 2 quiebras"
+meta_description: "Quién es Eduardo Hernández: empresario de Monterrey con 26 años importando de China, 2 bancarrotas, 5 negocios y 300+ empresas asesoradas. Su historia."
 excerpt: "Más de 26 años caminando fábricas en China, dos bancarrotas, cinco negocios funcionando y más de 300 empresas asesoradas. Esta es la historia contada por Eduardo, sin adornos."
 category: historias-de-eduardo
 tags: [eduardo hernández, historia, importaciones china, jaico, xijiao]
-focus_keyword: "Eduardo Hernández importaciones de China"
+focus_keyword: "Eduardo Hernández"
 featured: false
 cover_image: /blog/eduardo-hernandez-importaciones-china/eduardo-hernandez-importaciones-china-26-anos.webp
 cover_alt: "Eduardo Hernández, más de 26 años en importaciones de China y fábricas chinas"
@@ -29,9 +29,13 @@ faq:
 **Eduardo Hernández** es un empresario mexicano de 49 años con más de **26 años en importaciones de China**. Fundó JAICO, Xijiao Shops y Xijiao LOG, tiene 5 negocios funcionando y ha asesorado a más de 300 empresas. Pasó por 2 bancarrotas y hoy enseña a comprar directo de fábrica en Compra en Fábricas de China.
 :::
 
+*Actualizado: noviembre de 2026.*
+
 Te voy a contar mi historia, pero no para presumirte nada. Te la cuento porque probablemente estás donde yo estuve: con ganas de emprender, con miedo de perder tu dinero y rodeado de gente que te dice que "eso de China es muy arriesgado".
 
 Me llamo Eduardo Hernández, tengo 49 años y llevo más de 26 años dedicado a las importaciones de China, comprando directo en sus fábricas. Esto no lo aprendí en un libro. **Lo aprendí caminando fábricas, negociando en persona y equivocándome.** Muchas veces.
+
+![Eduardo Hernández, empresario de Monterrey con más de 26 años importando de China](/blog/eduardo-hernandez-importaciones-china/eduardo-hernandez-retrato.webp "Eduardo Hernández, fundador de Compra en Fábricas de China.")
 
 ![Eduardo Hernández en números: 26 años importando de China, 5 negocios y 300 empresas asesoradas](/blog/eduardo-hernandez-importaciones-china/eduardo-hernandez-en-numeros-importaciones-china.webp "Autoridad con hechos: años, negocios y gente asesorada.")
 
@@ -47,9 +51,9 @@ Ese fue el principio de todo: aprender a llegar a la fábrica.
 
 No me gusta adornar esta parte. **Quebré dos veces.** Perdí dinero, perdí tranquilidad y tuve que volver a empezar.
 
-<!-- PENDIENTE: anécdota real de Eduardo sobre las 2 bancarrotas: qué negocio era, qué salió mal y qué hizo para levantarse. -->
+La primera fue a los 26 años: pedí prestados 3,000 dólares, traje mercancía sin verla y los perdí. La segunda, a los 36, fue peor: deudas impagables y un negocio terminado. Me tomó un año y medio levantarme y cinco años pagar todo lo que debía y recuperar mi nombre. Y no fue mala suerte: fueron decisiones mal tomadas. Te cuento cada error y cómo evitarlo en [los errores al importar de China que me costaron dinero](/blog/errores-que-me-costaron-dinero-importando).
 
-Lo que sí te puedo decir es lo que me dejaron:
+Y esto es lo que me dejaron:
 
 - **El dinero se pierde más rápido por no hacer cuentas que por mala suerte.** Hoy no compro nada sin saber cuánto me cuesta puesto en México y a cuánto lo vendo.
 - **La confianza se valida, no se regala.** Nunca más pagué sin ver la mercancía.
@@ -139,5 +143,9 @@ Tampoco te voy a decir que importar es fácil o que te vas a hacer rico en un me
 - **[Clase en vivo con Eduardo](/clase):** te enseño todo el proceso de principio a fin y me preguntas directamente. Incluye la grabación, material de apoyo y proveedores de regalo para empezar.
 - **[Escuela de Negocios](/escuela):** cursos de importación, ventas y negocio, Zooms en vivo conmigo y una comunidad de emprendedores. $15 USD al mes.
 - **[Logística desde China](/logistica):** si ya tienes proveedor, validamos, pagamos y te traemos tu mercancía.
+
+Más de mi trayectoria, mis negocios y las notas que escribo en [mi página de autor](/autor/eduardo-hernandez) y en [eduardohdz.com](https://eduardohdz.com).
+
+![Eduardo Hernández, fundador de Compra en Fábricas de China y asesor de emprendedores](/blog/eduardo-hernandez-importaciones-china/eduardo-hernandez-fundador.webp "Si puedes hacerlo solo, hazlo solo. Nosotros estamos para acelerarte.")
 
 Y si tienes una duda concreta, escríbeme por WhatsApp. Ahí te contestamos.

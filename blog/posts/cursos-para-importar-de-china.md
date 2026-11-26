@@ -1,8 +1,8 @@
 ---
 title: "Cursos para importar de China en 2026: comparativa honesta de los mejores"
 slug: cursos-para-importar-de-china
-meta_title: "Cursos para importar de China 2026: comparativa honesta"
-meta_description: "Compara cursos para importar de China en 2026: precio, en vivo o grabado, si incluyen proveedores y soporte. Comparativa honesta para elegir bien."
+meta_title: "Cursos para importar de China 2026: precios y cuál elegir"
+meta_description: "Comparamos cursos para importar de China en 2026: precio, en vivo o grabado, si incluyen proveedores y soporte. Tabla rápida para elegir sin perder dinero."
 excerpt: "Antes de pagar un curso para importar de China, revisa estos 7 criterios. Comparamos opciones reales del mercado en precio, formato, soporte y si de verdad te enseña alguien que importa."
 category: como-importar
 tags: [curso importar de china, clase en vivo, escuela, comparativa]
@@ -23,6 +23,8 @@ faq:
     a: "La mayoría no. Es uno de los criterios que más vale revisar, porque encontrar una fábrica confiable es la parte más difícil del proceso."
   - q: "¿Qué debe enseñar un buen curso de importación?"
     a: "Cómo elegir producto con margen, cómo encontrar y validar la fábrica, cómo negociar y pedir muestras, cómo pagar seguro, Incoterms, tipos de envío, aduana, impuestos, NOM y cómo calcular el costo real."
+  - q: "¿Hay cursos para importar de China en Monterrey?"
+    a: "Sí. La clase en vivo con Eduardo es en línea, así que la puedes tomar desde Monterrey o cualquier ciudad, y para Monterrey y su área metropolitana además entregamos mercancía en la zona. Los detalles están en la página del curso para importar de China en Monterrey."
 ---
 
 :::respuesta
@@ -32,6 +34,22 @@ El mejor curso para importar de China es el que te enseña **alguien que importa
 Ya decidiste que quieres aprender a importar de China. Buscas "cursos para importar de China" en Google y te salen veinte opciones, todos prometiendo lo mismo. Unos cuestan menos de mil pesos, otros más de ocho mil. Unos son en vivo, otros son videos grabados hace años. Y la pregunta es: **¿cuál de verdad te va a servir?**
 
 Te lo digo de frente antes de empezar: **yo también vendo una clase y una escuela**. Me llamo Eduardo Hernández, llevo más de 26 años importando de China y las voy a incluir en esta comparativa. Pero creo que la mejor forma de que confíes en mí es ponerlas junto a otras opciones reales y darte los criterios para que tú decidas. Si otra te conviene más, adelante.
+
+*Actualizado: noviembre de 2026.*
+
+**Tabla rápida de cursos para importar de China** (precios publicados en noviembre de 2026; confírmalos en cada sitio):
+
+| Curso | Precio | En vivo o grabado | Incluye proveedores | Soporte |
+|---|---|---|---|---|
+| **[Clase en vivo con Eduardo](/curso-para-importar-de-china)** | $990 MXN | En vivo + grabación | Sí, 5 de regalo | Preguntas en vivo con Eduardo |
+| **Escuela de Negocios** (Compra en Fábricas de China) | $15 USD/mes | Grabado + Zooms en vivo | No lo indica | Comunidad y Zooms en vivo |
+| **CETYS Educación Continua** | $8,603 MXN | Presencial, 24 horas (Mexicali) | No lo indica | Grupo presencial |
+| **INCEA / LatinoTrainers** | Desde $790 MXN por curso | En línea | No lo indica | No lo indica |
+| **100negocios** | $39 USD | En línea, acceso de por vida | No lo indica | No lo indica |
+| **Kuinsen** | $2,999 MXN | Virtual | No lo indica | No lo indica |
+| **Elevify** | Básico sin costo; premium $37 USD | En línea, a tu ritmo | No lo indica | Tutor de IA |
+
+Donde dice "no lo indica" es porque su página no lo dice claramente, no porque no lo tenga. Abajo te explico cómo elegir.
 
 ## Por qué tomar un curso antes de importar de China
 
@@ -61,17 +79,7 @@ Pregúntale a quien te vende el curso qué importó el último mes. Si no te sab
 
 ## Comparativa de cursos para importar de China en 2026
 
-Estos son cursos que encontramos publicados en México. Los precios son los que mostraba cada sitio al momento de escribir esta nota (noviembre de 2026). **Pueden cambiar, así que confírmalos antes de pagar.** Donde dice "no lo indica" es porque su página no lo dice claramente, no porque no lo tenga.
-
-| Opción | Precio publicado | Formato | Proveedores incluidos | Comunidad / soporte |
-|---|---|---|---|---|
-| **Clase en vivo con Eduardo** (Compra en Fábricas de China) | $990 MXN | En vivo + grabación | Sí, 5 de regalo | Preguntas en vivo con Eduardo |
-| **Escuela de Negocios** (Compra en Fábricas de China) | $15 USD/mes | Cursos grabados + Zooms en vivo | No lo indica | Comunidad y Zooms en vivo |
-| **CETYS Educación Continua** — Inicia tu negocio importando desde China | $8,603 MXN | Presencial, 24 horas (Mexicali) | No lo indica | Grupo presencial |
-| **INCEA / LatinoTrainers** — Importar de China | Desde $790 MXN por curso | En línea | No lo indica | No lo indica |
-| **100negocios** — Curso para importar de China | $39 USD (en línea) | En línea, acceso de por vida | No lo indica | No lo indica |
-| **Kuinsen** — curso virtual | $2,999 MXN | Virtual | No lo indica | No lo indica |
-| **Elevify** — Curso para importar de China | Versión básica sin costo; premium $37 USD | En línea, a tu ritmo con tutor de IA | No lo indica | Tutor de IA |
+Estos son cursos que encontramos publicados en México; están en la tabla rápida de arriba. Los precios son los que mostraba cada sitio al momento de escribir esta nota (noviembre de 2026). **Pueden cambiar, así que confírmalos antes de pagar.**
 
 ![Tabla comparativa de cursos para importar de China en 2026 por precio, formato y proveedores](/blog/cursos-para-importar-de-china/tabla-comparativa-cursos-importar-de-china.webp "Comparativa de precios y formatos. Confirma precios vigentes en cada sitio.")
 
@@ -120,6 +128,10 @@ Antes de pagar, revisa el temario. Si le falta alguno de estos puntos, te va a t
 10. **Cómo vender** lo que traes, porque importar sin vender no es negocio.
 
 La [clase en vivo para aprender a importar de China](/clase) cubre todo ese recorrido en una sola sesión, de la fábrica hasta tu puerta. Si quieres ver el temario completo y comparar la clase, la Escuela y la asesoría en una sola página, está en el [curso para importar de China con Eduardo](/curso-para-importar-de-china).
+
+## ¿Hay cursos para importar de China en Monterrey?
+
+Sí. La clase en vivo es en línea, así que la tomas desde cualquier ciudad, y para Monterrey y su área metropolitana además entregamos mercancía en la zona. Todos los detalles están en el [curso para importar de China en Monterrey](/curso-para-importar-de-china-monterrey).
 
 ## Preguntas que debes hacer antes de pagar cualquier curso
 

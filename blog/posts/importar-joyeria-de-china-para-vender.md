@@ -60,7 +60,7 @@ No toda la joyería es igual. Esto es lo que necesitas saber:
 | **Bisutería** | Metales base con baño, piedras sintéticas. | La más barata, mucha variedad de moda | Dura menos, el baño se puede caer rápido |
 | **Chapa o baño de oro** | Una capa de oro sobre otro metal. | Se ve como oro a una fracción del precio | No es oro macizo; acuerda el metal base y el grosor |
 
-Si vas empezando, **el acero inoxidable es lo más seguro**: es resistente, se ve bien y tiene pocas devoluciones.
+Si vas empezando, **el acero inoxidable es lo más seguro**: es resistente, se ve bien y tiene pocas devoluciones. Te explico la diferencia entre acero 316L y 304, y cómo revisar la calidad, en [joyería de acero inoxidable](/blog/joyeria-de-acero-inoxidable).
 
 :::consejo
 No vendas acero dorado como si fuera oro, ni bisutería como si fuera plata. Di exactamente qué es. Una clienta bien informada vuelve a comprarte; una que se siente engañada te quema en redes.
