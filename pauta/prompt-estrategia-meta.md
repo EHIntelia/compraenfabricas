@@ -1,5 +1,6 @@
 # Prompt: estrategia de pauta en Meta (3 conjuntos × 4 anuncios, solo clase)
 
+> v4 · 26 nov 2026: se agrega la campaña de WhatsApp (ManyChat) para las dos clases y las piezas gráficas que se harán en artefacto.
 > v3 · 26 nov 2026: calendario de dos clases (12 dic y 9 ene) y presupuesto de $300 MXN/día con escala a $500.
 > v2 · 26 nov 2026: solo se vende la clase (no cajas); cada conjunto lleva 1 video orgánico ya probado + 3 estáticos de dolores. Análisis de videos en `analisis-videos-organicos.md`.
 
@@ -66,6 +67,19 @@ Cita las fuentes. Si algo es opinión y no dato, márcalo.
 Facebook es por mucho el canal más fuerte (y genera muchos comentarios, el formato "comenta X y te mando info" funciona).
 
 **Quién escribe (perfil real de atención a clientes, 24 nov: 30 conversaciones en un día):** dueños de tiendas (ej. tienda de "todo a un dólar" en Tampico), gente de Monterrey que quiere ir a la bodega, personas que preguntan si con $3,000 pueden empezar (con joyería), gente que busca productos específicos (uniformes de fútbol), algunos de Centroamérica (Honduras). Messenger es el canal con más conversaciones, luego WhatsApp, Instagram y TikTok.
+
+**WhatsApp (ManyChat) — datos reales de la cuenta:**
+
+- 10,202 contactos en ManyChat; **5,988 con WhatsApp activo** (opt-in).
+- Etiquetas útiles: `int_clase` (pidió info de la clase, ~102 con WhatsApp), `clic_pago_clase` (llegó al pago y no compró, ~31), `compro_clase_21nov`, `wa21_quiere` (tocó "Quiero mi lugar"), `wa21_no` (tocó "Ahora no"), `excluir_campanas`, `excluir_equipo`. La etiqueta `compro_curso` **no** marca bien a los compradores de la clase: los compradores de Stripe hay que cruzarlos a mano.
+- **116 contactos nuevos** entraron por WhatsApp después de la campaña del 20 nov (automatización `china-bienvenida-v2`): todavía no han recibido ninguna campaña.
+- **Campaña WA-01 (20 nov, clase del 21 nov):** plantilla de marketing con imagen + 3 botones (Quiero mi lugar / Ya tengo mi lugar / Ahora no), sin descuento, ángulo "trae cualquier producto".
+  - Grupo A, checkout abandonado: 29 en el segmento, 25 enviados, 23 entregados, 12 leídos, 5 "Quiero mi lugar", 1 clic a pago, **1 venta en 12 minutos**.
+  - Grupo B, interesados: 72 en el segmento, 58 enviados, 49 entregados, 33 leídos, 5 "Quiero mi lugar", 1 clic a pago, 0 ventas confirmadas.
+  - Seguimiento libre dentro de las 24 h a los 9 que dijeron "quiero" y no pagaron: 1 clic, 0 ventas. La única duda por escrito fue "¿Cómo es verdad esto?" (confianza).
+  - **Costo total: USD 3.92 (~$72 MXN)**: plantillas USD 3.80 por 83 envíos ≈ **USD 0.046 por mensaje (~$0.85 MXN)**; mensajes dentro de la ventana de 24 h casi gratis.
+- **Límites:** la cuenta no está verificada: máximo **250 conversaciones iniciadas por la empresa cada 24 h**. Con ese límite, recorrer toda la base de 5,988 tomaría ~24 días. El monedero de ManyChat tiene ~USD 4.57: hay que recargar.
+- Aprendizajes técnicos: el broadcast de ManyChat solo manda plantillas; un mensaje libre a un grupo se manda desde la bandeja de entrada contacto por contacto; solo 1 botón de link por mensaje; cuando alguien responde a la campaña se dispara la bienvenida automática (hay que evitarlo); Meta rechaza emojis en los botones.
 
 **Infraestructura disponible:** Meta Pixel en todo el sitio (falta confirmar CAPI), ManyChat conectado a WhatsApp con etiquetas, Stripe para la clase, panel interno que registra ventas, leads y gasto de pauta por campaña.
 
@@ -140,7 +154,7 @@ Para todos: destino (compraenfabricas.com/clase o WhatsApp con mensaje prellenad
 ### C. Plan de prueba y escala
 
 **Calendario (obligatorio respetarlo):** hoy es 26 nov 2026. Hay dos clases: **sábado 12 de diciembre** y **sábado 9 de enero**. Para la del 12 dic solo hay unos 8–10 días de pauta (lanzamos ~2–4 dic), y coincide con el día de la Virgen de Guadalupe y con anuncios caros por Black Friday y fiestas. Por eso:
-1. **Clase del 12 dic = calentamiento.** Se vende sobre todo con orgánico ("Comenta CLASE"), WhatsApp a quien ya preguntó y **solo el conjunto 3 (caliente)** en Meta. Dime si con tan poco tiempo conviene optimizar por compra o por conversaciones.
+1. **Clase del 12 dic = calentamiento.** El motor principal es **WhatsApp** (sección E), junto con el orgánico ("Comenta CLASE") y **solo el conjunto 3 (caliente)** en Meta. Dime si con tan poco tiempo conviene optimizar por compra o por conversaciones.
 2. **Clase del 9 ene = la pauta completa.** Los 3 conjuntos arrancan el 14 dic para aprender y juntar gente que vio los videos, bajan del 23 dic al 1 ene, y empujan fuerte del 2 al 8 ene (anuncios más baratos después de fiestas, propósitos de año nuevo, aguinaldo).
 3. Explica cómo pasar lo aprendido de la primera clase a la segunda (qué anuncios apagar, cuáles escalar) y si el video o los estáticos deben cambiar entre una fecha y otra.
 
@@ -148,6 +162,32 @@ Para todos: destino (compraenfabricas.com/clase o WhatsApp con mensaje prellenad
 - Cuándo apagar un creativo, cuándo duplicar presupuesto y cuándo refrescar (fatiga).
 - Cómo atribuir cada venta de la clase al anuncio que la trajo, incluidas las que cierran por WhatsApp o transferencia (UTM, mensajes prellenados por conjunto, etiquetas de ManyChat, registro en el panel con `campana_id`).
 - Punto de equilibrio: con la clase a $990, ¿cuánto puedo pagar por venta? Considera que una parte de quienes toman la clase después compra cajas (ticket promedio ~$15,500), Escuela o joyería: propón un costo por venta objetivo y uno máximo.
+
+### E. Campaña de WhatsApp (ManyChat) para las dos clases
+
+Diseña la campaña de WhatsApp de **cada clase** (12 dic y 9 ene), coordinada con la pauta de Meta:
+
+1. **Segmentos con condiciones de etiqueta exactas de ManyChat** (incluir y excluir). Nuestra propuesta, ajústala:
+   - **A · Checkout abandonado:** `clic_pago_clase` sin compra, incluidos los 29 de WA-01. Ya los tocamos el 20 nov: ¿se vuelven a tocar? ¿con qué ángulo distinto y cuántos días antes?
+   - **B · Interesados:** `int_clase` sin compra (los 72 de WA-01 + nuevos). Tocar de nuevo con otro ángulo (la objeción real fue la confianza).
+   - **C · Nuevos sin campaña:** los ~116 que entraron después del 20 nov.
+   - **D · Resto de la base con WhatsApp activo (~5,800):** nunca se les ha mandado una campaña de clase. ¿Nos atrevemos? En qué orden (más recientes primero), en lotes de 250 al día, y con qué prueba chica antes de mandar a todos.
+   - Exclusiones: compradores de cualquier clase (cruzados con Stripe), `wa21_no`, `excluir_campanas`, `excluir_equipo`, y quien ya recibió mensaje esa semana.
+   - Di si conviene invitar a los 25 compradores de cajas o dejarlos fuera.
+2. **Calendario de envíos** por segmento para cada clase (día y hora), respetando el límite de 250 al día y sin saturar a la misma gente: máximo de toques por persona por clase.
+3. **Plantillas** listas para mandar a aprobación a Meta (categoría Marketing, español de México): texto con variable `{{Nombre}}`, botones de respuesta rápida (máx. 20 caracteres, sin emojis), y para cada botón la respuesta, la etiqueta que pone y el link con UTM. Una plantilla distinta por segmento si el ángulo cambia. Más los mensajes libres de seguimiento dentro de la ventana de 24 h (recordatorio el día anterior y "hoy es la clase").
+4. **Costo estimado** con nuestros datos reales (USD 0.046 por plantilla enviada, ~$0.85 MXN): cuántos envíos por segmento y cuánto cuesta cada clase. Y qué esperamos vender por segmento, usando WA-01 como referencia (A: 1 venta en 25 envíos; B: 0 en 58), marcando que la base fría puede convertir mucho menos.
+5. Cómo medir: etiquetas por clase (`wa12d_…`, `wa9e_…`), UTM por plantilla y registro en el panel (`campanas`, `campana_segmentos`, `campana_cortes`), igual que WA-01.
+
+### F. Piezas gráficas (se harán como artefactos con nuestro design system)
+
+Los estáticos de Meta y las imágenes de las plantillas de WhatsApp **no los diseñas tú**: los construimos nosotros como artefactos (HTML con el design system de Compra en Fábricas, exportados a PNG). Entrégame cada pieza como **ficha lista para construir**, para **las dos fechas** (12 dic y 9 ene):
+
+- Nombre de la pieza, uso (Meta conjunto 1/2/3, plantilla WhatsApp segmento A/B/C/D, estado o historia) y medida exacta (1080×1350, 1080×1920, imagen de plantilla 1.91:1 o 1:1).
+- Titular (máx. 8–10 palabras), subtítulo, datos o lista corta (si aplica), botón o CTA visual y texto legal mínimo.
+- Qué elemento visual lleva (foto de Eduardo, producto, caja, mercado en China, solo tipografía) y qué se resalta con el degradado naranja.
+- Qué cambia entre la versión del 12 dic y la del 9 ene (fecha, "este sábado", cupo) para que la versión de enero sea solo cambiar datos.
+- Lista final de todas las piezas (cuántas en total) para producirlas en un solo lote.
 
 ### D. Riesgos
 - Políticas de Meta que pueden rechazar anuncios ("hazte rico", promesas de ingreso, antes/después) y cómo redactar para evitarlo.
@@ -172,6 +212,8 @@ Para todos: destino (compraenfabricas.com/clase o WhatsApp con mensaje prellenad
 3. Estructura de cuenta (tabla).
 4. Los 12 anuncios (una tabla por conjunto: el video con su edición y copy, y los 3 estáticos con su dolor, titular, visual y copy).
 5. Plan por etapas del calendario (2 dic – 9 ene), con presupuesto diario, qué se mide y qué decisión se toma en cada etapa.
-6. Riesgos y lista de lo que necesitas de nosotros antes de lanzar.
+6. Campaña de WhatsApp de cada clase: segmentos con etiquetas, calendario de envíos, plantillas con botones, seguimientos y costo estimado.
+7. Fichas de todas las piezas gráficas (Meta + WhatsApp) para las dos fechas, listas para construirlas como artefactos.
+8. Riesgos y lista de lo que necesitas de nosotros antes de lanzar.
 
 Si te falta un dato para decidir bien, pregúntalo antes de inventarlo.
