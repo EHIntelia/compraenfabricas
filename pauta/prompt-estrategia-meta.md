@@ -1,11 +1,12 @@
 # Prompt: estrategia de pauta en Meta (3 conjuntos × 4 anuncios, solo clase)
 
+> v3 · 26 nov 2026: calendario de dos clases (12 dic y 9 ene) y presupuesto de $300 MXN/día con escala a $500.
 > v2 · 26 nov 2026: solo se vende la clase (no cajas); cada conjunto lleva 1 video orgánico ya probado + 3 estáticos de dolores. Análisis de videos en `analisis-videos-organicos.md`.
 
 Preparado el 25 nov 2026 con datos del panel de Eduardo Hernández (ventas, leads y métricas al 22–25 nov) y del repo.
 Para usarlo: copiar todo lo que está debajo de la línea y pegarlo en una IA con búsqueda web (Claude, ChatGPT o Perplexity con investigación profunda).
 
-Antes de pegarlo, llenar los dos datos entre corchetes: **presupuesto** y **fecha de la próxima clase**.
+Ya trae fechas (12 dic 2026 y 9 ene 2027) y presupuesto ($300 MXN/día, escalable a $500). Si cambia alguna fecha, corregirla en la tabla de productos y en el calendario del Paso 3.
 
 ---
 
@@ -32,7 +33,7 @@ Cita las fuentes. Si algo es opinión y no dato, márcalo.
 
 | Producto | Precio | Cómo se compra |
 |---|---|---|
-| **Clase en vivo con Eduardo** (producto de entrada) | $990 MXN (~$54 USD) | Stripe en compraenfabricas.com/clase. Incluye grabación, plantillas y 5 proveedores de regalo (2 de electrónica, 3 de surtido general de Yiwu). Próxima fecha: **[FECHA — tentativa 9 de enero 2027]** |
+| **Clase en vivo con Eduardo** (producto de entrada) | $990 MXN (~$54 USD) | Stripe en compraenfabricas.com/clase. Incluye grabación, plantillas y 5 proveedores de regalo (2 de electrónica, 3 de surtido general de Yiwu). Próximas fechas: **sábado 12 de diciembre 2026** y **sábado 9 de enero 2027** |
 | Cajas de electrónica para revender (ya están en México; **no entran en esta pauta**, solo contexto) | Desde ~$3,000 hasta ~$46,000 MXN por caja (20–200 piezas; desde ~$157 por pieza) | WhatsApp → 20% de anticipo → 80% + envío en 7 días → llega en 1–2 días hábiles por DHL. Hoy quedan **12 cajas disponibles** (cámaras, relojes, bocinas, lentes con audio, etc.) en compraenfabricas.com/productos |
 | Escuela en Skool | $15 USD/mes | Recurrencia después de la clase |
 | Joyería al mayoreo | Variable | info.joyeria.shop |
@@ -68,9 +69,23 @@ Facebook es por mucho el canal más fuerte (y genera muchos comentarios, el form
 
 **Infraestructura disponible:** Meta Pixel en todo el sitio (falta confirmar CAPI), ManyChat conectado a WhatsApp con etiquetas, Stripe para la clase, panel interno que registra ventas, leads y gasto de pauta por campaña.
 
-**Pendiente que bloquea:** hay que resolver el método de pago de la cuenta publicitaria de Meta antes del 12 de diciembre.
+**Pendiente que bloquea:** el método de pago de la cuenta publicitaria de Meta se está resolviendo; la meta es tenerlo listo para lanzar entre el 2 y el 4 de diciembre.
 
-**Presupuesto:** [PRESUPUESTO DIARIO O MENSUAL EN MXN]. Si no te doy cifra, propón tres escenarios (mínimo viable, recomendado, agresivo) y di cuántas conversiones al mes necesita cada uno para salir de aprendizaje.
+**Presupuesto:** **$300 MXN al día** para empezar, con la idea de subir a **$500 MXN al día** si los números acompañan. Es un presupuesto chico para 3 conjuntos (unos $100 MXN diarios por conjunto), así que:
+- Dime con honestidad si alcanza para que Meta aprenda y qué evento de optimización conviene con este dinero (compra vs. conversaciones de WhatsApp vs. visitas a la página de la clase).
+- Dime si conviene presupuesto por campaña (Advantage+) o por conjunto para esta prueba.
+- Define la regla para subir de $300 a $500: con qué costo por venta y después de cuántos días, y en qué escalones (subir de golpe 67% puede reiniciar el aprendizaje).
+
+Reparto que proponemos (ajústalo):
+
+| Periodo | Qué corre | Presupuesto diario |
+|---|---|---|
+| ~2–12 dic | Solo conjunto 3 (caliente) para la clase del 12 dic | ~$150–200 |
+| 14–22 dic | Los 3 conjuntos, para la clase del 9 ene | $300 |
+| 23 dic – 1 ene | Los 3 conjuntos, bajo (fiestas, anuncios caros, poca compra) | ~$150 |
+| 2–8 ene | Empuje final con fecha y cupo | $300 → $500 si el costo por venta va bien |
+
+Gasto total estimado: unos $9,000–10,000 MXN entre las dos clases.
 
 ## PASO 3 · LA ESTRATEGIA QUE NECESITO
 
@@ -103,7 +118,7 @@ Para la propuesta final entrega:
 
 ### A. Estructura de cuenta
 - Cuántas campañas (¿una por objetivo o una sola?), objetivo de cada una (ventas, mensajes a WhatsApp, clientes potenciales) y evento de optimización.
-- Presupuesto por conjunto o por campaña, en MXN, y cómo repartirlo los primeros 14 días.
+- Presupuesto por conjunto o por campaña, en MXN, y cómo repartirlo en cada etapa del calendario.
 - Ubicaciones, edad, país (¿solo México o también Centroamérica / EE. UU. hispano?), exclusiones.
 - Si con Andromeda conviene más 3 conjuntos separados o una campaña Advantage+ con los creativos agrupados por ángulo, dilo claro, pero diseña la versión de 3 conjuntos que pedimos.
 
@@ -123,7 +138,13 @@ Para **cada video** (reel orgánico existente):
 Para todos: destino (compraenfabricas.com/clase o WhatsApp con mensaje prellenado), UTM y palabra clave o mensaje distinto por conjunto para saber qué anuncio vendió cada clase.
 
 ### C. Plan de prueba y escala
-- Qué medir en los días 3, 7 y 14; métricas objetivo (CPM, CTR, hook rate, costo por conversación, costo por compra de clase) con rangos de referencia para México.
+
+**Calendario (obligatorio respetarlo):** hoy es 26 nov 2026. Hay dos clases: **sábado 12 de diciembre** y **sábado 9 de enero**. Para la del 12 dic solo hay unos 8–10 días de pauta (lanzamos ~2–4 dic), y coincide con el día de la Virgen de Guadalupe y con anuncios caros por Black Friday y fiestas. Por eso:
+1. **Clase del 12 dic = calentamiento.** Se vende sobre todo con orgánico ("Comenta CLASE"), WhatsApp a quien ya preguntó y **solo el conjunto 3 (caliente)** en Meta. Dime si con tan poco tiempo conviene optimizar por compra o por conversaciones.
+2. **Clase del 9 ene = la pauta completa.** Los 3 conjuntos arrancan el 14 dic para aprender y juntar gente que vio los videos, bajan del 23 dic al 1 ene, y empujan fuerte del 2 al 8 ene (anuncios más baratos después de fiestas, propósitos de año nuevo, aguinaldo).
+3. Explica cómo pasar lo aprendido de la primera clase a la segunda (qué anuncios apagar, cuáles escalar) y si el video o los estáticos deben cambiar entre una fecha y otra.
+
+- Qué medir en cada etapa (a los 3, 7 y 14 días de cada lanzamiento); métricas objetivo (CPM, CTR, hook rate, costo por conversación, costo por compra de clase) con rangos de referencia para México.
 - Cuándo apagar un creativo, cuándo duplicar presupuesto y cuándo refrescar (fatiga).
 - Cómo atribuir cada venta de la clase al anuncio que la trajo, incluidas las que cierran por WhatsApp o transferencia (UTM, mensajes prellenados por conjunto, etiquetas de ManyChat, registro en el panel con `campana_id`).
 - Punto de equilibrio: con la clase a $990, ¿cuánto puedo pagar por venta? Considera que una parte de quienes toman la clase después compra cajas (ticket promedio ~$15,500), Escuela o joyería: propón un costo por venta objetivo y uno máximo.
@@ -150,7 +171,7 @@ Para todos: destino (compraenfabricas.com/clase o WhatsApp con mensaje prellenad
 2. Hallazgos de la investigación (tabla: funciona / no funciona / fuente).
 3. Estructura de cuenta (tabla).
 4. Los 12 anuncios (una tabla por conjunto: el video con su edición y copy, y los 3 estáticos con su dolor, titular, visual y copy).
-5. Plan de prueba y escala de 14 días, día por día.
+5. Plan por etapas del calendario (2 dic – 9 ene), con presupuesto diario, qué se mide y qué decisión se toma en cada etapa.
 6. Riesgos y lista de lo que necesitas de nosotros antes de lanzar.
 
 Si te falta un dato para decidir bien, pregúntalo antes de inventarlo.
