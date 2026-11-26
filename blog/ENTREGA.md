@@ -315,3 +315,4 @@ Las URL no cambiaron. Cada nota lleva "Actualizado: noviembre de 2026" visible. 
 - En comprar directo de fábrica: la lista de 10 señales, el enlace a /validacion y la infografía nueva.
 - El sitemap y llms.txt incluyen G. IndexNow devolvió 200 para las 5 URLs y el sitemap.
 - Falta pedir indexación en Search Console de G y de las 3 notas actualizadas.
+- 26 nov 2026: el usuario pidió en Search Console la indexación de G, cursos, Eduardo y comprar directo de fábrica. Revisión de CTR y posición: entre el 10 y el 17 de diciembre de 2026.
