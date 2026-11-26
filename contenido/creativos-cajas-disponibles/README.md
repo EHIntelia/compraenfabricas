@@ -1,6 +1,6 @@
 # Creativos horizontales: cajas disponibles (25 nov 2026)
 
-PNG 1920×1080 en `png/`. Diseño con el design system de Compra en fábricas (naranjas, Arial 900, tarjetas blancas, caja durazno).
+PNG en `png/`, exportados al doble (3840×2160) para que se vean nítidos. Las cajas vendidas después de hacerlos (`VENDIDAS` en `generar.py`) salen tachadas con sello VENDIDO: TK70 desde el 26 nov 2026. Diseño con el design system de Compra en fábricas (naranjas, Arial 900, tarjetas blancas, caja durazno).
 
 **Datos:** `src/lib/cajas.ts` del proyecto Lovable "China Direct Connect" al 25 nov 2026. Entran solo las cajas que no están vendidas, ocultas ni apartadas (12). Quedaron fuera las apartadas: CH-M814, Walkie-talkie, SAG11 y S2 Max.
 Precio por pieza = `priceMxnPerPiece` redondeado; "10 piezas" = precio por pieza × 10. Fotos: `compraenfabricas.com/og/producto/<código>.jpg`.
