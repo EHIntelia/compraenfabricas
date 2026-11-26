@@ -316,3 +316,14 @@ Las URL no cambiaron. Cada nota lleva "Actualizado: noviembre de 2026" visible. 
 - El sitemap y llms.txt incluyen G. IndexNow devolvió 200 para las 5 URLs y el sitemap.
 - Falta pedir indexación en Search Console de G y de las 3 notas actualizadas.
 - 26 nov 2026: el usuario pidió en Search Console la indexación de G, cursos, Eduardo y comprar directo de fábrica. Revisión de CTR y posición: entre el 10 y el 17 de diciembre de 2026.
+
+## Fotos de Eduardo copiadas al repo (26 nov 2026)
+
+Las 2 fotos de la nota de Eduardo solo existían en Lovable (`public/blog/eduardo-hernandez-importaciones-china/`). Se copiaron a `blog/img/eduardo-hernandez-importaciones-china/` byte por byte y se verificó el sha256 contra el original:
+
+| Archivo | Bytes | Medidas | sha256 |
+|---|---|---|---|
+| eduardo-hernandez-retrato.webp | 18928 | 1024×571 | 4edbc7c2d44bcefc71c912a485da911bff702a25b1ec4036b65d9a3597417e1b |
+| eduardo-hernandez-fundador.webp | 22508 | 1024×571 | 3609ad613e87de0e92163e06b2c53bf5af79530d8481219866337fbd1ddc3475 |
+
+Cómo se sacaron: el agente de Lovable las subió en base64 en el commit 82f91bb3 y las borró en 643f49a4. No se cambió nada en el sitio publicado.
