@@ -1,4 +1,6 @@
-# Prompt: estrategia de pauta en Meta (3 conjuntos × 5 creativos)
+# Prompt: estrategia de pauta en Meta (3 conjuntos × 4 anuncios, solo clase)
+
+> v2 · 26 nov 2026: solo se vende la clase (no cajas); cada conjunto lleva 1 video orgánico ya probado + 3 estáticos de dolores. Análisis de videos en `analisis-videos-organicos.md`.
 
 Preparado el 25 nov 2026 con datos del panel de Eduardo Hernández (ventas, leads y métricas al 22–25 nov) y del repo.
 Para usarlo: copiar todo lo que está debajo de la línea y pegarlo en una IA con búsqueda web (Claude, ChatGPT o Perplexity con investigación profunda).
@@ -31,7 +33,7 @@ Cita las fuentes. Si algo es opinión y no dato, márcalo.
 | Producto | Precio | Cómo se compra |
 |---|---|---|
 | **Clase en vivo con Eduardo** (producto de entrada) | $990 MXN (~$54 USD) | Stripe en compraenfabricas.com/clase. Incluye grabación, plantillas y 5 proveedores de regalo (2 de electrónica, 3 de surtido general de Yiwu). Próxima fecha: **[FECHA — tentativa 9 de enero 2027]** |
-| **Cajas de electrónica para revender** (ya están en México) | Desde ~$3,000 hasta ~$46,000 MXN por caja (20–200 piezas; desde ~$157 por pieza) | WhatsApp → 20% de anticipo → 80% + envío en 7 días → llega en 1–2 días hábiles por DHL. Hoy quedan **12 cajas disponibles** (cámaras, relojes, bocinas, lentes con audio, etc.) en compraenfabricas.com/productos |
+| Cajas de electrónica para revender (ya están en México; **no entran en esta pauta**, solo contexto) | Desde ~$3,000 hasta ~$46,000 MXN por caja (20–200 piezas; desde ~$157 por pieza) | WhatsApp → 20% de anticipo → 80% + envío en 7 días → llega en 1–2 días hábiles por DHL. Hoy quedan **12 cajas disponibles** (cámaras, relojes, bocinas, lentes con audio, etc.) en compraenfabricas.com/productos |
 | Escuela en Skool | $15 USD/mes | Recurrencia después de la clase |
 | Joyería al mayoreo | Variable | info.joyeria.shop |
 
@@ -72,13 +74,30 @@ Facebook es por mucho el canal más fuerte (y genera muchos comentarios, el form
 
 ## PASO 3 · LA ESTRATEGIA QUE NECESITO
 
-Vamos a pautar en Meta con **3 conjuntos de anuncios, cada uno con una audiencia distinta**. **Cada conjunto lleva 5 creativos: 3 estáticos y 2 videos** (15 en total).
+Vamos a pautar en Meta con **3 conjuntos de anuncios, cada uno con una audiencia distinta**. **Esta pauta vende solo la clase de $990** (nada de cajas). **Cada conjunto lleva 4 anuncios: 1 video y 3 estáticos** (12 en total).
 
-Mi hipótesis de audiencias (valídala o cámbiala con argumentos y datos; si propones otra, explica por qué es mejor):
+- **El video de cada conjunto NO se produce:** es un reel orgánico que ya demostró que vende la clase (tabla abajo). Tu trabajo es decir si la asignación es correcta, cómo editarlo para anuncio (gancho, fecha, cierre) y qué copy ponerle.
+- **Los 3 estáticos de cada conjunto atacan dolores del cliente**, uno por estático, distintos entre sí.
 
-1. **Emprendedor que quiere empezar a importar (frío).** Personas en México, 25–55, que quieren un negocio propio o un ingreso extra y no han importado. Segmentación amplia / Advantage+ con sugerencias (emprendimiento, negocios desde casa, Alibaba, AliExpress, importación, venta por catálogo). **Oferta: la clase de $990.** El creativo hace la segmentación.
-2. **Revendedor o negocio que ya vende (frío, intención comercial).** Dueños de tiendas, puestos de tianguis, vendedores de Facebook Marketplace / Mercado Libre / TikTok Shop, tiendas de "todo a un precio", mayoristas. **Oferta: cajas de electrónica ya en México**, precio por pieza contra lo que pagan en el centro o con el revendedor. Destino: WhatsApp. Es lo que más dinero ha dejado en orgánico.
-3. **Audiencia caliente (retargeting).** Gente que interactuó con Facebook e Instagram (365 días), vio 50%+ de los videos, visitó el sitio, abrió conversación en WhatsApp/Messenger o abandonó el checkout de la clase, más lookalike de compradores. Excluir compradores de los últimos 30 días. **Oferta: clase con fecha y urgencia + cajas disponibles.** Con más de 170 mil seguidores en Facebook esta audiencia tiene volumen.
+**Videos orgánicos que mejor vendieron la clase** (no hay atribución exacta por video; se cruzó fecha de publicación contra ventas de los días siguientes y se usaron los comentarios "Comenta CHINA/CLASE" como señal de intención):
+
+| # | Video (gancho) | Vistas FB | Interacciones FB | % | Comentarios IG | Ángulo |
+|---|---|---:|---:|---:|---:|---|
+| 1 | "Comprar en China no tiene por qué ser una apuesta" — hace 26 años mandé dinero prestado a un proveedor que no conocía; 3 cosas que reviso antes de pagar | 147,435 | 2,392 | 1.6% | 229 | Miedo a perder el dinero. Coincide con la mejor semana de ventas sin campaña (7 clases del 2 al 8 oct) |
+| 2 | "Si mañana tuviera que empezar de cero comprando en China, haría esto" — 5 pasos; empecé con dinero prestado, hoy tengo un negocio de joyería de mayoreo | 37,353 | 833 | 2.2% | 226 | Por dónde empiezo / historia |
+| 3 | "¿Quieres comprar en China pero tienes miedo de que te estafen?" (mencionaba la clase del 20 oct) | 76,506 | 1,772 | 2.3% | 199 | Miedo a la estafa. Antes de 4 ventas del 12 al 20 oct |
+| 4 | "Tener el contacto de un proveedor no significa que ya sepas comprar en China" — unboxing de consola G28, $748 puesta en México | 14,212 | 454 | 3.2% | 35 | Ya tengo/busqué proveedor y no sé qué sigue. Mejor tasa de interacción |
+| 5 | Walkie-talkies para niños, "estoy abriendo 43 cajas" | 49,679 | 1,224 | 2.5% | 72 | Prueba real de producto (respaldo) |
+
+Ojo: los videos más virales de la cuenta (mercados y ropa en Guangzhou, 3.5–3.7 millones de vistas) **no** vendieron la clase: no tenían llamada a la clase. No los propongas para conversión.
+
+Mi propuesta de audiencias y asignación (valídala o cámbiala con argumentos):
+
+1. **Quiero emprender y no sé por dónde empezar (frío).** México, 25–55, segmentación amplia / Advantage+ con sugerencias (emprendimiento, negocio propio, importación, Alibaba, AliExpress, venta por catálogo). **Video #2.** Dolores para estáticos: no sé qué producto vender · creo que necesito mucho dinero o un contenedor · nadie me enseña el proceso completo.
+2. **Ya vendo y le compro caro al intermediario (frío, intención comercial).** Dueños de negocio, tiendas, tianguis, vendedores de Marketplace / Mercado Libre / TikTok Shop. **Video #4.** Dolores: el revendedor se queda con mi ganancia · conseguí un proveedor y no sé cómo pagarle ni traerlo · aduana e impuestos me dan miedo.
+3. **Ya me conoce (caliente).** Interacción con FB e IG en 365 días, 50%+ de video visto, visitas al sitio, conversaciones de WhatsApp/Messenger, checkout abandonado de la clase. Excluir compradores de la clase. **Video #1** (respaldo #3). Dolores: miedo a que me estafen · "lo dejo para después" (fecha y cupo) · ¿qué me llevo? (grabación + 5 proveedores de regalo).
+
+Si con solo 1 video por conjunto ves riesgo (los estáticos suelen rendir menos en Reels y Stories), dilo y propone cómo rotar el video de respaldo (#3 o #5) sin romper la prueba.
 
 Para la propuesta final entrega:
 
@@ -88,20 +107,26 @@ Para la propuesta final entrega:
 - Ubicaciones, edad, país (¿solo México o también Centroamérica / EE. UU. hispano?), exclusiones.
 - Si con Andromeda conviene más 3 conjuntos separados o una campaña Advantage+ con los creativos agrupados por ángulo, dilo claro, pero diseña la versión de 3 conjuntos que pedimos.
 
-### B. Los 15 creativos (5 por conjunto)
-Para **cada uno**:
-- Formato y medida (1080×1350 o 1080×1920 para estáticos; 9:16 para video), duración del video.
-- **Ángulo** distinto (dolor, precio por pieza, historia de Eduardo, error común, prueba de producto, urgencia de fecha, "tú no necesitas ir a China", etc.). Los 5 de un conjunto no pueden ser variaciones del mismo mensaje: Andromeda los trata como uno solo.
-- **Gancho** de los primeros 3 segundos o titular del estático.
-- **Texto en la imagen** (máx. 8–10 palabras) y **copy principal** (versión corta y larga), titular y CTA de Meta.
-- **Guion completo** de los videos, escena por escena, pensado para que Eduardo lo grabe con el celular (cara a cámara, en bodega o con producto en mano).
-- Destino (clase, WhatsApp con mensaje prellenado, /productos) y qué etiqueta de ManyChat activa.
+### B. Los 12 anuncios (4 por conjunto: 1 video + 3 estáticos)
+Para **cada estático**:
+- Medida (1080×1350 para feed y 1080×1920 para Stories/Reels).
+- **Dolor** que ataca (uno por estático, distintos entre sí y distintos al ángulo del video: Andromeda trata como uno solo a los anuncios casi iguales).
+- **Titular / texto en la imagen** (máx. 8–10 palabras) y descripción visual (qué foto o elemento, con la marca en naranjas).
+- **Copy principal** (versión corta y larga) en PAS, titular y botón de Meta.
+
+Para **cada video** (reel orgánico existente):
+- Por qué ese video para esa audiencia.
+- Edición para anuncio: gancho de los primeros 3 segundos (¿se deja o se recorta?), quitar fechas viejas, cierre "toca el botón" en vez de "comenta CHINA", subtítulos.
+- Copy principal, titular y botón.
+- Si conviene usar la publicación original (conserva likes y comentarios) o subirlo como anuncio nuevo.
+
+Para todos: destino (compraenfabricas.com/clase o WhatsApp con mensaje prellenado), UTM y palabra clave o mensaje distinto por conjunto para saber qué anuncio vendió cada clase.
 
 ### C. Plan de prueba y escala
-- Qué medir en los días 3, 7 y 14; métricas objetivo (CPM, CTR, hook rate, costo por conversación, costo por compra de clase, costo por caja vendida) con rangos de referencia para México.
+- Qué medir en los días 3, 7 y 14; métricas objetivo (CPM, CTR, hook rate, costo por conversación, costo por compra de clase) con rangos de referencia para México.
 - Cuándo apagar un creativo, cuándo duplicar presupuesto y cuándo refrescar (fatiga).
-- Cómo atribuir ventas de cajas que cierran por WhatsApp y transferencia (UTM, mensajes prellenados por anuncio, etiquetas de ManyChat, registro en el panel con `campana_id`).
-- Punto de equilibrio: con la clase a $990 y cajas con ticket promedio de ~$15,500, ¿cuánto puedo pagar por venta en cada conjunto?
+- Cómo atribuir cada venta de la clase al anuncio que la trajo, incluidas las que cierran por WhatsApp o transferencia (UTM, mensajes prellenados por conjunto, etiquetas de ManyChat, registro en el panel con `campana_id`).
+- Punto de equilibrio: con la clase a $990, ¿cuánto puedo pagar por venta? Considera que una parte de quienes toman la clase después compra cajas (ticket promedio ~$15,500), Escuela o joyería: propón un costo por venta objetivo y uno máximo.
 
 ### D. Riesgos
 - Políticas de Meta que pueden rechazar anuncios ("hazte rico", promesas de ingreso, antes/después) y cómo redactar para evitarlo.
@@ -124,7 +149,7 @@ Para **cada uno**:
 1. Resumen ejecutivo (máx. 10 líneas): qué harías y por qué.
 2. Hallazgos de la investigación (tabla: funciona / no funciona / fuente).
 3. Estructura de cuenta (tabla).
-4. Los 15 creativos (una tabla por conjunto + guiones de video completos debajo).
+4. Los 12 anuncios (una tabla por conjunto: el video con su edición y copy, y los 3 estáticos con su dolor, titular, visual y copy).
 5. Plan de prueba y escala de 14 días, día por día.
 6. Riesgos y lista de lo que necesitas de nosotros antes de lanzar.
 
