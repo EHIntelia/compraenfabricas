@@ -26,9 +26,15 @@ CAJAS = [
 def m(n):
     return "$" + f"{round(n):,}"
 
+# Cajas que se vendieron después de hacer los creativos: se quedan en el diseño, tachadas con sello VENDIDO
+VENDIDAS = {"CF-001"}  # TK70 Reloj inteligente (26 nov 2026)
+
 def info(c):
     code, model, name, pz, total, pp = c
-    return dict(code=code, model=model, name=name, pz=pz, total=m(total), pp=m(pp), min=m(pp * MIN_PZS))
+    sold = code in VENDIDAS
+    return dict(code=code, model=model, name=name, pz=pz, total=m(total), pp=m(pp), min=m(pp * MIN_PZS),
+                sold=sold, cls=" sold" if sold else "", g="tach" if sold else "grad",
+                stamp="<div class='vend'>VENDIDO</div>" if sold else "")
 
 DATA = [info(c) for c in CAJAS]
 
@@ -53,6 +59,14 @@ h1{font-weight:900;letter-spacing:-.02em;line-height:1.05}
 .foot{position:absolute;left:0;right:0;bottom:0;background:var(--tinta);color:#fff;display:flex;
 align-items:center;justify-content:space-between;padding:0 64px;font-size:26px}
 .foot b{color:#FDBA74}
+.sold .photo{filter:grayscale(1) brightness(.85)}
+.sold{position:relative}
+.tach{color:#A8A29E;text-decoration:line-through;text-decoration-color:var(--n6);text-decoration-thickness:.09em}
+.vend{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-12deg);border:5px solid #fff;color:#fff;
+background:rgba(26,26,26,.82);font-weight:900;letter-spacing:.08em;border-radius:10px;padding:.15em .5em;font-size:34px;
+white-space:nowrap;z-index:3;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.big-v{font-size:96px;border-width:8px}
+.sm-v{font-size:13px;border-width:2px;border-radius:5px}
 .pill{background:var(--grad);color:#fff;font-weight:700;border-radius:999px;box-shadow:0 8px 24px rgba(234,88,12,.3)}
 """
 
@@ -69,12 +83,12 @@ FOOT = ("<div class='foot' style='height:84px'><span>Aparta con el 20% por Whats
 def prop_a():
     cards = ""
     for d in DATA:
-        cards += f"""<div class='card'>
-  <div class='photo ph' style="background-image:url('{foto(d['code'])}')"></div>
+        cards += f"""<div class='card{d['cls']}'>
+  <div class='photo ph' style="background-image:url('{foto(d['code'])}');position:relative">{d['stamp']}</div>
   <div class='tx'>
     <div class='mod'>{d['model']}</div><div class='nm'>{d['name']}</div>
-    <div class='pp'><span class='grad'>{d['pp']}</span><small>por pieza</small></div>
-    <div class='mn'>10 piezas: <b>{d['min']}</b></div>
+    <div class='pp'><span class='{d['g']}'>{d['pp']}</span><small>por pieza</small></div>
+    <div class='mn'>{'Ya se vendió' if d['sold'] else '10 piezas: <b>' + d['min'] + '</b>'}</div>
     <div class='cj'>Caja de {d['pz']} pzs: {d['total']}</div>
   </div></div>"""
     extra = """
@@ -118,11 +132,11 @@ box-shadow:0 16px 40px rgba(26,26,26,.12)}
 .box .c{font-size:26px;color:var(--tinta);margin-top:8px}
 """
     body = f"""<div class='l'><div class='photo' style="background-image:url('{foto(d['code'])}')"></div>
-<span class='badge'>Disponible · ya en México</span></div>
+<span class='badge'>{'Vendido' if d['sold'] else 'Disponible · ya en México'}</span>{d['stamp'].replace('vend','vend big-v')}</div>
 <div class='r'><img class='logo' src='fotos/logo-horizontal.png' style='height:62px;align-self:flex-start'>
 <div class='mod'>MODELO {d['model'].upper()}</div><h1>{d['name']}</h1>
-<div class='big grad'>{d['pp']}</div><div class='sub'>precio final por pieza</div>
-<div class='box'><div class='a'>Llévate desde 10 piezas: <b>{d['min']}</b></div>
+<div class='big {d['g']}'>{d['pp']}</div><div class='sub'>precio final por pieza</div>
+<div class='box'><div class='a'>{'Esta caja ya se vendió' if d['sold'] else 'Llévate desde 10 piezas: <b>' + d['min'] + '</b>'}</div>
 <div class='c'>Caja completa: {d['pz']} piezas por {d['total']}</div></div></div>{FOOT}"""
     return page(body, extra)
 
@@ -130,11 +144,11 @@ box-shadow:0 16px 40px rgba(26,26,26,.12)}
 def prop_c(parte, titulo, sub):
     cards = ""
     for d in parte:
-        cards += f"""<div class='card'><div class='photo ph' style="background-image:url('{foto(d['code'])}')">
+        cards += f"""<div class='card{d['cls']}'><div class='photo ph' style="background-image:url('{foto(d['code'])}')">{d['stamp']}
 <span class='badge soft'>{d['pz']} pzs en caja</span></div>
 <div class='tx'><div class='nm'><span>{d['model']}</span> {d['name']}</div>
-<div class='row'><div><div class='pp grad'>{d['pp']}</div><div class='lb'>por pieza</div></div>
-<div class='rt'><div class='mn'>10 pzs <b>{d['min']}</b></div><div class='cj'>Caja: {d['total']}</div></div></div></div></div>"""
+<div class='row'><div><div class='pp {d['g']}'>{d['pp']}</div><div class='lb'>por pieza</div></div>
+<div class='rt'><div class='mn'>{'Vendido' if d['sold'] else '10 pzs <b>' + d['min'] + '</b>'}</div><div class='cj'>Caja: {d['total']}</div></div></div></div></div>"""
     extra = """
 .top{height:200px;padding:44px 64px 0;display:flex;justify-content:space-between;align-items:flex-start}
 .top h1{font-size:66px}.top p{font-size:28px;color:var(--gris);margin-top:10px}
@@ -161,9 +175,9 @@ height:370px;overflow:hidden;display:flex;flex-direction:column}
 def prop_d():
     rows = ""
     for d in DATA:
-        rows += f"""<div class='rw'><div class='photo th' style="background-image:url('{foto(d['code'])}')"></div>
+        rows += f"""<div class='rw{d['cls']}'><div class='photo th' style="background-image:url('{foto(d['code'])}');position:relative">{d['stamp'].replace('vend','vend sm-v')}</div>
 <div class='nm'><span>{d['model']}</span>{d['name']}</div>
-<div class='pp grad'>{d['pp']}</div><div class='mn'>{d['min']}</div><div class='cj'>{d['pz']} pzs · {d['total']}</div></div>"""
+<div class='pp {d['g']}'>{d['pp']}</div><div class='mn'>{d['min'] if not d['sold'] else 'Vendido'}</div><div class='cj'>{d['pz']} pzs · {d['total']}</div></div>"""
     extra = """
 .side{position:absolute;left:0;top:0;bottom:84px;width:560px;background:#fff;border-right:1px solid var(--borde);
 padding:64px 56px;display:flex;flex-direction:column}

@@ -10,7 +10,8 @@ const lista = [...require('./_lista.json'), ...(fs.existsSync(path.join(__dirnam
     const tipo = k.startsWith('H-') ? 'historias' : k.startsWith('K-') ? 'carrusel' : '';
     const vp = { historias: [1080, 1920], carrusel: [1080, 1350], '': [1920, 1080] }[tipo];
     fs.mkdirSync(path.join(__dirname, 'png', tipo), { recursive: true });
-    const p = await b.newPage({ viewport: { width: vp[0], height: vp[1] } });
+    // Horizontales al doble de resolución (3840x2160) para que se vean nítidos
+    const p = await b.newPage({ viewport: { width: vp[0], height: vp[1] }, deviceScaleFactor: tipo === '' ? 2 : 1 });
     await p.goto('file://' + path.join(__dirname, `_${k}.html`));
     await p.waitForLoadState('networkidle');
     await p.screenshot({ path: path.join(__dirname, 'png', tipo, `${tipo ? k.slice(2) : k}.png`) });
