@@ -167,7 +167,7 @@ Sin cambios: públicos amplios, muchas creatividades, retargeting obligatorio, o
 
 Sin cambios (sistema de validación, recibo de pago, guías, Golden Freight, acuerdo de compra, sellos y firmas).
 
-**Nota de compra (nov 2026, antes se llamaba "acuerdo de compra"):** una hoja carta con 4 pasos (tu pedido, tu envío, cuánto pagas, datos para tu pago), ya en naranjas. Se da **una sola opción de envío**: DHL a domicilio, con seguro. El precio por pieza se redondea a centavos y se multiplica por las piezas (ej. M1: $49.90 × 94 = $4,690.60). El envío sale de `compraenfabricas.com/cotizar-envio?caja=CÓDIGO` con el CP del cliente (DHL vía Envia.com, con seguro por el valor de la caja). Los acuerdos llevan datos del cliente y bancarios: no se suben al repo.
+**Acuerdo de compra (27 nov 2026: se queda el nombre "acuerdo de compra"; por unos días se llamó "nota de compra"):** una hoja carta con 5 pasos (tu pedido, tu envío, cuánto pagas, datos para tu pago, políticas de envío y devoluciones) y siempre con el sello oficial, ya en naranjas. Se da **una sola opción de envío**: DHL a domicilio, con seguro. El precio por pieza se redondea a centavos y se multiplica por las piezas (ej. M1: $49.90 × 94 = $4,690.60). El envío sale de `compraenfabricas.com/cotizar-envio?caja=CÓDIGO` con el CP del cliente (DHL vía Envia.com, con seguro por el valor de la caja). Los acuerdos llevan datos del cliente y bancarios: no se suben al repo.
 
 **Nuevo:** `ENTREGA.md` del blog (ver sección 20).
 

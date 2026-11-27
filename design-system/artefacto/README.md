@@ -43,8 +43,9 @@
 - Va sobre blanco, crema o durazno. No se redibuja, no se recolorea y nunca va en rojo.
 - El cuadro con el carácter 中 en degradado naranja-rojo (favicon viejo del sitio) **no es el logo de la marca**.
 
-## DOCUMENTOS (notas de compra, recibos)
-- El documento de venta se llama **nota de compra** (ya no "acuerdo de compra"). Lleva una sola opción de envío: DHL a domicilio, con seguro.
+## DOCUMENTOS (acuerdos de compra, recibos)
+- El documento de venta se llama **acuerdo de compra** (decisión de Eduardo, 27 nov 2026: ya no "nota de compra"). Lleva una sola opción de envío: DHL a domicilio, con seguro.
+- Todo acuerdo de compra lleva **siempre** la sección "Políticas de envío y devoluciones" (apartado, envío, cancelaciones, si nosotros no cumplimos, piezas dañadas o faltantes, igual que compraenfabricas.com/politicas-envio-devoluciones) y **el sello oficial** junto a la firma de Eduardo.
 - Encabezado: logo horizontal + título en tinta bold, folio y fecha a la derecha en gris; debajo una línea de 3pt con el degradado naranja.
 - Pasos numerados en círculos con el degradado; precios y totales grandes en `cef-naranja-600`; fila de total con el degradado y texto blanco en negritas.
 - Tablas: encabezado tinta con texto blanco, celdas crema con borde suave.

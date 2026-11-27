@@ -22,14 +22,16 @@ Opcional en el JSON:
 - `cliente.correo` (se muestra junto al nombre; `telefono` también es opcional).
 - `envio.nota` (aviso bajo el envío, p. ej. que el costo de DHL es un estimado) y `envio.concepto` (texto de la fila del envío).
 - Con **una sola opción de envío** el apartado se llama "Tu envío" y la columna "Monto".
-- `titulo`: cambia el encabezado (por defecto "Acuerdo de compra"; p. ej. "Nota de compra").
+- `titulo`: el encabezado es "Acuerdo de compra" (así se llama el documento; no usar "nota de compra").
+- `politicas`: por defecto el acuerdo lleva la sección 5 "Políticas de envío y devoluciones" con las políticas de compraenfabricas.com/politicas-envio-devoluciones. Si cambian en la página, actualiza `POLITICAS` en `generar.py`.
+- Sello: sale siempre. Usa `assets/sello-oficial.png` si existe; si no, el sello naranja del design system (`design-system/artefacto/assets/sellos/sello-directo-de-fabrica.png`).
 - `apartado`: `{"porcentaje": 20, "monto": 315, "dias": 7}` agrega el pago para apartar y el resto + envío, con el plazo para liquidar.
 
 ## Importante: este repositorio es público
 
 - **No subas aquí los datos reales de clientes** (nombre, teléfono, dirección) ni los acuerdos ya llenos. Guárdalos en Drive, en la carpeta del cliente dentro de "Compra en China".
 - **No subas los datos bancarios reales.** El ejemplo usa una cuenta en ceros.
-- **El sello oficial no está en el repositorio.** Pon tu copia local en `assets/sello-oficial.png` (está en `.gitignore`). Sin él, el acuerdo sale sin sello.
+- **El sello:** el generador usa el sello naranja del design system, que ya está en el repositorio. Si tienes otra versión, ponla local en `assets/sello-oficial.png` (está en `.gitignore`).
 
 ## Archivos
 

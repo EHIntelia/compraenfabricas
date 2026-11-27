@@ -5,8 +5,9 @@ Uso:
 Después convierte el HTML a documento imprimible con:
   node a-pdf.js salida.html salida.pdf
 
-El sello oficial NO está en el repositorio (es público). Pon tu copia en
-assets/sello-oficial.png; si no existe, el acuerdo sale sin sello.
+Sello: usa assets/sello-oficial.png si existe; si no, el sello oficial naranja
+del design system (design-system/artefacto/assets/sellos/sello-directo-de-fabrica.png).
+El acuerdo siempre lleva el sello y las políticas de envío y devoluciones.
 """
 import base64, json, os, sys
 
@@ -24,6 +25,18 @@ def b64(ruta):
     return f"data:image/{tipo};base64," + base64.b64encode(open(ruta, "rb").read()).decode()
 
 
+SELLO_DS = "../../design-system/artefacto/assets/sellos/sello-directo-de-fabrica.png"
+
+# Políticas de envío y devoluciones (fuente: compraenfabricas.com/politicas-envio-devoluciones).
+POLITICAS = [
+    ("Apartado", "Apartas con un anticipo del 20%. Tienes 7 días naturales después de apartar para hacer el pago final: el 80% restante más el envío."),
+    ("Envío", "Enviamos por DHL Express con la mercancía asegurada, una guía por caja. El costo depende del peso y del destino y te lo confirmamos antes de tu pago final. Normalmente llega al día hábil siguiente; en zonas con cobertura extendida de DHL puede tardar días adicionales. Te compartimos la guía de rastreo y, una vez que la caja sale, el traslado y la entrega se rigen por las políticas de DHL."),
+    ("Cancelaciones", "El anticipo no es reembolsable si cambias de opinión: queda como crédito a tu favor, sin fecha límite, para cualquier caja disponible, la clase en vivo, la validación de proveedores, la asesoría o joyería JAICO."),
+    ("Si nosotros no cumplimos", "Si no podemos entregarte la mercancía que apartaste (por ejemplo, por un error nuestro de inventario), te devolvemos el 100% de lo que pagaste."),
+    ("Piezas dañadas o faltantes", "Avísanos dentro de las 48 horas siguientes a recibir tu paquete, con fotos o un video de la caja al abrirla. No reponemos piezas: te devolvemos en efectivo el valor de cada pieza afectada según su precio por pieza."),
+]
+
+
 def m(x):
     return f"${x:,.2f}"
 
@@ -33,7 +46,8 @@ def generar(d):
     total_merc = round(p["piezas"] * p["precio_pieza"], 2)
     ops = [dict(o, total=round(total_merc + o["precio"], 2)) for o in d["envio"]["opciones"]]
     cell = f"border:1px solid {BORDE};padding:7px 9px;font-size:10pt"
-    logo, foto, sello = b64("assets/logo-horizontal.png"), b64(p.get("foto", "")), b64("assets/sello-oficial.png")
+    logo, foto = b64("assets/logo-horizontal.png"), b64(p.get("foto", ""))
+    sello = b64("assets/sello-oficial.png") or b64(SELLO_DS)
 
     def h2(txt, n):
         b = (f"<span style='display:inline-block;width:22px;height:22px;border-radius:11px;background:{GRAD};"
@@ -57,6 +71,11 @@ def generar(d):
     pie_doc = ("esta " if titulo.lower().startswith("nota") else "este ") + titulo.lower()
     cliente_linea = " · ".join([c["nombre"]] + ([f"Tel.: {c['telefono']}"] if c.get("telefono") else [])
                                + ([f"Correo: {c['correo']}"] if c.get("correo") else []))
+    pols = d.get("politicas", POLITICAS)
+    bloque_politicas = ("" if not pols else h2("Políticas de envío y devoluciones", 5)
+        + "<ul style='margin:0;padding-left:18px;font-size:9pt;line-height:1.45'>"
+        + "".join(f"<li style='margin:0 0 3px'><b>{t}:</b> {x}</li>" for t, x in pols)
+        + f"</ul><p style='font-size:8.5pt;color:{GR};margin:3px 0 0'>Políticas completas: compraenfabricas.com/politicas-envio-devoluciones</p>")
     ne = d["envio"].get("nota")
     nota_envio = f"<p style='font-size:9pt;color:{GR};margin:4px 0 0'>{ne}</p>" if ne else ""
     ap = d.get("apartado")
@@ -104,6 +123,7 @@ def generar(d):
 <tr><td style='{cell}'><b>{pg.get('etiqueta_cuenta', 'Cuenta')}</b></td><td style='{cell}'><b style='font-size:12pt;letter-spacing:0.04em'>{pg['cuenta']}</b></td></tr>
 <tr><td style='{cell}'><b>Concepto</b></td><td style='{cell}'>{d['orden']} {c['nombre']}</td></tr></table>
 <p style='font-size:9pt;color:{GR};margin:4px 0 0'>{instruccion_pago}</p>
+{bloque_politicas}
 <p style='font-size:9pt;margin:10px 0 0;background:{DUR};border-left:5px solid {O};border-radius:12px;padding:8px 10px'><b style='color:{R}'>Importante:</b> el pago se hace antes de enviar tu mercancía. La mercancía siempre viaja con seguro. Una vez que sale, la entrega y el rastreo los hace la paquetería según sus políticas.</p>
 <div style='page-break-inside:avoid;margin-top:4px'><table style='width:100%'><tr>
 <td style='width:50%;text-align:center;vertical-align:bottom;padding-top:30px'>{blank}<br>{c['nombre']}<br>Cliente</td>
