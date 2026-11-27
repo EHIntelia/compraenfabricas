@@ -304,6 +304,7 @@ Las URL no cambiaron. Cada nota lleva "Actualizado: noviembre de 2026" visible. 
 
 **Pedido al agente SEO** (son páginas comerciales que el agente de contenido no toca):
 5. Agregar en **/validacion** y en **/preguntas-frecuentes** un enlace a **/blog/comprar-directo-de-fabrica-en-china**. Texto sugerido: "cómo saber si un proveedor chino es fábrica".
+   - 27 nov 2026: enviado y hecho en Lovable (commit 21277b7). En /validacion quedó después del párrafo "Encontrar un proveedor es fácil..." de la sección "El error más caro". En /preguntas-frecuentes quedó en la pregunta que ya existía, "¿Cómo sé si un proveedor chino es fábrica o revendedor?", y el schema FAQPage no cambia. Falta el deploy (pedirlo con confirmación) y después IndexNow para /validacion y /preguntas-frecuentes.
 
 **Revisión:** en 2 o 3 semanas, mirar en Search Console el CTR y la posición de las 3 notas.
 
