@@ -38,13 +38,13 @@ def generar(d):
     def h2(txt, n):
         b = (f"<span style='display:inline-block;width:22px;height:22px;border-radius:11px;background:{GRAD};"
              f"color:#fff;text-align:center;font-size:11pt;line-height:22px;margin-right:8px'>{n}</span>")
-        return f"<h2 style='color:{K};font-size:13pt;margin:12px 0 6px'>{b}{txt}</h2>"
+        return f"<h2 style='color:{K};font-size:13pt;margin:10px 0 5px'>{b}{txt}</h2>"
 
     def fila(concepto, valores, estilo=""):
         celdas = "".join(f"<td style='{cell};text-align:right'>{v}</td>" for v in valores)
         return f"<tr{estilo}><td style='{cell}'>{concepto}</td>{celdas}</tr>"
 
-    cab = "".join(f"<td style='{cell};border-color:{K};text-align:right'><b>{o['nombre'].split(' · ')[0]}</b></td>" for o in ops)
+    cab = "".join(f"<td style='{cell};border-color:{K};text-align:right'><b>{o['nombre'].split(' · ')[0] if len(ops) > 1 else 'Monto'}</b></td>" for o in ops)
     tot = "".join(f"<td style='{cell};border-color:{O};text-align:right'><b style='font-size:12pt'>{m(o['total'])}</b></td>" for o in ops)
     envio_cards = "".join(
         f"<td style='{cell};text-align:center'><b>{o['nombre']}</b><br><span style='font-size:14pt;font-weight:bold'>{m(o['precio'])}</span></td>"
@@ -53,42 +53,63 @@ def generar(d):
     sello_img = (f"<img src='{sello}' style='position:absolute;left:50%;top:0;margin-left:-65px;width:130px;height:130px;"
                  f"opacity:.9;transform:rotate(-8deg)'>") if sello else ""
     c, pg = d["cliente"], d["pago"]
+    titulo = d.get("titulo", "Acuerdo de compra")
+    pie_doc = ("esta " if titulo.lower().startswith("nota") else "este ") + titulo.lower()
+    cliente_linea = " · ".join([c["nombre"]] + ([f"Tel.: {c['telefono']}"] if c.get("telefono") else [])
+                               + ([f"Correo: {c['correo']}"] if c.get("correo") else []))
+    ne = d["envio"].get("nota")
+    nota_envio = f"<p style='font-size:9pt;color:{GR};margin:4px 0 0'>{ne}</p>" if ne else ""
+    ap = d.get("apartado")
+    if ap:
+        total = ops[0]["total"]
+        resto = round(total - ap["monto"], 2)
+        celda = f"{cell};text-align:right"
+        bloque_pago = (f"<table style='width:100%;border-collapse:collapse;margin-top:8px;background:{CREMA}'>"
+            f"<tr><td style='{cell}'><b>Para apartar tu pedido ({ap['porcentaje']}%)</b></td><td style='{celda}'><b style='font-size:12pt;color:{R}'>{m(ap['monto'])}</b></td></tr>"
+            f"<tr><td style='{cell}'><b>Resto + envío</b>, a más tardar {ap['dias']} días después de apartar</td><td style='{celda}'><b style='font-size:12pt'>{m(resto)}</b></td></tr></table>"
+            f"<p style='font-size:9pt;color:{GR};margin:4px 0 0'>Puedes apartar con el {ap['porcentaje']}% ({m(ap['monto'])}) y tienes {ap['dias']} días para liquidar el resto más el envío. "
+            f"También puedes pagar el total de una vez. Tu pedido sale cuando está liquidado.</p>")
+        instruccion_pago = "Haz tu transferencia por el apartado o por el total y mándanos tu comprobante por WhatsApp."
+    else:
+        bloque_pago = f"<p style='font-size:9pt;color:{GR};margin:4px 0 0'>Se paga en una sola exhibición, antes del envío.</p>"
+        instruccion_pago = ("Haz tu transferencia por el total de la opción que elijas y mándanos tu comprobante por WhatsApp."
+                            if len(ops) > 1 else "Haz tu transferencia por el total y mándanos tu comprobante por WhatsApp.")
     blank = "______________________"
     return f"""<html><head><meta charset="utf-8"></head><body style="font-family:Arial;color:{K};font-size:10.5pt">
 <table style='width:100%'><tr><td style='width:170px'>{f"<img src='{logo}' style='width:160px'>" if logo else ""}</td>
-<td style='vertical-align:bottom;padding-left:10px'><h1 style="font-size:22pt;margin:0;font-weight:900;letter-spacing:-0.02em">Acuerdo de compra</h1></td>
+<td style='vertical-align:bottom;padding-left:10px'><h1 style="font-size:22pt;margin:0;font-weight:900;letter-spacing:-0.02em">{d.get('titulo', 'Acuerdo de compra')}</h1></td>
 <td style='text-align:right;font-size:9.5pt;color:{GR};vertical-align:bottom'>Orden <b style='color:{K}'>{d['orden']}</b><br>{d['fecha']}</td></tr></table>
 <div style='height:4px;background:{GRAD};border-radius:2px;margin:10px 0 12px'></div>
-<p style='margin:0 0 4px'><b>Cliente:</b> {c['nombre']} · Tel.: {c['telefono']}</p>
+<p style='margin:0 0 4px'><b>Cliente:</b> {cliente_linea}</p>
 <p style='margin:0'><b>Entrega en:</b> {c['direccion']}</p>
 {h2("Tu pedido", 1)}
 <table style='width:100%;border-collapse:collapse;background:{CREMA}'><tr>{foto_td}
 <td style='{cell}'><b style='font-size:11.5pt'>{p['piezas']} {p['nombre']}</b><br><span style='color:{GR};font-size:9pt'>{p['descripcion']}</span></td>
 <td style='{cell};text-align:right;white-space:nowrap'>{p['piezas']} × {m(p['precio_pieza'])}<br><b style='font-size:14pt;color:{R}'>{m(total_merc)}</b></td></tr></table>
 <p style='font-size:9pt;color:{GR};margin:4px 0 0'>{p['nota']}</p>
-{h2("Elige tu envío", 2)}
+{h2("Elige tu envío" if len(ops) > 1 else "Tu envío", 2)}
 <p style='margin:0 0 6px'>{d['envio']['texto']}</p>
-<table style='width:100%;border-collapse:collapse'><tr>{envio_cards}</tr></table>
+<table style='width:100%;border-collapse:collapse'><tr>{envio_cards}</tr></table>{nota_envio}
 {h2("Cuánto pagas", 3)}
 <table style='width:100%;border-collapse:collapse'>
 <tr style='background:{K};color:#fff'><td style='{cell};border-color:{K}'><b>Concepto</b></td>{cab}</tr>
 {fila(f"{p['piezas']} {p['nombre']}", [m(total_merc)] * len(ops))}
-{fila("Envío con seguro", [m(o['precio']) for o in ops])}
+{fila(d['envio'].get('concepto', 'Envío con seguro'), [m(o['precio']) for o in ops])}
 <tr style='background:{GRAD};color:#fff'><td style='{cell};border-color:{O}'><b>Total a pagar</b></td>{tot}</tr></table>
-<p style='font-size:9pt;color:{GR};margin:4px 0 0'>Se paga en una sola exhibición, antes del envío.</p>
+{bloque_pago}
 {h2("Datos para tu pago", 4)}
 <table style='width:100%;border-collapse:collapse;background:{CREMA}'>
 <tr><td style='{cell};width:38%'><b>Banco</b></td><td style='{cell}'>{pg['banco']}</td></tr>
 <tr><td style='{cell}'><b>A nombre de</b></td><td style='{cell}'>{pg['titular']}</td></tr>
 <tr><td style='{cell}'><b>{pg.get('etiqueta_cuenta', 'Cuenta')}</b></td><td style='{cell}'><b style='font-size:12pt;letter-spacing:0.04em'>{pg['cuenta']}</b></td></tr>
 <tr><td style='{cell}'><b>Concepto</b></td><td style='{cell}'>{d['orden']} {c['nombre']}</td></tr></table>
-<p style='font-size:9pt;color:{GR};margin:4px 0 0'>Haz tu transferencia por el total de la opción que elijas y mándanos tu comprobante por WhatsApp.</p>
-<p style='font-size:9pt;margin:14px 0 0;background:{DUR};border-left:5px solid {O};border-radius:12px;padding:8px 10px'><b style='color:{R}'>Importante:</b> el pago se hace antes de enviar tu mercancía. La mercancía siempre viaja con seguro. Una vez que sale, la entrega y el rastreo los hace la paquetería según sus políticas.</p>
-<div style='page-break-inside:avoid;margin-top:10px'><table style='width:100%'><tr>
-<td style='width:50%;text-align:center;vertical-align:bottom;padding-top:40px'>{blank}<br>{c['nombre']}<br>Cliente</td>
+<p style='font-size:9pt;color:{GR};margin:4px 0 0'>{instruccion_pago}</p>
+<p style='font-size:9pt;margin:10px 0 0;background:{DUR};border-left:5px solid {O};border-radius:12px;padding:8px 10px'><b style='color:{R}'>Importante:</b> el pago se hace antes de enviar tu mercancía. La mercancía siempre viaja con seguro. Una vez que sale, la entrega y el rastreo los hace la paquetería según sus políticas.</p>
+<div style='page-break-inside:avoid;margin-top:4px'><table style='width:100%'><tr>
+<td style='width:50%;text-align:center;vertical-align:bottom;padding-top:30px'>{blank}<br>{c['nombre']}<br>Cliente</td>
 <td style='width:50%;text-align:center;vertical-align:bottom'><div style='position:relative;height:130px'>{sello_img}
 <div style='position:absolute;bottom:2px;width:100%;font-family:"Brush Script MT",cursive;font-size:15pt;color:#1b2a6b'>{d['firma']}</div></div>{blank}<br>{d['firma']}<br>Compra en fábricas</td></tr></table></div>
-<p style='font-size:9pt;color:{GR};margin:10px 0 0;text-align:center'><i>Al realizar tu pago, aceptas este acuerdo de compra.</i> · compraenfabricas.com</p>
+<p style='font-size:9pt;color:{GR};margin:6px 0 0;text-align:center'><i>Al realizar tu pago, aceptas {pie_doc}.</i> · compraenfabricas.com</p>
 </body></html>"""
 
 

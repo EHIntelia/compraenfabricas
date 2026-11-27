@@ -10,3 +10,4 @@ Registro de cada caja vendida: acuerdo de compra (PDF), ficha de la venta y el S
 | Fecha | Orden | Caja | Cliente | Piezas | Monto mercancía | Ficha |
 |---|---|---|---|---|---|---|
 | 18-nov-2026 | CF-2026-007 | CF-038 YJ12 Lentes Bluetooth | Rocío Ríos (Zacatecas) | 93 | $17,847.63 (+ $778.56 DHL, opción A) | [ver](./CF-2026-007_YJ12_Rocio_Rios.md) |
+| 27-nov-2026 | CF-2026-008 | CF-022 CH-M802 Mochila Bluetooth | Martín Castillo (San Luis Potosí) | 10 | $1,574.00 (+ $530 DHL estimado; apartado 20% = $315, resto en 7 días) | [nota de compra](./Nota_de_Compra_CF-2026-008_Martin_Castillo.pdf) |
