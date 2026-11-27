@@ -1,4 +1,4 @@
-// Convierte el HTML del acuerdo a documento imprimible tamaño carta.
+// Convierte el HTML de la nota a documento imprimible tamaño carta.
 // Uso: node a-pdf.js entrada.html salida.pdf   (requiere playwright)
 const { chromium } = require('playwright');
 const path = require('path');

@@ -1,4 +1,4 @@
-"""Genera el acuerdo de compra de Compra en fábricas en HTML a partir de un JSON.
+"""Genera la nota de compra de Compra en fábricas en HTML a partir de un JSON.
 
 Uso:
   python3 generar.py datos.json salida.html
@@ -6,7 +6,7 @@ Después convierte el HTML a documento imprimible con:
   node a-pdf.js salida.html salida.pdf
 
 El sello oficial NO está en el repositorio (es público). Pon tu copia en
-assets/sello-oficial.png; si no existe, el acuerdo sale sin sello.
+assets/sello-oficial.png; si no existe, la nota sale sin sello.
 """
 import base64, json, os, sys
 
@@ -56,7 +56,7 @@ def generar(d):
     blank = "______________________"
     return f"""<html><head><meta charset="utf-8"></head><body style="font-family:Arial;color:{K};font-size:10.5pt">
 <table style='width:100%'><tr><td style='width:170px'>{f"<img src='{logo}' style='width:160px'>" if logo else ""}</td>
-<td style='vertical-align:bottom;padding-left:10px'><h1 style="font-size:22pt;margin:0;font-weight:900;letter-spacing:-0.02em">Acuerdo de compra</h1></td>
+<td style='vertical-align:bottom;padding-left:10px'><h1 style="font-size:22pt;margin:0;font-weight:900;letter-spacing:-0.02em">Nota de compra</h1></td>
 <td style='text-align:right;font-size:9.5pt;color:{GR};vertical-align:bottom'>Orden <b style='color:{K}'>{d['orden']}</b><br>{d['fecha']}</td></tr></table>
 <div style='height:4px;background:{GRAD};border-radius:2px;margin:10px 0 12px'></div>
 <p style='margin:0 0 4px'><b>Cliente:</b> {c['nombre']} · Tel.: {c['telefono']}</p>
@@ -88,7 +88,7 @@ def generar(d):
 <td style='width:50%;text-align:center;vertical-align:bottom;padding-top:40px'>{blank}<br>{c['nombre']}<br>Cliente</td>
 <td style='width:50%;text-align:center;vertical-align:bottom'><div style='position:relative;height:130px'>{sello_img}
 <div style='position:absolute;bottom:2px;width:100%;font-family:"Brush Script MT",cursive;font-size:15pt;color:#1b2a6b'>{d['firma']}</div></div>{blank}<br>{d['firma']}<br>Compra en fábricas</td></tr></table></div>
-<p style='font-size:9pt;color:{GR};margin:10px 0 0;text-align:center'><i>Al realizar tu pago, aceptas este acuerdo de compra.</i> · compraenfabricas.com</p>
+<p style='font-size:9pt;color:{GR};margin:10px 0 0;text-align:center'><i>Al realizar tu pago, aceptas esta nota de compra.</i> · compraenfabricas.com</p>
 </body></html>"""
 
 

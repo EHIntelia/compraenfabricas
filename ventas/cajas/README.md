@@ -1,6 +1,6 @@
 # Ventas de cajas
 
-Registro de cada caja vendida: acuerdo de compra (PDF), ficha de la venta y el SQL con que se cargó al panel de eduardohernandez.com.
+Registro de cada caja vendida: nota de compra (antes "acuerdo de compra", documento imprimible), ficha de la venta y el SQL con que se cargó al panel de eduardohernandez.com.
 
 **Cómo se marca una caja como vendida**
 1. compraenfabricas.com → Lovable "China Direct Connect" → `src/lib/cajas.ts`: agregar `vendida: true` a la caja (por su `code` CF-0xx del catálogo) y publicar.
