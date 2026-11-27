@@ -22,6 +22,7 @@ Opcional en el JSON:
 - `cliente.correo` (se muestra junto al nombre; `telefono` también es opcional).
 - `envio.nota` (aviso bajo el envío, p. ej. que el costo de DHL es un estimado) y `envio.concepto` (texto de la fila del envío).
 - Con **una sola opción de envío** el apartado se llama "Tu envío" y la columna "Monto".
+- `titulo`: cambia el encabezado (por defecto "Acuerdo de compra"; p. ej. "Nota de compra").
 - `apartado`: `{"porcentaje": 20, "monto": 315, "dias": 7}` agrega el pago para apartar y el resto + envío, con el plazo para liquidar.
 
 ## Importante: este repositorio es público

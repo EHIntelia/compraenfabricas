@@ -53,6 +53,8 @@ def generar(d):
     sello_img = (f"<img src='{sello}' style='position:absolute;left:50%;top:0;margin-left:-65px;width:130px;height:130px;"
                  f"opacity:.9;transform:rotate(-8deg)'>") if sello else ""
     c, pg = d["cliente"], d["pago"]
+    titulo = d.get("titulo", "Acuerdo de compra")
+    pie_doc = ("esta " if titulo.lower().startswith("nota") else "este ") + titulo.lower()
     cliente_linea = " · ".join([c["nombre"]] + ([f"Tel.: {c['telefono']}"] if c.get("telefono") else [])
                                + ([f"Correo: {c['correo']}"] if c.get("correo") else []))
     ne = d["envio"].get("nota")
@@ -75,7 +77,7 @@ def generar(d):
     blank = "______________________"
     return f"""<html><head><meta charset="utf-8"></head><body style="font-family:Arial;color:{K};font-size:10.5pt">
 <table style='width:100%'><tr><td style='width:170px'>{f"<img src='{logo}' style='width:160px'>" if logo else ""}</td>
-<td style='vertical-align:bottom;padding-left:10px'><h1 style="font-size:22pt;margin:0;font-weight:900;letter-spacing:-0.02em">Acuerdo de compra</h1></td>
+<td style='vertical-align:bottom;padding-left:10px'><h1 style="font-size:22pt;margin:0;font-weight:900;letter-spacing:-0.02em">{d.get('titulo', 'Acuerdo de compra')}</h1></td>
 <td style='text-align:right;font-size:9.5pt;color:{GR};vertical-align:bottom'>Orden <b style='color:{K}'>{d['orden']}</b><br>{d['fecha']}</td></tr></table>
 <div style='height:4px;background:{GRAD};border-radius:2px;margin:10px 0 12px'></div>
 <p style='margin:0 0 4px'><b>Cliente:</b> {cliente_linea}</p>
@@ -107,7 +109,7 @@ def generar(d):
 <td style='width:50%;text-align:center;vertical-align:bottom;padding-top:30px'>{blank}<br>{c['nombre']}<br>Cliente</td>
 <td style='width:50%;text-align:center;vertical-align:bottom'><div style='position:relative;height:130px'>{sello_img}
 <div style='position:absolute;bottom:2px;width:100%;font-family:"Brush Script MT",cursive;font-size:15pt;color:#1b2a6b'>{d['firma']}</div></div>{blank}<br>{d['firma']}<br>Compra en fábricas</td></tr></table></div>
-<p style='font-size:9pt;color:{GR};margin:6px 0 0;text-align:center'><i>Al realizar tu pago, aceptas este acuerdo de compra.</i> · compraenfabricas.com</p>
+<p style='font-size:9pt;color:{GR};margin:6px 0 0;text-align:center'><i>Al realizar tu pago, aceptas {pie_doc}.</i> · compraenfabricas.com</p>
 </body></html>"""
 
 
