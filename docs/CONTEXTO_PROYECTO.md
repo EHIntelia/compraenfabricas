@@ -32,7 +32,7 @@ El fin último es que la gente **compre joyería al mayoreo y la revenda** (JAIC
 
 | Producto | Precio | Página | Nota |
 |---|---|---|---|
-| **Clase en vivo con Eduardo** | $990 MXN | /clase | CTA principal. **21 de noviembre de 2026, 11:00 am hora CDMX, dura 1 h 30 min.** Incluye grabación, material, plantillas y 5 proveedores de regalo. Pago por Stripe. |
+| **Clase en vivo con Eduardo** | $990 MXN | /clase | CTA principal. **Próxima: 12 de diciembre de 2026, 11:00 am hora CDMX, dura 1 h 30 min** (venta cierra 11:30 am). Siguiente: 9 de enero de 2027. Ya pasó: 21 de noviembre. Incluye grabación, material, plantillas y 5 proveedores de regalo. Pago por Stripe. |
 | Escuela de Negocios (Skool) | $250 MXN/mes o $2,500/año | /escuela | Cursos grabados, Zooms en vivo y comunidad. |
 | Joyería al mayoreo (JAICO) | Variable | /joyeria → info.joyeria.shop | Producto estrella real. |
 | Cajas de electrónica | Desde ~$3,000 MXN | /productos y /producto/<código> | Ya en México. Se apartan con 20%, llegan en 1–2 días hábiles. |
