@@ -18,6 +18,12 @@ El acuerdo tiene 4 partes: tu pedido (con foto), elige tu envío (opciones de pa
 
 Los totales se calculan solos: piezas × precio por pieza, más el envío de cada opción.
 
+Opcional en el JSON:
+- `cliente.correo` (se muestra junto al nombre; `telefono` también es opcional).
+- `envio.nota` (aviso bajo el envío, p. ej. que el costo de DHL es un estimado) y `envio.concepto` (texto de la fila del envío).
+- Con **una sola opción de envío** el apartado se llama "Tu envío" y la columna "Monto".
+- `apartado`: `{"porcentaje": 20, "monto": 315, "dias": 7}` agrega el pago para apartar y el resto + envío, con el plazo para liquidar.
+
 ## Importante: este repositorio es público
 
 - **No subas aquí los datos reales de clientes** (nombre, teléfono, dirección) ni los acuerdos ya llenos. Guárdalos en Drive, en la carpeta del cliente dentro de "Compra en China".
